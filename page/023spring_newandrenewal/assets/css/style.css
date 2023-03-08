@@ -852,6 +852,13 @@ Local navigation
   border: 2px solid #000;
 }
 
+@media screen and (max-width: 768px) {
+  .localnav__item a {
+    padding: 18px 0;
+    line-height: 1.3;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .localnav-wrap {
     padding: 80px 0 0;
@@ -1585,15 +1592,6 @@ body.type4 .floornav .floornav__item04 a:after {
 }
 
 /* アイテムリスト - PC */
-@media screen and (min-width: 769px) {
-  .item-list {
-    display: flex;
-  }
-  .item-list li:not(:last-child) {
-    margin-right: 27px;
-  }
-}
-
 /* スライダー */
 .slick-slide {
   margin-right: 5px !important;
@@ -1904,7 +1902,7 @@ Local navi
 ========================================================= */
 .localnav {
   max-width: 1024px;
-  margin: 30px auto 0;
+  margin: 80px auto 0;
   padding: 0 20px;
 }
 
@@ -1917,7 +1915,7 @@ Local navi
 .localnav-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 6px;
 }
 
 @media (max-width: 768px) {
@@ -1928,7 +1926,7 @@ Local navi
 
 @media (min-width: 769px) {
   .localnav-item {
-    width: calc(20% - 13px);
+    width: calc(20% - 6px);
   }
 }
 
@@ -1941,7 +1939,6 @@ Local navi
 .localnav-item a,
 .localnav-item button {
   width: 100%;
-  background: #D1E5D3;
   color: #fff;
   line-height: 1.3;
   font-weight: 700;
@@ -1950,21 +1947,24 @@ Local navi
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #000;
+  border-bottom: 2px solid;
 }
 
 @media (max-width: 768px) {
   .localnav-item a,
   .localnav-item button {
-    height: 60px;
-    font-size: 20px;
+    height: 46px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 769px) {
   .localnav-item a,
   .localnav-item button {
-    height: 80px;
-    font-size: clamp(10px, 1.73vw, 26px);
+    height: 53px;
+    font-size: 16px;
+    font-family: "Krona One", sans-serif;
   }
 }
 
@@ -1973,10 +1973,25 @@ Local navi
   .localnav-item button {
     transition: background .4s;
   }
-  .localnav-item a:hover,
-  .localnav-item button:hover {
-    background: #ECACA5;
+}
+
+.newrenew .localnav__item01 a {
+  background: #000;
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .newrenew .localnav__item01 a:hover {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
   }
+}
+
+.newrenew .localnav__item02 a {
+  background: #fff;
+  color: #000;
+  border-bottom-color: #fff;
 }
 
 /* =========================================================
@@ -1988,80 +2003,37 @@ New&Renew items
 
 .newrenew-block {
   max-width: 1024px;
-  margin: 120px auto 0;
-  padding: 0 20px;
+  box-sizing: content-box;
 }
 
-@media screen and (min-width: 769px) {
-  .newrenew-block {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .newrenew-block {
     margin: 65px auto 0;
+    padding: 0 20px;
   }
 }
 
-.newrenew-block .read-ttl {
-  text-align: center;
-  font-size: 40px;
-  line-height: 50px;
-  margin-bottom: 40px;
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  color: #1A1311;
-  z-index: 10;
-}
-
-@media screen and (max-width: 768px) {
-  .newrenew-block .read-ttl {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 50px;
+@media (min-width: 769px) {
+  .newrenew-block {
+    margin: 76px auto 0;
+    padding: 0 40px;
   }
-}
-
-.newrenew-block .read-ttl::after {
-  z-index: -1;
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-  height: 0px;
-  background: #1A1311;
-}
-
-.newrenew-block .read-ttl span {
-  display: inline-block;
-  padding: 0 20px;
-  background: #fff;
-  z-index: 2;
 }
 
 .newrenew-block .list-block {
   margin: 0 auto 50px;
-  display: none;
-}
-
-.newrenew-block .list-block#all-list-block {
-  display: block;
 }
 
 .newrenew-block .list-block:last-child {
   margin-bottom: 0;
 }
 
-.newrenew-block .ttl {
-  margin: 0 auto 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
+.list-block {
+  display: none;
+}
+
+#all-list-block.list-block {
+  display: block;
 }
 
 .item-list {
@@ -2072,15 +2044,12 @@ New&Renew items
 
 @media screen and (min-width: 769px) {
   .item-list {
-    width: calc(100% + 20px);
-    margin-left: -10px;
-    justify-content: initial;
+    gap: 50px 40px;
   }
 }
 
 .item-list .item {
-  width: 47.16%;
-  margin: 0 2.2% 30px 0;
+  width: 50%;
   box-sizing: border-box;
 }
 
@@ -2091,8 +2060,8 @@ New&Renew items
 @media screen and (min-width: 769px) {
   .item-list .item {
     margin-bottom: 20px;
-    width: 48.9%;
-    padding: 20px 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
   }
 }
 
@@ -2100,7 +2069,7 @@ New&Renew items
   height: 100%;
   background: #fff;
   border: 1px solid;
-  border-color: #1A1311;
+  border-color: #999999;
 }
 
 @media screen and (max-width: 768px) {
@@ -2118,7 +2087,7 @@ New&Renew items
 .item-list .front-cont .badge-l {
   width: 115px;
   padding: 16px 10px 10px;
-  background: #E74A26;
+  background: #CF4866;
   position: absolute;
   color: #fff;
   top: -20px;
@@ -2143,7 +2112,7 @@ New&Renew items
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: #E74A26 transparent transparent transparent;
+  border-color: #CF4866 transparent transparent transparent;
 }
 
 @media screen and (min-width: 769px) {
@@ -2161,8 +2130,10 @@ New&Renew items
 }
 
 .item-list .front-cont .badge-l .date {
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -2182,6 +2153,8 @@ New&Renew items
   font-weight: 400;
   font-size: 20px;
   margin-top: 12px;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -2197,6 +2170,8 @@ New&Renew items
   padding: 17px 0 0;
   border-top: 1px solid #fff;
   font-size: 20px;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
   text-align: center;
 }
 
@@ -2318,6 +2293,7 @@ New&Renew items
   align-items: center;
   width: 115px;
   white-space: pre-line;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -2345,15 +2321,16 @@ New&Renew items
 .item-list .front-cont .more button {
   width: 100%;
   height: 50px;
-  background: #6C9FD4;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-weight: 700;
   font-size: 20px;
   transition: 0.4s;
-  letter-spacing: 0.2em;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0.4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -2361,10 +2338,6 @@ New&Renew items
     font-size: 14px;
     height: 30px;
   }
-}
-
-.item-list .front-cont .more button:hover {
-  background: #E74A26;
 }
 
 .newrenew-modal .modal-wrap {
@@ -2388,7 +2361,7 @@ New&Renew items
     background: #fff;
     padding-top: 0;
     border: 1px solid;
-    border-color: #1A1311;
+    border-color: #999999;
   }
 }
 
@@ -2407,7 +2380,7 @@ New&Renew items
     box-sizing: initial;
     overflow-y: auto;
     border: 1px solid;
-    border-color: #1A1311;
+    border-color: #999999;
   }
 }
 
@@ -2447,7 +2420,6 @@ New&Renew items
 .newrenew-modal .img-slider .slick-arrow.prev {
   left: 50%;
   margin-left: -33%;
-  bottom: -43px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2460,7 +2432,6 @@ New&Renew items
 .newrenew-modal .img-slider .slick-arrow.next {
   right: 50%;
   margin-right: -33%;
-  bottom: -43px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2475,7 +2446,7 @@ New&Renew items
   width: 35px;
   height: 35px;
   background: #fff;
-  border: 1px solid #E74A26;
+  border: 1px solid #000000;
   border-radius: 100%;
 }
 
@@ -2484,8 +2455,8 @@ New&Renew items
   display: block;
   width: 9px;
   height: 9px;
-  border-top: 1px solid #E74A26;
-  border-left: 1px solid #E74A26;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
   position: absolute;
   top: 12px;
   left: 15px;
@@ -2514,7 +2485,7 @@ New&Renew items
 }
 
 .newrenew-modal .img-slider .slick-dots li.slick-active button:before {
-  background-color: #E74A26;
+  background-color: #CF4866;
 }
 
 .newrenew-modal .detail {
@@ -2568,6 +2539,7 @@ New&Renew items
   align-items: center;
   width: 115px;
   white-space: pre-line;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 768px) {
@@ -2580,7 +2552,7 @@ New&Renew items
 }
 
 .newrenew-modal .side-wrap {
-  background: #E74A26;
+  background: #CF4866;
   text-align: left;
   position: absolute;
   top: -60px;
@@ -2588,7 +2560,7 @@ New&Renew items
   font-weight: 700;
   color: #fff;
   box-sizing: border-box;
-  padding: 17px 20px 0 37px;
+  padding: 22px 20px 0 37px;
   height: 80px;
   min-width: 230px;
   z-index: 100;
@@ -2613,7 +2585,7 @@ New&Renew items
   height: 0;
   border-style: solid;
   border-width: 80px 20px 0 0;
-  border-color: #E74A26 transparent transparent transparent;
+  border-color: #CF4866 transparent transparent transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -2628,6 +2600,9 @@ New&Renew items
   font-size: 34px;
   display: inline-block;
   vertical-align: middle;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
@@ -2640,9 +2615,11 @@ New&Renew items
 }
 
 .newrenew-modal .date b {
-  font-size: 22px;
+  font-size: 16px;
   padding-left: 3px;
   display: inline-block;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -2659,6 +2636,9 @@ New&Renew items
   font-size: 28px;
   line-height: 40px;
   margin-left: 6px;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
@@ -2746,7 +2726,7 @@ New&Renew items
   font-weight: bold;
   text-align: left;
   margin-bottom: 0;
-  color: #E74A26;
+  color: #CF4866;
 }
 
 .newrenew-modal .open-event .txt {
@@ -2782,13 +2762,13 @@ New&Renew items
 .newrenew-modal .link-item a {
   height: 40px;
   display: block;
-  background: #6C9FD4;
+  background: #fff;
   border-radius: 100%;
   transition: 0.4s;
 }
 
 .newrenew-modal .link-item a:hover {
-  background: #E74A26;
+  background: #CF4866;
 }
 
 @media screen and (max-width: 768px) {
@@ -2820,11 +2800,11 @@ New&Renew items
 
 .newrenew-modal .modal-arrow button {
   display: block;
-  background: #fff;
   border-radius: 100%;
   width: 50px;
   height: 50px;
-  background: #6C9FD4;
+  background: #fff;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -3046,6 +3026,42 @@ modal
   }
 }
 
+.newrenew-modal .img-slider .slick-dots {
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.newrenew-modal .img-slider .slick-dots li {
+  width: 15px;
+  height: 15px;
+}
+
+.newrenew-modal .img-slider .slick-dots button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #C9C9C9;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.newrenew-modal .img-slider .slick-dots {
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.newrenew-modal .img-slider .slick-dots .slick-active button {
+  background: #000000;
+}
+
 .modal-bg {
   width: 100vw;
   height: 150vh;
@@ -3106,7 +3122,7 @@ ul.item-list-pickup .front-wrap {
   width: 100%;
   position: relative;
   border: 1px solid;
-  border-color: #1A1311;
+  border-color: #999999;
 }
 
 ul.item-list-pickup .front-cont {
@@ -3180,7 +3196,7 @@ ul.item-list-pickup .front-cont .img-wrap img {
 }
 
 ul.item-list-pickup .front-cont .side-wrap {
-  background: #E74A26;
+  background: #CF4866;
   text-align: left;
   position: absolute;
   top: -20px;
@@ -3188,7 +3204,7 @@ ul.item-list-pickup .front-cont .side-wrap {
   color: #fff;
   font-weight: 700;
   box-sizing: border-box;
-  padding: 19px 20px 0 35px;
+  padding: 24px 20px 0 35px;
   height: 80px;
   min-width: 230px;
 }
@@ -3209,7 +3225,7 @@ ul.item-list-pickup .front-cont .side-wrap::after {
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: #E74A26 transparent transparent transparent;
+  border-color: #CF4866 transparent transparent transparent;
 }
 
 @media screen and (min-width: 769px) {
@@ -3229,10 +3245,12 @@ ul.item-list-pickup .front-cont .side-wrap::after {
 }
 
 ul.item-list-pickup .front-cont .date {
-  font-size: 34px;
+  font-size: 28px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -3244,7 +3262,7 @@ ul.item-list-pickup .front-cont .date {
 }
 
 ul.item-list-pickup .front-cont .date b {
-  font-size: 22px;
+  font-size: 16px;
   padding-left: 3px;
   display: inline-block;
 }
@@ -3263,6 +3281,8 @@ ul.item-list-pickup .front-cont .new-renew {
   font-size: 28px;
   line-height: 40px;
   margin-left: 6px;
+  font-family: "Krona One", sans-serif;
+  line-height: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -3367,6 +3387,7 @@ ul.item-list-pickup .catch.catchfirst .sido-ico span {
   align-items: center;
   width: 115px;
   white-space: pre-line;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -3433,9 +3454,9 @@ ul.item-list-pickup .more {
 ul.item-list-pickup .more button {
   width: 100%;
   height: 50px;
-  background: #6C9FD4;
+  background: #fff;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   font-weight: 500;
   font-size: 20px;
   transition: 0.4s;
@@ -3443,6 +3464,8 @@ ul.item-list-pickup .more button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -3450,10 +3473,6 @@ ul.item-list-pickup .more button {
     font-size: 20px;
     height: 50px;
   }
-}
-
-ul.item-list-pickup .more button:hover {
-  background: #E74A26;
 }
 
 @media screen and (max-width: 768px) {
@@ -3506,6 +3525,10 @@ ul.item-list-pickup .modal-wrap .catch {
 
 #ladies-list-block .item-list-pickup.js-tabarea > li:nth-child(3) {
   order: 2;
+}
+
+.miniwrap {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* =========================================================
@@ -3584,6 +3607,30 @@ modal
   .modal-bottom-close:hover {
     opacity: .6;
   }
+}
+
+.localnav-list {
+  width: 100%;
+}
+
+.localnav-item button {
+  position: relative;
+  transition: .2s all;
+}
+
+.localnav-item.current button {
+  color: #C05167;
+  border-bottom-color: #C05167;
+}
+
+.localnav-item.current button:before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #C05167;
+  border-radius: 100%;
+  top: -3px;
 }
 
 /* =========================================================

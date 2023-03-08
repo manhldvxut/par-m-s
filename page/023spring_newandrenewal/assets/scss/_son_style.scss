@@ -969,7 +969,7 @@ body.type4 .floornav .floornav__item04 a:after {
   }
   &:nth-child(2n) {
     .shop-info__right-top {
-      display: flex;
+      display: flex;  
       align-items: center;
       justify-content: flex-end;
       @media (max-width: 768px) {

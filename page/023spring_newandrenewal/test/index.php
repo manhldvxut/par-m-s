@@ -40,7 +40,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/023spring_newandrenew
   <link rel="stylesheet" href="/page/023spring_newandrenewal/assets/css/style_02.css"> 
 </head>
 
-<body class="<?php echo STORE_NAME; ?> page-tag newrenew" id="top">
+<body class="<?php echo STORE_NAME; ?> newrenew" id="top">
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/inc/tagmanager2.php'; ?>
 
   <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/page/assets/inc/svgs.php'; ?>
@@ -73,7 +73,7 @@ Local navigation
   <ul class="localnav-list listnum5">
     <li class="localnav-item current"><button class="js-tabbtn" data-target="#all-list-block">ALL</button></li>
     <li class="localnav-item"><button class="js-tabbtn" data-target="#clothes-list-block">CLOTHES</button></li>
-    <li class="localnav-item"><button class="js-tabbtn" data-target="#goods-list-block">GOODS<br>＆CULTURES</button></li>
+    <li class="localnav-item"><button class="js-tabbtn" data-target="#goods-list-block">GOODS<br>CULTURES</button></li>
     <li class="localnav-item"><button class="js-tabbtn" data-target="#cosmetics-list-block">COSMETICS</button></li>
     <li class="localnav-item"><button class="js-tabbtn" data-target="#lifestyles-list-block">LIFESTYLES<br>＆FOODS</button></li>
   </ul>
