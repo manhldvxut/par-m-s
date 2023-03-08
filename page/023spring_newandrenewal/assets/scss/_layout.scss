@@ -401,6 +401,11 @@ Local navigation
       color: $localnav_txt;
       text-decoration: none;
       border: 2px solid #000;
+
+      @media screen and (max-width:768px){
+        padding: 18px 0;
+        line-height: 1.3;
+      }
     }
   }
 }
@@ -1121,14 +1126,6 @@ body.type4 .floornav .floornav__item04 a:after {
   }
 }
 /* アイテムリスト - PC */
-@media screen and (min-width: 769px) {
-  .item-list {
-    display: flex;
-    li:not(:last-child) {
-      margin-right: 27px;
-    }
-  }
-}
 
 /* スライダー */
 .slick-slide{
@@ -1345,7 +1342,7 @@ Local navi
 ========================================================= */
 .localnav {
   max-width: 1024px;
-  margin: 30px auto 0;
+  margin: 80px auto 0;
   padding: 0 20px;
   @media (min-width: 769px) {
     padding: 0;
@@ -1353,14 +1350,14 @@ Local navi
   &-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 6px;
   }
   &-item {
     @media (max-width: 768px) {
       width: calc(50% - 8px);
     }
     @media (min-width: 769px) {
-      width: calc(20% - 13px);
+      width: calc(20% - 6px);
     }
     &.w100 {
       @media (max-width: 768px) {
@@ -1370,7 +1367,6 @@ Local navi
     a,
     button {
       width: 100%;
-      background: #D1E5D3;
       color: #fff;
       line-height: 1.3;
       font-weight: 700;
@@ -1379,25 +1375,51 @@ Local navi
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #000;
+      border-bottom: 2px solid;
       @media (max-width: 768px) {
-        height: 60px;
-        font-size: 20px;
+        height: 46px;
+        font-size: 14px;
       }
       @media (min-width: 769px) {
-        height: 80px;
-        font-size: clamp(10px, 1.73vw, 26px);
+        height: 53px;
+        font-size: 16px;
+        font-family: $font-en;
       }
       @media (hover:hover) {
         transition: background .4s;
         &:hover {
-          background: #ECACA5;
+          // background: #ECACA5;
         }
       }
     }
   }
 }
 
+.newrenew {
+  .localnav__item01 {
+    a {
+      background: #000;
+      color: #fff;
 
+      &:hover {
+      @media (min-width: 769px) {
+          text-decoration: none;
+          background: #fff;
+          color: #000;
+        }
+      }
+
+    }
+  }
+  .localnav__item02 {
+    a {
+      background: #fff;
+      color: #000;
+      border-bottom-color: #fff;
+    }
+  }
+}
 
 
 /* =========================================================
@@ -1409,93 +1431,56 @@ New&Renew items
 
 .newrenew-block {
   max-width: 1024px;
-  margin: 120px auto 0;
-  padding: 0 20px;
-  @media screen and (min-width: 769px) {
-    padding: 0;
-  }
-  @media screen and (max-width: 768px) {
+  box-sizing: content-box;
+  @media (max-width: 768px) {
     margin: 65px auto 0;
+    padding: 0 20px;
   }
-  .read-ttl{
-    text-align: center;
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 40px;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    color: #1A1311;
-    z-index: 10;
-    @media screen and (max-width: 768px) {
-      font-size: 30px;
-      line-height: 40px;
-      margin-bottom: 50px;
-    }
-    &::after{
-      z-index: -1;
-      content: " ";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      width: 100%;
-      height: 0px;
-      background: #1A1311;
-    }
-    span{
-      display: inline-block;
-      padding: 0 20px;
-      background: #fff;
-      z-index: 2;
-    }
+  @media (min-width: 769px) {
+    margin: 76px auto 0;
+    padding: 0 40px;
   }
   .list-block {
     margin: 0 auto 50px;
-    display: none;
-    &#all-list-block{
-      display: block;
-    }
     &:last-child {
       margin-bottom: 0;
     }
   }
-  .ttl {
-    margin: 0 auto 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
 }
 
+.list-block {
+  display: none;
+}
+
+#all-list-block {
+  &.list-block {
+    display: block;
+  }
+}
 .item-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   @media screen and (min-width: 769px) {
-    width: calc(100% + 20px);
-    margin-left: -10px;
-    justify-content: initial;
+    gap: 50px 40px;
   }
   .item {
-    width: 47.16%;
-    margin: 0 2.2% 30px 0;
+    width: 50%;
     box-sizing: border-box;
     &:nth-child(2n){
       margin-right: 0;
     }
     @media screen and (min-width: 769px) {
       margin-bottom: 20px;
-      width: 48.9%;
-      padding: 20px 10px;
+      width: calc(50% - 20px);
+      box-sizing: border-box;
     }
   }
   .front-cont {
     height: 100%;
     background: #fff;
     border: 1px solid;
-    border-color: #1A1311;
+    border-color: #999999;
     @media screen and (max-width: 768px) {
       padding: 0 0 30px 0;
       box-sizing: border-box;
@@ -1507,7 +1492,7 @@ New&Renew items
     .badge-l {
       width: 115px;
       padding: 16px 10px 10px;
-      background: #E74A26;
+      background: #CF4866;
       position: absolute;
       color: #fff;
       top: -20px;
@@ -1527,7 +1512,7 @@ New&Renew items
         width: 0;
         height: 0;
         border-style: solid;
-        border-color: #E74A26 transparent transparent transparent;
+        border-color: #CF4866 transparent transparent transparent;
         @media screen and (min-width: 769px) {
           border-width: 30px 115px 0 0;
         }
@@ -1538,8 +1523,10 @@ New&Renew items
         }
       }
       .date {
-        font-size: 36px;
+        font-size: 28px;
         text-align: center;
+        font-family: $font-en;
+        letter-spacing: 0;
         @media screen and (max-width: 768px) {
           font-size: 20px;
         }
@@ -1553,6 +1540,8 @@ New&Renew items
           font-weight: 400;
           font-size: 20px;
           margin-top: 12px;
+          font-family: $font-en;
+          letter-spacing: 0;
           @media screen and (max-width: 768px) {
             display: block;
             font-size: 12px;
@@ -1565,6 +1554,8 @@ New&Renew items
         padding: 17px 0 0;
         border-top: 1px solid #fff;
         font-size: 20px;
+        font-family: $font-en;
+        letter-spacing: 0;
         text-align: center;
         @media screen and (max-width: 768px) {
           font-size: 12px;
@@ -1656,6 +1647,7 @@ New&Renew items
             align-items: center;
             width: 115px;
             white-space: pre-line;
+            font-weight: 500;
             @media screen and (max-width: 768px) {
               font-size: 10px;
               line-height: 18px;
@@ -1680,21 +1672,22 @@ New&Renew items
       button {
         width: 100%;
         height: 50px;
-        background: #6C9FD4;
-        color: #fff;
+        background: #fff;
+        color: #000;
         font-weight: 700;
         font-size: 20px;
         transition: 0.4s;
-        letter-spacing: 0.2em;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: $font-en;
+        letter-spacing: 0.4rem;
         @media screen and (max-width: 768px) {
           font-size: 14px;
           height: 30px;
         }
         &:hover{
-          background: #E74A26;
+          // background: #CF4866;
         }
       }
     }
@@ -1721,7 +1714,7 @@ New&Renew items
       background: #fff;
       padding-top: 0;
       border: 1px solid;
-      border-color: #1A1311;  
+      border-color: #999999;  
     }
   }
   .modal-cont {
@@ -1737,7 +1730,7 @@ New&Renew items
       box-sizing: initial;
       overflow-y: auto;
       border: 1px solid;
-      border-color: #1A1311;
+      border-color: #999999;
     }
     @media screen and (max-width: 768px) {
       padding-top: 172px;
@@ -1764,7 +1757,6 @@ New&Renew items
       &.prev {
         left: 50%;
         margin-left: -33%;
-        bottom: -43px;
         @media screen and (max-width: 768px) {
           left: 36px;
           margin-left: 0;
@@ -1773,7 +1765,6 @@ New&Renew items
       &.next {
         right: 50%;
         margin-right: -33%;
-        bottom: -43px;
         @media screen and (max-width: 768px) {
           right: 36px;
           margin-right: 0;
@@ -1784,15 +1775,15 @@ New&Renew items
         width: 35px;
         height: 35px;
         background: #fff;
-        border: 1px solid #E74A26;
+        border: 1px solid #000000;
         border-radius: 100%;
         &:before {
           content: "";
           display: block;
           width: 9px;
           height: 9px;
-          border-top: 1px solid #E74A26;
-          border-left: 1px solid #E74A26;
+          border-top: 1px solid #000000;
+          border-left: 1px solid #000000;
           position: absolute;
           top: 12px;
           left: 15px;
@@ -1820,7 +1811,7 @@ New&Renew items
         &.slick-active{
           button{
             &:before{
-              background-color: #E74A26;
+              background-color: #CF4866;
             }
           }
         }
@@ -1866,6 +1857,7 @@ New&Renew items
       align-items: center;
       width: 115px;
       white-space: pre-line;
+      font-weight: normal;
       @media screen and (max-width: 768px) {
         font-size: 14px;
         line-height: 18px;
@@ -1875,7 +1867,7 @@ New&Renew items
     }
   }
   .side-wrap{
-    background: #E74A26;
+    background: #CF4866;
     text-align: left;
     position: absolute;
     top: -60px;
@@ -1883,7 +1875,7 @@ New&Renew items
     font-weight: 700;
     color: #fff;
     box-sizing: border-box;
-    padding: 17px 20px 0 37px;
+    padding: 22px 20px 0 37px;
     height: 80px;
     min-width: 230px;
     z-index: 100;
@@ -1903,7 +1895,7 @@ New&Renew items
       height: 0;
       border-style: solid;
       border-width: 80px 20px 0 0;
-      border-color: #E74A26 transparent transparent transparent;
+      border-color: #CF4866 transparent transparent transparent;
       @media screen and (max-width: 768px) {
         border-width: 20px 85px 0 0;
         top: 100%;
@@ -1915,6 +1907,9 @@ New&Renew items
     font-size: 34px;
     display: inline-block;
     vertical-align: middle;
+    font-family: $font-en;
+    letter-spacing: 0;
+    font-weight: 400;
     @media screen and (max-width: 768px) {
       font-size: 24px;
       line-height: 28px;
@@ -1922,9 +1917,11 @@ New&Renew items
       text-align: center;
     }
     b{
-      font-size: 22px;
+      font-size: 16px;
       padding-left: 3px;
       display: inline-block;
+      font-family: $font-en;
+      letter-spacing: 0;
       @media screen and (max-width: 768px) {
         font-size: 16px;
         display: block;
@@ -1938,6 +1935,9 @@ New&Renew items
     font-size: 28px;
     line-height: 40px;
     margin-left: 6px;
+    font-family: $font-en;
+    letter-spacing: 0;
+    font-weight: 400;
     @media screen and (max-width: 768px) {
       border-top: 1px solid #fff;
       font-size: 16px;
@@ -2003,7 +2003,7 @@ New&Renew items
       font-weight: bold;
       text-align: left;
       margin-bottom: 0;
-      color: #E74A26;
+      color: #CF4866;
     }
     .txt {
       margin: 15px auto 0;
@@ -2031,11 +2031,11 @@ New&Renew items
     a {
       height: 40px;
       display: block;
-      background: #6C9FD4;
+      background: #fff;
       border-radius: 100%;
       transition: 0.4s;
       &:hover{
-        background: #E74A26;
+        background: #CF4866;
       }
     }
     @media screen and (max-width: 768px) {
@@ -2059,11 +2059,11 @@ New&Renew items
     }
     button {
       display: block;
-      background: #fff;
       border-radius: 100%;
       width: 50px;
       height: 50px;
-      background: #6C9FD4;
+      background: #fff;
+      color: #000;
       @media screen and (max-width: 768px) {
         width: 35px;
         height: 35px;
@@ -2244,6 +2244,44 @@ modal
   &::after{
   }
 }
+
+.newrenew-modal .img-slider .slick-dots {
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.newrenew-modal .img-slider .slick-dots li {
+    width: 15px;
+    height: 15px;
+}
+
+.newrenew-modal .img-slider .slick-dots button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #C9C9C9;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.newrenew-modal .img-slider .slick-dots {
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.newrenew-modal .img-slider .slick-dots .slick-active button {
+    background: #000000;
+}
+
+
 .modal-bg {
   width: 100vw;
   height: 150vh;
@@ -2295,7 +2333,7 @@ ul.item-list-pickup{
     width: 100%;
     position: relative;
     border: 1px solid;
-    border-color: #1A1311;
+    border-color: #999999;
   }
   .front-cont {
     background: #fff;
@@ -2351,7 +2389,7 @@ ul.item-list-pickup{
       }
     }
     .side-wrap{
-      background: #E74A26;
+      background: #CF4866;
       text-align: left;
       position: absolute;
       top: -20px;
@@ -2359,7 +2397,7 @@ ul.item-list-pickup{
       color: #fff;
       font-weight: 700;
       box-sizing: border-box;
-      padding: 19px 20px 0 35px;
+      padding: 24px 20px 0 35px;
       height: 80px;
       min-width: 230px;
       @media screen and (max-width: 768px) {
@@ -2375,7 +2413,7 @@ ul.item-list-pickup{
         width: 0;
         height: 0;
         border-style: solid;
-        border-color: #E74A26 transparent transparent transparent;
+        border-color: #CF4866 transparent transparent transparent;
         @media screen and (min-width: 769px) {
           border-width: 80px 20px 0 0;
           top: 0;
@@ -2389,17 +2427,20 @@ ul.item-list-pickup{
       }
     }
     .date {
-      font-size: 34px;
+      font-size: 28px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
+      font-family: $font-en;
+      letter-spacing: 0;
+
       @media screen and (max-width: 768px) {
         display: block;
         font-size: 24px;
         line-height: 28px;
       }
       b{
-        font-size: 22px;
+        font-size: 16px;
         padding-left: 3px;
         display: inline-block;
         @media screen and (max-width: 768px) {
@@ -2415,6 +2456,8 @@ ul.item-list-pickup{
       font-size: 28px;
       line-height: 40px;
       margin-left: 6px;
+      font-family: $font-en;
+      line-height: 1;
       @media screen and (max-width: 768px) {
         border-top: 1px solid #fff;
         font-size: 16px;
@@ -2499,6 +2542,8 @@ ul.item-list-pickup{
           align-items: center;
           width: 115px;
           white-space: pre-line;
+          font-weight: 500;
+
           @media screen and (max-width: 768px) {
             height: 90px;
             font-size: 14px;
@@ -2551,9 +2596,9 @@ ul.item-list-pickup{
     button {
       width: 100%;
       height: 50px;
-      background: #6C9FD4;
+      background: #fff;
       font-weight: 700;
-      color: #fff;
+      color: #000;
       font-weight: 500;
       font-size: 20px;
       transition: 0.4s;
@@ -2561,12 +2606,14 @@ ul.item-list-pickup{
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: $font-en;
+      letter-spacing: 0;
       @media screen and (max-width: 768px) {
         font-size: 20px;
         height: 50px;
       }
       &:hover{
-        background: #E74A26;
+        // background: #CF4866;
       }
     }
   }
@@ -2604,6 +2651,10 @@ ul.item-list-pickup{
   & > li:nth-child(1){order: 1;}
   & > li:nth-child(2){order: 3;}
   & > li:nth-child(3){order: 2;}
+}
+
+.miniwrap {
+  font-family: $font-private;
 }
 
 
@@ -2667,12 +2718,33 @@ modal
   }
 }
 
+.localnav-list {
+  width: 100%;
+}
 
+.localnav-item {
 
+  button {
+    position: relative;
+    transition: .2s all;
+  }
+  &.current {
+    button {
+      color: #C05167;
+      border-bottom-color: #C05167;
 
-
-
-
+      &:before {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #C05167;
+        border-radius: 100%;
+        top: -3px;
+      }
+    }
+  }
+}
 
 
 

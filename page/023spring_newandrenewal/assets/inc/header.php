@@ -9,7 +9,7 @@
   <h1 class="header__title">
     <picture>
       <?php /* SPメイン画像 */ ?>
-      <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/main-title-sp.svg" width="" height="" />
+      <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.png" width="" height="" />
       <?php /* PCメイン画像 */ ?>
       <img class="" src="/<?php echo DIRNAME; ?>/assets/images/mv-pc.png" alt="<?php echo $pege_title; ?>" width="1366" height="547">
     </picture>
