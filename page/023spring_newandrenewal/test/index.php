@@ -2,12 +2,12 @@
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/global-config.php';
 //下記のパス「demo」を変更
-include_once $_SERVER['DOCUMENT_ROOT'].'/page/023spring_newandrenewal/assets/inc/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/page/023spring_newandrenewal/assets/inc/config.php';
 
 $nowURL = $_SERVER['HTTP_HOST'];
-$pageURL = STORE_NAME.'.parco.jp';
-$noCacheURL = STORE_NAME.'-parco.sc-concierge.jp';
-$devURL = 'dev-'.STORE_NAME.'-parco.sc-concierge.jp';
+$pageURL = STORE_NAME . '.parco.jp';
+$noCacheURL = STORE_NAME . '-parco.sc-concierge.jp';
+$devURL = 'dev-' . STORE_NAME . '-parco.sc-concierge.jp';
 
 //ドメインの判定
 if ($nowURL === $pageURL || $nowURL === $noCacheURL || $devURL === $pageURL) {
@@ -22,31 +22,30 @@ if ($productionFlag === true) {
 }
 
 //ページ用の変数
-$pege_title = '2023 SPRING NEW＆RENWAL名古屋PARCO';
-$pege_description = '2023 SPRING NEW＆RENWAL注目のニューショップやおすすめアイテムをご紹介しています。';
-$pege_keywords = '名古屋パルコ,名古屋,NEWSHOP,EVENT,イベント,';
-$page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/023spring_newandrenewal/'; //必ずディレクトリ名を変更する
+$pege_title = 'NAGOYA PARCO AUTUMN NEW & RENEWAL｜名古屋PARCO';
+$pege_description = '名古屋パルコにオープンするお店を紹介するページです。2022年秋、名古屋パルコに注目のショップが続々オープン！レディス、メンズ、雑貨、など盛りだくさん。';
+$pege_keywords = '名古屋パルコ,名古屋,改装';
+$page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/023spring_newandrenewal/'; //必ずディレクトリ名を変更する
 
 ?>
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/meta.php';?>
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager1.php';?>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/page/023spring_newandrenewal/assets/css/style_02.css">
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/css.php';?>
+<head>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/page/assets/inc/meta.php'; ?>
+
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/inc/tagmanager1.php'; ?>
+
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/css.php'; ?>
+  <link rel="stylesheet" href="/page/023spring_newandrenewal/assets/css/style_02.css"> 
 </head>
 
 <body class="<?php echo STORE_NAME; ?> page-tag newrenew" id="top">
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager2.php';?>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/inc/tagmanager2.php'; ?>
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/svgs.php';?>
+  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/page/assets/inc/svgs.php'; ?>
 
-<div class="wrapper">
+  <div class="wrapper">
 
     <?php
     /**
@@ -62,14 +61,24 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/023spring_newandrenewal/'
      */
     ?>
         <main class="main-contents">
-          <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/ribo.php'; ?>
-
-          <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/bnr.php'; ?>
+      
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/bnr.php'; ?>
 
 <?php /* ==========================================================
 Local navigation
 ============================================================== */ ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/localnav.php'; ?>
+      
+<nav class="localnav">
+  <ul class="localnav-list listnum5">
+    <li class="localnav-item current"><button class="js-tabbtn" data-target="#all-list-block">ALL</button></li>
+    <li class="localnav-item"><button class="js-tabbtn" data-target="#clothes-list-block">CLOTHES</button></li>
+    <li class="localnav-item"><button class="js-tabbtn" data-target="#goods-list-block">GOODS<br>＆CULTURES</button></li>
+    <li class="localnav-item"><button class="js-tabbtn" data-target="#cosmetics-list-block">COSMETICS</button></li>
+    <li class="localnav-item"><button class="js-tabbtn" data-target="#lifestyles-list-block">LIFESTYLES<br>＆FOODS</button></li>
+  </ul>
+  <!-- /.localnav -->
+</nav>
 
 <div class="newrenew-block" id="shoplist" v-cloak>
 
@@ -95,10 +104,9 @@ Local navigation
                   <p class="date"><template v-if="shopList.date != ''">{{shopList.date}}</template><template v-if="shopList.weeks != ''"><b>{{shopList.weeks}}</b></template></p>
                   <p class="new-renew">{{shopList.new_renew}}</p>
                 </div>
-                <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                 <div class="miniwrap">
-                  <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
-                  <!-- <p class="shop">{{shopList.name}}</p> -->
+                  <p class="shop">{{shopList.name}}</p>
                   <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                   <p class="ctg">{{shopList.category_name}}</p>
                 </div>
@@ -135,9 +143,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -153,11 +161,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -190,10 +200,10 @@ Local navigation
                 <span>{{shopList.first}}</span>
               </div>
             </div>
-              <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+              <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
               <div class="img"><img :src=" '/page/023spring_newandrenewal/assets/images/shop/' + shopList.image01img + '.jpg' " :alt="shopList.name"></div>
               <div class="miniwrap">
-                <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                <p class="shop">{{shopList.name}}</p>
                 <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                 <p class="ctg">{{shopList.category_name}}</p>
                 <div class="more"><button class="js-modalopen" :data-modal="'modal-n'+index">+ MORE</button></div>
@@ -228,9 +238,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -246,11 +256,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -290,9 +302,9 @@ Local navigation
                   <p class="date"><template v-if="shopList.date != ''">{{shopList.date}}</template><template v-if="shopList.weeks != ''"><b>{{shopList.weeks}}</b></template></p>
                   <p class="new-renew">{{shopList.new_renew}}</p>
                 </div>
-                <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                 <div class="miniwrap">
-                  <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                  <p class="shop">{{shopList.name}}</p>
                   <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                   <p class="ctg">{{shopList.category_name}}</p>
                 </div>
@@ -329,9 +341,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -347,11 +359,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -385,10 +399,10 @@ Local navigation
                 <span>{{shopList.first}}</span>
               </div>
             </div>
-              <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+              <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
               <div class="img"><img :src=" '/page/023spring_newandrenewal/assets/images/shop/' + shopList.image01img + '.jpg' " :alt="shopList.name"></div>
               <div class="miniwrap">
-                <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                <p class="shop">{{shopList.name}}</p>
                 <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                 <p class="ctg">{{shopList.category_name}}</p>
                 <div class="more"><button class="js-modalopen" :data-modal="'modal-c'+index">+ MORE</button></div>
@@ -423,9 +437,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -441,11 +455,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -485,9 +501,9 @@ Local navigation
                   <p class="date"><template v-if="shopList.date != ''">{{shopList.date}}</template><template v-if="shopList.weeks != ''"><b>{{shopList.weeks}}</b></template></p>
                   <p class="new-renew">{{shopList.new_renew}}</p>
                 </div>
-                <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                 <div class="miniwrap">
-                  <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                  <p class="shop">{{shopList.name}}</p>
                   <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                   <p class="ctg">{{shopList.category_name}}</p>
                 </div>
@@ -526,9 +542,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -544,11 +560,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -582,10 +600,10 @@ Local navigation
                 <span>{{shopList.first}}</span>
               </div>
             </div>
-              <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+              <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
               <div class="img"><img :src=" '/page/023spring_newandrenewal/assets/images/shop/' + shopList.image01img + '.jpg' " :alt="shopList.name"></div>
               <div class="miniwrap">
-                <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                <p class="shop">{{shopList.name}}</p>
                 <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                 <p class="ctg">{{shopList.category_name}}</p>
                 <div class="more"><button class="js-modalopen" :data-modal="'modal-g'+index">+ MORE</button></div>
@@ -620,9 +638,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -638,11 +656,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -661,9 +681,9 @@ Local navigation
     </ul>
   </div>
   
-  <div class="list-block" id="fashion-list-block">
+  <div class="list-block" id="cosmetics-list-block">
     <ul class="item-list-pickup js-tabarea" v-cloak>
-      <template v-for="(shopList, index) in fashionList_pickup">
+      <template v-for="(shopList, index) in cosmeticsList_pickup">
         <li :class="'item ' + shopList.category" v-bind:key="index">
           <div class="front-wrap">
             <div class="catch catchfirst" v-if="shopList.first != ''">
@@ -682,9 +702,9 @@ Local navigation
                   <p class="date"><template v-if="shopList.date != ''">{{shopList.date}}</template><template v-if="shopList.weeks != ''"><b>{{shopList.weeks}}</b></template></p>
                   <p class="new-renew">{{shopList.new_renew}}</p>
                 </div>
-                <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                 <div class="miniwrap">
-                  <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                  <p class="shop">{{shopList.name}}</p>
                   <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                   <p class="ctg">{{shopList.category_name}}</p>
                 </div>
@@ -721,9 +741,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -739,11 +759,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -752,7 +774,7 @@ Local navigation
             </div>
             <div class="modal-control-area">
               <div class="modal-arrow prev" v-if="index>0"><button class="js-modalopen" :data-modal="'modal-mp'+ (index - 1)">&nbsp;</button></div>
-              <div class="modal-arrow next" v-if="index+1<fashionList_pickup.length"><button class="js-modalopen" :data-modal="'modal-mp'+ (index + 1)">&nbsp;</button></div>
+              <div class="modal-arrow next" v-if="index+1<cosmeticsList_pickup.length"><button class="js-modalopen" :data-modal="'modal-mp'+ (index + 1)">&nbsp;</button></div>
               <div class="modal-arrow-close"><button class="js-modalclose">× CLOSE</button></div>
             </div>
             <!-- /.modal-block -->
@@ -761,7 +783,7 @@ Local navigation
       </template>
     </ul>
     <ul class="item-list item-list-all js-tabarea" v-cloak>
-      <template v-for="(shopList, index) in fashionList">
+      <template v-for="(shopList, index) in cosmeticsList">
         <li :class="'item ' + shopList.category" v-bind:key="index">
           <div class="front-cont">
             <div class="img-wrap">
@@ -777,10 +799,10 @@ Local navigation
                 <span>{{shopList.first}}</span>
               </div>
             </div>
-              <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+              <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
               <div class="img"><img :src=" '/page/023spring_newandrenewal/assets/images/shop/' + shopList.image01img + '.jpg' " :alt="shopList.name"></div>
               <div class="miniwrap">
-                <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                <p class="shop">{{shopList.name}}</p>
                 <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                 <p class="ctg">{{shopList.category_name}}</p>
                 <div class="more"><button class="js-modalopen" :data-modal="'modal-m'+index">+ MORE</button></div>
@@ -815,9 +837,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -833,11 +855,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -846,7 +870,7 @@ Local navigation
             </div>
             <div class="modal-control-area">
               <div class="modal-arrow prev" v-if="index>0"><button class="js-modalopen" :data-modal="'modal-m'+ (index - 1)">&nbsp;</button></div>
-              <div class="modal-arrow next" v-if="index+1<fashionList.length"><button class="js-modalopen" :data-modal="'modal-m'+ (index + 1)">&nbsp;</button></div>
+              <div class="modal-arrow next" v-if="index+1<cosmeticsList.length"><button class="js-modalopen" :data-modal="'modal-m'+ (index + 1)">&nbsp;</button></div>
               <div class="modal-arrow-close"><button class="js-modalclose">× CLOSE</button></div>
             </div>
             <!-- /.modal-block -->
@@ -856,9 +880,9 @@ Local navigation
     </ul>
   </div>
 
-  <div class="list-block" id="sweets-list-block">
+  <div class="list-block" id="lifestyles-list-block">
     <ul class="item-list-pickup js-tabarea" v-cloak>
-      <template v-for="(shopList, index) in sweetsList_pickup">
+      <template v-for="(shopList, index) in lifestylesList_pickup">
         <li :class="'item ' + shopList.category" v-bind:key="index">
           <div class="front-wrap">
             <div class="catch catchfirst" v-if="shopList.first != ''">
@@ -877,9 +901,9 @@ Local navigation
                   <p class="date"><template v-if="shopList.date != ''">{{shopList.date}}</template><template v-if="shopList.weeks != ''"><b>{{shopList.weeks}}</b></template></p>
                   <p class="new-renew">{{shopList.new_renew}}</p>
                 </div>
-                <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                 <div class="miniwrap">
-                  <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                  <p class="shop">{{shopList.name}}</p>
                   <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                   <p class="ctg">{{shopList.category_name}}</p>
                 </div>
@@ -916,9 +940,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -934,11 +958,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -947,7 +973,7 @@ Local navigation
             </div>
             <div class="modal-control-area">
               <div class="modal-arrow prev" v-if="index>0"><button class="js-modalopen" :data-modal="'modal-lp'+ (index - 1)">&nbsp;</button></div>
-              <div class="modal-arrow next" v-if="index+1<sweetsList_pickup.length"><button class="js-modalopen" :data-modal="'modal-lp'+ (index + 1)">&nbsp;</button></div>
+              <div class="modal-arrow next" v-if="index+1<lifestylesList_pickup.length"><button class="js-modalopen" :data-modal="'modal-lp'+ (index + 1)">&nbsp;</button></div>
               <div class="modal-arrow-close"><button class="js-modalclose">× CLOSE</button></div>
             </div>
             <!-- /.modal-block -->
@@ -956,7 +982,7 @@ Local navigation
       </template>
     </ul>
     <ul class="item-list item-list-all js-tabarea" v-cloak>
-      <template v-for="(shopList, index) in sweetsList">
+      <template v-for="(shopList, index) in lifestylesList">
         <li :class="'item ' + shopList.category" v-bind:key="index">
           <div class="front-cont">
             <div class="img-wrap">
@@ -972,10 +998,10 @@ Local navigation
                 <span>{{shopList.first}}</span>
               </div>
             </div>
-              <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+              <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
               <div class="img"><img :src=" '/page/023spring_newandrenewal/assets/images/shop/' + shopList.image01img + '.jpg' " :alt="shopList.name"></div>
               <div class="miniwrap">
-                <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                <p class="shop">{{shopList.name}}</p>
                 <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                 <p class="ctg">{{shopList.category_name}}</p>
                 <div class="more"><button class="js-modalopen" :data-modal="'modal-l'+index">+ MORE</button></div>
@@ -1010,9 +1036,9 @@ Local navigation
                   <!-- /.img-wrap -->
                 </div>
                 <div class="detail">
-                  <div class="logo" v-if="shopList.logoimg != ''"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.jpg' " :alt="shopList.name"></div>
+                  <div class="logo"><img  :src=" '/page/023spring_newandrenewal/assets/images/logo/' + shopList.logoimg + '.png' " :alt="shopList.name"></div>
                   <div class="miniwrap">
-                    <p class="shop" v-html="brTxt(shopList.name)">ショップ名</p>
+                    <p class="shop">{{shopList.name}}</p>
                     <p class="floor">{{shopList.yakata}} {{shopList.floor}}</p>
                     <p class="ctg">{{shopList.category_name}}</p>
                   </div>
@@ -1028,11 +1054,13 @@ Local navigation
                 </div>
 
                 <ul class="link-list">
-                  <li v-if="shopList.link_home != ''" class="link-item shop"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
+                  <li v-if="shopList.link_shop != ''" class="link-item shop"><a :href="shopList.link_shop" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_shop.png" alt="shop"></a></li>
                   <li v-if="shopList.link_instagram != ''" class="link-item ig"><a :href="shopList.link_instagram" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_ig.png" alt="Instagram"></a></li>
                   <li v-if="shopList.link_facebook != ''" class="link-item fb"><a :href="shopList.link_facebook" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_fb.png" alt="Facebook"></a></li>
                   <li v-if="shopList.link_twitter != ''" class="link-item tw"><a :href="shopList.link_twitter" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tw.png" alt="Twitter"></a></li>
-                  <li v-if="shopList.link_site != ''" class="link-item home"><a :href="shopList.link_site" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
+                  <li v-if="shopList.link_line != ''" class="link-item line"><a :href="shopList.link_line" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_line.png" alt="line"></a></li>
+                  <li v-if="shopList.link_tiktok != ''" class="link-item tiktok"><a :href="shopList.link_tiktok" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_tiktok.png" alt="tiktok"></a></li>
+                  <li v-if="shopList.link_home != ''" class="link-item home"><a :href="shopList.link_home" target="_blank"><img src="/page/023spring_newandrenewal/assets/images/ico_home.png" alt="home"></a></li>
                   <!-- /.link-list -->
                 </ul>
               </div>
@@ -1041,7 +1069,7 @@ Local navigation
             </div>
             <div class="modal-control-area">
               <div class="modal-arrow prev" v-if="index>0"><button class="js-modalopen" :data-modal="'modal-l'+ (index - 1)">&nbsp;</button></div>
-              <div class="modal-arrow next" v-if="index+1<sweetsList.length"><button class="js-modalopen" :data-modal="'modal-l'+ (index + 1)">&nbsp;</button></div>
+              <div class="modal-arrow next" v-if="index+1<lifestylesList.length"><button class="js-modalopen" :data-modal="'modal-l'+ (index + 1)">&nbsp;</button></div>
               <div class="modal-arrow-close"><button class="js-modalclose">× CLOSE</button></div>
             </div>
             <!-- /.modal-block -->

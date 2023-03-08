@@ -29,10 +29,10 @@ function shop(shopList) {
         clothesList_pickup: [],
         goodsList: [],
         goodsList_pickup: [],
-        fashionList: [],
-        fashionList_pickup: [],
-        sweetsList: [],
-        sweetsList_pickup: []
+        cosmeticsList: [],
+        cosmeticsList_pickup: [],
+        lifestylesList: [],
+        lifestylesList_pickup: []
       },
       mounted: function () {
         for (var i = 0; i < shopList.length; i++) {
@@ -54,17 +54,17 @@ function shop(shopList) {
           if (shopList[i].category.indexOf('goods') >= 0 && shopList[i].pickup) {
             this.goodsList_pickup.push(shopList[i]);
           }
-          if (shopList[i].category.indexOf('fashion') >= 0 && !shopList[i].pickup) {
-            this.fashionList.push(shopList[i]);
+          if (shopList[i].category.indexOf('cosmetics') >= 0 && !shopList[i].pickup) {
+            this.cosmeticsList.push(shopList[i]);
           }
-          if (shopList[i].category.indexOf('fashion') >= 0 && shopList[i].pickup) {
-            this.fashionList_pickup.push(shopList[i]);
+          if (shopList[i].category.indexOf('cosmetics') >= 0 && shopList[i].pickup) {
+            this.cosmeticsList_pickup.push(shopList[i]);
           }
-          if (shopList[i].category.indexOf('sweets') >= 0 && !shopList[i].pickup) {
-            this.sweetsList.push(shopList[i]);
+          if (shopList[i].category.indexOf('lifestyles') >= 0 && !shopList[i].pickup) {
+            this.lifestylesList.push(shopList[i]);
           }
-          if (shopList[i].category.indexOf('sweets') >= 0 && shopList[i].pickup) {
-            this.sweetsList_pickup.push(shopList[i]);
+          if (shopList[i].category.indexOf('lifestyles') >= 0 && shopList[i].pickup) {
+            this.lifestylesList_pickup.push(shopList[i]);
           }
         }
         return;
