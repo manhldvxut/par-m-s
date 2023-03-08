@@ -86,7 +86,7 @@ Local navigation
 ============================================================== */ ?>
 <div class="continer js-scr-target js-bg-trigger">
   
-  <section class="shop-wrap">
+  <section class="shop-wrap yellow">
     <div class="shop-info js-scr-target fadeIn">
       <div class="shop-info__body" data-color="true" data-color-type="yellow">
         <div class="shop-info__left">
@@ -147,7 +147,7 @@ Local navigation
       </ul>
     </div>
   </section>
-  <section class="shop-wrap">
+  <section class="shop-wrap green">
     <div class="shop-info js-scr-target fadeIn">
       <div class="shop-info__body" data-color="true" data-color-type="green">
         <div class="shop-info__left">
@@ -208,7 +208,7 @@ Local navigation
       </ul>
     </div>
   </section>
-  <section class="shop-wrap">
+  <section class="shop-wrap pink">
     <div class="shop-info js-scr-target fadeIn">
       <div class="shop-info__body" data-color="true" data-color-type="pink">
         <div class="shop-info__left">
@@ -269,7 +269,7 @@ Local navigation
       </ul>
     </div>
   </section>
-  <section class="shop-wrap">
+  <section class="shop-wrap blue">
     <div class="shop-info js-scr-target fadeIn">
       <div class="shop-info__body" data-color="true" data-color-type="blue">
         <div class="shop-info__left">
@@ -330,7 +330,7 @@ Local navigation
       </ul>
     </div>
   </section>
-  <section class="shop-wrap">
+  <section class="shop-wrap orange">
     <div class="shop-info js-scr-target fadeIn">
       <div class="shop-info__body" data-color="true" data-color-type="orange">
         <div class="shop-info__left">

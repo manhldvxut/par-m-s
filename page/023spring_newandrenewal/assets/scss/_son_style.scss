@@ -6,7 +6,9 @@ colors
 
 $font-private: 'Noto Sans JP', sans-serif;
 $font-en: 'Krona One', sans-serif;
-
+.main-contents {
+  overflow-x: hidden;
+}
 
 .newrenew {
   .fadeIn {
@@ -934,6 +936,18 @@ body.type4 .floornav .floornav__item04 a:after {
     margin-left: auto;
     margin-right: auto;
   }
+  @media (max-width: 1400px) {
+    padding: 0 80px;
+  }
+  @media (max-width: 1200px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 1023px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
 }
 .bg-gradation {
   position: relative;
@@ -949,19 +963,100 @@ body.type4 .floornav .floornav__item04 a:after {
 .shop-wrap {
   position: relative;
   margin-bottom: 60px;
+  @media (max-width: 1023px) {
+    margin-bottom: 80px;
+    padding: 0 0 50px 0;
+  }
+  &:nth-child(2n) {
+    .shop-info__right-top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+      }
+      .logo {
+        order: 2;
+        margin: 0 0 0 20px;
+        @media (max-width: 768px) {
+          order: 1;
+          margin: 0 10px 0 0;
+        }
+      }
+      .detail {
+        text-align: right;
+        order: 1;
+        @media (max-width: 768px) {
+          text-align: left;
+          order: 2;
+        }
+      }
+    }
+    &:after {
+      right: unset;
+      left: -40px;
+    }
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    z-index: -1;
+  }
+  &.yellow {
+    &:after {
+      background: #FDF050;
+    }
+  }
+  &.green {
+    &:after {
+      background: #51A9D0;
+    }
+  }
+  &.pink {
+    &:after {
+      background: #CF4866;
+    }
+  }
+  &.blue {
+    &:after {
+      background: #64AF59;
+    }
+  }
+  &.orange {
+    &:after {
+      background: #E94920;
+    }
+  }
 }
 .shop-info {
   display: flex;
   flex-wrap: wrap;
   margin: 0 30px;
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
   .logo {
     width: 38.1%;
     margin-right: 20px;
+    @media (max-width: 1023px) {
+      width: 120px;
+    }
+    @media (max-width: 768px) {
+      width: 100px;
+      margin-right: 10px;
+    }
   }
   .detail {
     width: 56.5%;
     font-size: 14px;
     letter-spacing: 0;
+    @media (max-width: 1023px) {
+      width: auto;
+    }
     .open {
       color: #00ADDD;
       font-weight: bold;
@@ -969,7 +1064,11 @@ body.type4 .floornav .floornav__item04 a:after {
     }
     .name {
       font-family: $font-private;
-      margin-bottom: 15px;
+      margin-bottom: 0;
+      @media (max-width: 1023px) {
+        font-size: 24px;
+        font-weight: bold;
+      }
       span {
         padding: 4px 7px;
       }
@@ -979,6 +1078,9 @@ body.type4 .floornav .floornav__item04 a:after {
       color: #868686;
       line-height: 1.41666667;
       letter-spacing: 0;
+      @media (max-width: 1023px) {
+        font-size: 14px;
+      }
     }
   }
   .text {
@@ -988,6 +1090,9 @@ body.type4 .floornav .floornav__item04 a:after {
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0;
+    @media (max-width: 1023px) {
+      margin-top: 20px;
+    }
   }
 }
 .shop-info[data-text='no'] {
@@ -997,6 +1102,9 @@ body.type4 .floornav .floornav__item04 a:after {
 @media screen and (min-width: 769px) {
   .shop-wrap {
     margin-bottom: 120px;
+    &:last-child {
+      margin-bottom: 138px;
+    }
   }
   .shop-info {
     width: 100%;
@@ -1067,6 +1175,22 @@ body.type4 .floornav .floornav__item04 a:after {
   // pointer-events: none;
   &-wrap {
     margin-top: 64px;
+    @media (max-width: 1023px) {
+      margin-top: 48px;
+      width: calc(100% + 80px);
+      position: relative;
+      left: -45px;
+    }
+    @media (max-width: 768px) {
+      left: -20px;
+      width: calc(100% + 40px);
+      margin-left: -10px;
+      margin-right: -10px;
+      .slick-slide {
+        padding: 0 10px;
+        margin: 0 !important;
+      }
+    }
   }
   .item {
     width: 84%;
@@ -1141,12 +1265,24 @@ body.type4 .floornav .floornav__item04 a:after {
   top: -20px;
   right: calc(7% + 5px);
   display: flex;
+  @media (max-width: 1023px) {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 14px;
+  }
   li {
     margin-left: 8px;
     width: 10px;
     height: 10px;
     &.slick-active button {
       background: #000;
+      @media (max-width: 1023px) {
+        background: #000000;
+      }
     }
   }
   button {
@@ -1157,6 +1293,9 @@ body.type4 .floornav .floornav__item04 a:after {
     padding: 0;
     margin: 0;
     background: #ACACAC;
+    @media (max-width: 1023px) {
+      background: #fff;
+    }
   }
 }
 @import "slick";
@@ -1274,6 +1413,13 @@ body.type4 .floornav .floornav__item04 a:after {
   &__body {
     display: flex;
     position: relative;
+    @media (max-width: 1400px) {
+      padding: 0 45px;
+    }
+    @media (max-width: 1023px) {
+      padding: 0;
+      display: block;
+    }
 
     &[data-color="true"] {
       position: relative;
@@ -1284,6 +1430,17 @@ body.type4 .floornav .floornav__item04 a:after {
         width: 480px;
         height: 1050px;
         z-index: -1;
+        @media (max-width: 1400px) {
+          width: 40% !important;
+          left: unset !important;
+          right: 50%;
+        }
+        @media (max-width: 1023px) {
+          width: 100% !important;
+          left: unset !important;
+          right: -40px;
+          opacity: 0;
+        }
       }
     }
 
@@ -1327,23 +1484,24 @@ body.type4 .floornav .floornav__item04 a:after {
   &__left {
     max-width: 420px;
     margin-right: 32px;
+    @media (max-width:1023px) {
+      max-width: 100%;
+      margin: 0;
+    }
   }
 
   &__right {
     max-width: calc(100% - 452px);
     width: 100%;
+    @media (max-width: 1023px) {
+      max-width: 100%;
+    }
 
     &-top {
-      display: flex;
+      margin-top: 52px;
       align-items: center;
-      justify-content: flex-end;
-      .logo {
-        order: 2;
-        margin: 0 0 0 20px;
-      }
-      .detail {
-        text-align: right;
-        order: 1;
+      @media (max-width: 1200px) {
+        margin-top: 20px;
       }
     }
   }
@@ -1494,6 +1652,12 @@ New&Renew items
     width: 47.16%;
     margin: 0 2.2% 30px 0;
     box-sizing: border-box;
+    @media (max-width: 1023px) {
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+    }
     &:nth-child(2n){
       margin-right: 0;
     }
