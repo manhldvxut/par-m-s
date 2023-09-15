@@ -84,62 +84,20 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
       </div>
       <div class="list-creator">
         <div class="row">
-          <div class="col-md-3">
-            <?php
-              for ($x = 0; $x <= 3; $x++) { ?>
-                  <div class="item-creator">
-                    <a href="javascript:void(0)"></a>
-                    <div class="avarta">
-                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator1.png" class="img-fluid w-100" alt="">
-                      <span>View</span>
-                    </div>
-                    <div class="info">名前が入ります名前が入ります</div>
+          <?php
+            for ($x = 0; $x <= 19; $x++) { ?>
+              <div class="col-md-3">
+                <div class="item-creator">
+                  <a href="javascript:void(0)"></a>
+                  <div class="avarta">
+                    <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator1.png" class="img-fluid w-100" alt="">
+                    <span>View</span>
                   </div>
+                  <div class="info">名前が入ります名前が入ります</div>
+                </div>
+              </div>
             <?php  }
-            ?>
-          </div>
-          <div class="col-md-3">
-            <?php
-              for ($x = 0; $x <= 3; $x++) { ?>
-                  <div class="item-creator">
-                    <a href="javascript:void(0)"></a>
-                    <div class="avarta">
-                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator2.png" class="img-fluid w-100" alt="">
-                      <span>View</span>
-                    </div>
-                    <div class="info">名前が入ります名前が入ります</div>
-                  </div>
-            <?php  }
-            ?>
-          </div>
-          <div class="col-md-3">
-            <?php
-              for ($x = 0; $x <= 3; $x++) { ?>
-                  <div class="item-creator">
-                    <a href="javascript:void(0)"></a>
-                    <div class="avarta">
-                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator1.png" class="img-fluid w-100" alt="">
-                      <span>View</span>
-                    </div>
-                    <div class="info">名前が入ります名前が入ります</div>
-                  </div>
-            <?php  }
-            ?>
-          </div>
-          <div class="col-md-3">
-            <?php
-              for ($x = 0; $x <= 3; $x++) { ?>
-                  <div class="item-creator">
-                    <a href="javascript:void(0)"></a>
-                    <div class="avarta">
-                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator2.png" class="img-fluid w-100" alt="">
-                      <span>View</span>
-                    </div>
-                    <div class="info">名前が入ります名前が入ります</div>
-                  </div>
-            <?php  }
-            ?>
-          </div>
+          ?>
         </div>
         <div class="view-more">
           <a href="">
@@ -352,6 +310,39 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
           <?php }
           ?>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="box-quesstion">
+    <div class="container">
+      <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs3"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-3.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs4"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-4.svg" class="img-fluid" alt=""></div>
+      <div class="title">
+        <h2>CREATORS</h2>
+      </div>
+      <div class="content-quesstion">
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <h4>本館1階</h4>
+        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
       </div>
     </div>
   </section>

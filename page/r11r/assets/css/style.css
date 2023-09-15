@@ -221,7 +221,6 @@ PARCO Header
 PARCO Footer
 ========================================================= */
 .pft {
-  margin-top: 52px;
   padding: 45px 0 58px;
   background: #222;
   position: relative;
@@ -229,8 +228,7 @@ PARCO Footer
 
 @media screen and (min-width: 769px) {
   .pft {
-    margin-top: 70px;
-    padding: 50px 0 40px;
+    padding: 85px 0 100px 0;
   }
 }
 
@@ -351,7 +349,7 @@ PARCO Footer
 }
 
 .pft__copyright {
-  margin-top: 30px;
+  margin-top: 22px;
   text-align: center;
   line-height: 0;
 }
