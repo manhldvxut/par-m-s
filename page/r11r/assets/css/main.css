@@ -78,6 +78,10 @@ main .row .col-md-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
+main .row .col-md-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
 main .row .col-md-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -103,26 +107,27 @@ main .row .col-md-6 {
 .box-caption-banner .container {
   padding: 125px 60px;
 }
-.box-caption-banner .icon-abs {
+
+.icon-abs {
   position: absolute;
 }
-.box-caption-banner .icon-abs img {
+.icon-abs img {
   width: 69px;
   height: 63px;
 }
-.box-caption-banner .icon-abs.abs1 {
+.icon-abs.abs1 {
   top: 0;
   left: 0;
 }
-.box-caption-banner .icon-abs.abs2 {
+.icon-abs.abs2 {
   top: 0;
   right: 0;
 }
-.box-caption-banner .icon-abs.abs3 {
+.icon-abs.abs3 {
   left: 0;
   bottom: 0;
 }
-.box-caption-banner .icon-abs.abs4 {
+.icon-abs.abs4 {
   right: 0;
   bottom: 0;
 }
@@ -208,6 +213,18 @@ main .row .col-md-6 {
   background-size: cover;
   padding-bottom: 90px;
 }
+.box-creators:after {
+  content: "";
+  width: 100%;
+  height: 222px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box-creators .container {
+  z-index: 2;
+}
 .box-creators .view-more {
   text-align: right;
 }
@@ -225,15 +242,22 @@ main .row .col-md-6 {
   position: relative;
   margin-right: -8px;
 }
+.box-creators .title {
+  margin-bottom: -60px;
+}
 
 .box-calender {
-  padding: 88px 0 100px 0;
+  padding: 90px 0 100px 0;
 }
 .box-calender .title {
   margin: 0 auto;
 }
 .box-calender .title h2 span {
   padding: 0 30px;
+}
+.box-calender .container {
+  padding-top: 60px;
+  padding-bottom: 84px;
 }
 
 .list-calender {
@@ -244,6 +268,257 @@ main .row .col-md-6 {
 }
 .list-calender .row > div {
   padding: 0 50px;
+}
+
+.list-event {
+  max-width: 930px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 15px;
+}
+.list-event .row {
+  margin: 0 -31px;
+}
+.list-event .col-md-6 {
+  padding: 0 31px;
+  margin-top: 80px;
+}
+.list-event .col-md-6:first-child, .list-event .col-md-6:nth-child(2) {
+  margin-top: 0;
+}
+
+.item-event {
+  position: relative;
+  padding-left: 24px;
+}
+.item-event .avarta {
+  margin-bottom: 15px;
+}
+.item-event .top {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.item-event h3 {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+.item-event .title-top {
+  font-size: 28px;
+  position: relative;
+  transform: rotate(-7deg);
+  z-index: 2;
+  margin-bottom: -25px;
+}
+.item-event .desc {
+  line-height: 2;
+  font-weight: 500;
+}
+
+.item-top-head {
+  display: flex;
+  align-items: center;
+  width: calc(100% + 24px);
+  position: absolute;
+  left: -24px;
+  height: auto;
+  z-index: 2;
+  top: 0;
+}
+.item-top-head .icon {
+  flex: 0 0 74px;
+  margin-right: 23px;
+}
+
+.box-special {
+  padding: 100px 0;
+  background: url(../images/banner/bg-special.jpg) no-repeat center;
+  background-size: cover;
+}
+.box-special .title {
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 70px;
+}
+.box-special .container {
+  padding-top: 52px;
+  padding-bottom: 120px;
+}
+.box-special .icon-abs img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+
+.list-special {
+  max-width: 914px;
+  margin: 0 auto;
+}
+
+.item-special {
+  margin-bottom: 113px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: flex-end;
+  padding-bottom: 37px;
+}
+.item-special:last-child {
+  margin-bottom: 0;
+}
+.item-special .avarta {
+  flex: 0 0 400px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 3;
+}
+.item-special .avarta:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #303232;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.item-special .avarta a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.item-special .info {
+  background: #fff;
+  padding: 50px 50px 30px 50px;
+  border-radius: 10px 10px 10px 0;
+  margin-bottom: -37px;
+  position: relative;
+}
+.item-special .info:after {
+  content: "";
+  width: 42px;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: -42px;
+}
+.item-special .info ul {
+  padding: 27px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.item-special .info ul li {
+  display: flex;
+  margin-bottom: 14px;
+}
+.item-special .info ul li:last-child {
+  margin-bottom: 0;
+}
+.item-special .info ul li span:first-child {
+  flex: 0 0 90px;
+}
+.item-special .info .desc {
+  line-height: 2;
+}
+.item-special .info h3 {
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.box-goods {
+  padding: 62.5px 0;
+}
+.box-goods .title {
+  margin: 0 auto;
+  text-align: center;
+}
+.box-goods .title h2 span {
+  padding: 0 10px;
+}
+.box-goods .container {
+  padding: 44px 0 94px 0;
+}
+
+.content-goods {
+  max-width: 1140px;
+  margin: 70px auto 0 auto;
+  position: relative;
+}
+.content-goods .row {
+  margin: 0 -30px;
+}
+.content-goods .row > div {
+  padding: 0 30px;
+}
+.content-goods .circle {
+  position: absolute;
+  z-index: 3;
+  top: -44px;
+  left: -44px;
+}
+.content-goods .circle img {
+  width: 88px;
+  height: 88px;
+}
+
+.item-good {
+  position: relative;
+}
+.item-good .avarta {
+  position: relative;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.item-good .avarta:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #303232;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.item-good .avarta img {
+  border-radius: 10px;
+}
+.item-good .avarta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.item-good .info {
+  padding-top: 27px;
+}
+.item-good .info h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.item-good .info .price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.view-shop {
+  margin-top: 32px;
+}
+.view-shop a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.view-shop a span {
+  display: block;
+  margin-bottom: -4px;
+  letter-spacing: 1.2px;
 }
 
 /*# sourceMappingURL=main.css.map */

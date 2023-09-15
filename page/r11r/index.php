@@ -104,7 +104,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
                   <div class="item-creator">
                     <a href="javascript:void(0)"></a>
                     <div class="avarta">
-                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator1.png" class="img-fluid w-100" alt="">
+                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator2.png" class="img-fluid w-100" alt="">
                       <span>View</span>
                     </div>
                     <div class="info">名前が入ります名前が入ります</div>
@@ -132,7 +132,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
                   <div class="item-creator">
                     <a href="javascript:void(0)"></a>
                     <div class="avarta">
-                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator1.png" class="img-fluid w-100" alt="">
+                      <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator2.png" class="img-fluid w-100" alt="">
                       <span>View</span>
                     </div>
                     <div class="info">名前が入ります名前が入ります</div>
@@ -164,6 +164,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
   </section>
   <section class="box-calender">
     <div class="container">
+      <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs3"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-3.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs4"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-4.svg" class="img-fluid" alt=""></div>
       <div class="title text-center">
         <h2><span>EVENT</span></h2>
       </div>
@@ -179,6 +183,174 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
               <div class="avr"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/calender2.svg" class="img-fluid w-100" alt=""></div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="list-event">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="item-event">
+              <div class="title-top">
+                <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
+                <div class="item-top-head">
+                  <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-1.svg" class="img-fluid" alt=""></div>
+                  <span>ライブペイント</span>
+                </div>
+              </div>
+              <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
+              <div class="info">
+                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
+                <h3>場所：本館2F</h3>
+                <div class="desc">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item-event">
+              <div class="title-top">
+                <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
+                <div class="item-top-head">
+                  <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-2.svg" class="img-fluid" alt=""></div>
+                  <span>ライブペイント</span>
+                </div>
+              </div>
+              <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
+              <div class="info">
+                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
+                <h3>場所：本館2F</h3>
+                <div class="desc">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item-event">
+              <div class="title-top">
+                <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
+                <div class="item-top-head">
+                  <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-3.svg" class="img-fluid" alt=""></div>
+                  <span>ライブペイント</span>
+                </div>
+              </div>
+              <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
+              <div class="info">
+                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
+                <h3>場所：本館2F</h3>
+                <div class="desc">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item-event">
+              <div class="title-top">
+                <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
+                <div class="item-top-head">
+                  <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-4.svg" class="img-fluid" alt=""></div>
+                  <span>ライブペイント</span>
+                </div>
+              </div>
+              <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
+              <div class="info">
+                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
+                <h3>場所：本館2F</h3>
+                <div class="desc">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="box-special">
+    <div class="container">
+      <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs3"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-3.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs4"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-4.svg" class="img-fluid" alt=""></div>
+      <div class="title text-center">
+        <h2>SPECIAL</h2>
+      </div>
+      <div class="list-special">
+        <div class="item-special">
+          <div class="avarta"><a href=""><img src="assets/images/banner/spec.png" class="img-fluid w-100" alt=""></a></div>
+          <div class="info">
+            <h3>テナントコラボ</h3>
+            <ul>
+              <li>
+                <span>開催日時</span>
+                <span>2023/08/10〜2023/08/30</span>
+              </li>
+              <li>
+                <span>開催場所</span>
+                <span>—————</span>
+              </li>
+            </ul>
+            <div class="desc">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </div>
+          </div>
+        </div>
+        <div class="item-special">
+          <div class="avarta"><a href=""><img src="assets/images/banner/spec.png" class="img-fluid w-100" alt=""></a></div>
+          <div class="info">
+            <h3>テナントコラボ</h3>
+            <ul>
+              <li>
+                <span>開催日時</span>
+                <span>2023/08/10〜2023/08/30</span>
+              </li>
+              <li>
+                <span>開催場所</span>
+                <span>—————</span>
+              </li>
+            </ul>
+            <div class="desc">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="box-goods">
+    <div class="container">
+      <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs3"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-3.svg" class="img-fluid" alt=""></div>
+      <div class="icon-abs abs4"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-4.svg" class="img-fluid" alt=""></div>
+      <div class="title text-center">
+        <h2><span>Goods</span></h2>
+      </div>
+      <div class="content-goods">
+        <div class="circle"><img src="assets/images/banner/circle.svg" class="img-fluid w-100" alt=""></div>
+        <div class="row">
+          <?php
+          for ($x = 0; $x <= 2; $x++) { ?>
+            <div class="col-md-4">
+              <div class="item-good">
+                <div class="avarta"><a href=""><img src="assets/images/banner/store.jpg" class="img-fluid w-100" alt=""></a></div>
+                <div class="info">
+                  <h3>画集</h3>
+                  <div class="price">¥0,000</div>
+                  <div class="view-shop">
+                    <a href="">
+                      <span>ONLINE STORE</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
+                        <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php }
+          ?>
         </div>
       </div>
     </div>
