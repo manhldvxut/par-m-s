@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.669" height="58.791" viewBox="0 0 41.669 58.791">
+  <g id="bnt_next" transform="translate(-313.831 -2518.5)">
+    <ellipse id="Ellipse_43" data-name="Ellipse 43" cx="20.334" cy="20.334" rx="20.334" ry="20.334" transform="translate(314.331 2536.122)" fill="none" stroke="#000" stroke-width="1"/>
+    <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(320.63 2570.963) rotate(-90)">
+      <path id="Path_3690" data-name="Path 3690" d="M18,7.5V20.572" transform="translate(-3.493 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_3691" data-name="Path 3691" d="M21.513,18l-7.007,7.007L7.5,18" transform="translate(0 -4.435)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <text id="NEXT" transform="translate(322.443 2529.5)" font-size="10" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.05em"><tspan x="0" y="0">NEXT</tspan></text>
+  </g>
+</svg>

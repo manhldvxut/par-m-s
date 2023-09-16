@@ -6,6 +6,11 @@ $(function() {
       arrows: false,
     });
 
+    $( ".action-cal" ).on( "click", function() {
+      $('.month11, .month10').slideToggle();
+      // $('.month10').slideDown(); 
+    } );
+
     // ページトップボタン
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {

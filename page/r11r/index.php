@@ -131,13 +131,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
       </div>
       <div class="list-calender">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 month10">
             <div class="item-calender">
+              <div class="action-cal next-cal"><a href="javascript:void(0)"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bnt_next.svg" class="img-fluid" alt=""></a></div>
               <div class="avr"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/calender1.svg" class="img-fluid w-100" alt=""></div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 month11">
             <div class="item-calender">
+              <div class="action-cal prev-cal"><a href="javascript:void(0)"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bnt_prev.svg" class="img-fluid" alt=""></a></div>
               <div class="avr"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/calender2.svg" class="img-fluid w-100" alt=""></div>
             </div>
           </div>
