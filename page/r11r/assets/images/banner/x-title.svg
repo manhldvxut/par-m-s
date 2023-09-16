@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.509" height="13.524" viewBox="0 0 145.509 13.524">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="145.509" height="13.524" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="x-title" clip-path="url(#clip-path)">
+    <g transform="translate(-359.416 -4027.738)">
+      <line id="Line_1542" data-name="Line 1542" x2="12.965" y2="12.813" transform="translate(359.767 4028.094)" fill="none" stroke="#272727" stroke-width="1"/>
+      <line id="Line_1543" data-name="Line 1543" x1="12.965" y2="12.813" transform="translate(359.767 4028.094)" fill="none" stroke="#272727" stroke-width="1"/>
+    </g>
+    <g transform="translate(-296.416 -4027.738)">
+      <line id="Line_1542-2" data-name="Line 1542" x2="12.965" y2="12.813" transform="translate(359.767 4028.094)" fill="none" stroke="#272727" stroke-width="1"/>
+      <line id="Line_1543-2" data-name="Line 1543" x1="12.965" y2="12.813" transform="translate(359.767 4028.094)" fill="none" stroke="#272727" stroke-width="1"/>
+    </g>
+    <g transform="translate(-233.416 -4027.738)">
+      <line id="Line_1542-3" data-name="Line 1542" x2="12.965" y2="12.813" transform="translate(359.767 4028.094)" fill="none" stroke="#272727" stroke-width="1"/>
+      <line id="Line_1543-3" data-name="Line 1543" x1="12.965" y2="12.813" transform="translate(359.767 4028.094)" fill="none" stroke="#272727" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

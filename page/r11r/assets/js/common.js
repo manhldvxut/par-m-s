@@ -1,15 +1,65 @@
 $(function() {
 
+    setTimeout(function() { 
+       $('.avr-cover').addClass('hide_cover'); 
+    }, 400);
+
+    setTimeout(function() { 
+       $('.wrapper, .box-cover').addClass('hide_cover'); 
+    }, 1600);
+
     $('.slide-banner').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
       slidesToShow: 1,
       dots: false,
       arrows: false,
+      fade: true,
+      cssEase: 'linear'
     });
 
     $( ".action-cal" ).on( "click", function() {
       $('.month11, .month10').slideToggle();
-      // $('.month10').slideDown(); 
+    });
+
+    $( ".close-modal" ).on( "click", function() {
+      $('body, .modal-creator').removeClass('show-modal');
+    });
+ 
+    $( ".close-menu a" ).on( "click", function() {
+      $('.content-menu').removeClass('active');
+      $('body').removeClass('show-modal');
+    });
+
+    $( ".btn-bar a" ).on( "click", function() {
+      $('.content-menu').addClass('active');
+      $('body').addClass('show-modal');
     } );
+
+    $('.clc-modal').click(function(){
+        var tab_id = $(this).attr('data-tab');
+        $("#"+tab_id).addClass('show-modal');
+        $('body').addClass('show-modal');
+    });
+
+    jQuery(function($) {
+      var doAnimations = function() {
+        var offset = $(window).scrollTop() + $(window).height(),
+            $animatables = $('.scroll-anime');
+        if ($animatables.length == 0) {
+          $(window).off('scroll', doAnimations);
+        }
+        $animatables.each(function(i) {
+           var $animatable = $(this);
+          if (($animatable.offset().top + $animatable.height() + 60) < offset) {
+                $animatable.addClass('animated');
+          } else {
+          }
+        });
+      };
+      $(window).on('scroll', doAnimations);
+      $(window).trigger('scroll'); 
+    }); 
 
     // ページトップボタン
     $(window).scroll(function () {
