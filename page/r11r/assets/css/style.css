@@ -1198,6 +1198,8 @@ main
   font-weight: normal;
   text-transform: uppercase;
   color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
 @media (max-width: 768px) {
@@ -1477,7 +1479,6 @@ main
 
 .top-profile .info-user .name {
   font-size: 30px;
-  font-weight: bold;
   margin-bottom: 38px;
 }
 
@@ -1506,6 +1507,7 @@ main
 .top-profile .link-profile a span {
   letter-spacing: 1.2px;
   margin-right: 14px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .top-profile .link-profile .icon-svg-bott {
@@ -1575,7 +1577,8 @@ main
 .title h2 {
   text-transform: uppercase;
   font-size: 80px;
-  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
 @media (max-width: 768px) {
@@ -2004,10 +2007,11 @@ main .row .col-md-6 {
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 200;
   -webkit-transition: .3s all !important;
   transition: .3s all !important;
   opacity: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -2023,7 +2027,6 @@ main .row .col-md-6 {
 .item-creator .info {
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -2116,6 +2119,15 @@ main .row .col-md-6 {
 .box-creators .view-more .icon {
   position: relative;
   margin-right: -8px;
+}
+
+.box-creators .view-more img {
+  max-width: 95px;
+}
+
+.box-creators .view-more span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
 .box-creators .title {

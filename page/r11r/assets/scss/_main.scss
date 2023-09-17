@@ -78,6 +78,8 @@
     	font-weight: normal;
     	text-transform: uppercase;
     	color: #000000;
+    	font-family: 'Poppins', sans-serif;
+    	font-weight: 200;
     	@media (max-width: 768px) {
     		font-size: 30px;
     	}
@@ -275,7 +277,6 @@
 	.info-user {
 		.name {
 			font-size: 30px;
-			font-weight: bold;
 			margin-bottom: 38px;
 			@media (max-width: 1023px) {
 				margin-bottom: 20px;
@@ -297,6 +298,7 @@
 			span {
 				letter-spacing: 1.2px;
 				margin-right: 14px;
+				font-family: 'Poppins', sans-serif;
 			}
 		}
 		.icon-svg-bott {
@@ -346,7 +348,8 @@
 	h2 { 
 		text-transform: uppercase;
 		font-size: 80px;
-		font-weight: normal;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 200;
 		@media (max-width: 768px) {
 			font-size: 42px;
 		}
@@ -623,9 +626,10 @@ main {
 		    align-items: center;
 		    justify-content: center;
 		    font-size: 24px;
-		    font-weight: normal;
+		    font-weight: 200;
 		    transition: .3s all !important;
 		    opacity: 0;
+		    font-family: 'Poppins', sans-serif;
 		    @media (max-width: 1023px) {
 		    	display: none;
 		    }
@@ -641,7 +645,6 @@ main {
 	.info {
 		color: #fff;
 		font-size: 16px;
-		font-weight: bold;
 		@media (max-width: 768px) {
 			font-size: 12px;
 			line-height: 19px;
@@ -696,6 +699,7 @@ main {
 		    color: #000000;
 		    position: relative;
 		    margin-top: -105px;
+
 		    @media (max-width: 768px) {
 		    	font-size: 21px;
 		    	margin: 0;
@@ -708,6 +712,15 @@ main {
 		.icon {
 			position: relative;
     		margin-right: -8px;
+		}
+
+		img {
+			max-width: 95px;
+		}
+
+		span {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 200;
 		}
 	}
 	.title {

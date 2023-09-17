@@ -145,17 +145,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
         <div class="view-more">
           <a href="javascript:void(0)">
             <span class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="95.976" height="101" viewBox="0 0 95.976 101">
-                <g id="Group_2391" data-name="Group 2391" transform="translate(-570.5 -2818.5)">
-                  <g id="Group_2233" data-name="Group 2233" transform="translate(-215 5)">
-                    <path id="Subtraction_1" data-name="Subtraction 1" d="M-242-667a49.685,49.685,0,0,1-19.462-3.929,49.832,49.832,0,0,1-15.893-10.715,49.833,49.833,0,0,1-10.715-15.893A49.688,49.688,0,0,1-292-717a49.686,49.686,0,0,1,3.929-19.462,49.833,49.833,0,0,1,10.715-15.893,49.833,49.833,0,0,1,15.893-10.715A49.685,49.685,0,0,1-242-767a49.861,49.861,0,0,1,26.564,7.633,50.171,50.171,0,0,1,18.1,19.867h-1.121a48.967,48.967,0,0,0-8.894-12.148,48.836,48.836,0,0,0-15.575-10.5A48.685,48.685,0,0,0-242-766a48.691,48.691,0,0,0-19.073,3.85,48.849,48.849,0,0,0-15.575,10.5,48.847,48.847,0,0,0-10.5,15.575A48.691,48.691,0,0,0-291-717a48.684,48.684,0,0,0,3.85,19.073,48.836,48.836,0,0,0,10.5,15.575,48.838,48.838,0,0,0,15.575,10.5A48.707,48.707,0,0,0-242-668a48.7,48.7,0,0,0,19.073-3.85,48.822,48.822,0,0,0,15.575-10.5,49.24,49.24,0,0,0,6.58-8.148h1.18a50.347,50.347,0,0,1-17.813,17.043,49.737,49.737,0,0,1-11.668,4.77A50.151,50.151,0,0,1-242-667Z" transform="translate(1078 3581)" fill="none" stroke="#000" stroke-width="1"/>
-                  </g>
-                  <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(597.93 2845.626)">
-                    <path id="Path_3690" data-name="Path 3690" d="M18,7.5V39.491" transform="translate(5.495 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                    <path id="Path_3691" data-name="Path 3691" d="M39.491,18l-16,16L7.5,18" transform="translate(0 5.495)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                  </g>
-                </g>
-              </svg>
+              <img src="/<?php echo DIRNAME; ?>/assets/images/btn_more.png" class="img-fluid w-100" alt="more">
             </span>
             <span>view more</span>
           </a>
