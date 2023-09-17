@@ -127,20 +127,6 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
       </div>
       <div class="list-creator">
         <div class="row">
-          <?php
-            for ($x = 0; $x <= 19; $x++) { ?>
-              <div class="col-md-3">
-                <div class="item-creator">
-                  <a href="javascript:void(0)" class="clc-modal" data-tab="modal-1"></a>
-                  <div class="avarta">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/banner/creator1.png" class="img-fluid w-100" alt="">
-                    <span>View</span>
-                  </div>
-                  <div class="info">名前が入ります名前が入ります</div>
-                </div>
-              </div>
-            <?php  }
-          ?>
         </div>
         <div class="view-more">
           <a href="javascript:void(0)">
@@ -154,58 +140,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
     </div>
 
 
-  <div class="modal-creator" id="modal-1">
-    <div class="modal">
-      <div class="close-modal">
-        <a href="javascript:void(0)">
-          <svg xmlns="http://www.w3.org/2000/svg" width="33.836" height="34.344" viewBox="0 0 33.836 34.344">
-            <g id="close" transform="translate(-1205.867 -4041.828)">
-              <path id="シェイプ_4" data-name="シェイプ 4" d="M1222.785,4059l-16.205,16.47,16.205-16.47-16.205-16.47,16.205,16.47,16.205-16.47L1222.785,4059l16.205,16.47Z" fill="#0d0b0b" stroke="#0d0b0b" stroke-width="2"/>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div class="content-modal">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="avarta"><img src="assets/images/banner/modal1.jpg" class="img-fluid w-100" alt=""></div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-profile">
-              <div class="top-profile">
-                <div class="avarta-user"><img src="assets/images/banner/profile.jpg" class="img-fluid w-100" alt=""></div>
-                <div class="info-user">
-                  <div class="name">こまやま明</div>
-                  <div class="link-profile">
-                    <a href="">
-                      <span>Profile</span>
-                      <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                          <g id="Icon_feather-external-link" data-name="Icon feather-external-link" transform="translate(-8.25 -10.75)">
-                            <path id="Path_3756" data-name="Path 3756" d="M18,15.3v5.4a1.8,1.8,0,0,1-1.8,1.8H6.3a1.8,1.8,0,0,1-1.8-1.8V10.8A1.8,1.8,0,0,1,6.3,9h5.4" transform="translate(4.5 4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                            <path id="Path_3757" data-name="Path 3757" d="M22.5,4.5h5.2V9.7" transform="translate(-3.204 7)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                            <path id="Path_3758" data-name="Path 3758" d="M15,12l7.5-7.5" transform="translate(1.546 7.454)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                          </g>
-                        </svg>
-                      </span>
-                      <span class="icon-svg-bott">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
-                          <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"/>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div> 
-              </div>
-              <div class="map text-center">
-                <div class="avr"><img src="assets/images/banner/map.jpg" class="img-fluid" alt=""></div>
-                <a href="">MAP画像待ち</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="modal-creator" id="modalShow">
   </div>
   </section>
   <section class="box-calender">

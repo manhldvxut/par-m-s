@@ -10,6 +10,7 @@
 
 
 $(function() {
+    showItem(); // show Item Creators
 
     setTimeout(function() { 
        $('.avr-cover').addClass('hide_cover'); 
@@ -33,11 +34,11 @@ $(function() {
         $('.month11, .month10').slideToggle();
     });
 
-    $( ".close-modal" ).on( "click", function() {
+    $(document).on('click', '.close-modal', function () {
         $('body, .modal-creator').removeClass('show-modal');
     });
  
-    $( ".close-menu a" ).on( "click", function() {
+    $(document).on('click', '.close-menu a', function () {
         $('.content-menu').removeClass('active');
         $('body').removeClass('show-modal');
     });
@@ -47,12 +48,128 @@ $(function() {
         $('body').addClass('show-modal');
     });
 
-    $('.clc-modal').click(function(){
-        var tab_id = $(this).attr('data-tab');
-        $("#"+tab_id).addClass('show-modal');
-        $('body').addClass('show-modal');
-    });
+    // load data.json
+    var dataArr = [];
+    let showCurrenNumber = 16;
+    //view more
+    $('.view-more a').click(function(e) {
+        let currentItemElm = $('.list-creator .col-md-3').length
+        if(currentItemElm.length == 0) {
+            console.log('アイテムがない')
+        } else {
+            showCurrenNumber = currentItemElm + showCurrenNumber;
+            $('.list-creator .col-md-3').remove()
+            showItem(); // show Item Creators
+        }
+    })
 
+    function showItem () {
+        $.ajax({
+            url: 'assets/data/data.json',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+                // Lưu dữ liệu vào biến global dataArr
+                dataArr = data;
+
+                // Gọi hàm xử lý dữ liệu sau khi tải xong
+                processData(dataArr);
+            },
+            complete: function () {
+                // click show modal
+                $(document).on('click', '.clc-modal', function () {
+                    let currentId = parseInt($(this).attr('data-tab').match(/\d+/));
+                    let itemModalShow = dataArr[currentId - 1];
+
+                    let creatModal = $('.modal-creator');
+                    $('.modal').remove(); // reset modal
+                    
+                    let modalHtml = `
+                        <div class="modal">
+                          <div class="close-modal">
+                            <a href="javascript:void(0)">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="33.836" height="34.344" viewBox="0 0 33.836 34.344">
+                                <g id="close" transform="translate(-1205.867 -4041.828)">
+                                  <path id="シェイプ_4" data-name="シェイプ 4" d="M1222.785,4059l-16.205,16.47,16.205-16.47-16.205-16.47,16.205,16.47,16.205-16.47L1222.785,4059l16.205,16.47Z" fill="#0d0b0b" stroke="#0d0b0b" stroke-width="2"></path>
+                                </g>
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="content-modal">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="avarta"><img src="assets/images/${itemModalShow.imageName}" class="img-fluid w-100" alt="${itemModalShow.creatorName}"></div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="info-profile">
+                                  <div class="top-profile">
+                                    <div class="avarta-user"><img src="assets/images/${itemModalShow.IconImage}" class="img-fluid w-100" alt="${itemModalShow.creatorName}"></div>
+                                    <div class="info-user">
+                                      <div class="name">${itemModalShow.creatorName}</div>
+                                      <div class="link-profile">
+                                        <a href="${itemModalShow.creatorLink}">
+                                          <span>Profile</span>
+                                          <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                              <g id="Icon_feather-external-link" data-name="Icon feather-external-link" transform="translate(-8.25 -10.75)">
+                                                <path id="Path_3756" data-name="Path 3756" d="M18,15.3v5.4a1.8,1.8,0,0,1-1.8,1.8H6.3a1.8,1.8,0,0,1-1.8-1.8V10.8A1.8,1.8,0,0,1,6.3,9h5.4" transform="translate(4.5 4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                <path id="Path_3757" data-name="Path 3757" d="M22.5,4.5h5.2V9.7" transform="translate(-3.204 7)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                <path id="Path_3758" data-name="Path 3758" d="M15,12l7.5-7.5" transform="translate(1.546 7.454)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                              </g>
+                                            </svg>
+                                          </span>
+                                          <span class="icon-svg-bott">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
+                                              <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"></path>
+                                            </svg>
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="map text-center">
+                                    <div class="avr"><img src="assets/images/banner/map.jpg" class="img-fluid" alt="Map"></div>
+                                    <a href="">MAP画像待ち</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    `
+
+                    creatModal.append(modalHtml);
+                    $("#modalShow").addClass('show-modal');
+                    $('body').addClass('show-modal');
+                });
+            }
+        });
+    }
+
+    function processData(data) {
+        if (data.length === 0) {
+            console.log('データ存在していない');
+        } else {
+            var currentShow = data.slice(0, showCurrenNumber);
+            var rowAppend = $('.list-creator .row');
+            $.each(currentShow, function (index, item) {
+                var htmlShow = `
+                    <div class="col-md-3">
+                        <div class="item-creator">
+                            <a href="javascript:void(0)" class="clc-modal" data-tab="modal-${index + 1}"></a>
+                            <div class="avarta">
+                                <img src="assets/images/${item.imageName}" class="img-fluid w-100" alt="${item.creatorName}">
+                                <span>View</span>
+                            </div>
+                            <div class="info">${item.creatorName}</div>
+                        </div>
+                    </div>
+                `;
+
+                rowAppend.append(htmlShow);
+            });
+        }
+    }
     jQuery(function($) {
         var doAnimations = function() {
             var offset = $(window).scrollTop() + $(window).height(),
