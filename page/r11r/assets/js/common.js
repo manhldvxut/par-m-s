@@ -57,9 +57,14 @@ $(function() {
         if(currentItemElm.length == 0) {
             console.log('アイテムがない')
         } else {
-            showCurrenNumber = currentItemElm + showCurrenNumber;
+            showCurrenNumber = currentItemElm + 16;
             $('.list-creator .col-md-3').remove()
             showItem(); // show Item Creators
+            console.log(showCurrenNumber)
+
+            if(showCurrenNumber > dataArr.length) {
+                $('.view-more').remove();
+            }
         }
     })
 
@@ -69,10 +74,7 @@ $(function() {
             dataType: 'json',
             cache: false,
             success: function (data) {
-                // Lưu dữ liệu vào biến global dataArr
                 dataArr = data;
-
-                // Gọi hàm xử lý dữ liệu sau khi tải xong
                 processData(dataArr);
             },
             complete: function () {
