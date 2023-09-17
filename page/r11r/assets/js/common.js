@@ -60,7 +60,6 @@ $(function() {
             showCurrenNumber = currentItemElm + 16;
             $('.list-creator .col-md-3').remove()
             showItem(); // show Item Creators
-            console.log(showCurrenNumber)
 
             if(showCurrenNumber >= dataArr.length) {
                 $('.view-more').remove();
@@ -84,6 +83,7 @@ $(function() {
                     let itemModalShow = dataArr[currentId - 1];
 
                     let creatModal = $('.modal-creator');
+                    $('.modal').remove(); // reset modal
                     
                     let modalHtml = `
                         <div class="modal">
@@ -139,7 +139,7 @@ $(function() {
                         </div>
                     `
 
-                    creatModal.push(modalHtml);
+                    creatModal.append(modalHtml);
                     $("#modalShow").addClass('show-modal');
                     $('body').addClass('show-modal');
                 });
