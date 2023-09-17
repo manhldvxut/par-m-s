@@ -84,7 +84,6 @@ $(function() {
                     let itemModalShow = dataArr[currentId - 1];
 
                     let creatModal = $('.modal-creator');
-                    $('.modal').remove(); // reset modal
                     
                     let modalHtml = `
                         <div class="modal">
@@ -140,7 +139,7 @@ $(function() {
                         </div>
                     `
 
-                    creatModal.append(modalHtml);
+                    creatModal.push(modalHtml);
                     $("#modalShow").addClass('show-modal');
                     $('body').addClass('show-modal');
                 });
