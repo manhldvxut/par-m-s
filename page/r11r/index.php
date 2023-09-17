@@ -42,16 +42,16 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager2.php';?>
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/svgs.php';?>
-<!-- <div class="box-cover">
+<div class="box-cover">
   <div class="container">
     <div class="avr-cover text-center"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cover.svg" class="img-fluid" alt=""></div>
   </div>
-</div> -->
+</div>
 <div class="wrapper">
 
 <div class="header-menu">
   <div class="container">
-    <div class="btn-bar">
+    <div class="btn-bar"> 
       <a href="javascript:void(0)">
         <svg xmlns="http://www.w3.org/2000/svg" width="52.296" height="35" viewBox="0 0 52.296 35">
           <g id="menu" transform="translate(0.5 0.5)">
