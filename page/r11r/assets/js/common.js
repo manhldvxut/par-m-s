@@ -62,7 +62,7 @@ $(function() {
             showItem(); // show Item Creators
             console.log(showCurrenNumber)
 
-            if(showCurrenNumber > dataArr.length) {
+            if(showCurrenNumber >= dataArr.length) {
                 $('.view-more').remove();
             }
         }
