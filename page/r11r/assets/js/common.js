@@ -1,3 +1,14 @@
+// font
+(function(d) {
+    var config = {
+      kitId: 'gvh5cpv',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,'')+'wf-inactive';},config.scriptTimeout),tk=d.createElement('script'),f=false,s=d.getElementsByTagName('script')[0],a;h.className+='wf-loading';tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!='complete'&&a!='loaded')return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+
+
 $(function() {
 
     setTimeout(function() { 
@@ -9,32 +20,32 @@ $(function() {
     }, 1600);
 
     $('.slide-banner').slick({
-      autoplay: true,
-      autoplaySpeed: 2000,
-      slidesToShow: 1,
-      dots: false,
-      arrows: false,
-      fade: true,
-      cssEase: 'linear'
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear'
     });
 
     $( ".action-cal" ).on( "click", function() {
-      $('.month11, .month10').slideToggle();
+        $('.month11, .month10').slideToggle();
     });
 
     $( ".close-modal" ).on( "click", function() {
-      $('body, .modal-creator').removeClass('show-modal');
+        $('body, .modal-creator').removeClass('show-modal');
     });
  
     $( ".close-menu a" ).on( "click", function() {
-      $('.content-menu').removeClass('active');
-      $('body').removeClass('show-modal');
+        $('.content-menu').removeClass('active');
+        $('body').removeClass('show-modal');
     });
 
     $( ".btn-bar a" ).on( "click", function() {
-      $('.content-menu').addClass('active');
-      $('body').addClass('show-modal');
-    } );
+        $('.content-menu').addClass('active');
+        $('body').addClass('show-modal');
+    });
 
     $('.clc-modal').click(function(){
         var tab_id = $(this).attr('data-tab');
@@ -43,22 +54,22 @@ $(function() {
     });
 
     jQuery(function($) {
-      var doAnimations = function() {
-        var offset = $(window).scrollTop() + $(window).height(),
-            $animatables = $('.scroll-anime');
-        if ($animatables.length == 0) {
-          $(window).off('scroll', doAnimations);
-        }
-        $animatables.each(function(i) {
-           var $animatable = $(this);
-          if (($animatable.offset().top + $animatable.height() + 60) < offset) {
-                $animatable.addClass('animated');
-          } else {
-          }
-        });
-      };
-      $(window).on('scroll', doAnimations);
-      $(window).trigger('scroll'); 
+        var doAnimations = function() {
+            var offset = $(window).scrollTop() + $(window).height(),
+                $animatables = $('.scroll-anime');
+            if ($animatables.length == 0) {
+                $(window).off('scroll', doAnimations);
+            }
+
+            $animatables.each(function(i) {
+                var $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height() + 60) < offset) {
+                    $animatable.addClass('animated');
+                }
+            });
+        };
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll'); 
     }); 
 
     // ページトップボタン

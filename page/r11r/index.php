@@ -34,6 +34,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/meta.php';?>
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager1.php';?>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/css.php';?>
 </head>

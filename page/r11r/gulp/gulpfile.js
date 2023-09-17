@@ -14,7 +14,7 @@
 var documentRoot = "../../../"; //server root directory
 var projectRoot = "../"; //project root (index directory)
 // sass - css file directory
-var sassDirectory = projectRoot + "--assets/scss/"; //sass file directory
+var sassDirectory = projectRoot + "assets/scss/"; //sass file directory
 var cssOutputDirectory = projectRoot + "assets/css/" //css file output directory
 var sassCompileStyle = "expanded"; //sass compile style [expanded, nested, campact, compressed]
 // local server
