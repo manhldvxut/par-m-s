@@ -8,6 +8,8 @@ PARCO Header
   background: #fff;
   border-bottom: 1px solid #ccc;
   overflow: hidden;
+  position: relative;
+  z-index: 22;
   &__in {
     height: 55px;
     margin: 0 auto;
@@ -196,57 +198,30 @@ PARCO Footer
     }
   }
   &__pageTop {
-    position:absolute;
-    top: -66px;
-    left:50%;
-    margin-left: -22px;
+    right: 5px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 5;
     @media screen and (min-width:769px){
       display: none;
-      position: fixed;
       top: auto;
       left: auto;
-      right: 30px;
-      bottom: 30px;
       margin: 0;
+      right: 30px;
     }
     a {
       display: inline-block;
       position: relative;
-      width: 45px;
-      height: 45px;
-      background: #222;
-      border-radius: 50%;
+      width: 35px;
+      height: 35px;
       text-indent: 100%;
       overflow: hidden;
       white-space: nowrap;
+      background: url('/page/r11r/assets/images/banner/pagetop.svg') no-repeat;
+      background-size: 100%;
       @media screen and (min-width:769px){
         width: 54px;
         height: 54px;
-        background: #FFF;
-        border-radius: 50%;
-        text-indent: 100%;
-      }
-      &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -5px 0 0 -6px;
-      width: 7px;
-      height: 7px;
-      border-top: #fff 2px solid;
-      border-right: #fff 2px solid;
-      transform: rotate(-45deg);
-      @media screen and (min-width:769px){
-        top: 50%;
-        left: 50%;
-        margin: -5px 0 0 -7px;
-        width: 11px;
-        height: 11px;
-        border-top: #222 3px solid;
-        border-right: #222 3px solid;
-        }
       }
       &:hover {
         opacity: 0.7;

@@ -81,10 +81,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
         </svg>
       </a>
     </li>
-    <li><a href="">CREATORS</a></li>
-    <li><a href="">EVENT</a></li>
-    <li><a href="">SPECIAL</a></li>
-    <li><a href="">GOODS</a></li>
+    <li><a href="#creators">CREATORS</a></li>
+    <li><a href="#event">EVENT</a></li>
+    <li><a href="#special">SPECIAL</a></li>
+    <li><a href="#goods">GOODS</a></li>
   </ul>
 </div>
 
@@ -121,7 +121,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
   </section>
   <section class="box-creators">
     <div class="container">
-      <div class="title scroll-anime">
+      <div class="title scroll-anime" id="creators">
         <h2><span>CREATORS</span></h2>
         <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/creators.svg" class="img-fluid" alt=""></div>
       </div>
@@ -143,7 +143,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
   <div class="modal-creator" id="modalShow">
   </div>
   </section>
-  <section class="box-calender">
+  <section class="box-calender" id="event">
     <div class="container">
       <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
       <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
@@ -195,10 +195,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
               </div>
               <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
               <div class="info">
-                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
-                <h3>場所：本館2F</h3>
+                <div class="top">日時：毎週土曜日</div>
+                <h3>場所：P'PARCO 店頭</h3>
                 <div class="desc">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  <!-- code here -->
                 </div>
               </div>
             </div>
@@ -209,15 +209,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
                 <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
                 <div class="item-top-head">
                   <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-2.svg" class="img-fluid" alt=""></div>
-                  <span>ライブペイント</span>
+                  <span>サイン会</span>
                 </div>
               </div>
               <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
               <div class="info">
-                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
-                <h3>場所：本館2F</h3>
+                <div class="top">日時：毎週日曜日</div>
+                <h3>場所：本館8F 特設会場</h3>
                 <div class="desc">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  <!-- code here -->
                 </div>
               </div>
             </div>
@@ -228,15 +228,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
                 <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
                 <div class="item-top-head">
                   <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-3.svg" class="img-fluid" alt=""></div>
-                  <span>ライブペイント</span>
+                  <span>トークイベント</span>
                 </div>
               </div>
               <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
               <div class="info">
-                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
-                <h3>場所：本館2F</h3>
+                <div class="top">日時：11/4</div>
+                <h3>場所：本館M2F HIS</h3>
                 <div class="desc">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  <!-- code here -->
                 </div>
               </div>
             </div>
@@ -247,15 +247,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
                 <div class="abs-head"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/bg-title-event.png" class="img-fluid w-100" alt=""></div>
                 <div class="item-top-head">
                   <div class="icon"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/ev-4.svg" class="img-fluid" alt=""></div>
-                  <span>ライブペイント</span>
+                  <span>クリエイターズマーケット</span>
                 </div>
               </div>
               <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/avr-event.png" class="img-fluid w-100" alt=""></div>
               <div class="info">
-                <div class="top">日時：2023/10/20 MAN   |  13：00 〜</div>
-                <h3>場所：本館2F</h3>
+                <div class="top">日時：11/4</div>
+                <h3>場所：本館RF</h3>
                 <div class="desc">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  <!-- code here -->
                 </div>
               </div>
             </div>
@@ -278,7 +278,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
       </div>
     </div>
   </section>
-  <section class="box-special">
+  <section class="box-special" id="special">
     <div class="container">
       <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
       <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
@@ -295,41 +295,47 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
             <ul>
               <li>
                 <span>開催日時</span>
-                <span>2023/08/10〜2023/08/30</span>
+                <span>
+                  <!-- code here -->
+                </span>
               </li>
               <li>
                 <span>開催場所</span>
-                <span>—————</span>
+                <span>
+                  <!-- code here -->
+                </span>
               </li>
             </ul>
             <div class="desc">
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+              <!-- code here -->
             </div>
           </div>
         </div>
         <div class="item-special">
           <div class="avarta"><a href=""><img src="assets/images/banner/spec.png" class="img-fluid w-100" alt=""></a></div>
           <div class="info">
-            <h3>テナントコラボ</h3>
+            <h3>限定ガチャ</h3>
             <ul>
               <li>
                 <span>開催日時</span>
-                <span>2023/08/10〜2023/08/30</span>
+                <span>
+                  <!-- code here -->
+                </span>
               </li>
               <li>
                 <span>開催場所</span>
-                <span>—————</span>
+                <span>本館8F 特設会場</span>
               </li>
             </ul>
             <div class="desc">
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+              <!-- code here -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="box-goods">
+  <section class="box-goods" id="goods">
     <div class="container">
       <div class="icon-abs abs1"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-1.svg" class="img-fluid" alt=""></div>
       <div class="icon-abs abs2"><img src="/<?php echo DIRNAME; ?>/assets/images/banner/cap-2.svg" class="img-fluid" alt=""></div>
@@ -343,27 +349,61 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
       <div class="content-goods">
         <div class="circle"><img src="assets/images/banner/circle.svg" class="img-fluid w-100" alt=""></div>
         <div class="row">
-          <?php
-          for ($x = 0; $x <= 2; $x++) { ?>
-            <div class="col-md-4">
-              <div class="item-good">
-                <div class="avarta"><a href=""><img src="assets/images/banner/store.jpg" class="img-fluid w-100" alt=""></a></div>
-                <div class="info">
-                  <h3>画集</h3>
-                  <div class="price">¥0,000</div>
-                  <div class="view-shop">
-                    <a href="">
-                      <span>ONLINE STORE</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
-                        <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"/>
-                      </svg>
-                    </a>
-                  </div>
+          <div class="col-md-4">
+            <div class="item-good">
+              <div class="avarta"><a href=""><img src="assets/images/banner/store.jpg" class="img-fluid w-100" alt="画集"></a></div>
+              <div class="info">
+                <h3>画集</h3>
+                <div class="price">3,300円（税込）</div>
+                <div class="view-shop">
+                  <a href="">
+                    <span>ONLINE STORE</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
+                      <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
-          <?php }
-          ?>
+          </div>
+          <div class="col-md-4">
+            <div class="item-good">
+              <div class="avarta"><a href=""><img src="assets/images/banner/store.jpg" class="img-fluid w-100" alt="複製原画"></a></div>
+              <div class="info">
+                <h3>複製原画</h3>
+                <div class="price">
+                  <!-- code here -->
+                </div>
+                <div class="view-shop">
+                  <a href="">
+                    <span>ONLINE STORE</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
+                      <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item-good">
+              <div class="avarta"><a href=""><img src="assets/images/banner/store.jpg" class="img-fluid w-100" alt="サイン会チケット"></a></div>
+              <div class="info">
+                <h3>サイン会チケット</h3>
+                <div class="price">
+                  <!-- code here -->
+                </div>
+                <div class="view-shop">
+                  <a href="">
+                    <span>ONLINE STORE</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="170.217" height="12.159" viewBox="0 0 170.217 12.159">
+                      <path id="Path_3532" data-name="Path 3532" d="M185.749,1776.333h169l-11.433-11.3" transform="translate(-185.749 -1764.673)" fill="none" stroke="#0d0b0b" stroke-width="1"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -378,26 +418,28 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/r11r/'; //必ずディレ
         <h2>CREATORS</h2>
       </div>
       <div class="content-quesstion">
+        <h4>本館8階</h4>
+        <p>おにく　くいたい / アキオカ / 一条 / まるゐ / しな / とみながしんぺい / kokuno / 中村杏子 / お天気屋 / わたなべ萌 / てとら うう / ラリアット/rariatoo / 金属8g / mamep / 爆竹香織 / 晴菜 / CHO / 雪丸ぬん / 朝際イコ / ヨシサコツバサ</p>
+        <h4>本館7階</h4>
+        <p>HASU /暮宙シュン /fracoco /春海 にむ /フジマメグム /カンカラナシ /すり餌 /ねこぜもん /まぁ坊 /けけ /逢編いあむ /Mercure /あんのん /まつもとみなみ /岬ましろ /天川たまを〜 /やまなみ /イラカアヅコ /山北東 /櫻田 あこ /才賀サイ /めめんち /sʜɪᴍᴀᴋᴜᴍᴀ  /桜田佳代子</p>
+        <h4>本館6階</h4>
+        <p>山月 まり / めげ / のをか / 藻前まっく / まんぷくアートスタジオ はち / hao / YUBISAKI / あんころもちこ先生 / せの弁当屋 / Osu / alma / 田島幸枝 / roxy / taniori / しまりすゆきち / 北極まぐ / 白咲まぐる / 一色 しめ / </p>
+        <h4>本館5階</h4>
+        <p>nowri / 仮名井 / TSCR / タミウラ / ほたてんし / YUME / O仮名だモ / ウエダツバサ / Haる / とろろとろろ / OYK / Birne / 鴉羽凛燈 / こたろう</p>
+        <h4>本館4階</h4>
+        <p>N1 / 眩しい / スドウ創太 / AyaNee / REO / 丸千代 / ゆりぼう / はやぴ / まめすけ / SG / athéko / カトウトモカ / アキヤレモンサワー / おそら / びねつ</p>
+        <h4>本館3階</h4>
+        <p>紀 / 恢原 / unknown / まかろんK / Biss / 福宇地 / 西條ユリカ / GAS / ROROICHI / うみねこ研究所 / 蒼木こうり / イグアナ大佐 / </p>
+        <h4>本館2階</h4>
+        <p>8月96日 / burari / お村ヴィレッジ / Syamauchi / ななみ雪 / カノ / 大志 / こもり / 白駒マル / 亀山鶴子 / チヤキ / みつきさなぎ / 川名 すず / 前田ミック / ゆうき / ふじまる2002 </p>
+        <h4>本館M2階</h4>
+        <p>野渡ひい / HER / ペパーミント / 梅田 あいな / STUDY優作 / くまぞう / najuco / その / maple / しうん / いとうみゆき / 旅行 / ゆいあい</p>
         <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
-        <h4>本館1階</h4>
-        <p>HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ HER ／ 前山ちぇ〜 ／ 山吹あん ／ 犬波 ／ 526 ／ クリエイター名 ／ </p>
+        <p>もなか / fjsmu / Gurin. / もん / ぽんすけかいかい / 左藤うずら / さん / 神吉李花 / あさ / みりん / ドジ / KOUME / ききのき / 瓜うりた / 万年喪服 / Z-Z / tacomiya / AiLeeN / タナカミホ / シブチャ / mashu / ともわか / 水沢石鹸 / うた坊 / 桜庭すず / さわ / たる / 冨田 マリー / 芦屋マキ / 526 / OKADA / てんてこ / 冨士原良 / matumot / Kou / こまやま 明</p>
+        <h4>本館B1階</h4>
+        <p>はやしうき / 琥珀雨 / ナカムラユウキ / いなた / 白鹿 / 猫目トヲル / 棉きのし / 旧都なぎ / fucca / ナチコ / ROMI / 犀将 / 慧子 / オカユウリ / 前山 ちぇ～ / オツザカ / 驟々みそばた / 色田 / しんいし智歩 / hiko / an minami / 梅まろ / きくち / なつめみく / まかぎ / 白皙</p>
+        <h4>本館B2階</h4>
+        <p>purokiti / 兎鷺ぬい / more / Coma*85 / ますだみく / はまふぐ </p>
       </div>
     </div>
   </section>

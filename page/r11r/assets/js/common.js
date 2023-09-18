@@ -22,7 +22,8 @@ $(function() {
 
     $('.slide-banner').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        speed: 1200,
         slidesToShow: 1,
         dots: false,
         arrows: false,
@@ -48,18 +49,42 @@ $(function() {
         $('body').addClass('show-modal');
     });
 
+    $('.content-menu a').click(function() {
+        $('.content-menu').removeClass('active');
+        $('body').removeClass('show-modal')
+    })
+
     // load data.json
     var dataArr = [];
     let showCurrenNumber = 16;
+    let rowAppend = $('.list-creator .row');
+
     //view more
     $('.view-more a').click(function(e) {
-        let currentItemElm = $('.list-creator .col-md-3').length
+        let currentItemElm = $('.list-creator .col-md-3').length;
         if(currentItemElm.length == 0) {
             console.log('アイテムがない')
         } else {
             showCurrenNumber = currentItemElm + 16;
-            $('.list-creator .col-md-3').remove()
-            showItem(); // show Item Creators
+            $('.list-creator .row').fadeOut();
+            let subArray = dataArr.slice(currentItemElm, currentItemElm + 16);
+            for (var i = 0; i < subArray.length; i++) {
+                let subItem = subArray[i];
+                let subHtml = `
+                    <div class="col-md-3">
+                        <div class="item-creator">
+                            <a href="javascript:void(0)" class="clc-modal" data-tab="modal-${subItem.id}"></a>
+                            <div class="avarta">
+                                <img src="assets/images/${subItem.imageName}" class="img-fluid w-100" alt="${subItem.creatorName}">
+                                <span>View</span>
+                            </div>
+                            <div class="info">${subItem.creatorName}</div>
+                        </div>
+                    </div>
+                `;
+                rowAppend.append(subHtml);
+                $('.list-creator .row').fadeIn();
+            }
 
             if(showCurrenNumber >= dataArr.length) {
                 $('.view-more').remove();
@@ -73,6 +98,7 @@ $(function() {
             dataType: 'json',
             cache: false,
             success: function (data) {
+                dataArr = [];
                 dataArr = data;
                 processData(dataArr);
             },
@@ -108,7 +134,7 @@ $(function() {
                                     <div class="info-user">
                                       <div class="name">${itemModalShow.creatorName}</div>
                                       <div class="link-profile">
-                                        <a href="${itemModalShow.creatorLink}">
+                                        <a href="${itemModalShow.creatorLink}" target="_blank">
                                           <span>Profile</span>
                                           <span class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -151,10 +177,9 @@ $(function() {
         if (data.length === 0) {
             console.log('データ存在していない');
         } else {
-            var currentShow = data.slice(0, showCurrenNumber);
-            var rowAppend = $('.list-creator .row');
+            let currentShow = data.slice(0, showCurrenNumber);
             $.each(currentShow, function (index, item) {
-                var htmlShow = `
+                const htmlShow = `
                     <div class="col-md-3">
                         <div class="item-creator">
                             <a href="javascript:void(0)" class="clc-modal" data-tab="modal-${index + 1}"></a>
@@ -168,6 +193,7 @@ $(function() {
                 `;
 
                 rowAppend.append(htmlShow);
+                $('.list-creator .row').fadeIn();
             });
         }
     }

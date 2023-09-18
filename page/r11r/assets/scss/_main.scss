@@ -11,7 +11,7 @@
 }
 .header {
 	position: relative;
-	z-index: 12;
+	z-index: 1;
 }
 .header-menu {
 	padding: 55px 0 0 0;
@@ -248,6 +248,8 @@
 		    font-size: 20px;
 		    font-weight: bold;
 		    letter-spacing: 0.4px;
+		    cursor: pointer;
+		    pointer-events: none;
 		    @media (max-width: 1023px) {
 		    	font-size: 22px;
 		    }
@@ -360,7 +362,7 @@
 			&:before {
 				content: "";
 				width: 100%;
-				background-image: linear-gradient(to right, #84BBF0 , #F9B3D6);
+				background: transparent linear-gradient(100deg, #84BBF0 0%, #D6B0DB 48%, #F9B3D6 100%) 0% 0% no-repeat padding-box;
 				height: 55px;
 				position: absolute;
 				bottom: 0;
@@ -436,12 +438,14 @@ main {
 		margin-bottom: 40px;
 		font-size: 28px;
 		background-image: linear-gradient(to right, #84BBF0 , #F9B3D6);
-		padding: 5px;
+		padding: 6px 6px 0;
 		letter-spacing: 0.4px;
+		line-height: 1.2;
 		@media (max-width: 768px) {
 			padding: 12px 20px;
     		font-size: 18px;
     		margin-bottom: 30px;
+    		line-height: 1.4;
 		}
 	}
 	.desc {
@@ -609,7 +613,6 @@ main {
 		position: relative;
 		margin-bottom: 15px;
 		overflow: hidden;
-		border-radius: 10px;
 		@media (max-width: 768px) {
 			margin-bottom: 13px;
 		}
@@ -633,6 +636,11 @@ main {
 		    @media (max-width: 1023px) {
 		    	display: none;
 		    }
+		}
+
+		img {
+			border-radius: 10px;
+			box-shadow: 0px 3px 6px #00000029;
 		}
 	}
 	&:hover {
@@ -663,7 +671,7 @@ main {
 
 .box-creators {
 	position: relative;
-	background: url('../images/banner/bg-creator.svg') no-repeat center;
+	background: transparent linear-gradient(136deg, #84BBF0 0%, #D6B0DB 48%, #F9B3D6 100%) 0% 0% no-repeat padding-box;
 	background-size: cover;
 	padding-bottom: 90px;
 	@media (max-width: 768px) {
@@ -699,6 +707,11 @@ main {
 		    color: #000000;
 		    position: relative;
 		    margin-top: -105px;
+		    transition: .2s all;
+
+		    &:hover {
+		    	opacity: 0.8;
+		    }
 
 		    @media (max-width: 768px) {
 		    	font-size: 21px;
@@ -716,6 +729,9 @@ main {
 
 		img {
 			max-width: 95px;
+			@media (max-width: 768px) {
+				max-width: 75px;
+			}
 		}
 
 		span {
@@ -902,6 +918,9 @@ main {
     		margin-right: 20px;
     	}
     }
+    span {
+    	letter-spacing: 0;
+    }
 }
 
 .box-special {
@@ -1021,6 +1040,7 @@ main {
 	    			margin-bottom: 0;
 	    		}
 	    		span {
+	    			line-height: 1.3;
 	    			&:first-child {
 	    				flex: 0 0 90px;
 	    			}
