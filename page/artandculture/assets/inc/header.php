@@ -12,8 +12,8 @@
     		<div class="item-slide">
     			<div class="item-banner">
             <picture>
-                <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/banner/banner-sp-1.png">
-                <img src="/<?php echo DIRNAME; ?>/assets/images/banner/banner-1.jpg" class="img-fluid w-100" alt="<?php echo $pege_title; ?>">
+                <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
+                <img src="/<?php echo DIRNAME; ?>/assets/images/mv-pc.gif" class="img-fluid w-100" alt="<?php echo $pege_title; ?>">
             </picture>
           </div>
     		</div>

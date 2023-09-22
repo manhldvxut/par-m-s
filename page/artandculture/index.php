@@ -2,7 +2,7 @@
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/global-config.php';
 //下記のパス「demo」を変更
-include_once $_SERVER['DOCUMENT_ROOT'].'/page/r11r/assets/inc/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/page/artandculture/assets/inc/config.php';
 
 $nowURL = $_SERVER['HTTP_HOST'];
 $pageURL = STORE_NAME.'.parco.jp';
@@ -36,7 +36,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/artandculture/'; //必ず
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager1.php';?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/css.php';?>
 </head>
