@@ -76,6 +76,15 @@ $(function() {
         $(this).css('display', 'none');
       }
     });
+
+    // modal
+    $('.clc-modal').click(function() {
+        $('.modal-artan, body').addClass('open_modal');
+    });
+
+    $('.close a').click(function() {
+        $('.modal-artan, body').removeClass('open_modal');
+    });
 });
 
 

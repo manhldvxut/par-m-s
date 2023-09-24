@@ -9,22 +9,28 @@ body
 ========================================================= */
 html {
   font-size: 62.5%;
-  letter-spacing: 0.03em;
-  line-height: 1.3rem;
 }
 body {
-  color: #000;
-  font-family: 'heisei-kaku-gothic-std', sans-serif;
-  font-size: 1rem;
-  background: #fff;
-  -webkit-overflow-scrolling: touch;
+  background: #DBC2E2;
+  color: #fff;
+  // font-family: 'heisei-kaku-gothic-std', sans-serif;
+  font-family: 'Noto_Sans_JP';
+  font-size: 20px;
+  // -webkit-overflow-scrolling: touch; 
+  line-height: 1.8;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  &.open_modal {
+    overflow: hidden;
+  }
 }
 img {
   width: 100%;
 }
 
 .main-contents {
-  font-family: 'heisei-kaku-gothic-std', sans-serif;
+  // font-family: 'heisei-kaku-gothic-std', sans-serif; 
   font-weight: 500;
 }
 @media print {
@@ -47,6 +53,7 @@ default
 /* =========================================================
 layout
 ========================================================= */
+@import "_fonts";
 @import "_layout";
 
 /* =========================================================
