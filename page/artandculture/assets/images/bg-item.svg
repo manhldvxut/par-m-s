@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="855.865" viewBox="0 0 1024 855.865">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f4ace0"/>
+      <stop offset="1" stop-color="#86caf0"/>
+    </linearGradient>
+  </defs>
+  <g id="bg-item" transform="translate(-20 -1351.509)">
+    <rect id="Rectangle_3172" data-name="Rectangle 3172" width="1024" height="855.865" transform="translate(20 1351.509)" fill="rgba(119,68,145,0.3)"/>
+    <g id="Group_2174" data-name="Group 2174" transform="translate(20 20)" opacity="0">
+      <rect id="Rectangle_3173" data-name="Rectangle 3173" width="944" height="83.39" rx="10" transform="translate(40 1371.509)" fill="url(#linear-gradient)"/>
+      <text id="OTHER_FLOORS" data-name="OTHER FLOORS" transform="translate(509.893 1428.187)" fill="#fff" font-size="42" font-family="SegoeUI, Segoe UI" letter-spacing="0.06em"><tspan x="-158.399" y="0">OTHER FLOORS</tspan></text>
+    </g>
+    <g id="btn" transform="translate(204 634.374)" opacity="0">
+      <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(168 1475)" stroke="#fff" stroke-width="1" fill="url(#linear-gradient)">
+        <rect width="320" height="58" rx="29" stroke="none"/>
+        <rect x="0.5" y="0.5" width="319" height="57" rx="28.5" fill="none"/>
+      </g>
+      <text id="詳しくはこちら" transform="translate(209 1511)" fill="#fff" font-size="18" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="0" y="0">詳しくはこちら</tspan></text>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="13" cy="13" r="13" transform="translate(446 1491)" fill="#fff"/>
+      <path id="Path_3173" data-name="Path 3173" d="M457.4,1500.786l3.718,3.718-3.718,3.718" transform="translate(0 -0.286)" fill="none" stroke="#7090c2" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+    <text id="概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_概要テキストが入ります_" data-name="概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。" transform="translate(146 1514.929)" fill="#fff" font-size="20" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500" opacity="0"><tspan x="-376.1" y="23">概要テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要</tspan><tspan x="-385.8" y="59">テキストが入ります。概要テキストが入ります。概要テキストが入ります。概要テキス</tspan><tspan x="-376.1" y="95">トが入ります。概要テキストが入ります。概要テキストが入ります。概要テキストが</tspan><tspan x="-286.4" y="131">入ります。概要テキストが入ります。概要テキストが入ります。</tspan></text>
+  </g>
+</svg>

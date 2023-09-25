@@ -86,6 +86,52 @@ $(function() {
     $('.close a').click(function() {
         $('.modal-artan, body').removeClass('open_modal');
     });
+
+    $( '.box-event-tab a' ).on( 'click', function(e){
+      var href = $(this).attr( 'href' );
+      $( 'html, body' ).animate({
+            scrollTop: $( href ).offset().top - 109
+      }, '800' );
+      e.preventDefault();
+    });
+
+    $(window).scroll(function() {
+       var headerH = $('.header').outerHeight(true);
+       var banner = $('.box-sapo').outerHeight(true);
+       var scrollTop = $('.box-event-tab').outerHeight(true);
+       // console.log(headerH); 
+       var scrollVal = $(this).scrollTop();
+        if ( scrollVal > (headerH + banner + scrollTop - 80) ) {
+            $('.box-event-tab').addClass('fix_menu');
+        } else {
+            $('.box-event-tab').removeClass('fix_menu');
+        }
+
+        var windscroll = $(window).scrollTop(); 
+        // console.log(windscroll) 
+    });
+
+
+    jQuery(function($) {
+        var doAnimations = function() {
+            var offset = $(window).scrollTop() + $(window).height(),
+                $animatables = $('.icon-day');
+            if ($animatables.length == 0) {
+                $(window).off('scroll', doAnimations);
+            }
+
+            $animatables.each(function(i) {
+                var $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height() + 60) < offset) {
+                    $animatable.addClass('bounceIn');
+                } else {
+                    $animatable.removeClass('bounceIn');
+                }
+            });
+        };
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll'); 
+    }); 
 });
 
 
