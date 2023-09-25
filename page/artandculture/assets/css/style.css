@@ -263,8 +263,8 @@ PARCO Footer
 }
 .pft__pageTop {
   right: 5px;
-  bottom: 30px;
-  position: fixed;
+  bottom: calc(50% - 27px);
+  position: absolute;
   z-index: 5;
 }
 @media screen and (min-width: 769px) {
@@ -276,21 +276,33 @@ PARCO Footer
     right: 30px;
   }
 }
+@media (max-width: 768px) {
+  .pft__pageTop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: -23px;
+    bottom: unset;
+    left: calc(50% - 23px);
+    right: unset;
+  }
+}
 .pft__pageTop a {
   display: inline-block;
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: url("/page/r11r/assets/images/banner/pagetop.svg") no-repeat;
+  background: url("/page/artandculture/assets/images/pagetopmb.svg") no-repeat;
   background-size: 100%;
 }
 @media screen and (min-width: 769px) {
   .pft__pageTop a {
     width: 54px;
     height: 54px;
+    background: url("/page/artandculture/assets/images/pagetop.svg") no-repeat;
   }
 }
 .pft__pageTop a:hover {
@@ -301,10 +313,48 @@ PARCO Footer
   text-align: center;
   line-height: 0;
 }
+@media (max-width: 768px) {
+  .pft__copyright {
+    margin-top: 14px;
+  }
+}
 .pft__copyright svg {
   height: 11px;
   fill: #fff;
   overflow: hidden;
+}
+
+.social-footer {
+  padding: 28px 0 0 0;
+}
+@media (max-width: 768px) {
+  .social-footer {
+    padding: 14px 0 0 0;
+  }
+}
+.social-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-footer ul li {
+  padding: 0 12px;
+}
+@media (max-width: 768px) {
+  .social-footer ul li {
+    padding: 0 12px;
+  }
+}
+.social-footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .social-footer img {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 /* =========================================================
