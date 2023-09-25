@@ -78,7 +78,8 @@ $(function() {
     });
 
     // modal
-    $('.clc-modal').click(function() {
+    $('.clc-modal').click(function(e) {
+        e.preventDefault();
         $('.modal-artan, body').addClass('open_modal');
     });
 
