@@ -2,6 +2,9 @@
 $font-jp: 'Noto Sans JP', sans-serif;
 $font-en: "oskar", sans-serif;
 
+body {
+	font-family: $font-jp;
+}
 
 .text-center {
 	text-align: center;
@@ -68,7 +71,7 @@ $font-en: "oskar", sans-serif;
 }
 
 .box-event-tab {
-	font-family: 'Oskar';
+	font-family: $font-en;
 	padding: 14px 0;
     text-transform: uppercase;
     border-top: 1px solid #fff;
@@ -115,7 +118,7 @@ $font-en: "oskar", sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	line-height: 1;
-	font-family: 'Oskar';
+	font-family: $font-en;
 	@media (max-width: 1200px) {
 		font-size: 160px;
 	}
@@ -543,7 +546,7 @@ $font-en: "oskar", sans-serif;
 			font-size: 60px;
 			color: #C782C3;
 			font-weight: normal;
-			font-family: 'Oskar';
+			font-family: $font-en;
 			@media (max-width: 768px) {
 				font-size: 30px;
 			}
