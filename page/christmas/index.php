@@ -34,10 +34,6 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/meta.php';?>
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager1.php';?>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/xzf0geu.css">
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/css.php';?>
 </head>
