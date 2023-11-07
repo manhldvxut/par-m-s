@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* =========================================================
+colors
+========================================================= */
+@import "_colors";
+
+/* =========================================================
+body
+========================================================= */
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url(../images/main-bg.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    font-family: "Noto_Sans_JP";
+    font-size: 20px;
+    line-height: 1.8;
+    background-attachment: fixed;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  } 
+  &.open_modal {
+    overflow: hidden;
+  }
+}
+img {
+  width: 100%;
+}
+
+.main-contents {
+  // font-family: 'heisei-kaku-gothic-std', sans-serif; 
+  font-weight: 500;
+}
+@media print {
+  html, body {
+    _zoom: 70%!important;
+  }
+}
+
+main {
+  display: block; /*IE*/
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
+
+/* =========================================================
+default
+========================================================= */
+@import "_default";
+
+/* =========================================================
+layout
+========================================================= */
+@import "_layout";
+
+/* =========================================================
+main
+========================================================= */
+@import "_main";
