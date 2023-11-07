@@ -65,7 +65,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
 </main>
 
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/footer.php'; ?>
+<footer class="pft">
+  <!-- code here -->
+</footer>
 
 </div>
 
