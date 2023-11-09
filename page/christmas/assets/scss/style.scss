@@ -11,19 +11,28 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: url(../images/main-bg.jpg) no-repeat center;
     background-size: cover;
     color: #1D5D00;
-    font-family: "源ノ角ゴシック JP, Medium";
+    font-family: "源ノ角ゴシック JP";
     font-size: 20px;
     line-height: 1.8;
-    background-attachment: fixed;
+    letter-spacing: 1px;
   @media (max-width: 768px) {
     font-size: 16px;
   } 
   &.open_modal {
     overflow: hidden;
   }
+}
+
+.menu-fixed {
+  a {
+    font-family: span;
+  }
+}
+
+.title h2 span, .viewmore, .pft p {
+  font-family: span;
 }
 .main-contents {
   // font-family: 'heisei-kaku-gothic-std', sans-serif; 
