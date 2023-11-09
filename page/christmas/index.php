@@ -59,12 +59,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
 <header>
     <div class="content-header">
         <div class="h-header">
-            <div class="logo"><img src="assets/images/logo.png" alt=""></div>
+            <div class="logo">
+              <a href="https://fukuoka.parco.jp/page/christmas/"><img src="assets/images/logo.png" alt="Riveting Wonder Christmas| 福岡PARCO"></a>
+            </div>
             <div class="social">
                 <ul>
-                    <li><a href=""><img src="assets/images/head-1.png" alt=""></a></li>
-                    <li><a href=""><img src="assets/images/head-2.png" alt=""></a></li>
-                    <li><a href=""><img src="assets/images/head-3.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/parco_fukuoka" target="_blank"><img src="assets/images/head-1.png" alt="twitter"></a></li>
+                    <li><a href="https://page.line.me/fukuokaparco" target="_blank"><img src="assets/images/head-2.png" alt="line"></a></li>
+                    <li><a href="https://www.instagram.com/parco_fukuoka_official/" target="_blank"><img src="assets/images/head-3.png" alt="instagram"></a></li>
                 </ul>
             </div>
         </div>
