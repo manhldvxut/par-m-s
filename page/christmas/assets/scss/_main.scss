@@ -288,6 +288,8 @@ img {
     .desc {
       margin-top: 20px;
       font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
       @media (max-width: 767px) {
         font-size: 13px;
       }
@@ -404,6 +406,15 @@ img {
     top: 0;
     left: 0;
   }
+  h3{
+    font-size: 30px;
+    color: #fff;
+  }
+  ul {
+    li {
+      font-size: 20px;
+    }
+  }
   .avarta {
     img {
       width: 100%;
@@ -422,6 +433,8 @@ img {
     color: #fff;
     .desc {
       margin-bottom: 8px;
+      font-weight: 300;
+      line-height: 1.75;
     }
     .more {
       text-align: right;
@@ -454,6 +467,7 @@ img {
   .sort-content {
     font-size: 20px;
     font-weight: 500;
+    line-height: 2;
   }
   .viewmore {
     margin-top: 60px;

@@ -218,11 +218,21 @@ PARCO Footer
       &:last-child {
         margin-right: 0;
       }
+
+      img {
+        height: 29px;
+      }
     }
   }
   .h-header {
     display: flex;
     justify-content: space-between;
+
+    .logo {
+      img {
+        width: 220px;
+      }
+    }
   }
 }
 
