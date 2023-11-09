@@ -13,7 +13,9 @@ html {
 body {
     background-size: cover;
     color: #1D5D00;
-    font-family: "源ノ角ゴシック JP";
+    font-family: "source-han-sans-cjk-ja", sans-serif;
+    font-weight: 500;
+    font-style: 400;
     font-size: 20px;
     line-height: 1.8;
     letter-spacing: 1px;
@@ -48,7 +50,6 @@ main {
   display: block; /*IE*/
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
 
 /* =========================================================
 default
