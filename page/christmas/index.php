@@ -97,9 +97,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
             <div class="content-riveting">
                 <div class="txt-riveting">
-                    <p>1年の中でも最高にワクワクし、 <br>ドキドキするクリスマスシーズン。 <br>相手を思い浮かべながら心を込めて選ぶギフトには、 <br>心が躍り、驚きと喜びが広がります。</p>
-                    <p>1年の中でも最高にワクワクし、 <br>ドキドキするクリスマスシーズン。 <br>相手を思い浮かべながら心を込めて選ぶギフトには、 <br>心が躍り、驚きと喜びが広がります。</p>
-                    <p>1年の中でも最高にワクワクし、 <br>ドキドキするクリスマスシーズン。 <br>相手を思い浮かべながら心を込めて選ぶギフトには、 <br>心が躍り、驚きと喜びが広がります。</p>
+                  <p>1年の中でも最高にワクワク、ドキドキするクリスマスシーズン。<br>
+                      相手を思い浮かべながら選ぶギフトには、心が躍り、驚きと喜びが広がる。<br>
+                      そんなギフトたちもあなたに選ばれたくて、<br>
+                      じっと待ってなんかいられないはず！</p> 
                 </div>
                 <div class="user-riveting">
                     <div class="content-user">
@@ -107,12 +108,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                         <div class="info-user">
                             <div class="namer">岡田将充（OMD）</div>
                             <div class="desc">
-                                紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト紹介テキスト
+                                グラフィックデザイナー／アーティストとして活動中。クライアントワークと並行して近年は3DCGを用いたアートワークを展開。プロダクトや日用品など、それらのオブジェクトが持つ機能性を超越しデジタル空間上で再構築することで、新しい視覚的な価値を生み出すことをテーマに日々制作している。
                             </div>
                             <ul>
-                                <li><a href="" target="_blank"><img src="assets/images/sc-1.png" alt=""></a></li>
-                                <li><a href="" target="_blank"><img src="assets/images/sc-2.png" alt=""></a></li>
-                                <li><a href="" target="_blank"><img src="assets/images/sc-3.png" alt=""></a></li>
+                                <li><a href="https://www.instagram.com/okada_masamitsu/" target="_blank"><img src="assets/images/sc-1.png" alt=""></a></li>
+                                <li><a href="http://om-d.jp/" target="_blank"><img src="assets/images/sc-3.png" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -131,26 +131,22 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                     <div class="avarta-item-left">
                         <div class="slide-avr">
                             <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt=""></div>
-                            </div>
-                            <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt=""></div>
-                            </div>
-                            <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt=""></div>
+                                <div class="avr"><img src="assets/images/mv2.jpg" alt="CHIRSTMAS抽選会"></div>
                             </div>
                         </div>
                     </div>
                     <div class="txt-item-right">
                         <div class="info">
-                            <h3>タイトルが入ります。タイトルが入ります。</h3>
+                            <h3>CHIRSTMAS抽選会</h3>
                             <ul>
-                                <li>2023.11.1 WED - 11.5 FRI</li>
-                                <li>PARCO館 ●F ▲▲▲前</li>
+                                <li>2023.12.22fri~202312.25 mon</li>
+                                <li>新館3F 特設会場</li>
                             </ul>
+                            <p>新館3F特設会場に高さ約2メートルの巨大なガチャが出現！<br>
+                                九州の有名なホテル宿泊券やディナー券など豪華景品が当たるワクワク、ドキドキな抽選会を開催！</p>
                         </div>
                         <div class="viewmore">
-                            <a href="">
+                            <a href="https://fukuoka.parco.jp/pnews/detail/?id=25795" target="_blank">
                                 VIEW MORE
                                 <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                             </a>
@@ -171,23 +167,25 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                     <div class="avarta-item-left">
                         <div class="slide-avr">
                             <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt=""></div>
+                                <div class="avr"><img src="assets/images/cp-2.jpg" alt="CHIRSTMASギフトキャンペーン"></div>
                             </div>
                         </div>
                     </div>
                     <div class="txt-item-right">
                         <div class="info">
-                            <h3>タイトルが入ります。タイトルが入ります。</h3>
+                            <h3>CHIRSTMASギフトキャンペーン</h3>
                             <ul>
-                                <li>2023.11.1 WED - 11.5 FRI</li>
-                                <li>PARCO館 ●F ▲▲▲前</li>
+                                <li>2023.12.11 mon～202312.25 mon</li>
+                                <li>本館2F・3F エスカレーター横</li>
                             </ul>
                             <div class="desc">
-                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                                館内のおすすめクリスマスギフトを20名様にプレゼント！<br>
+                                福岡PARCO公式Instagramをフォロー&12/11のフィード投稿に、ほしい商品をコメントしてください♩さらに、館内にはクリスマスギフトのディスプレイも登場！ほしい商品を是非チェックしに来てくださいね。<br>
+                                ※応募の詳細は12/11のフィード投稿をご確認ください。
                             </div>
                         </div>
                         <div class="viewmore">
-                            <a href="">
+                            <a href=" https://fukuoka.parco.jp/pnews/detail/?id=25821" target="_blank">
                                 VIEW MORE
                                 <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                             </a>
@@ -198,50 +196,23 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                     <div class="avarta-item-left">
                         <div class="slide-avr">
                             <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt=""></div>
+                                <div class="avr"><img src="assets/images/avarta.png" alt="PARCOとちいかわのクリスマスッ!!!"></div>
                             </div>
                         </div>
                     </div>
                     <div class="txt-item-right">
                         <div class="info">
-                            <h3>タイトルが入ります。タイトルが入ります。</h3>
+                            <h3>PARCOとちいかわのクリスマスッ!!!</h3>
                             <ul>
-                                <li>2023.11.1 WED - 11.5 FRI</li>
+                                <li>2023.12.8 fri ~ 2023.12.25 mon</li>
                                 <li>PARCO館 ●F ▲▲▲前</li>
                             </ul>
                             <div class="desc">
-                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                                池袋PARCOの「ちいかわレストラン」OPENを記念して、福岡PARCO館内の対象のレストラン・カフェでのご飲食でオリジナルコースターをプレゼント！さらに、ちいかわオリジナルポストカードが当たるSNSプレゼント企画も実施します！
                             </div>
                         </div>
                         <div class="viewmore">
-                            <a href="">
-                                VIEW MORE
-                                <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-section">
-                    <div class="avarta-item-left">
-                        <div class="slide-avr">
-                            <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-item-right">
-                        <div class="info">
-                            <h3>タイトルが入ります。タイトルが入ります。</h3>
-                            <ul>
-                                <li>2023.11.1 WED - 11.5 FRI</li>
-                                <li>PARCO館 ●F ▲▲▲前</li>
-                            </ul>
-                            <div class="desc">
-                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-                            </div>
-                        </div>
-                        <div class="viewmore">
-                            <a href="">
+                            <a href="https://parco.jp/chiikawa-christmas/" target="_blank">
                                 VIEW MORE
                                 <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                             </a>
@@ -322,6 +293,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
         </div>
     </section>
+  <p>100文字程度の館内BGMのテキストが入ります館内BGMのテキストが入りま<br>す館内BGMのテキストが入ります館内BGMのテキストが入ります</p>
 </main>
 
 
