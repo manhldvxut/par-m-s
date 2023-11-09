@@ -6,6 +6,7 @@ img {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
   @media (max-width: 1023px) {
     max-width: 100%;
     padding: 0 40px;
@@ -52,12 +53,46 @@ img {
     }
     span {
       position: relative;
-      border-bottom: 1px solid #fff;
       display: inline-flex;
-      padding-bottom: 20px;
-      @media (max-width: 767px) {
-        padding-bottom: 10px;
+      padding-bottom: 10px;
+      &:after {
+        content: "";
+        width: calc(100% + 50px);
+        height: 1px;
+        transition: .4s all !important;
+        position: absolute;
+        bottom: 0;
+        animation-delay: 0.4s !important;
+        opacity: 0;
       }
+    }
+    label {
+      position: absolute;
+      bottom: -31px;
+      right: -75px;
+      animation-delay: 1s !important;
+      opacity: 0;
+    }
+  }
+}
+.wow-up {
+  position: relative;
+  transition: .5s ease-in !important;
+  opacity: 0;
+  top: 50px;
+  &.animated {
+    top: 0;
+    opacity: 1;
+    span {
+      &:after {
+        animation: title_line 0.5s linear;
+        opacity: 1;
+        background: #fff;
+      }
+    }
+    label {
+      opacity: 1;
+      animation: title-flicker 1s linear;
     }
   }
 }
@@ -174,9 +209,10 @@ img {
   position: absolute;
   top: -42px;
   height: 43px;
-  background-repeat: repeat-x;
   width: 100%;
   left: 0;
+  animation: scroll-anim 15s linear infinite;
+  background-size: 50%;
   @media (max-width: 767px) {
     top: -41px;
   }
@@ -362,7 +398,9 @@ img {
   background: #F8EFD9;
   .title {
     span {
-      border-bottom: 1px solid #FF4A01;
+      &:after {
+        background: #FF4A01;
+      }
     }
   }
   .top-bg {
@@ -483,6 +521,7 @@ img {
     position: relative;
     width: 100%;
     height: 100%;
+    max-width: 1360px;
   }
   .icon-abs {
     position: absolute;
@@ -490,29 +529,138 @@ img {
     align-items: center;
     justify-content: center;
     z-index: 11;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
     img {
+      max-width: 100%;
+      max-height: 100%;
       width: 100%;
-      max-height: 90vh;
     }
     &.icon-1 {
-      max-width: 39%;
-      top: 6%;
-      left: 4%;
+      filter: blur(10px);
+      transition: .4s all !important;
+      &.active {
+        filter: blur(0);
+      }
     }
     &.icon-2 {
-      max-width: 40%;
-      left: 40%;
-      top: 11%;
+      transition: .7s all !important;
+      top: -60px;
+      opacity: 0;
+      &.active {
+        opacity: 1;
+        top: 0;
+      }
     }
     &.icon-3 {
-      top: 73%;
-      left: 45%;
-      max-width: 16%;
+      transition: .7s all !important;
+      top: -40px;
+      opacity: 0;
+      &.active {
+        opacity: 1;
+        top: 0;
+      }
     }
     &.icon-4 {
-      max-width: 56%;
-      left: 38%;
-      top: 38%;
+      transition: .9s all !important;
+      top: -60px;
+      opacity: 0;
+      &.active {
+        opacity: 1;
+        top: 0;
+      }
     }
+  }
+}
+
+.bg-orang {
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FF4A01;
+  transition: 1s all !important;
+  pointer-events: none;
+  &.active {
+    opacity: 0;
+  }
+}
+.bg-cover {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  background: #40CE7A;
+  top: 0;
+  left: calc(50% - 50vh);
+  z-index: 13;
+  transition: 1.8s all !important;
+  transform: scale(0);
+  border-radius: 100%;
+  pointer-events: none;
+  &.active {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1; }
+  19% {
+    opacity: 1; }
+  21% {
+    opacity: 0.1; }
+  23% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  83% {
+    opacity: 0.4; }
+  87% {
+    opacity: 1; }
+}
+
+@keyframes title-flicker {
+  0% {
+    opacity: 0.1; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0.1; }
+  75% {
+    opacity: 1; }
+  90% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; }
+}
+
+@-webkit-keyframes unyo-right3 {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0
+  }
+
+  to {
+    -webkit-mask-position: 70px 0;
+    mask-position: 70px 0
+  }
+}
+
+@keyframes scroll-anim {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@keyframes title_line {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: calc(100% + 50px);
   }
 }

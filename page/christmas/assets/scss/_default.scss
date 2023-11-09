@@ -203,11 +203,17 @@ PARCO Footer
 
 .content-header {
   position: fixed;
-  top: 0;
+  top: -80px;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 12;
   padding: 20px;
+  transition: 1s all !important;
+  opacity: 0;
+  &.active {
+    top: 0;
+    opacity: 1;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -222,6 +228,9 @@ PARCO Footer
       img {
         height: 29px;
       }
+      img {
+        max-height: 30px;
+      }
     }
   }
   .h-header {
@@ -234,16 +243,26 @@ PARCO Footer
       }
     }
   }
+  .logo {
+    position: relative;
+    top: -20px;
+  }
 }
 
 .menu-fixed {
   position: fixed;
-  bottom: 0;
-  z-index: 10;
+  bottom: 80px;
+  z-index: 12;
   left: 0;
   width: 100%;
   padding: 18px 0;
   background: #fff;
+  transition: 1s all !important;
+  opacity: 0;
+  &.active {
+    bottom: 0;
+    opacity: 1;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -265,5 +284,21 @@ PARCO Footer
     color: #1D5D00;
     font-size: 20px;
     font-weight: normal;
+  }
+}
+
+.icon-star {
+  position: absolute;
+  &.star-1 {
+    top: 0;
+    right: 14%;
+    max-width: 20%;
+    animation: letter-flicker ease-out 1s infinite;
+  }
+  &.star-2 {
+    left: 0;
+    top: 42%;
+    max-width: 20%;
+    animation: letter-flicker ease-out 1.6s infinite;
   }
 }

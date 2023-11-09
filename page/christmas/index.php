@@ -82,6 +82,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     </div>
 </header>
 <main class="main-contents">
+    <div class="bg-orang"></div>
+    <div class="bg-cover"></div>
     <section class="box-banner">
         <div class="container">
             <div class="content-banner">
@@ -94,7 +96,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     </section>
     <section class="box-riveting text-center">
         <div class="container">
-            <div class="title-riveting">
+            <div class="icon-star star-1"><img src="assets/images/star-1.png" alt=""></div>
+            <div class="icon-star star-2"><img src="assets/images/star-2.png" alt=""></div>
+            <div class="title-riveting wow fadeInUp wHighlight">
                 <img src="assets/images/riveting.png" class="img-fluid" alt="">
             </div>
             <div class="content-riveting">
@@ -126,7 +130,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         <div class="top-bg"></div>
         <div class="container">
             <div class="title text-center">
-                <h2><span>EVENT</span></h2>
+                <h2 class="wow wow-up" data-wow-duration="1000ms">
+                    <span class="">EVENT <label><img src="assets/images/star-title.png" alt=""></label></span>
+                </h2>
             </div>
             <div class="list-item-section">
                 <div class="item-section">
@@ -162,7 +168,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         <div class="top-bg"></div>
         <div class="container">
             <div class="title text-center">
-                <h2><span>CAMPAIGN</span></h2>
+                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>CAMPAIGN <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
             <div class="list-item-section">
                 <div class="item-section">
@@ -228,7 +234,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         <div class="top-bg"></div>
         <div class="container">
             <div class="title text-center">
-                <h2><span>POPUP</span></h2>
+                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>POPUP <label><img src="assets/images/star-popup.png" alt=""></label></span></h2>
             </div>
             <div class="content-popup">
                 <div class="list-popup">
@@ -292,7 +298,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         <div class="top-bg"></div>
         <div class="container">
             <div class="title text-center">
-                <h2><span>館内BGM</span></h2>
+                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>館内BGM <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
             <div class="content-bgm text-center">
                 <div class="sort-content">
@@ -325,12 +331,39 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
 </footer>
 
 </div>
-
+<!--<div class="icon-abs icon-1"><img src="assets/images/banner-1.png" alt=""></div>-->
+<!--<div class="icon-abs icon-2 wow fadeInDown wHighlight" data-wow-delay="1.6s" data-wow-duration="1400ms"><img src="assets/images/banner-2.png" alt=""></div>-->
+<!--<div class="icon-abs icon-3 wow fadeInDown wHighlight" data-wow-delay="2.4s" data-wow-duration="1400ms"><img src="assets/images/banner-3.png" alt=""></div>-->
+<!--<div class="icon-abs icon-4 wow fadeInDown wHighlight" data-wow-delay="2.0s" data-wow-duration="1400ms"><img src="assets/images/banner-4.png" alt=""></div>-->
 <!-- Javascript -->
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/js.php';?>
 <!-- /Javascript -->
 
 <script>
+
+    new WOW({
+        offset: 150,
+    }).init();
+
+    setTimeout(function() {
+        $('.bg-cover, .bg-orang').addClass('active');
+    }, 600);
+    setTimeout(function() {
+        $('.icon-abs.icon-1').addClass('active');
+    }, 1800);
+    setTimeout(function() {
+        $('.icon-abs.icon-2').addClass('active');
+    }, 2000);
+    setTimeout(function() {
+        $('.icon-abs.icon-4').addClass('active');
+    }, 2600);
+    setTimeout(function() {
+        $('.icon-abs.icon-3').addClass('active');
+    }, 3200);
+    setTimeout(function() {
+        $('.menu-fixed, .content-header').addClass('active');
+    }, 4000);
+
     $('.slide-avr').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
