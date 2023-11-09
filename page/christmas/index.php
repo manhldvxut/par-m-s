@@ -229,46 +229,58 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                 <h2><span>POPUP</span></h2>
             </div>
             <div class="content-popup">
-                <div class="sort-content text-center">
-                    200文字程度の概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります概要文が入ります
-                </div>
                 <div class="list-popup">
                     <div class="col-popup">
                         <div class="item-popup">
-                            <div class="avarta"><img src="assets/images/pop-1.png" alt=""></div>
+                            <div class="avarta"><img src="assets/images/cp-2.jpg" alt="mofusand もふもふストア出張所"></div>
                             <div class="info">
-                                <div class="desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
-                                <div class="more"><a href=""><img src="assets/images/arrow-right.png" alt=""></a></div>
+                              <h3>mofusand もふもふストア出張所</h3>
+                              <ul>
+                                <li>2023.11.29 wed ~ 2024.1.28 sun</li>
+                                <li>本館4F 特設会場</li>
+                              </ul>
+                              <div class="desc">「mofusand」のオフィシャルショップ「mofusand もふもふストア」の出張所が、福岡PARCOにて期間限定OPEN！<br>
+                              にゃんこがかわいい新商品や、もふもふストアのオリジナル商品をたくさん取り揃えました。<br>
+                              商品をご購入いただいたお客様には、オリジナルステッカーをプレゼントいたします</div>
+                                <div class="more"><a href="https://fukuoka.parco.jp/popup/detail/?id=25765" target="_blank"><img src="assets/images/arrow-right.png" alt=""></a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-popup">
                         <div class="item-popup">
-                            <div class="avarta"><img src="assets/images/pop-2.png" alt=""></div>
+                            <div class="avarta"><img src="assets/images/pop-2.png" alt="くるりのPop-Up Shop"></div>
                             <div class="info">
-                                <div class="desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
-                                <div class="more"><a href=""><img src="assets/images/arrow-right.png" alt=""></a></div>
+                              <h3>タイトル記載</h3>
+                              <ul>
+                                <li>ーーーーーーー</li>
+                                <li>本館1F POP UP SPACE「GATE」</li>
+                              </ul>
+                              <div class="desc">
+                                ダミーテストダミーテストダミーテストダミーテストダミーテストダミーテスト
+                              </div>
+                                <div class="more"><a href="https://fukuoka.parco.jp/popup/detail/?id=25819" target="_blank"><img src="assets/images/arrow-right.png" alt=""></a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-popup">
                         <div class="item-popup">
-                            <div class="avarta"><img src="assets/images/pop-2.png" alt=""></div>
+                            <div class="avarta"><img src="assets/images/QURULI_no_main.jpg" alt="くるりのPop-Up Shop"></div>
                             <div class="info">
-                                <div class="desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
-                                <div class="more"><a href=""><img src="assets/images/arrow-right.png" alt=""></a></div>
+                              <h3>くるりのPop-Up Shop</h3>
+                              <ul>
+                                <li>2023.11.27 mon〜2023.12.10 sun</li>
+                                <li>新館3F エスカレーター横特設会場</li>
+                              </ul>
+                              <div class="desc">
+                                くるりポップアップ企画「くるりのPop-Up Shop」が期間限定OPEN！<br>
+                                初代くるりロゴデザインのTシャツ、トートバック、バスタオル、マグネット＆ステッカーセット、レザーキーカバーなどの小物に加えて、QURULIロゴのロンT、初登場のパーカーやハンガー、更に昨年に引き続きタムくんがデザインをしたキーホルダー、ポーチなど、多種多様なグッズが盛りだくさん。<br>
+                                その他にも「くるりのえいが」場面写真のパネルや、ツアーで着用した衣装も展示予定となっています。
+                              </div>
+                                <div class="more"><a href="https://fukuoka.parco.jp/popup/detail/?id=25806" target="_blank"><img src="assets/images/arrow-right.png" alt=""></a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-popup">
-                        <div class="item-popup">
-                            <div class="avarta"><img src="assets/images/pop-2.png" alt=""></div>
-                            <div class="info">
-                                <div class="desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
-                                <div class="more"><a href=""><img src="assets/images/arrow-right.png" alt=""></a></div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -278,14 +290,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         <div class="top-bg"></div>
         <div class="container">
             <div class="title text-center">
-                <h2><span>BGM</span></h2>
+                <h2><span>館内BGM</span></h2>
             </div>
             <div class="content-bgm text-center">
                 <div class="sort-content">
-                    100文字程度の館内BGMのテキストが入ります館内BGMのテキストが入ります館内BGMのテキストが入ります館内BGMのテキストが入ります
+                    2023.12.22fri~202312.25<br>
+                    厳選したクリスマスソングを福岡PARCO館内で4日間限定で放送します。<br>
+                    ワクワクでドキドキなお買い物の合間のほっと一息に耳を傾けてみてください。<br>
+                    あなたのクリスマスがもっともっと楽しくなりますように。
                 </div>
                 <div class="viewmore">
-                    <a href="">
+                    <a href="https://open.spotify.com/user/31fup4kqfw22z47jbv6v3z2zjuja?si=67db260936894a42&nd=1" target="_blank">
                         PLAY LIST
                         <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                     </a>
@@ -293,14 +308,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
         </div>
     </section>
-  <p>100文字程度の館内BGMのテキストが入ります館内BGMのテキストが入りま<br>す館内BGMのテキストが入ります館内BGMのテキストが入ります</p>
 </main>
 
 
 <footer class="pft">
   <div class="container">
       <div class="content-fter text-center">
-          <div class="logo"><img src="assets/images/fter.png" alt=""></div>
+          <div class="logo">
+            <a href="https://fukuoka.parco.jp/"target="_blank"><img src="assets/images/fter.png" alt=""></a>
+          </div>
           <p>COPYRIGHT © PARCO CO.,LTD ALL RIGHTS RESERVED.</p>
       </div>
   </div>
