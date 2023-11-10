@@ -157,6 +157,9 @@ PARCO Footer
   background: #F8EFD9;
   position: relative;
   color: #FF4A01;
+  @media (max-width: 1023px) {
+    padding: 50px 0 130px 0;
+  }
   .logo {
     display: flex;
     align-items: center;
@@ -210,6 +213,9 @@ PARCO Footer
   padding: 20px;
   transition: 1s all !important;
   opacity: 0;
+  @media (max-width: 767px) {
+    padding: 10px 16px;
+  }
   &.active {
     top: 0;
     opacity: 1;
@@ -221,12 +227,18 @@ PARCO Footer
     justify-content: center;
     li {
       margin-right: 26px;
+      @media (max-width: 767px) {
+        margin-right: 20px;
+      }
       &:last-child {
         margin-right: 0;
       }
 
       img {
         height: 29px;
+        @media (max-width: 767px) {
+          height: 18px;
+        }
       }
       img {
         max-height: 30px;
@@ -240,6 +252,10 @@ PARCO Footer
     .logo {
       img {
         width: 220px;
+        @media (max-width: 767px) {
+          width: auto;
+          height: 104px;
+        }
       }
     }
   }
@@ -259,6 +275,9 @@ PARCO Footer
   background: #fff;
   transition: 1s all !important;
   opacity: 0;
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
   &.active {
     bottom: 0;
     opacity: 1;
@@ -271,6 +290,9 @@ PARCO Footer
     li {
       margin-right: 40px;
       line-height: initial;
+      @media (max-width: 767px) {
+        margin-right: 25px;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -284,6 +306,9 @@ PARCO Footer
     color: #1D5D00;
     font-size: 20px;
     font-weight: normal;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -294,11 +319,35 @@ PARCO Footer
     right: 14%;
     max-width: 20%;
     animation: letter-flicker ease-out 1s infinite;
+    @media (max-width: 767px) {
+      width: 216px;
+      max-width: unset;
+      top: 15%;
+      right: 0;
+    }
   }
   &.star-2 {
     left: 0;
     top: 42%;
     max-width: 20%;
     animation: letter-flicker ease-out 1.6s infinite;
+    @media (max-width: 767px) {
+      width: 216px;
+      max-width: unset;
+      top: 37%;
+      left: 0;
+    }
+  }
+  &.star-3 {
+    bottom: -12%;
+    right: 2%;
+    max-width: 20%;
+    animation: letter-flicker ease-out 1s infinite;
+    @media (max-width: 767px) {
+      width: 216px;
+      max-width: unset;
+      bottom: -17%;
+      right: 0;
+    }
   }
 }

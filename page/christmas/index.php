@@ -98,6 +98,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         <div class="container">
             <div class="icon-star star-1"><img src="assets/images/star-1.png" alt=""></div>
             <div class="icon-star star-2"><img src="assets/images/star-2.png" alt=""></div>
+            <div class="icon-star star-3"><img src="assets/images/star-3.png" alt=""></div>
             <div class="title-riveting wow fadeInUp wHighlight">
                 <img src="assets/images/riveting.png" class="img-fluid" alt="">
             </div>
@@ -129,6 +130,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     <section class="box-event">
         <div class="top-bg"></div>
         <div class="container">
+            <div class="icon-abs abs-1"><img src="assets/images/ev-abs.png" alt=""></div>
+            <div class="icon-abs abs-2"><img src="assets/images/ev-abs-1.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms">
                     <span class="">EVENT <label><img src="assets/images/star-title.png" alt=""></label></span>
@@ -167,6 +170,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     <section class="box-campaign">
         <div class="top-bg"></div>
         <div class="container">
+            <div class="icon-abs abs-1"><img src="assets/images/cam-1.png" alt=""></div>
+            <div class="icon-abs abs-2"><img src="assets/images/cam-2.png" alt=""></div>
+            <div class="icon-abs abs-3"><img src="assets/images/cam-3.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms"><span>CAMPAIGN <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
@@ -233,6 +239,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     <section class="box-popup">
         <div class="top-bg"></div>
         <div class="container">
+            <div class="icon-abs abs-1"><img src="assets/images/pp-1.png" alt=""></div>
+            <div class="icon-abs abs-2"><img src="assets/images/pp-2.png" alt=""></div>
+            <div class="icon-abs abs-3"><img src="assets/images/pp-3.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms"><span>POPUP <label><img src="assets/images/star-popup.png" alt=""></label></span></h2>
             </div>
@@ -297,6 +306,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     <section class="box-bgm">
         <div class="top-bg"></div>
         <div class="container">
+            <div class="icon-abs abs-1"><img src="assets/images/b-1.png" alt=""></div>
+            <div class="icon-abs abs-2"><img src="assets/images/b-2.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms"><span>館内BGM <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
