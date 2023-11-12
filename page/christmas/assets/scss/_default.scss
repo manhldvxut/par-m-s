@@ -222,7 +222,7 @@ PARCO Footer
   transition: 1s all !important;
   opacity: 0;
   @media (max-width: 767px) {
-    padding: 10px 16px;
+    padding: 18px 10px;
   }
   &.active {
     top: 0;
@@ -271,7 +271,7 @@ PARCO Footer
     position: relative;
     top: -20px;
     @media (max-width: 767px) {
-      opacity: 0;
+      //opacity: 0;
     }
   }
 }
@@ -339,6 +339,7 @@ PARCO Footer
       max-width: unset;
       top: 15%;
       right: 0;
+      z-index: 1;
     }
   }
   &.star-2 {

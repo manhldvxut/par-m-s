@@ -296,7 +296,7 @@ PARCO Footer
 }
 @media (max-width: 767px) {
   .content-header {
-    padding: 10px 16px;
+    padding: 18px 10px;
   }
 }
 .content-header.active {
@@ -348,12 +348,6 @@ PARCO Footer
   position: relative;
   top: -20px;
 }
-@media (max-width: 767px) {
-  .content-header .logo {
-    opacity: 0;
-  }
-}
-
 .menu-fixed {
   position: fixed;
   bottom: 80px;
@@ -428,6 +422,7 @@ PARCO Footer
     max-width: unset;
     top: 15%;
     right: 0;
+    z-index: 1;
   }
 }
 .icon-star.star-2 {
@@ -1108,6 +1103,7 @@ main {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
+  z-index: 13;
 }
 @media (max-width: 1023px) {
   .container {
@@ -1170,7 +1166,7 @@ main {
 }
 .title h2 span:after {
   content: "";
-  width: calc(100% + 50px);
+  width: calc(100% + 42px);
   height: 1px;
   transition: 0.6s all !important;
   position: absolute;
@@ -1229,6 +1225,9 @@ main {
   margin-bottom: 50px;
   position: relative;
   z-index: 3;
+  opacity: 0;
+  top: -80px;
+  transition: 1s all !important;
 }
 @media (max-width: 767px) {
   .title-riveting {
@@ -1239,6 +1238,10 @@ main {
   .title-riveting img {
     max-height: 180px;
   }
+}
+.title-riveting.animated {
+  opacity: 1;
+  top: 0;
 }
 
 .content-riveting {
@@ -1355,32 +1358,20 @@ main {
 }
 
 .box-riveting {
-  padding: 0 0 168px 0;
   position: relative;
-  background: #F8EFD9;
   transition: 0.6s all !important;
+  z-index: 11;
+  margin-top: 0;
+}
+.box-riveting.active {
+  margin-top: -10.5%;
 }
 @media (max-width: 767px) {
-  .box-riveting {
-    padding: 70px 0 110px 0;
-  }
-}
-.box-riveting:after {
-  content: "";
-  width: 100%;
-  height: 100px;
-  background: #40CE7A;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@media (max-width: 767px) {
-  .box-riveting:after {
-    opacity: 0;
+  .box-riveting.active {
+    margin-top: 0;
   }
 }
 .box-riveting .top-circle {
-  background: #40CE7A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1399,6 +1390,11 @@ main {
     transform: scale(1.04);
   }
 }
+@media (max-width: 1023px) and (max-width: 767px) {
+  .box-riveting .top-circle.active {
+    margin-top: -90px;
+  }
+}
 .box-riveting .top-circle > div {
   flex: 0 0 100%;
   max-width: 100%;
@@ -1415,7 +1411,7 @@ main {
   }
 }
 .box-riveting .top-circle .rv-pc {
-  margin-bottom: -100px;
+  margin-bottom: -80px;
 }
 @media (max-width: 1023px) {
   .box-riveting .top-circle .rv-pc {
@@ -1435,7 +1431,16 @@ main {
 }
 @media (max-width: 767px) {
   .box-riveting .top-circle .rv-mb {
-    margin-bottom: -90px;
+    margin-bottom: -76px;
+  }
+}
+.box-riveting .content-box-rive {
+  padding: 0 0 168px 0;
+  background: #F8EFD9;
+}
+@media (max-width: 767px) {
+  .box-riveting .content-box-rive {
+    padding-bottom: 100px;
   }
 }
 
@@ -1447,10 +1452,13 @@ main {
   left: 0;
   animation: scroll-anim 15s linear infinite;
   background-size: 50%;
+  z-index: 12;
 }
 @media (max-width: 767px) {
   .top-bg {
-    top: -41px;
+    top: -29px;
+    background-size: cover !important;
+    height: 30px;
   }
 }
 
@@ -1462,7 +1470,7 @@ main {
 }
 @media (max-width: 1023px) {
   .box-event {
-    padding: 30px 0 150px 0;
+    padding: 30px 0 135px 0;
   }
 }
 .box-event .slick-arrow {
@@ -1672,7 +1680,7 @@ main {
 }
 @media (max-width: 1023px) {
   .box-campaign {
-    padding: 30px 0 150px 0;
+    padding: 30px 0 135px 0;
   }
 }
 .box-campaign .top-bg {
@@ -1683,7 +1691,7 @@ main {
 }
 @media (max-width: 767px) {
   .box-campaign .title h2 {
-    font-size: 56px;
+    font-size: 60px;
   }
 }
 .box-campaign .icon-abs {
@@ -1714,6 +1722,11 @@ main {
     left: -4%;
     max-width: 152px;
     top: 64%;
+  }
+}
+@media (max-width: 767px) {
+  .box-campaign .icon-abs.abs-2 {
+    top: 52%;
   }
 }
 .box-campaign .icon-abs.abs-3 {
@@ -2051,6 +2064,7 @@ main {
   height: 100vh;
   background: #40CE7A;
   overflow: hidden;
+  z-index: 10;
 }
 @media (max-width: 767px) {
   .box-banner {
@@ -2204,7 +2218,7 @@ main {
     width: 0px;
   }
   100% {
-    width: calc(100% + 50px);
+    width: calc(100% + 43px);
     @media (max-width: 767px) {
       width: calc(100% + 20px);
     }
