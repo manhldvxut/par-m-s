@@ -73,11 +73,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     </div>
     <div class="menu-fixed">
         <ul>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">EVENT</a></li>
-            <li><a href="">CAMPAIGN</a></li>
-            <li><a href="">POPUP</a></li>
-            <li><a href="">BGM</a></li>
+            <li><a href="#section-1">ABOUT</a></li>
+            <li><a href="#section-2">EVENT</a></li>
+            <li><a href="#section-3">CAMPAIGN</a></li>
+            <li><a href="#section-4">POPUP</a></li>
+            <li><a href="#section-5">BGM</a></li>
         </ul>
     </div>
 </header>
@@ -94,7 +94,16 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
         </div>
     </section>
-    <section class="box-riveting text-center">
+    <section class="box-banner-mobile">
+        <div class="icon-cover logo-cover"><img src="assets/images/logo.png" alt=""></div>
+        <div class="icon-cover cover-1"><img src="assets/images/mobile/cover-1.png" alt=""></div>
+        <div class="icon-cover cover-abs cover-2"><img src="assets/images/mobile/cover-2.png" alt=""></div>
+        <div class="icon-cover cover-abs cover-3"><img src="assets/images/mobile/cover-3.png" alt=""></div>
+    </section>
+    <section class="box-riveting text-center" id="section-1">
+        <div class="top-circle">
+            <img src="assets/images/top-bg-circle.png" alt="">
+        </div>
         <div class="container">
             <div class="icon-star star-1"><img src="assets/images/star-1.png" alt=""></div>
             <div class="icon-star star-2"><img src="assets/images/star-2.png" alt=""></div>
@@ -127,11 +136,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
         </div>
     </section>
-    <section class="box-event">
+    <section class="box-event" id="section-2">
         <div class="top-bg"></div>
         <div class="container">
-            <div class="icon-abs abs-1"><img src="assets/images/ev-abs.png" alt=""></div>
-            <div class="icon-abs abs-2"><img src="assets/images/ev-abs-1.png" alt=""></div>
+            <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/ev-abs.png" alt=""></div>
+            <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/ev-abs-1.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms">
                     <span class="">EVENT <label><img src="assets/images/star-title.png" alt=""></label></span>
@@ -167,12 +176,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
         </div>
     </section>
-    <section class="box-campaign">
+    <section class="box-campaign" id="section-3">
         <div class="top-bg"></div>
         <div class="container">
-            <div class="icon-abs abs-1"><img src="assets/images/cam-1.png" alt=""></div>
-            <div class="icon-abs abs-2"><img src="assets/images/cam-2.png" alt=""></div>
-            <div class="icon-abs abs-3"><img src="assets/images/cam-3.png" alt=""></div>
+            <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/cam-1.png" alt=""></div>
+            <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/cam-2.png" alt=""></div>
+            <div class="icon-abs abs-3 srv-parlx"><img src="assets/images/cam-3.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms"><span>CAMPAIGN <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
@@ -236,12 +245,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             </div>
         </div>
     </section>
-    <section class="box-popup">
+    <section class="box-popup" id="section-4">
         <div class="top-bg"></div>
         <div class="container">
-            <div class="icon-abs abs-1"><img src="assets/images/pp-1.png" alt=""></div>
-            <div class="icon-abs abs-2"><img src="assets/images/pp-2.png" alt=""></div>
-            <div class="icon-abs abs-3"><img src="assets/images/pp-3.png" alt=""></div>
+            <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/pp-1.png" alt=""></div>
+            <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/pp-2.png" alt=""></div>
+            <div class="icon-abs abs-3 srv-parlx"><img src="assets/images/pp-3.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms"><span>POPUP <label><img src="assets/images/star-popup.png" alt=""></label></span></h2>
             </div>
@@ -303,11 +312,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         </div>
     </section>
 
-    <section class="box-bgm">
+    <section class="box-bgm" id="section-5">
         <div class="top-bg"></div>
         <div class="container">
-            <div class="icon-abs abs-1"><img src="assets/images/b-1.png" alt=""></div>
-            <div class="icon-abs abs-2"><img src="assets/images/b-2.png" alt=""></div>
+            <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/b-1.png" alt=""></div>
+            <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/b-2.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms"><span>館内BGM <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
@@ -340,40 +349,49 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
       </div>
   </div>
 </footer>
-
 </div>
-<!--<div class="icon-abs icon-1"><img src="assets/images/banner-1.png" alt=""></div>-->
-<!--<div class="icon-abs icon-2 wow fadeInDown wHighlight" data-wow-delay="1.6s" data-wow-duration="1400ms"><img src="assets/images/banner-2.png" alt=""></div>-->
-<!--<div class="icon-abs icon-3 wow fadeInDown wHighlight" data-wow-delay="2.4s" data-wow-duration="1400ms"><img src="assets/images/banner-3.png" alt=""></div>-->
-<!--<div class="icon-abs icon-4 wow fadeInDown wHighlight" data-wow-delay="2.0s" data-wow-duration="1400ms"><img src="assets/images/banner-4.png" alt=""></div>-->
 <!-- Javascript -->
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/js.php';?>
 <!-- /Javascript -->
 
 <script>
 
+    $('.menu-fixed a').click(function(e){
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if(target.length){
+            var scrollTo = target.offset().top - 45;
+            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+        }
+        $('.menu-fixed a').removeClass("active");
+        $(this).addClass("active");
+    });
+
     new WOW({
-        offset: 150,
+        offset: 100,
     }).init();
 
     setTimeout(function() {
         $('.bg-cover, .bg-orang').addClass('active');
     }, 600);
     setTimeout(function() {
-        $('.icon-abs.icon-1').addClass('active');
+        $('.icon-abs.icon-1, .logo-cover').addClass('active');
     }, 1800);
     setTimeout(function() {
-        $('.icon-abs.icon-2').addClass('active');
+        $('.icon-abs.icon-2, .cover-1').addClass('active');
     }, 2000);
     setTimeout(function() {
-        $('.icon-abs.icon-4').addClass('active');
+        $('.icon-abs.icon-4, .cover-2').addClass('active');
     }, 2600);
     setTimeout(function() {
-        $('.icon-abs.icon-3').addClass('active');
+        $('.icon-abs.icon-3, .cover-3').addClass('active');
     }, 3200);
     setTimeout(function() {
         $('.menu-fixed, .content-header').addClass('active');
     }, 4000);
+    setTimeout(function() {
+        $('.top-circle, body').addClass('active');
+    }, 4200);
 
     $('.slide-avr').slick({
         slidesToShow: 1,
@@ -381,6 +399,16 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         arrows: true,
         nextArrow: '<a href="javascript:void(0)" class="arr-right"><img src="assets/images/arrow-right.png" class="img-fluid" alt=""></a>',
         prevArrow: '<a href="javascript:void(0)" class="arr-left"><img src="assets/images/arrow-left.png" class="img-fluid" alt=""></a>',
+    });
+
+    var data = [
+        {speed:12, index: 2},
+    ];
+    $('.srv-parlx').each(function(i,o){
+        $(this).parallax({speed:12, index: 2});
+    });
+    $('.top-circle').each(function(i,o){
+        $(this).parallax({speed:20, index: 2});
     });
 </script>
 </body>

@@ -158,13 +158,21 @@ PARCO Footer
   position: relative;
   color: #FF4A01;
   @media (max-width: 1023px) {
-    padding: 50px 0 130px 0;
+    padding: 50px 0 90px 0;
   }
   .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 26px;
+    @media (max-width: 767px) {
+      margin-bottom: 18px;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   p {
     font-size: 10px;
@@ -209,7 +217,7 @@ PARCO Footer
   top: -80px;
   left: 0;
   width: 100%;
-  z-index: 12;
+  z-index: 14;
   padding: 20px;
   transition: 1s all !important;
   opacity: 0;
@@ -262,13 +270,16 @@ PARCO Footer
   .logo {
     position: relative;
     top: -20px;
+    @media (max-width: 767px) {
+      opacity: 0;
+    }
   }
 }
 
 .menu-fixed {
   position: fixed;
   bottom: 80px;
-  z-index: 12;
+  z-index: 14;
   left: 0;
   width: 100%;
   padding: 18px 0;
@@ -287,11 +298,14 @@ PARCO Footer
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      justify-content: space-between;
+    }
     li {
       margin-right: 40px;
       line-height: initial;
       @media (max-width: 767px) {
-        margin-right: 25px;
+        margin-right: 10px;
       }
       &:last-child {
         margin-right: 0;
