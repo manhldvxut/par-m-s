@@ -333,6 +333,7 @@ PARCO Footer
     right: 14%;
     max-width: 20%;
     animation: letter-flicker ease-out 1s infinite;
+    z-index: 3;
     @media (max-width: 767px) {
       width: 216px;
       max-width: unset;

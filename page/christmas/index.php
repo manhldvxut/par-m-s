@@ -102,7 +102,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     </section>
     <section class="box-riveting text-center" id="section-1">
         <div class="top-circle">
-            <img src="assets/images/top-bg-circle.png" alt="">
+            <div class="rv-pc"><img src="assets/images/top-bg-circle.png" alt=""></div>
+            <div class="rv-mb"><img src="assets/images/top-edit.png" alt=""></div>
         </div>
         <div class="container">
             <div class="icon-star star-1"><img src="assets/images/star-1.png" alt=""></div>
@@ -139,7 +140,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
     <section class="box-event" id="section-2">
         <div class="top-bg"></div>
         <div class="container">
-            <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/ev-abs.png" alt=""></div>
+            <div class="icon-abs abs-1 srv-parlx" data-enllax-ratio=".9" data-enllax-type="foreground"><img src="assets/images/ev-abs.png" alt=""></div>
             <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/ev-abs-1.png" alt=""></div>
             <div class="title text-center">
                 <h2 class="wow wow-up" data-wow-duration="1000ms">
@@ -401,15 +402,19 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
         prevArrow: '<a href="javascript:void(0)" class="arr-left"><img src="assets/images/arrow-left.png" class="img-fluid" alt=""></a>',
     });
 
-    var data = [
-        {speed:12, index: 2},
-    ];
+    // var data = [
+    //     {speed:12, index: 2},
+    // ];
     $('.srv-parlx').each(function(i,o){
-        $(this).parallax({speed:12, index: 2});
+        $(this).parallax({speed:15, mobile: true,});
     });
-    $('.top-circle').each(function(i,o){
-        $(this).parallax({speed:20, index: 2});
+    $('.rv-pc').each(function(i,o){
+        $(this).parallax({speed:20, index: 2, mobile: true});
     });
+    $('.rv-mb').each(function(i,o){
+        $(this).parallax({speed:15, index: 2, mobile: true});
+    });
+
 </script>
 </body>
 </html>

@@ -420,6 +420,7 @@ PARCO Footer
   right: 14%;
   max-width: 20%;
   animation: letter-flicker ease-out 1s infinite;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .icon-star.star-1 {
@@ -1227,7 +1228,7 @@ main {
 .title-riveting {
   margin-bottom: 50px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .title-riveting {
@@ -1373,7 +1374,7 @@ main {
   top: 0;
   left: 0;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .box-riveting:after {
     opacity: 0;
   }
@@ -1383,8 +1384,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -100px;
-  transition: 0.6s all !important;
+  transition: 0.4s all !important;
   position: relative;
   z-index: 3;
 }
@@ -1399,14 +1399,43 @@ main {
     transform: scale(1.04);
   }
 }
+.box-riveting .top-circle > div {
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+}
 .box-riveting .top-circle img {
   width: 100%;
   height: 260px;
   object-fit: fill;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .box-riveting .top-circle img {
-    height: 60px;
+    height: 146px;
+  }
+}
+.box-riveting .top-circle .rv-pc {
+  margin-bottom: -100px;
+}
+@media (max-width: 1023px) {
+  .box-riveting .top-circle .rv-pc {
+    display: none;
+  }
+}
+.box-riveting .top-circle .rv-mb {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .box-riveting .top-circle .rv-mb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -180px;
+  }
+}
+@media (max-width: 767px) {
+  .box-riveting .top-circle .rv-mb {
+    margin-bottom: -90px;
   }
 }
 
