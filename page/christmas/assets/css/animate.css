@@ -121,6 +121,64 @@
     animation-name: flash;
 }
 
+
+@keyframes width_title {
+    from {
+       width: 0px;
+    }
+    to {
+        width: calc(100% + 36px);
+    }
+}
+@media (max-width: 767px) {
+    @keyframes width_title {
+        from {
+            width: 0px;
+        }
+        to {
+            width: calc(100% + 20px);
+        }
+    }
+}
+
+.width_title {
+    -webkit-animation-name: width_title;
+    animation-name: width_title;
+}
+
+@keyframes blink_title {
+    /*from {*/
+    /*   opacity: 0;*/
+    /*}*/
+    /*20% {*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*40% {*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*60% {*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*80% {*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*100% {*/
+    /*    opacity: 1;*/
+    /*}*/
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 0;}
+    60% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.blink_title {
+    -webkit-animation-name: blink_title;
+    animation-name: blink_title;
+    animation: blink_title 0.2s linear infinite alternate;
+}
+
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes pulse {

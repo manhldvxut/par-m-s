@@ -4,6 +4,7 @@ $(document).ready(function(){
         $(window).scrollTop(0);
     });
 
+
     if($(window).innerWidth() <= 767){
         $(window).bind('scroll', function() {
             var navHeight = $('.box-banner-mobile').height() - 100;

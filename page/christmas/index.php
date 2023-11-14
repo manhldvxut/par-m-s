@@ -145,9 +145,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             <div class="icon-abs abs-1 srv-parlx" data-enllax-ratio=".9" data-enllax-type="foreground"><img src="assets/images/ev-abs.png" alt=""></div>
             <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/ev-abs-1.png" alt=""></div>
             <div class="title text-center">
-                <h2 class="wow wow-up" data-wow-duration="1000ms">
-                    <span class="">EVENT <label><img src="assets/images/star-title.png" alt=""></label></span>
+                <h2 class="wow">
+                    <span class="">EVENT</span>
+                    <label class="blink_title wow" data-wow-delay="1s"><img src="assets/images/star-title.png" alt=""></label>
                 </h2>
+                <div class="line wow width_title" data-wow-delay="0.5s"></div>
             </div>
             <div class="list-item-section">
                 <div class="item-section">
@@ -194,7 +196,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/cam-2.png" alt=""></div>
             <div class="icon-abs abs-3 srv-parlx"><img src="assets/images/cam-3.png" alt=""></div>
             <div class="title text-center">
-                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>CAMPAIGN <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
+                <h2 class="wow">
+                    <span class="">CAMPAIGN</span>
+                    <label class="blink_title wow" data-wow-delay="1s"><img src="assets/images/star-title.png" alt=""></label>
+                </h2>
+                <div class="line wow width_title" data-wow-delay="0.5s"></div>
             </div>
             <div class="list-item-section">
                 <div class="item-section">
@@ -279,7 +285,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/pp-2.png" alt=""></div>
             <div class="icon-abs abs-3 srv-parlx"><img src="assets/images/pp-3.png" alt=""></div>
             <div class="title text-center">
-                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>POPUP <label><img src="assets/images/star-popup.png" alt=""></label></span></h2>
+                <h2 class="wow">
+                    <span class="">POPUP</span>
+                    <label class="blink_title wow" data-wow-delay="1s"><img src="assets/images/star-popup.png" alt=""></label>
+                </h2>
+                <div class="line wow width_title" data-wow-delay="0.5s"></div>
             </div>
             <div class="content-popup">
                 <div class="list-popup">
@@ -321,7 +331,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/b-1.png" alt=""></div>
             <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/b-2.png" alt=""></div>
             <div class="title text-center">
-                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>BGM <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
+                <h2 class="wow">
+                    <span class="">CAMPAIGN</span>
+                    <label class="blink_title wow" data-wow-delay="1s"><img src="assets/images/star-title.png" alt=""></label>
+                </h2>
+                <div class="line wow width_title" data-wow-delay="0.5s"></div>
             </div>
             <div class="content-bgm text-center">
                 <div class="sort-content">
