@@ -23,7 +23,7 @@ if ($productionFlag === true) {
 
 //ページ用の変数
 $pege_title = 'Riveting Wonder Christmas| 福岡PARCO';
-$pege_description = '福岡PARCOがお届けするクリスマスイベント"Riveting Wonder"ワクワクとドキドキが詰まった素敵な企画をご紹介します。';
+$pege_description = '福岡PARCOがお届けするクリスマスイベント”Riveting Wonder”ワクワクとドキドキが詰まった素敵な企画をご紹介します。';
 $pege_keywords = '';
 $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずディレクトリ名を変更する
 
@@ -168,9 +168,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                             <p>新館3F特設会場に高さ約2メートルの巨大なガチャが出現！<br>
                                 九州の有名なホテル宿泊券やディナー券など豪華景品が当たるワクワク、ドキドキな抽選会を開催！</p>
                         </div>
-                        <div class="viewmore">
+                        <div class="viewmore wow">
                             <a href="https://fukuoka.parco.jp/pnews/detail/?id=25795" target="_blank">
-                                VIEW MORE
+                                <span>V</span>
+                                <span>I</span>
+                                <span>E</span>
+                                <span>W</span>
+                                <span>&nbsp;</span>
+                                <span>M</span>
+                                <span>O</span>
+                                <span>R</span>
+                                <span>E</span>
                                 <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                             </a>
                         </div>
@@ -210,9 +218,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                                 ※応募の詳細は12/11のフィード投稿をご確認ください。
                             </div>
                         </div>
-                        <div class="viewmore">
+                        <div class="viewmore wow">
                             <a href=" https://fukuoka.parco.jp/pnews/detail/?id=25821" target="_blank">
-                                VIEW MORE
+                                <span>V</span>
+                                <span>I</span>
+                                <span>E</span>
+                                <span>W</span>
+                                <span>&nbsp;</span>
+                                <span>M</span>
+                                <span>O</span>
+                                <span>R</span>
+                                <span>E</span>
                                 <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                             </a>
                         </div>
@@ -222,7 +238,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                     <div class="avarta-item-left">
                         <div class="slide-avr">
                             <div class="item-slide">
-                                <div class="avr"><img src="assets/images/avarta.png" alt="PARCOとちいかわのクリスマスッ!!!"></div>
+                                <div class="avr"><img src="assets/images/app_1240x1240.jpg" alt="PARCOとちいかわのクリスマスッ!!!"></div>
                             </div>
                         </div>
                     </div>
@@ -231,15 +247,23 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                             <h3>PARCOとちいかわのクリスマスッ!!!</h3>
                             <ul>
                                 <li>2023.12.8 fri ~ 2023.12.25 mon</li>
-                                <li>PARCO館 ●F ▲▲▲前</li>
+                                <li>―――</li>
                             </ul>
                             <div class="desc">
                                 池袋PARCOの「ちいかわレストラン」OPENを記念して、福岡PARCO館内の対象のレストラン・カフェでのご飲食でオリジナルコースターをプレゼント！さらに、ちいかわオリジナルポストカードが当たるSNSプレゼント企画も実施します！
                             </div>
                         </div>
-                        <div class="viewmore">
+                        <div class="viewmore wow">
                             <a href="https://parco.jp/chiikawa-christmas/" target="_blank">
-                                VIEW MORE
+                                <span>V</span>
+                                <span>I</span>
+                                <span>E</span>
+                                <span>W</span>
+                                <span>&nbsp;</span>
+                                <span>M</span>
+                                <span>O</span>
+                                <span>R</span>
+                                <span>E</span>
                                 <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                             </a>
                         </div>
@@ -261,33 +285,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                 <div class="list-popup">
                     <div class="col-popup">
                         <div class="item-popup">
-                            <div class="avarta"><img src="assets/images/cp-2.jpg" alt="mofusand もふもふストア出張所"></div>
+                            <div class="avarta"><img src="assets/images/shop_visual_wh1240px_ol.jpg" alt="mofusand もふもふストア出張所"></div>
                             <div class="info">
                               <h3>mofusand もふもふストア出張所</h3>
                               <ul>
                                 <li>2023.11.29 wed ~ 2024.1.28 sun</li>
                                 <li>本館4F 特設会場</li>
                               </ul>
-                              <div class="desc">「mofusand」のオフィシャルショップ「mofusand もふもふストア」の出張所が、福岡PARCOにて期間限定OPEN！<br>
-                              にゃんこがかわいい新商品や、もふもふストアのオリジナル商品をたくさん取り揃えました。<br>
-                              商品をご購入いただいたお客様には、オリジナルステッカーをプレゼントいたします</div>
                                 <div class="more"><a href="https://fukuoka.parco.jp/popup/detail/?id=25765" target="_blank"><img src="assets/images/arrow-right.png" alt=""></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-popup">
-                        <div class="item-popup">
-                            <div class="avarta"><img src="assets/images/pop-2.png" alt="くるりのPop-Up Shop"></div>
-                            <div class="info">
-                              <h3>タイトル記載</h3>
-                              <ul>
-                                <li>ーーーーーーー</li>
-                                <li>本館1F POP UP SPACE「GATE」</li>
-                              </ul>
-                              <div class="desc">
-                                ダミーテストダミーテストダミーテストダミーテストダミーテストダミーテスト
-                              </div>
-                                <div class="more"><a href="https://fukuoka.parco.jp/popup/detail/?id=25819" target="_blank"><img src="assets/images/arrow-right.png" alt=""></a></div>
                             </div>
                         </div>
                     </div>
@@ -300,11 +305,6 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                                 <li>2023.11.27 mon〜2023.12.10 sun</li>
                                 <li>新館3F エスカレーター横特設会場</li>
                               </ul>
-                              <div class="desc">
-                                くるりポップアップ企画「くるりのPop-Up Shop」が期間限定OPEN！<br>
-                                初代くるりロゴデザインのTシャツ、トートバック、バスタオル、マグネット＆ステッカーセット、レザーキーカバーなどの小物に加えて、QURULIロゴのロンT、初登場のパーカーやハンガー、更に昨年に引き続きタムくんがデザインをしたキーホルダー、ポーチなど、多種多様なグッズが盛りだくさん。<br>
-                                その他にも「くるりのえいが」場面写真のパネルや、ツアーで着用した衣装も展示予定となっています。
-                              </div>
                                 <div class="more"><a href="https://fukuoka.parco.jp/popup/detail/?id=25806" target="_blank"><img src="assets/images/arrow-right.png" alt=""></a></div>
                             </div>
                         </div>
@@ -321,7 +321,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
             <div class="icon-abs abs-1 srv-parlx"><img src="assets/images/b-1.png" alt=""></div>
             <div class="icon-abs abs-2 srv-parlx"><img src="assets/images/b-2.png" alt=""></div>
             <div class="title text-center">
-                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>館内BGM <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
+                <h2 class="wow wow-up" data-wow-duration="1000ms"><span>BGM <label><img src="assets/images/star-title.png" alt=""></label></span></h2>
             </div>
             <div class="content-bgm text-center">
                 <div class="sort-content">
@@ -330,9 +330,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/christmas/'; //必ずデ�
                     ワクワクでドキドキなお買い物の合間のほっと一息に耳を傾けてみてください。<br>
                     あなたのクリスマスがもっともっと楽しくなりますように。
                 </div>
-                <div class="viewmore">
+                <div class="viewmore wow">
                     <a href="https://open.spotify.com/user/31fup4kqfw22z47jbv6v3z2zjuja?si=67db260936894a42&nd=1" target="_blank">
-                        PLAY LIST
+                        <span>P</span>
+                        <span>L</span>
+                        <span>A</span>
+                        <span>Y</span>
+                        <span>&nbsp;</span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>S</span>
+                        <span>T</span>
                         <span class="icon"><img src="assets/images/arrow-right.png" alt=""></span>
                     </a>
                 </div>

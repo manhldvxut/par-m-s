@@ -9,9 +9,11 @@ $(document).ready(function(){
             var navHeight = $('.box-banner-mobile').height() - 100;
             if ($(window).scrollTop() > navHeight) {
                 $('.menu-fixed, .content-header').addClass('active');
+                $('.logo-cover').removeClass('active');
             }
             else {
                 $('.menu-fixed, .content-header').removeClass('active');
+                $('.logo-cover').addClass('active');
             }
         });
     }
@@ -75,4 +77,12 @@ $(document).ready(function(){
     $('.rv-mb').each(function(i,o){
         $(this).parallax({speed:15, index: 2, mobile: true});
     });
+
+    // click tagert
+    $('.col-popup').click(function() {
+        let linkHref = $(this).find('a').attr('href');
+        if(linkHref) {
+            window.open(linkHref);
+        }
+    })
 })

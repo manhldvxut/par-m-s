@@ -131,7 +131,7 @@ main {
     }
     label {
       opacity: 1;
-      animation: title-flicker 2.5s infinite;
+      animation: title-flicker 0.5s;
     }
   }
 }
@@ -192,6 +192,16 @@ main {
   @media (max-width: 767px) {
     margin-top: 40px;
     padding: 30px;
+  }
+
+  .info-user {
+    ul {
+      li {
+        img {
+          max-width: 32px;
+        }
+      }
+    }
   }
 }
 .content-user {
@@ -313,9 +323,20 @@ main {
       }
     }
     .rv-pc {
-      margin-bottom: -80px;
+      margin-bottom: -60px;
+      position: relative;
       @media (max-width: 1023px) {
         display: none;
+      }
+      &:after {
+        content: "";
+        width: 100%;
+        height: 50px;
+        background: #40ce7a;
+        position: absolute;
+        bottom: 82px;
+        left: 0;
+        z-index: -1;
       }
     }
     .rv-mb {
@@ -350,6 +371,7 @@ main {
   background-size: 50%;
   z-index: 12;
   @media (max-width: 767px) {
+    animation: scroll-anim 5s linear infinite;
     top: -29px;
     background-size: cover !important;
     height: 30px;
@@ -362,6 +384,7 @@ main {
   color: #fff;
   @media (max-width: 1023px) {
     padding: 30px 0 135px 0;
+    z-index: 12;
   }
   .slick-arrow {
     background: #D61D1B98;
@@ -458,7 +481,7 @@ main {
     border: 2px solid #fff;
     flex: 0 0 calc(55% - 24px);
     max-width: calc(55% - 24px);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -472,6 +495,10 @@ main {
       max-width: 100%;
       position: relative;
       margin-top: -40px;
+      font-size: 13px;
+    }
+    .info {
+      line-height: 1.75;
     }
     h3 {
       font-size: 30px;
@@ -719,6 +746,7 @@ main {
   border: 2px solid #FF4A01;
   font-size: 16px;
   overflow: hidden;
+  cursor: pointer;
   &:after {
     content: "";
     width: 100%;
@@ -727,6 +755,16 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  img {
+    transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 360ms;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.03);
+    }
   }
   h3{
     font-size: 30px;
@@ -914,6 +952,7 @@ main {
       &.active {
         opacity: 1;
         top: 0;
+        animation: 5s fuwafuwa infinite;
       }
     }
     &.icon-3 {
@@ -923,6 +962,7 @@ main {
       &.active {
         opacity: 1;
         top: 0;
+        animation: 5s fuwafuwa infinite;
       }
     }
     &.icon-4 {
@@ -932,6 +972,7 @@ main {
       &.active {
         opacity: 1;
         top: 0;
+        animation: 5s fuwafuwa infinite;
       }
     }
   }
@@ -1061,6 +1102,7 @@ main {
     &.active {
       margin-top: 0;
       opacity: 1;
+      animation: 5s fuwafuwa infinite;
     }
   }
   .cover-3 {
@@ -1074,6 +1116,7 @@ main {
     &.active {
       margin-top: 0;
       opacity: 1;
+      animation: 5s fuwafuwa infinite;
     }
   }
   .logo-cover {
@@ -1084,9 +1127,10 @@ main {
     z-index: 2;
     transition: 1s all !important;
     opacity: 0;
+    animation: 5s fuwafuwa infinite;
     &.active {
       opacity: 1;
-      top: -10px;
+      top: 7px;
     }
   }
   .icon-cover {
@@ -1096,5 +1140,111 @@ main {
   }
   .cover-abs {
     position: absolute;
+  }
+}
+
+// view more
+.viewmore a span {
+  opacity: 0;
+}
+.viewmore.animated a span {
+    transform: translateY(2em);
+    animation: textanimation 1s forwards;
+}
+/* 1文字目 */
+.viewmore.animated a span:nth-child(1) {
+    animation-delay: 0.2s;
+    
+}
+/* 2文字目 */
+.viewmore.animated a span:nth-child(2) {
+    animation-delay: 0.4s;
+    
+}
+/* 3文字目 */
+.viewmore.animated a span:nth-child(3) {
+    animation-delay: 0.6s;
+    
+}
+/* 4文字目 */
+.viewmore.animated a span:nth-child(4) {
+    animation-delay: 0.8s;
+    
+}
+/* 5文字目 */
+.viewmore.animated a span:nth-child(5) {
+    animation-delay: 1s;
+    
+}
+/* 6文字目 */
+.viewmore.animated a span:nth-child(6) {
+    animation-delay: 1.2s;
+    
+}
+/* 7文字目 */
+.viewmore.animated a span:nth-child(7) {
+    animation-delay: 1.4s;
+    
+}
+/* 8文字目 */
+.viewmore.animated a span:nth-child(8) {
+    animation-delay: 1.6s;
+    
+}
+/* 9文字目 */
+.viewmore.animated a span:nth-child(9) {
+    animation-delay: 1.8s;
+    
+}
+/* 10文字目 */
+.viewmore.animated a span:nth-child(10) {
+    animation-delay: 2s;
+
+}
+/* 11文字目 */
+.viewmore.animated a span:nth-child(11) {
+    animation-delay: 2.2s;
+    
+}
+/* 12文字目 */
+.viewmore.animated a span:nth-child(12) {
+    animation-delay: 2.4s;
+    
+}
+
+
+@keyframes textanimation {
+    0% {
+        //transform: translateY(2em);
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    100% {
+        //transform: translateY(0);
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+
+@keyframes fuwafuwa {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  @keyframes fuwafuwa {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }
