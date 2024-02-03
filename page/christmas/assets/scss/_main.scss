@@ -64,6 +64,10 @@ main {
 
 .title {
   margin-bottom: 78px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   @media (max-width: 1023px) {
     margin-bottom: 38px;
   }
@@ -72,6 +76,9 @@ main {
     font-size: 84px;
     font-weight: 600;
     line-height: 0.84;
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
     @media (max-width: 1023px) {
       font-size: 64px;
     }
@@ -79,29 +86,26 @@ main {
       position: relative;
       display: inline-flex;
       padding-bottom: 10px;
-      &:after {
-        content: "";
-        width: calc(100% + 42px);
-        height: 1px;
-        transition: .6s all !important;
-        position: absolute;
-        bottom: 0;
-        animation-delay: 0.4s !important;
-        opacity: 0;
-        @media (max-width: 767px) {
-          width: calc(100% + 20px);
-        }
+      transition: .5s ease-in !important;
+      opacity: 0;
+      top: 50px;
+      &.animated {
+        top: 0;
+        opacity: 1;
       }
     }
     label {
       position: absolute;
-      bottom: -31px;
-      right: -75px;
-      animation-delay: 1s !important;
+      bottom: -24px;
+      right: -68px;
       opacity: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
       @media (max-width: 767px) {
-        bottom: -23px;
-        right: -44px;
+        bottom: -17px;
+        right: -43px;
       }
       img {
         @media (max-width: 767px) {
@@ -109,8 +113,44 @@ main {
         }
       }
     }
+    &.animated {
+      span {
+        top: 0;
+        opacity: 1;
+      }
+      label {
+        animation: title-flicker 2.5s infinite;
+      }
+      .line {
+        animation-delay: 10s;
+        animation: title_line 1s;
+        width: calc(100% + 36px);
+
+      }
+    }
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 36px);
+    height: 1px;
+    background: #fff;
+    @media (max-width: 767px) {
+      width: calc(100% + 20px);
+    }
   }
 }
+
+@keyframes title_line {
+  0% {
+    width: 0px;
+  }
+  90% {
+    width: calc(100% + 36px);
+  }
+}
+
 .wow-up {
   position: relative;
   transition: .5s ease-in !important;
@@ -659,6 +699,9 @@ main {
       &:after {
         background: #FF4A01;
       }
+    }
+    .line {
+      background: #FF4A01;
     }
   }
   .top-bg {
