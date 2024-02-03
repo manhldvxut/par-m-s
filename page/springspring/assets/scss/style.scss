@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+/* =========================================================
+styles-config
+========================================================= */
+
+
+$letter-spacing: 0.02em;
+
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+
+$black: #373332;
+$white: #ffffff;
+$gray: #707070;
+$bg-color: #FFE3F8;
+$light-green: #BBE0E0;
+$pink: #F491AE;
+$main-color: #504545;
+
+$notosan-font: 'Noto Sans JP', sans-serif;
+
+@mixin eng_font ($weight: 300){
+  font-family: "ivypresto-headline", serif;
+  font-weight: $weight;
+  font-style: italic;
+}
+
+/* =========================================================
+function
+========================================================= */
+// line-height計算
+@function lh($size, $line-height) {
+  $lh: $line-height / $size;
+  @return $lh;
+}
+
+// letter-spacing計算
+@function ls($letter_spacing) {
+	@return $letter_spacing / 10000 * 1em;
+}
+
+// clamp計算
+@function clp($min, $widthMin, $widthMax, $max) {
+  $preferred_vw_base: (($max - $min) / ($widthMax - $widthMin));
+  $preferred_vw: ($preferred_vw_base * 100) * 1vw;
+  $preferred_rem: ($widthMin * -1 * $preferred_vw_base + $min) * 1px;
+  @return clamp($min * 1px, unquote( 'calc(#{$preferred_rem} + #{$preferred_vw})'), $max * 1px);
+}
+
+// Sassのmin()関数
+@function _min($numbers...) {
+  @return min($numbers...);
+}
+// CSSのmin()関数
+@function min($values...) {
+  @return unquote('min(#{$values})');
+}
+
+/* =========================================================
+media query
+========================================================= */
+$breakpoint: (
+  sp: 768px,
+  pc: 769px
+);
+
+@mixin mq($breakpoint-name) {
+  @if $breakpoint-name == sp {
+    @media screen and (max-width: map-get($breakpoint, sp)) {
+      @content;
+    }
+  } @else if $breakpoint-name == pc {
+    @media screen and (min-width: map-get($breakpoint, pc)) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $breakpoint-name) {
+      @content;
+    }
+  }
+}
+
+
+
+
+
+/* =========================================================
+body
+========================================================= */
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  letter-spacing: 0.03em;
+  line-height: 1.5rem;
+}
+body {
+  color: $main-color;
+  font-family: $notosan-font;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+img {
+  width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  transition: .5s;
+  &:hover{
+    opacity: 0.6;
+    transition: .5s;
+  }
+}
+
+@media print {
+  html, body {
+    _zoom: 70%!important;
+  }
+}
+
+main {
+  display: block; /*IE*/
+}
+
+@mixin font-cooper {  
+  font-family: copperplate, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* =========================================================
+default
+========================================================= */
+@import "_default";
+/* =========================================================
+layout
+========================================================= */
+@import "_layout";
+
+/* =========================================================
+slick
+========================================================= */
+@import "_slick";
+@import "_slick-theme";
