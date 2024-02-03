@@ -2456,20 +2456,22 @@ layout
 
 .new-open .title {
   font-weight: 300;
+  margin-bottom: 60px;
   text-align: left;
 }
 
 .new-open__content {
   max-width: 1036px;
-  padding: 30px 40px;
-  margin: auto;
-  background: #F8F5F5;
+  margin: 80px auto 0;
 }
 
 .new-open__column {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  background: #F8F5F5;
+  padding: 30px 40px 50px;
+  margin-bottom: 20px;
 }
 
 .new-open__item-left {
@@ -2483,7 +2485,74 @@ layout
 
 .new-open__item-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.new-open__item-header-time {
+  font-size: 2.5rem;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+.new-open__item-header-floor {
+  font-size: 1.8rem;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  letter-spacing: 0.72px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.new-open__item-header-name {
+  font-size: 2.4rem;
+  letter-spacing: 0.96px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.new-open__item-header-logo {
+  margin-left: 10px;
+  max-width: 125px;
+}
+
+.new-open__item-desc {
+  margin-bottom: 40px;
+}
+
+.new-open__item-desc.content-text {
+  padding-left: 0;
+}
+
+.new-open__link {
+  display: flex;
+  justify-content: center;
+}
+
+.new-open__link .btn-arrow {
+  background: #FEAB8F;
+}
+
+.visual__slick-item {
+  transition: all .3s ease-in-out;
+  opacity: .65;
+  transition-duration: 1s, .4s;
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1), linear;
+  cursor: pointer;
+  position: relative;
+}
+
+.visual__slick-item.slick-active, .visual__slick-item.is-active-next {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  transition: .3s ease-in-out;
+  transition-duration: 1s, .4s;
+  transition-property: transform, opacity;
 }
 
 .btn-arrow {
@@ -2651,8 +2720,8 @@ slick
 .slick-dots li {
   position: relative;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
   margin: 0 3px;
   padding: 0;
   cursor: pointer;
@@ -2660,16 +2729,18 @@ slick
 
 .slick-dots li button {
   border: 0;
-  background: transparent;
+  background: #A5A5A5;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
   outline: none;
   line-height: 0px;
   font-size: 0px;
   color: transparent;
   padding: 5px;
   cursor: pointer;
+  border: none;
+  border-radius: 100%;
 }
 
 .slick-dots li button:hover, .slick-dots li button:focus {
@@ -2680,25 +2751,17 @@ slick
   opacity: 1.0;
 }
 
-.slick-dots li button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
-  font-family: "slick";
-  font-size: 30px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFF100;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  padding: 4px;
+  border: 1px solid #A5A5A5;
+  background: unset;
+  opacity: 1;
 }
 
-.slick-dots li.slick-active button:before {
-  color: #56C800;
-  opacity: 1;
+.slick-arrow {
+  display: none !important;
 }
 
 /*# sourceMappingURL=map/style.css.map */

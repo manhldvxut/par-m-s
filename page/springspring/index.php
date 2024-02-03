@@ -653,7 +653,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__item-desc">
+                            <div class="new-open__item-desc content-text">
                                 <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
                             </div>
                             <div class="new-open__link">
@@ -695,7 +695,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__item-desc">
+                            <div class="new-open__item-desc content-text">
                                 <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
                             </div>
                             <div class="new-open__link">
@@ -737,7 +737,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__item-desc">
+                            <div class="new-open__item-desc content-text">
                                 <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
                             </div>
                             <div class="new-open__link">
@@ -779,7 +779,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__item-desc">
+                            <div class="new-open__item-desc content-text">
                                 <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
                             </div>
                             <div class="new-open__link">
@@ -788,6 +788,27 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="visual">
+            <div class="visual__content">
+                <div class="visual__slick">
+                    <div class="visual__slick-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_01.png" alt="">
+                    </div>
+                    <div class="visual__slick-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_02.png" alt="">
+                    </div>
+                    <div class="visual__slick-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_03.png" alt="">
+                    </div>
+                    <div class="visual__slick-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_04.png" alt="">
+                    </div>
+                    <div class="visual__slick-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_05.png" alt="">
                     </div>
                 </div>
             </div>
@@ -807,9 +828,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/footer.php'; ?>
 
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/js.php'; ?>
-
-    <script src="/<?php echo DIRNAME; ?>/assets/js/lib/slick.min.js"></script>
-    <script src="/<?php echo DIRNAME; ?>/assets/js/shop-list.js"></script>
     <!-- /Javascript -->
 </body>
 
