@@ -1608,6 +1608,8 @@ $color-mv: #F2A1B0;
     }
   }
   &__img {
+    max-width: 21.67vw;
+    margin: auto;
     @media (max-width: 1023px) {
       text-align: center;
       margin-top: 40px;
@@ -1881,7 +1883,8 @@ $color-mv: #F2A1B0;
     }
 
     > div {
-      display: inline-block;
+      display: block;
+      width: fit-content;
       position: relative;
 
       &:before {
@@ -1995,7 +1998,7 @@ $color-mv: #F2A1B0;
       background: url('../images/bg_parts_03.png') no-repeat;
       background-size: 100% 100%;
       right: -3%;
-      top: -80%;
+      top: -60%;
       @media (max-width: 1023px) {
         width: 30%;
         height: 100%;
@@ -2025,6 +2028,11 @@ $color-mv: #F2A1B0;
       margin-bottom: 15px;
       padding-left: 16px;
       padding-right: 16px;
+
+      img {
+        height: 306px;
+        object-fit: contain;
+      }
     }
 
     &-item {
@@ -2134,7 +2142,7 @@ $color-mv: #F2A1B0;
       height: 138px;
       background: url('../images/bg_parts_09.png') no-repeat;
       background-size: 100% 100%;
-      right: 0;
+      right: 4.5%;
       top: -140px;
     }
 
@@ -2145,7 +2153,7 @@ $color-mv: #F2A1B0;
       height: 486px;
       background: url('../images/bg_parts_04.png') no-repeat;
       background-size: 100% 100%;
-      left: -140px;
+      left: -60px;
       bottom: 0;
       top: 0;
       margin: auto;
