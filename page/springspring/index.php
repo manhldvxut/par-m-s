@@ -855,7 +855,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                     <div class="col-md-14">
                         <h2 class="title">NEW OPEN</h2>
                         <div class="new-open__text content-text">
-                            <p>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                            <p>春のNEW SHOPが続々オープン！</p>
                         </div>
                         <div class="new-open__content">
                             <div class="new-open__column">
@@ -863,10 +863,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="new-open__item-slick">
                                         <div class="new-open__item-slick-item">
                                             <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="ダミータイトル">
                                             </div>
                                         </div>
                                     </div>
@@ -875,26 +872,26 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="new-open__item-header">
                                         <div class="new-open__item-header-left">
                                             <div class="new-open__item-header-time">
-                                                2/17 Sat.
+                                                2/26/2024
                                             </div>
                                             <div class="new-open__item-header-floor">
-                                                1F
+                                                本館B1F・Karend
                                             </div>
                                             <div class="new-open__item-header-name">
-                                                カレンド
+                                                ダミータイトル
                                             </div>
                                         </div>
                                         <div class="new-open__item-header-right">
                                             <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                                        <p>花と緑を通じてドキドキワクワクを届けるフラワーショップ。カラフルな生花や石けんのお花、チョコレートのお花など様々なアイテムを取り扱っています。</p>
                                     </div>
                                     <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
+                                        <a href="https://fukuoka.parco.jp/pnews/detail/?id=26432" target="_blank" class="btn-arrow">
                                             CHECK
                                         </a>
                                     </div>
@@ -905,10 +902,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="new-open__item-slick">
                                         <div class="new-open__item-slick-item">
                                             <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -917,26 +911,26 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="new-open__item-header">
                                         <div class="new-open__item-header-left">
                                             <div class="new-open__item-header-time">
-                                                2/17 Sat.
+                                                2/9/2024
                                             </div>
                                             <div class="new-open__item-header-floor">
-                                                1F
+                                                本館2F・CARA FUKUOKA
                                             </div>
                                             <div class="new-open__item-header-name">
-                                                カレンド
+                                                ダミータイトル
                                             </div>
                                         </div>
                                         <div class="new-open__item-header-right">
                                             <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                                        <p>知識豊富なバイヤーが厳選して買い付けたヴィンテージのバッグや財布、アクセサリーなどの1点物アイテムをお手頃価格でお買い求めいただけます。</p>
                                     </div>
                                     <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
+                                        <a href=" https://fukuoka.parco.jp/pnews/detail/?id=26716" target="_blank" class="btn-arrow">
                                             CHECK
                                         </a>
                                     </div>
@@ -947,10 +941,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="new-open__item-slick">
                                         <div class="new-open__item-slick-item">
                                             <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -959,26 +950,26 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="new-open__item-header">
                                         <div class="new-open__item-header-left">
                                             <div class="new-open__item-header-time">
-                                                2/17 Sat.
+                                                3/17/2024
                                             </div>
                                             <div class="new-open__item-header-floor">
-                                                1F
+                                                本館3F・KEBOZ
                                             </div>
                                             <div class="new-open__item-header-name">
-                                                カレンド
+                                                ダミータイトル
                                             </div>
                                         </div>
                                         <div class="new-open__item-header-right">
                                             <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                                        <p>「着たい服を作る」をコンセプトに、ストリート・ファッション好き、野球好きに絶大な支持を集めるブランド。プロ野球球団とのコラボレーションなど野球を軸に様々なプロダクトを展開。</p>
                                     </div>
                                     <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
+                                        <a href="https://fukuoka.parco.jp/pnews/detail/?id=26887" target="_blank" class="btn-arrow">
                                             CHECK
                                         </a>
                                     </div>
