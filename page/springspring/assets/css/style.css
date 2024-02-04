@@ -1958,6 +1958,23 @@ layout
   }
 }
 
+@keyframes backgroundEffect {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+[animation="true"] .title:after {
+  transition: 0.5s all;
+  background-position: left center;
+}
+
 .container {
   max-width: 1215px;
   margin: auto;
@@ -1985,8 +2002,27 @@ layout
   letter-spacing: 0;
   color: #E46B70;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  display: block;
+  display: inline-block;
   text-align: center;
+  position: relative;
+  transition: 3s all;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 50%, #fff 50%) right bottom/200% 100%;
+  z-index: 4;
+  transition: 3s all;
+}
+
+.title span {
+  position: relative;
+  z-index: 2;
 }
 
 .main-mv {
@@ -2100,6 +2136,11 @@ layout
   font-weight: 300;
 }
 
+.event__header {
+  display: block;
+  text-align: center;
+}
+
 .event__container {
   max-width: 1215px;
   margin: auto;
@@ -2113,6 +2154,12 @@ layout
   box-sizing: border-box;
   margin: 0 -32px 260px;
   position: relative;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.event__column[animation="true"] {
+  opacity: 1;
 }
 
 .event__column:last-child {
@@ -2145,6 +2192,11 @@ layout
   top: -160px;
 }
 
+.event__column.box01[animation="true"] .event__title span:before {
+  transition: 0.5s all;
+  background-position: left center;
+}
+
 .event__column.box02:before {
   width: 370px;
   height: 477px;
@@ -2167,8 +2219,13 @@ layout
   bottom: -95px;
 }
 
-.event__column.box02 .event__title span {
-  background: #E88D8D;
+.event__column.box02[animation="true"] .event__title span:before {
+  transition: 0.5s all;
+  background-position: left center;
+}
+
+.event__column.box02 .event__title span:before {
+  background: linear-gradient(to right, #E88D8D 50%, transparent 50%) right bottom/200% 100%;
 }
 
 .event__column.box03:before {
@@ -2182,8 +2239,13 @@ layout
   top: -285px;
 }
 
-.event__column.box03 .event__title span {
-  background: #98C78A;
+.event__column.box03[animation="true"] .event__title span:before {
+  transition: 0.5s all;
+  background-position: left center;
+}
+
+.event__column.box03 .event__title span:before {
+  background: linear-gradient(to right, #98C78A 50%, transparent 50%) right bottom/200% 100%;
 }
 
 .event__item {
@@ -2203,8 +2265,22 @@ layout
   font-size: 2.6rem;
   color: #fff;
   padding: 12.5px 14px;
-  background: #E68BC7;
   margin-bottom: 4px;
+  position: relative;
+  transition: 0.5s all;
+}
+
+.event__title span:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #E68BC7 50%, transparent 50%) right bottom/200% 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  z-index: -1;
 }
 
 .event__title span:last-child {
@@ -2240,8 +2316,37 @@ layout
   margin-bottom: 38px;
 }
 
+/*base code*/
+@keyframes flipInY {
+  0% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  100% {
+    transform: perspective(400px);
+  }
+}
+
 .present {
   padding-top: 110px;
+  opacity: 0;
+  transition: .3s all;
+}
+
+.present[animation="true"] {
+  opacity: 1;
 }
 
 .present__container {
@@ -2295,10 +2400,27 @@ layout
   border-right: 1px solid #A5A5A5;
   border-bottom: 1px solid #A5A5A5;
   background: #F8F5F5;
+  opacity: 0;
+  transition: .3s all;
 }
 
 .present__ins-item:last-child {
   border-right: none;
+}
+
+@media (min-width: 769px) {
+  .present__ins-item:hover {
+    background: url("../images/present-hover-on.svg") no-repeat;
+    background-size: 100%;
+    transition: .3s all;
+  }
+}
+
+.present__ins-item[animation="true"] {
+  opacity: 1;
+  animation-name: flipInY;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 .present__ins-item-box {
@@ -2343,6 +2465,12 @@ layout
   padding-top: 100px;
   padding-bottom: 20px;
   background: #F7F7F7;
+  opacity: 0;
+}
+
+.shop-event[animation="true"] {
+  opacity: 1;
+  transition: .3s all;
 }
 
 .shop-event__container {
@@ -2404,12 +2532,33 @@ layout
   padding-right: 20px;
   position: relative;
   margin-bottom: 67px;
+  opacity: 0;
+  transition: .3s all;
 }
 
-.shop-event__item-box {
+.shop-event__item[animation="true"] {
+  opacity: 1;
+}
+
+.shop-event__item-body {
+  min-height: 515px;
   box-shadow: 3px 3px 10px #0000000D;
   background: #fff;
   border-radius: 0 0 15px 15px;
+}
+
+.shop-event__item-box {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  .shop-event__item-box:hover .shop-event__item-front-hover, .shop-event__item-box.active .shop-event__item-front-hover {
+    transform: rotateY(-180deg);
+  }
+  .shop-event__item-box:hover .shop-event__item-back-hover, .shop-event__item-box.active .shop-event__item-back-hover {
+    transform: rotateY(0deg);
+  }
 }
 
 .shop-event__item-title {
@@ -2486,8 +2635,28 @@ layout
   max-width: 20px;
 }
 
+.shop-event__item-back-hover {
+  transform: rotateY(180deg);
+}
+
+.shop-event__item .hover-3D {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-size: cover;
+  background-position: center center;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
 .shop-event__content {
   padding: 20px 20px 30px;
+  background: #fff;
+  margin-top: -1px;
 }
 
 .new-open {
@@ -2578,6 +2747,15 @@ layout
   background: #FEAB8F;
 }
 
+.new-open__link .btn-arrow:hover {
+  color: #FEAB8F;
+  background: #fff;
+}
+
+.new-open__link .btn-arrow:hover:before {
+  background: url("../images/arrow-button-green.svg") no-repeat;
+}
+
 .visual__slick-item {
   transition: all .3s ease-in-out;
   opacity: .65;
@@ -2622,6 +2800,16 @@ layout
   bottom: 0;
   margin: auto;
   letter-spacing: 0;
+}
+
+.btn-arrow:hover {
+  opacity: 0.8;
+  background: #fff;
+  color: #E68BC7;
+}
+
+.btn-arrow:hover:before {
+  background: url("../images/arrow-button-pink.svg") no-repeat;
 }
 
 /* =========================================================

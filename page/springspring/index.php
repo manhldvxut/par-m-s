@@ -102,9 +102,13 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
 
         <section class="event">
-            <h2 class="title">EVENT</h2>
+            <div class="event__header">
+                <h2 class="title">
+                    <span>EVENT</span>
+                </h2>
+            </div>
             <div class="event__container">
-                <div class="event__column box01">
+                <div class="event__column box01 animation-js">
                     <div class="event__item">
                         <div class="event__item-img">
                             <picture>
@@ -134,7 +138,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                         </div>
                     </div>
                 </div>
-                <div class="event__column box02">
+                <div class="event__column box02 animation-js">
                     <div class="event__item">
                         <div class="event__item-img">
                             <picture>
@@ -158,7 +162,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                         </div>
                     </div>
                 </div>
-                <div class="event__column box03">
+                <div class="event__column box03 animation-js">
                     <div class="event__item">
                         <div class="event__item-img">
                             <picture>
@@ -186,7 +190,9 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
         <section class="present">
             <div class="present__container container">
-                <h2 class="title">PRESENT</h2>
+                <h2 class="title">
+                    <span>PRESENT</span>
+                </h2>
                 <div class="present__text content-text">
                     <p>福岡PARCO館内にて10,000円(税込・当日中合算可)以上お買い上げのレシートを提示いただくと、各日先着100名様に福岡をはじめとした全国の人気スイーツをプレゼント！ <br>会期：2/17（土）2/18（日）3/9（土）3/10（日）<br>引換会場：新館4F特設会場<br>※お買い上げ当日中のレシートが対象になります。</p>
                 </div>
@@ -194,7 +200,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
             <div class="present__ins">
                 <div class="present__ins-container">
                     <div class="present__ins-column">
-                        <div class="present__ins-item">
+                        <div class="present__ins-item animation-js">
                             <div class="present__ins-item-box">
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
@@ -218,7 +224,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                         </div>
-                        <div class="present__ins-item">
+                        <div class="present__ins-item animation-js">
                             <div class="present__ins-item-box">
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
@@ -242,7 +248,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                         </div>
-                        <div class="present__ins-item">
+                        <div class="present__ins-item animation-js">
                             <div class="present__ins-item-box">
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
@@ -266,7 +272,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                         </div>
-                        <div class="present__ins-item">
+                        <div class="present__ins-item animation-js">
                             <div class="present__ins-item-box">
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
@@ -296,29 +302,50 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
         <section class="shop-event">
             <div class="shop-event__container container">
-                <h2 class="title">SHOP EVENT</h2>
+                <h2 class="title">
+                    <span>SHOP EVENT</span>
+                </h2>
                 <div class="shop-event__text content-text">
                     <p>テキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                 </div>
                 <div class="shop-event__column">
-                    <div class="shop-event__item">
-                        <div class="shop-event__item-box">
-                            <div class="shop-event__item-thumb">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                </picture>
-                            </div>
-                            <div class="shop-event__content">
-                                <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
-                                <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
-                                <div class="shop-event__item-footer">
-                                    <div class="shop-event__item-logo">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                    <div class="shop-event__item animation-js">
+                        <div class="shop-event__item-body">
+                            <div class="shop-event__item-box">
+                                <div class="shop-event__item-front-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
                                     </div>
-                                    <div class="shop-event__item-front">
-                                        <div class="shop-event__item-floor">1F</div>
-                                        <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-event__item-back-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -363,34 +390,53 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="shop-event__item">
-                        <div class="shop-event__item-box">
-                            <div class="shop-event__item-thumb">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                </picture>
-                            </div>
-                            <div class="shop-event__content">
-                                <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
-                                <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
-                                <div class="shop-event__item-footer">
-                                    <div class="shop-event__item-logo">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                    <div class="shop-event__item animation-js">
+                        <div class="shop-event__item-body">
+                            <div class="shop-event__item-box">
+                                <div class="shop-event__item-front-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
                                     </div>
-                                    <div class="shop-event__item-front">
-                                        <div class="shop-event__item-floor">1F</div>
-                                        <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-event__item-back-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button data-modal="modal-2">
+                                <button data-modal="modal-1">
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal modal-2">
+                        <div class="modal-block js-modal modal-1">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -425,34 +471,53 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="shop-event__item">
-                        <div class="shop-event__item-box">
-                            <div class="shop-event__item-thumb">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                </picture>
-                            </div>
-                            <div class="shop-event__content">
-                                <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
-                                <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
-                                <div class="shop-event__item-footer">
-                                    <div class="shop-event__item-logo">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                    <div class="shop-event__item animation-js">
+                        <div class="shop-event__item-body">
+                            <div class="shop-event__item-box">
+                                <div class="shop-event__item-front-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
                                     </div>
-                                    <div class="shop-event__item-front">
-                                        <div class="shop-event__item-floor">1F</div>
-                                        <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-event__item-back-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button>
+                                <button data-modal="modal-1">
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal">
+                        <div class="modal-block js-modal modal-1">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -487,34 +552,53 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="shop-event__item">
-                        <div class="shop-event__item-box">
-                            <div class="shop-event__item-thumb">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                </picture>
-                            </div>
-                            <div class="shop-event__content">
-                                <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
-                                <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
-                                <div class="shop-event__item-footer">
-                                    <div class="shop-event__item-logo">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                    <div class="shop-event__item animation-js">
+                        <div class="shop-event__item-body">
+                            <div class="shop-event__item-box">
+                                <div class="shop-event__item-front-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
                                     </div>
-                                    <div class="shop-event__item-front">
-                                        <div class="shop-event__item-floor">1F</div>
-                                        <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-event__item-back-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button>
+                                <button data-modal="modal-1">
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal">
+                        <div class="modal-block js-modal modal-1">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -549,34 +633,53 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="shop-event__item">
-                        <div class="shop-event__item-box">
-                            <div class="shop-event__item-thumb">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                </picture>
-                            </div>
-                            <div class="shop-event__content">
-                                <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
-                                <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
-                                <div class="shop-event__item-footer">
-                                    <div class="shop-event__item-logo">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                    <div class="shop-event__item animation-js">
+                        <div class="shop-event__item-body">
+                            <div class="shop-event__item-box">
+                                <div class="shop-event__item-front-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
                                     </div>
-                                    <div class="shop-event__item-front">
-                                        <div class="shop-event__item-floor">1F</div>
-                                        <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-event__item-back-hover hover-3D">
+                                    <div class="shop-event__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="shop-event__content">
+                                        <div class="shop-event__item-title">テキストが入りますテキストが入りますテキストが入ります。</div>
+                                        <div class="shop-event__item-time">2024.3.14〜2024.3.14</div>
+                                        <div class="shop-event__item-footer">
+                                            <div class="shop-event__item-logo">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="spring">
+                                            </div>
+                                            <div class="shop-event__item-front">
+                                                <div class="shop-event__item-floor">1F</div>
+                                                <div class="shop-event__item-name">テナント名テナント名テナント名</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button>
+                                <button data-modal="modal-1">
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal">
+                        <div class="modal-block js-modal modal-1">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -616,7 +719,9 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
         <section class="new-open">
             <div class="new-open__container container">
-                <h2 class="title">NEW OPEN</h2>
+                <h2 class="title">
+                    <span>NEW OPEN</span>
+                </h2>
                 <div class="new-open__text content-text">
                     <p>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                 </div>
