@@ -17,6 +17,24 @@ $(function () {
       $('.main-mv__main').addClass('animation-active')
     }, 2000);
   }
+
+  // hover active
+  $('.shop-event__item').each(function() {
+    let shopItemEventBox = $(this).find('.shop-event__item-box');
+    let buttonHover = $(this).find('.shop-event__item-btn')
+    if(shopItemEventBox) {
+      $(buttonHover).hover(
+        function() {
+            $(shopItemEventBox).addClass('active');
+        }, function() {
+            if(!$(shopItemEventBox).hasClass('clicked') ){
+                $(shopItemEventBox ).removeClass('active');
+            }
+        }
+    );
+    }
+  })
+  
 });
 
 
@@ -34,7 +52,7 @@ function scrollAddClass(){
     $('.header').removeClass('active');
   }
 
-  $('.main-contents section').each(function() {
+  $('.main-contents section, .animation-js').each(function() {
     let elemPos = $(this).offset().top;
     let scroll = $(window).scrollTop();
     let windowHeight = $(window).height();
