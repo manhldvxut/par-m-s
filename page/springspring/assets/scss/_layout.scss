@@ -2257,11 +2257,22 @@ $color-mv: #F2A1B0;
     &-logo {
       width: 74px;
       margin-right: 20px;
+      @media (max-width: 1023px) {
+        border: 1px solid #707070;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px auto;
+      }
     }
 
     &-footer {
       display: flex;
       box-sizing: border-box;
+      @media (max-width: 1023px) {
+        display: block;
+      }
 
     }
 
@@ -2269,6 +2280,11 @@ $color-mv: #F2A1B0;
       width: calc(100% - 94px);
       position: relative;
       z-index: 3;
+      @media (max-width: 1023px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
     }
 
     &-floor {
@@ -2277,6 +2293,9 @@ $color-mv: #F2A1B0;
       line-height: 23px;
       font-family: 'IBM Plex Sans Condensed', sans-serif;
       margin-bottom: 6px;
+      @media (max-width: 1023px) {
+        margin: 0 10px 0 0;
+      }
     }
 
     &-name {
@@ -2302,7 +2321,7 @@ $color-mv: #F2A1B0;
         height: 74px;
         background: #fff;
         border-radius: 100%;
-        box-shadow: 3px 3px 10px #0000000D;
+        //box-shadow: 3px 3px 10px #0000000D;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2340,7 +2359,7 @@ $color-mv: #F2A1B0;
   }
 
   &__content {
-    padding: 20px 20px 30px;
+    padding: 20px 20px 40px 20px;
     background: #fff;
     margin-top: -1px;
   }
