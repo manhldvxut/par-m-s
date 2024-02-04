@@ -164,7 +164,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
 
 
                 </div>
-                <div class="event__column box02">
+                <div class="event__column box02 animation-js">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="event__item">
@@ -179,7 +179,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                                 <div class="event__item-img">
                                     <picture>
-<!--                                        <source media="(max-width: 768px)" srcset="/--><?php //echo DIRNAME; ?><!--/assets/images/mv-sp.gif">-->
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
                                     </picture>
                                 </div>
@@ -205,7 +204,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                         </div>
                     </div>
                 </div>
-                <div class="event__column box03">
+                <div class="event__column box03 animation-js">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="event__item">
@@ -220,7 +219,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                                 <div class="event__item-img">
                                     <picture>
-<!--                                        <source media="(max-width: 768px)" srcset="/--><?php //echo DIRNAME; ?><!--/assets/images/mv-sp.gif">-->
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
                                     </picture>
                                 </div>
@@ -265,7 +263,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
                                     <picture>
-<!--                                        <source media="(max-width: 768px)" srcset="/--><?php //echo DIRNAME; ?><!--/assets/images/mv-sp.gif">-->
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/sample01.png" class="" alt="spring">
                                     </picture>
                                 </div>
@@ -289,7 +286,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
                                     <picture>
-<!--                                        <source media="(max-width: 768px)" srcset="/--><?php //echo DIRNAME; ?><!--/assets/images/mv-sp.gif">-->
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/sample01.png" class="" alt="spring">
                                     </picture>
                                 </div>
@@ -313,7 +309,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="present__ins-time">2/17 Sat.</div>
                                 <div class="present__ins-thumb">
                                     <picture>
-<!--                                        <source media="(max-width: 768px)" srcset="/--><?php //echo DIRNAME; ?><!--/assets/images/mv-sp.gif">-->
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/sample01.png" class="" alt="spring">
                                     </picture>
                                 </div>
