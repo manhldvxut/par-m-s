@@ -1883,7 +1883,8 @@ $color-mv: #F2A1B0;
     }
 
     > div {
-      display: inline-block;
+      display: block;
+      width: fit-content;
       position: relative;
 
       &:before {
@@ -2027,6 +2028,11 @@ $color-mv: #F2A1B0;
       margin-bottom: 15px;
       padding-left: 16px;
       padding-right: 16px;
+
+      img {
+        height: 306px;
+        object-fit: contain;
+      }
     }
 
     &-item {

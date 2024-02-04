@@ -2542,7 +2542,9 @@ layout
 }
 
 .event__info > div {
-  display: inline-block;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
 }
 
@@ -2691,6 +2693,12 @@ layout
   margin-bottom: 15px;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.present__ins-thumb img {
+  height: 306px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .present__ins-item {
