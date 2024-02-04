@@ -161,10 +161,12 @@ PARCO Header
 PARCO Footer
 ========================================================= */
 .pft{
+  margin-top: 52px;
   padding: 45px 0 58px;
   background: #222;
   position: relative;
   @media screen and (min-width:769px){
+    margin-top: 70px;
     padding: 50px 0 40px;
   }
   &__in {

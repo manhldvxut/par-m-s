@@ -52,7 +52,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
      * Header
      */
     ?>
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/header.php'; ?>
+        <?php // include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/header.php'; ?>
     
     <?php
     /**
@@ -85,23 +85,17 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
             </div>
         </section>
         <section class="rido">
-            <div class="container">
-                <div class="rido__column pl-1 pr-1">
-                    <div class="row">
-                        <div class="col-md-10">
-                            <div class="rido__text">
-                                <p class="content-text">リードテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                                <p class="content-text">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 pr-1">
-                            <div class="rido__img">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/rido-sping-logo.svg" class="" alt="spring">
-                                </picture>
-                            </div>
-                        </div>
+            <div class="rido__container">
+                <div class="rido__column">
+                    <div class="rido__text">
+                        <p class="content-text">リードテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br> うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                        <p class="content-text">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                    </div>
+                    <div class="rido__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/rido-sping-logo.svg" class="" alt="spring">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -109,99 +103,81 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
 
         <section class="event">
             <h2 class="title">EVENT</h2>
-            <div class="container">
+            <div class="event__container">
                 <div class="event__column box01">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="event__item">
-                                <div class="event__item-img">
-                                    <picture>
-                                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
-                                    </picture>
-                                </div>
-                            </div>
+                    <div class="event__item">
+                        <div class="event__item-img">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
+                                <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
+                            </picture>
                         </div>
-                        <div class="col-md-8">
-                            <div class="event__item">
-                                <div class="event__item-text">
-                                    <h3 class="event__title">
-                                        <span>観覧無料！</span>
-                                        <span>春コスメ「SPECIAL TALKSHOW」</span>
-                                    </h3>
-                                    <div class="event__info">
-                                        <div class="event__info-time">期間：2/24（土）</div>
-                                        <div class="event__info-address">会場：新館6Fカワラカフェ＆ダイニング フォワード</div>
-                                    </div>
-                                    <div class="event__content">
-                                        <p class="content-text">ビジュアルのモデルも務めた美容クリエイターの「鹿の間」やメイクアップアーティスト「イガリシノブ」が来館し、スペシャルトークショーを開催。各回先着50名様をご招待し、ここでしか聞けない貴重なトークをお楽しみいただけます！<br>11：00～12：00　「鹿の間」×「コスメキッチン・スナイデルビューティ」<br>14：00～15：00　「鹿の間」×「イガリシノブ」</p>
-                                    </div>
-                                    <div class="event__btn">
-                                        <a href="" target="_blank" class="btn-arrow">
-                                            CHECK
-                                        </a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="event__item">
+                        <div class="event__item-text">
+                            <h3 class="event__title">
+                                <span>観覧無料！</span>
+                                <span>春コスメ「SPECIAL TALKSHOW」</span>
+                            </h3>
+                            <div class="event__info">
+                                <div class="event__info-time">期間：2/24（土）</div>
+                                <div class="event__info-address">会場：新館6Fカワラカフェ＆ダイニング フォワード</div>
+                            </div>
+                            <div class="event__content">
+                                <p class="content-text">ビジュアルのモデルも務めた美容クリエイターの「鹿の間」やメイクアップアーティスト「イガリシノブ」が来館し、スペシャルトークショーを開催。各回先着50名様をご招待し、ここでしか聞けない貴重なトークをお楽しみいただけます！<br>11：00～12：00　「鹿の間」×「コスメキッチン・スナイデルビューティ」<br>14：00～15：00　「鹿の間」×「イガリシノブ」</p>
+                            </div>
+                            <div class="event__btn">
+                                <a href="" target="_blank" class="btn-arrow">
+                                    CHECK
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="event__column box02">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="event__item">
-                                <div class="event__item-img">
-                                    <picture>
-                                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
-                                    </picture>
-                                </div>
-                            </div>
+                    <div class="event__item">
+                        <div class="event__item-img">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
+                                <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
+                            </picture>
                         </div>
-                        <div class="col-md-8">
-                            <div class="event__item">
-                                <div class="event__item-text">
-                                    <h3 class="event__title">
-                                        <span>福岡パルコ屋上イベント開催</span>
-                                        <span>イベントテキスト</span>
-                                    </h3>
-                                    <div class="event__info">
-                                        <div class="event__info-time">会期：2024.3.14</div>
-                                    </div>
-                                    <div class="event__content">
-                                        <p class="content-text">イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="event__item">
+                        <div class="event__item-text">
+                            <h3 class="event__title">
+                                <span>福岡パルコ屋上イベント開催</span>
+                                <span>イベントテキスト</span>
+                            </h3>
+                            <div class="event__info">
+                                <div class="event__info-time">会期：2024.3.14</div>
+                            </div>
+                            <div class="event__content">
+                                <p class="content-text">イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="event__column box03">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="event__item">
-                                <div class="event__item-img">
-                                    <picture>
-                                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
-                                    </picture>
-                                </div>
-                            </div>
+                    <div class="event__item">
+                        <div class="event__item-img">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
+                                <img src="/<?php echo DIRNAME; ?>/assets/images/special-talkshow.svg" class="" alt="SPECIAL TALK SHOW">
+                            </picture>
                         </div>
-                        <div class="col-md-8">
-                            <div class="event__item">
-                                <div class="event__item-text">
-                                    <h3 class="event__title">
-                                        <span>5,000円以上ご購入でペイバックキャン</span>
-                                        <span>ペーン</span>
-                                    </h3>
-                                    <div class="event__info">
-                                        <div class="event__info-time">会期：2024.3.14</div>
-                                    </div>
-                                    <div class="event__content">
-                                        <p class="content-text">イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="event__item">
+                        <div class="event__item-text">
+                            <h3 class="event__title">
+                                <span>5,000円以上ご購入でペイバックキャン</span>
+                                <span>ペーン</span>
+                            </h3>
+                            <div class="event__info">
+                                <div class="event__info-time">会期：2024.3.14</div>
+                            </div>
+                            <div class="event__content">
+                                <p class="content-text">イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                             </div>
                         </div>
                     </div>
@@ -210,11 +186,9 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
         <section class="present">
             <div class="present__container container">
-                <div class="content-resent pl-1 pr-1">
-                    <h2 class="title">PRESENT</h2>
-                    <div class="present__text content-text">
-                        <p>福岡PARCO館内にて10,000円(税込・当日中合算可)以上お買い上げのレシートを提示いただくと、各日先着100名様に福岡をはじめとした全国の人気スイーツをプレゼント！ <br>会期：2/17（土）2/18（日）3/9（土）3/10（日）<br>引換会場：新館4F特設会場<br>※お買い上げ当日中のレシートが対象になります。</p>
-                    </div>
+                <h2 class="title">PRESENT</h2>
+                <div class="present__text content-text">
+                    <p>福岡PARCO館内にて10,000円(税込・当日中合算可)以上お買い上げのレシートを提示いただくと、各日先着100名様に福岡をはじめとした全国の人気スイーツをプレゼント！ <br>会期：2/17（土）2/18（日）3/9（土）3/10（日）<br>引換会場：新館4F特設会場<br>※お買い上げ当日中のレシートが対象になります。</p>
                 </div>
             </div>
             <div class="present__ins">
@@ -322,13 +296,9 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
         <section class="shop-event">
             <div class="shop-event__container container">
-                <div class="row">
-                    <div class="col-md-14">
-                        <h2 class="title">SHOP EVENT</h2>
-                        <div class="shop-event__text content-text">
-                            <p>テキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        </div>
-                    </div>
+                <h2 class="title">SHOP EVENT</h2>
+                <div class="shop-event__text content-text">
+                    <p>テキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                 </div>
                 <div class="shop-event__column">
                     <div class="shop-event__item">
@@ -353,12 +323,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button data-modal="modal-1">
+                                <button>
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal modal-1">
+                        <div class="modal-block js-modal">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -415,12 +385,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button data-modal="modal-2">
+                                <button>
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal modal-2">
+                        <div class="modal-block js-modal">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -646,185 +616,180 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
         </section>
         <section class="new-open">
             <div class="new-open__container container">
-                <div class="row justify-center">
-                    <div class="col-md-14">
-                        <h2 class="title">NEW OPEN</h2>
-                        <div class="new-open__text content-text">
-                            <p>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                <h2 class="title">NEW OPEN</h2>
+                <div class="new-open__text content-text">
+                    <p>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                </div>
+                <div class="new-open__content">
+                    <div class="new-open__column">
+                        <div class="new-open__item-left">
+                            <div class="new-open__item-slick">
+                                <div class="new-open__item-slick-item">
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
-                        <div class="new-open__content">
-                            <div class="new-open__column">
-                                <div class="new-open__item-left">
-                                    <div class="new-open__item-slick">
-                                        <div class="new-open__item-slick-item">
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                        </div>
+                        <div class="new-open__item-right">
+                            <div class="new-open__item-header">
+                                <div class="new-open__item-header-left">
+                                    <div class="new-open__item-header-time">
+                                        2/17 Sat.
+                                    </div>
+                                    <div class="new-open__item-header-floor">
+                                        1F
+                                    </div>
+                                    <div class="new-open__item-header-name">
+                                        カレンド
                                     </div>
                                 </div>
-                                <div class="new-open__item-right">
-                                    <div class="new-open__item-header">
-                                        <div class="new-open__item-header-left">
-                                            <div class="new-open__item-header-time">
-                                                2/17 Sat.
-                                            </div>
-                                            <div class="new-open__item-header-floor">
-                                                1F
-                                            </div>
-                                            <div class="new-open__item-header-name">
-                                                カレンド
-                                            </div>
-                                        </div>
-                                        <div class="new-open__item-header-right">
-                                            <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
-                                    </div>
-                                    <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
-                                            CHECK
-                                        </a>
+                                <div class="new-open__item-header-right">
+                                    <div class="new-open__item-header-logo">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__column">
-                                <div class="new-open__item-left">
-                                    <div class="new-open__item-slick">
-                                        <div class="new-open__item-slick-item">
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                        </div>
+                            <div class="new-open__item-desc content-text">
+                                <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                            </div>
+                            <div class="new-open__link">
+                                <a href="" target="_blank" class="btn-arrow">
+                                    CHECK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-open__column">
+                        <div class="new-open__item-left">
+                            <div class="new-open__item-slick">
+                                <div class="new-open__item-slick-item">
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-open__item-right">
+                            <div class="new-open__item-header">
+                                <div class="new-open__item-header-left">
+                                    <div class="new-open__item-header-time">
+                                        2/17 Sat.
+                                    </div>
+                                    <div class="new-open__item-header-floor">
+                                        1F
+                                    </div>
+                                    <div class="new-open__item-header-name">
+                                        カレンド
                                     </div>
                                 </div>
-                                <div class="new-open__item-right">
-                                    <div class="new-open__item-header">
-                                        <div class="new-open__item-header-left">
-                                            <div class="new-open__item-header-time">
-                                                2/17 Sat.
-                                            </div>
-                                            <div class="new-open__item-header-floor">
-                                                1F
-                                            </div>
-                                            <div class="new-open__item-header-name">
-                                                カレンド
-                                            </div>
-                                        </div>
-                                        <div class="new-open__item-header-right">
-                                            <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
-                                    </div>
-                                    <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
-                                            CHECK
-                                        </a>
+                                <div class="new-open__item-header-right">
+                                    <div class="new-open__item-header-logo">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__column">
-                                <div class="new-open__item-left">
-                                    <div class="new-open__item-slick">
-                                        <div class="new-open__item-slick-item">
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                        </div>
+                            <div class="new-open__item-desc content-text">
+                                <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                            </div>
+                            <div class="new-open__link">
+                                <a href="" target="_blank" class="btn-arrow">
+                                    CHECK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-open__column">
+                        <div class="new-open__item-left">
+                            <div class="new-open__item-slick">
+                                <div class="new-open__item-slick-item">
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-open__item-right">
+                            <div class="new-open__item-header">
+                                <div class="new-open__item-header-left">
+                                    <div class="new-open__item-header-time">
+                                        2/17 Sat.
+                                    </div>
+                                    <div class="new-open__item-header-floor">
+                                        1F
+                                    </div>
+                                    <div class="new-open__item-header-name">
+                                        カレンド
                                     </div>
                                 </div>
-                                <div class="new-open__item-right">
-                                    <div class="new-open__item-header">
-                                        <div class="new-open__item-header-left">
-                                            <div class="new-open__item-header-time">
-                                                2/17 Sat.
-                                            </div>
-                                            <div class="new-open__item-header-floor">
-                                                1F
-                                            </div>
-                                            <div class="new-open__item-header-name">
-                                                カレンド
-                                            </div>
-                                        </div>
-                                        <div class="new-open__item-header-right">
-                                            <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
-                                    </div>
-                                    <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
-                                            CHECK
-                                        </a>
+                                <div class="new-open__item-header-right">
+                                    <div class="new-open__item-header-logo">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="new-open__column">
-                                <div class="new-open__item-left">
-                                    <div class="new-open__item-slick">
-                                        <div class="new-open__item-slick-item">
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                            <div class="new-open__item-thumb">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                            </div>
-                                        </div>
+                            <div class="new-open__item-desc content-text">
+                                <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                            </div>
+                            <div class="new-open__link">
+                                <a href="" target="_blank" class="btn-arrow">
+                                    CHECK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-open__column">
+                        <div class="new-open__item-left">
+                            <div class="new-open__item-slick">
+                                <div class="new-open__item-slick-item">
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div>
+                                    <div class="new-open__item-thumb">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-open__item-right">
+                            <div class="new-open__item-header">
+                                <div class="new-open__item-header-left">
+                                    <div class="new-open__item-header-time">
+                                        2/17 Sat.
+                                    </div>
+                                    <div class="new-open__item-header-floor">
+                                        1F
+                                    </div>
+                                    <div class="new-open__item-header-name">
+                                        カレンド
                                     </div>
                                 </div>
-                                <div class="new-open__item-right">
-                                    <div class="new-open__item-header">
-                                        <div class="new-open__item-header-left">
-                                            <div class="new-open__item-header-time">
-                                                2/17 Sat.
-                                            </div>
-                                            <div class="new-open__item-header-floor">
-                                                1F
-                                            </div>
-                                            <div class="new-open__item-header-name">
-                                                カレンド
-                                            </div>
-                                        </div>
-                                        <div class="new-open__item-header-right">
-                                            <div class="new-open__item-header-logo">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="new-open__item-desc content-text">
-                                        <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
-                                    </div>
-                                    <div class="new-open__link">
-                                        <a href="" target="_blank" class="btn-arrow">
-                                            CHECK
-                                        </a>
+                                <div class="new-open__item-header-right">
+                                    <div class="new-open__item-header-logo">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="new-open__item-desc content-text">
+                                <p>ショップテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 ショップテキストが入ります。</p>
+                            </div>
+                            <div class="new-open__link">
+                                <a href="" target="_blank" class="btn-arrow">
+                                    CHECK
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="visual">
@@ -844,38 +809,6 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                     </div>
                     <div class="visual__slick-item">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_05.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="box-video">
-            <div class="container">
-                <div class="row justify-center">
-                    <div class="col-md-14">
-                        <div class="avr-iframe">
-                            <iframe width="1280" height="975" src="https://www.youtube.com/embed/vPcKN4HjoiI" title="Driftveil City - Pokémon / Toothless (Marimba Ringtone)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="desc-video">
-                            <p>テキストが入りますあのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                            <p>テキストが入りますあのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波テキストが入りますあのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        </div>
-                        <div class="txt-video-bott">
-                            <ul>
-                                <li>クレジットテキストが入りますクレジットテキストが入りますクレジットテキストが入りますクレジットテキストが入りますクレジットテキストが入ります</li>
-                            </ul>
-                            <ul>
-                                <li>クレジットテキストが入りますクレジットテキストが入りますクレジットテキストが入ります</li>
-                                <li>クレジットテキストが入りますクレジットテキストが入ります</li>
-                                <li>クレジットテキストが入りますクレジットテキストが入りますクレジットテキストが入りますクレジットテキストが入ります</li>
-                            </ul>
-                            <ul>
-                                <li>クレジットテキストが入りますクレジットテキストが入ります</li>
-                                <li>クレジットテキストが入ります</li>
-                                <li>クレジットテキストが入ります</li>
-                                <li>クレジットテキストが入ります</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
