@@ -726,7 +726,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                     <p>イベントテキストが入ります。あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                 </div>
                 <div class="new-open__content">
-                    <div class="new-open__column">
+                    <div class="new-open__column animation-js">
                         <div class="new-open__item-left">
                             <div class="new-open__item-slick">
                                 <div class="new-open__item-slick-item">
@@ -768,7 +768,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="new-open__column">
+                    <div class="new-open__column animation-js">
                         <div class="new-open__item-left">
                             <div class="new-open__item-slick">
                                 <div class="new-open__item-slick-item">
@@ -810,7 +810,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="new-open__column">
+                    <div class="new-open__column animation-js">
                         <div class="new-open__item-left">
                             <div class="new-open__item-slick">
                                 <div class="new-open__item-slick-item">
@@ -852,7 +852,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             </div>
                         </div>
                     </div>
-                    <div class="new-open__column">
+                    <div class="new-open__column animation-js">
                         <div class="new-open__item-left">
                             <div class="new-open__item-slick">
                                 <div class="new-open__item-slick-item">

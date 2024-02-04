@@ -2682,6 +2682,12 @@ layout
   background: #F8F5F5;
   padding: 30px 40px 50px;
   margin-bottom: 20px;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.new-open__column[animation="true"] {
+  opacity: 1;
 }
 
 .new-open__item-left {

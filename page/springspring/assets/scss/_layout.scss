@@ -2119,6 +2119,12 @@ $color-mv: #F2A1B0;
         background: #F8F5F5;
         padding: 30px 40px 50px;
         margin-bottom: 20px;
+        opacity: 0;
+        transition: 0.3s all;
+
+        &[animation="true"] {
+            opacity: 1;
+        }
     }
 
     &__item {
