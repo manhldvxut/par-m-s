@@ -134,15 +134,38 @@ function modalImgSlider() {
   }
 }
 
-$('.visual__slick').slick({
-  autoplay: false,
-  autoplaySpeed: 3000,
-  speed: 800,
-  slidesToShow: 1.8,
-  slidesToScroll: 1,
-  focusOnSelect: true,
-  centerPadding: '0',
-  arrows: true,
-  dots: false,
-  infinite: true,
+// $('.visual__slick').slick({
+//   autoplay: true,
+//   autoplaySpeed: 3000,
+//   speed: 800,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   focusOnSelect: true,
+//   centerPadding: '0',
+//   arrows: true,
+//   dots: false,
+//   infinite: true,
+//   variableWidth: true,
+//   centerMode: true,
+// });
+
+var mySwiper = new Swiper(".swiper-visual", {
+  spaceBetween: 1,
+  slidesPerView: 1.5,
+  centeredSlides: true,
+  roundLengths: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
+
+$('.box-stick-menu a').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+  }
 });

@@ -107,6 +107,9 @@ body {
   font-size: 1.6rem;
   -webkit-overflow-scrolling: touch;
   position: relative;
+  @media (max-width: 1023px) {
+    font-size: 13px;
+  }
 }
 img {
   width: 100%;
@@ -153,7 +156,7 @@ a{
 
 main { 
   display: block; /*IE*/
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 @mixin font-cooper {  
