@@ -450,28 +450,25 @@ layout
 ヘッダー
 ========================================================= */
 .header {
-  position: relative;
+  position: fixed;
   width: 100%;
-  background-color: #FFE3F8;
   overflow: hidden;
+  left: 20px;
+  top: 20px;
+  z-index: 999;
+  opacity: 0;
+  transition: 0.3s all;
 }
 
-.header__title {
-  text-align: center;
+.header.active {
+  opacity: 1;
+  transition: 0.3s all;
 }
 
 .header__title img {
   vertical-align: bottom;
-}
-
-.header__in {
-  height: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  .header__in {
-    margin: 0 auto;
-  }
+  width: 100px;
+  height: 100px;
 }
 
 /* =========================================================
@@ -1950,6 +1947,17 @@ layout
   transform: rotate(0deg);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
 .container {
   max-width: 1215px;
   margin: auto;
@@ -1988,6 +1996,31 @@ layout
   margin-bottom: 100px;
 }
 
+.main-mv[animation="true"] .main-mv__spring-img {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.main-mv.animation-active .main-mv__spring-img {
+  transition: 0.9s all;
+  transform: translateY(-60px);
+}
+
+.main-mv.animation-active .main-mv__fukuoka-parco {
+  opacity: 1;
+  transition: 0.9s all;
+  transform: translateY(60px);
+}
+
+.main-mv.animation-active .main-mv__main.animation-active {
+  opacity: 1;
+  transition: 0.5s all;
+  transition-timing-function: ease-in;
+}
+
 .main-mv__content {
   position: absolute;
   top: 50%;
@@ -1997,6 +2030,8 @@ layout
 
 .main-mv__spring-img {
   text-align: center;
+  opacity: 0;
+  transition: 0.4s all;
 }
 
 .main-mv__spring-img img {
@@ -2005,11 +2040,17 @@ layout
 
 .main-mv__fukuoka-parco {
   text-align: center;
-  margin-top: 60px;
+  opacity: 0;
 }
 
 .main-mv__fukuoka-parco img {
   max-width: 222px;
+}
+
+.main-mv__main {
+  position: relative;
+  z-index: 333;
+  opacity: 0;
 }
 
 .rido {

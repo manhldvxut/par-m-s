@@ -52,7 +52,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
      * Header
      */
     ?>
-        <?php // include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/header.php'; ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/' . DIRNAME . '/assets/inc/header.php'; ?>
     
     <?php
     /**
@@ -323,12 +323,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button>
+                                <button data-modal="modal-1">
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal">
+                        <div class="modal-block js-modal modal-1">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">
@@ -385,12 +385,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                             <div class="shop-event__item-btn">
-                                <button>
+                                <button data-modal="modal-2">
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                 </button>
                             </div>
                         </div>
-                        <div class="modal-block js-modal">
+                        <div class="modal-block js-modal modal-2">
                             <div class="modal-bg js-modalclose"></div>
                             
                             <div class="modal-wrap">

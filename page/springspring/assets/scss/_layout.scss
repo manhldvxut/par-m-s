@@ -18,20 +18,24 @@
 ヘッダー
 ========================================================= */
 .header {
-    position: relative;
+    position: fixed;
     width: 100%;
-    background-color: $bg-color;
     overflow: hidden;
+    left: 20px;
+    top: 20px;
+    z-index: 999;
+    opacity: 0;
+    transition: 0.3s all;
+
+    &.active {
+        opacity: 1;
+        transition: 0.3s all;
+    }
     &__title {
-        text-align: center;
         img {
             vertical-align: bottom;
-        }
-    }
-    &__in {
-        height: 100%;
-        @media screen and (min-width: 769px) {
-            margin: 0 auto;
+            width: 100px;
+            height: 100px;
         }
     }
 }
@@ -1322,6 +1326,17 @@
 
 $color-mv: #F2A1B0;
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+}
+
 .container {
     max-width: 1215px;
     margin: auto;
@@ -1361,6 +1376,35 @@ $color-mv: #F2A1B0;
     position: relative;
     margin-bottom: 100px;
 
+    &[animation="true"] {
+        .main-mv__spring-img {
+            opacity: 1;
+            transition-property: opacity;
+            transition-duration: 0.4s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-in;
+        }
+    }
+
+    &.animation-active {
+        .main-mv__spring-img {
+            transition: 0.9s all;
+            transform: translateY(-60px);
+        }
+
+        .main-mv__fukuoka-parco {
+            opacity: 1;
+            transition: 0.9s all;
+            transform: translateY(60px);
+        }
+
+        .main-mv__main.animation-active {
+            opacity: 1;
+            transition: 0.5s all;
+            transition-timing-function: ease-in;
+        }
+    }
+
     &__content {
         position: absolute;
         top: 50%;
@@ -1370,6 +1414,8 @@ $color-mv: #F2A1B0;
 
     &__spring-img {
         text-align: center;
+        opacity: 0;
+        transition: 0.4s all;
 
         img {
             max-width: 370px;
@@ -1378,7 +1424,7 @@ $color-mv: #F2A1B0;
 
     &__fukuoka-parco {
         text-align: center;
-        margin-top: 60px;
+        opacity: 0;
 
         img {
             max-width: 222px;
@@ -1386,7 +1432,9 @@ $color-mv: #F2A1B0;
     }
 
     &__main {
-
+        position: relative;
+        z-index: 333;
+        opacity: 0;
     }
 }
 
