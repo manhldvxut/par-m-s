@@ -140,7 +140,7 @@ function modalImgSlider() {
 //   speed: 800,
 //   slidesToShow: 2,
 //   slidesToScroll: 1,
-//   focusOnSelect: true,
+//   focusOnSelect: true, 
 //   centerPadding: '0',
 //   arrows: true,
 //   dots: false,

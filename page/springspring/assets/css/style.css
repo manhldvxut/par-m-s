@@ -2185,6 +2185,11 @@ layout
 .rido {
   margin-bottom: 40px;
   padding-top: 100px;
+  opacity: 0;
+  transition: 0.3s all;
+}
+.rido[animation=true] {
+  opacity: 1;
 }
 @media (max-width: 1023px) {
   .rido {
@@ -3520,6 +3525,13 @@ layout
   bottom: 0;
   margin: auto;
   letter-spacing: 0;
+}
+.btn-arrow:hover {
+  color: #E68BC7;
+  background: #fff;
+}
+.btn-arrow:hover:before {
+  background: url("../images/arrow-button-pink.svg") no-repeat;
 }
 
 .box-video {
