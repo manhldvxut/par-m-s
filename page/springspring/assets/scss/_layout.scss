@@ -1710,6 +1710,12 @@ $color-mv: #F2A1B0;
 .rido {
   margin-bottom: 40px;
   padding-top: 100px;
+  opacity: 0;
+  transition: .3s all;
+
+  &[animation="true"] {
+    opacity: 1;
+  }
   @media (max-width: 1023px) {
     padding-top: 40px;
   }
@@ -3009,6 +3015,15 @@ $color-mv: #F2A1B0;
     bottom: 0;
     margin: auto;
     letter-spacing: 0;
+  }
+
+  &:hover {
+    color: #E68BC7;
+    background: #fff;
+
+    &:before {
+      background: url('../images/arrow-button-pink.svg') no-repeat;
+    }
   }
 }
 
