@@ -155,6 +155,7 @@ var mySwiper = new Swiper(".swiper-visual", {
   centeredSlides: true,
   roundLengths: true,
   loop: true,
+  speed: 2000,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
