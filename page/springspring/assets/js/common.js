@@ -169,3 +169,7 @@ $('.box-stick-menu a').click(function(e){
     $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
   }
 });
+
+$('.src-paralax').each(function(i,o){
+  $(this).parallax({speed:14});
+});

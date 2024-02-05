@@ -110,7 +110,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 </div>
                             </div>
                             <div class="col-md-6 pr-1">
-                                <div class="rido__img">
+                                <div class="rido__img src-paralax">
                                     <picture>
                                         <!--                                    <source media="(max-width: 768px)" srcset="/--><?php //echo DIRNAME; ?><!--/assets/images/mv-sp.gif">-->
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/rido-sping-logo.svg" class="" alt="spring">
@@ -122,6 +122,8 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 </div>
             </section>
             <section id="event" class="event">
+                <div class="icon-abs abs-1 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_01.png" alt=""></div>
+                <div class="icon-abs abs-2 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_06.png" alt=""></div>
                 <div class="event__header">
                     <h2 class="title">
                         <span>EVENT</span>
@@ -176,6 +178,8 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                         </div>
                     </div>
                     <div class="event__column box02 animation-js">
+                        <div class="icon-abs abs-3 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_02.png" class="" alt="アーネ×パルコ"></div>
+                        <div class="icon-abs abs-4 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_08.png" class="" alt="アーネ×パルコ"></div>
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="event__item">
@@ -216,6 +220,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                         </div>
                     </div>
                     <div class="event__column box03 animation-js">
+                        <div class="icon-abs abs-5 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_05.png" class="" alt="アーネ×パルコ"></div>
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="event__item">
@@ -258,6 +263,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 </div>
             </section>
             <section id="present" class="present">
+                <div class="icon-abs abs-1 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_03.png" class="" alt="アーネ×パルコ"></div>
                 <div class="present__container container">
                     <div class="content-resent pl-1 pr-1">
                         <h2 class="title">PRESENT</h2>
@@ -369,6 +375,8 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 </div>
             </section>
             <section id="shop-event" class="shop-event">
+                <div class="icon-abs abs-1 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_09.png" class="" alt="アーネ×パルコ"></div>
+                <div class="icon-abs abs-2 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_04.png" class="" alt="アーネ×パルコ"></div>
                 <div class="shop-event__container container">
                     <div class="row">
                         <div class="col-md-14">
@@ -864,7 +872,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 </div>
             </section>
             <section id="new-open" class="new-open">
-                <div class="icon-abs"><img src="/<?php echo DIRNAME; ?>/assets/images/abs-open.png" class="" alt="spring"></div>
+                <div class="icon-abs src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/abs-open.png" class="" alt="spring"></div>
                 <div class="new-open__container container">
                     <div class="row justify-center">
                         <div class="col-md-14">
