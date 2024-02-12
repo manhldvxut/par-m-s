@@ -25,7 +25,7 @@
   top: 20px;
   z-index: 999;
   opacity: 0;
-  transition: 0.3s all;
+  transition: 0.3s all; 
 
   &.active {
     opacity: 1;
@@ -39,7 +39,7 @@
       @media (max-width: 767px) {
         width: 62px;
         height: auto;
-      }
+      } 
     }
   }
 }
@@ -2466,6 +2466,7 @@ $color-mv: #F2A1B0;
       transform-style: preserve-3d;
       position: relative;
       cursor: pointer;
+      height: 100%;
 
       @media (min-width: 769px) {
         &:hover, &.active {
@@ -2533,8 +2534,11 @@ $color-mv: #F2A1B0;
     &-footer {
       display: flex;
       box-sizing: border-box;
-      // position: absolute;
-      // bottom: 10px;
+      position: absolute;
+      bottom: 40px;
+      padding: 0 20px;
+      width: 100%;
+      left: 0;
       @media (max-width: 1023px) {
         display: block;
       }
@@ -2628,28 +2632,26 @@ $color-mv: #F2A1B0;
 
     &-back-hover {
       transform: rotateY(180deg);
-      position: absolute;
+      position: absolute !important;
       top: 0;
       left: 0;
+      height: 100%;
     }
 
     .hover-3D {
-      //display: block;
-      //position: absolute;
-      //top: 0;
-      //left: 0;
-      //width: 100%;
-      //height: 100%;
       border-radius: 0.8rem;
       background-size: cover;
       background-position: center center;
       backface-visibility: hidden;
       transition: transform 0.5s ease-in-out;
+      height: 100%;
+      position: relative;
+      padding-bottom: 115px;
     }
   }
 
   &__content {
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 0 20px;
     background: #fff;
     margin-top: -1px;
     @media (max-width: 767px) {
