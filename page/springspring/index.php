@@ -22,7 +22,7 @@ if ($productionFlag === true) {
 
 //ページ用の変数
 $pege_title = 'spring spring FUKUOKA PARCO 2024| 福岡PARCO';
-$pege_description = '福岡パルコがお届けする春のファッション・コスメイベント"spring spring FUKUOKA PARCO 2024"素敵な企画をご紹介します。';
+$pege_description = '福岡パルコがお届けする春のファッション・コスメイベント“spring spring FUKUOKA PARCO 2024”素敵な企画をご紹介します。';
 $pege_keywords = '';
 $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必ずディレクトリ名を変更する
 
@@ -65,27 +65,50 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
             <div class="main-mv__content">
                 <div class="main-mv__spring-img">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/spring-logo-pc.png" class="" alt="spring">
                     </picture>
                 </div>
                 <div class="main-mv__fukuoka-parco">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/fukuoka2024.svg" class="" alt="FUKUOKA PARCO 2024">
                     </picture>
                 </div>
             </div>
-
             <div class="main-mv__main">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv-sp.gif">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/main-mv-pc.png" class="" alt="SPRING FUKUOKA PARCO 2024">
-                </picture>
+                <div class="main-mv__main-list">
+                    <div class="main-mv__main-list-item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/poster_tate_03.jpg">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_03.jpg" class="" alt="SPRING FUKUOKA PARCO 2024">
+                        </picture>
+                    </div>
+                    <div class="main-mv__main-list-item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/poster_tate_02.jpg">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_02.jpg" class="" alt="SPRING FUKUOKA PARCO 2024">
+                        </picture>
+                    </div>
+                    <div class="main-mv__main-list-item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/poster_tate_01.jpg">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_01.jpg" class="" alt="SPRING FUKUOKA PARCO 2024">
+                        </picture>
+                    </div>
+                    <div class="main-mv__main-list-item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/poster_tate_04.jpg">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_04.jpg" class="" alt="SPRING FUKUOKA PARCO 2024">
+                        </picture>
+                    </div>
+                    <div class="main-mv__main-list-item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/poster_tate_05.jpg">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_05.jpg" class="" alt="SPRING FUKUOKA PARCO 2024">
+                        </picture>
+                    </div>
+                </div>
+                
             </div>
-        </section>
-        <section class="box-mv-mobile">
-            <div class="avarta"><img src="/<?php echo DIRNAME; ?>/assets/images/mv-mb.jpg" class="w-100" alt="FUKUOKA PARCO 2024"></div>
         </section>
         <section class="box-stick-menu">
             <div class="container">
@@ -125,7 +148,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 <div class="icon-abs abs-1 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_01.png" alt=""></div>
                 <div class="icon-abs abs-2 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_06.png" alt=""></div>
                 <div class="event__header">
-                    <h2 class="title">
+                    <h2 class="title animation-js">
                         <span>EVENT</span>
                     </h2>
                 </div>
@@ -165,7 +188,13 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             </div>
                                         </div>
                                         <div class="event__content">
-                                            <p class="content-text">ビジュアルのモデルも務めた美容クリエイターの「鹿の間」やメイクアップアーティスト「イガリシノブ」が来館し、スペシャルトークショーを開催。各回先着50名様をご招待し、ここでしか聞けない貴重なトークをお楽しみいただけます！<br>11：00～12：00　「鹿の間」×「コスメキッチン・スナイデルビューティ」<br>14：00～15：00　「鹿の間」×「イガリシノブ」</p>
+                                            <p class="content-text">
+                                                ビジュアルのモデルをつとめた美容クリエイターの「鹿の間」さんやメイクアップアーティスト「イガリシノブ」さんが来館し、スペシャルトークショーを開催。各回先着50名様をご招待し、ここでしか聞けない貴重なトークをお楽しみいただけます！<br>
+                                                11：00～12：00　「鹿の間」 ×「コスメキッチン」<br>
+                                                14：00～15：00　「鹿の間」×「イガリシノブ」<br>
+                                                ※ご好評につき受付は終了しました。<br>
+                                                さらに、2/23（金）～2/25（日）の期間、対象SHOPにてコスメスタンプカードプレゼント！<br>※無くなり次第終了
+                                            </p>
                                         </div>
                                         <div class="event__btn">
                                             <a href="https://fukuoka.parco.jp/pnews/detail/?id=26890" target="_blank" class="btn-arrow">
@@ -194,7 +223,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                     <div class="event__item-img">
                                         <picture>
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アーネ×パルコ">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/ane.jpg" class="" alt="アーネ×パルコ">
                                         </picture>
                                     </div>
                                 </div>
@@ -221,7 +250,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                     </div>
                     <div class="event__column box03 animation-js">
                         <div class="icon-abs abs-5 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_05.png" class="" alt="アーネ×パルコ"></div>
-                        <div class="row">
+                        <div class="row" style="display: none;">
                             <div class="col-md-8">
                                 <div class="event__item">
                                     <div class="even__item-top d-none">
@@ -266,10 +295,9 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 <div class="icon-abs abs-1 src-paralax"><img src="/<?php echo DIRNAME; ?>/assets/images/bg_parts_03.png" class="" alt="アーネ×パルコ"></div>
                 <div class="present__container container">
                     <div class="content-resent pl-1 pr-1">
-                        <h2 class="title">PRESENT</h2>
+                        <h2 class="title animation-js">PRESENT</h2>
                         <div class="present__text content-text">
                             <p>福岡PARCO館内にて10,000円(税込・当日中合算可)<br>以上お買い上げのレシートを提示いただくと、各日先着100名様に福岡をはじめとした全国の人気スイーツをプレゼント！<br>
-                                会期：2/17（土）2/18（日）3/9（土）3/10（日）<br>
                                 引換会場：新館4F特設会場<br>
                                 ※お買い上げ当日中のレシートが対象になります。</p>
                         </div>
@@ -283,7 +311,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="present__ins-time">2/17（土）</div>
                                     <div class="present__ins-thumb">
                                         <picture>
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present01.png" class="" alt="フランス菓子１６区 ダックワーズ（3袋入り）">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present01.jpg" class="" alt="フランス菓子１６区 ダックワーズ（3袋入り）">
                                         </picture>
                                     </div>
                                     <div class="present__ins-link">
@@ -293,7 +321,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                     <div class="present__ins-product">
                                         <div class="present__ins-product-title">
-                                            フランス菓子１６区 ダックワーズ（3袋入り）
+                                            フランス菓子１６区<br>ダックワーズ（3袋入り）
                                         </div>
                                         <div class="present__ins-product-desc">
                                             福岡県の薬院にある、パリで4年修業した三島隆夫シェフがオーナーを務める老舗スイーツ店「フランス菓子16区」<br>本店の看板商品である焼き菓子「ダックワーズ」の3袋入りセット。
@@ -306,7 +334,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="present__ins-time">2/18（日）</div>
                                     <div class="present__ins-thumb">
                                         <picture>
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present02.jpg" class="" alt="OYATUYA.U ディアサククッキー（３種アソート缶）">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/OYATUYA.U.jpg" class="" alt="OYATUYA.U ディアサククッキー（３種アソート缶）">
                                         </picture>
                                     </div>
                                     <div class="present__ins-link">
@@ -329,7 +357,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="present__ins-time">3/9（土）</div>
                                     <div class="present__ins-thumb">
                                         <picture>
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="spring">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/nennrinnya.jpg" class="" alt="ねんりん家マウントバーム　しっかり芽 1山">
                                         </picture>
                                     </div>
                                     <div class="present__ins-link">
@@ -352,7 +380,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="present__ins-time">3/10（日）</div>
                                     <div class="present__ins-thumb">
                                         <picture>
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="spring">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/aroha.jpg" class="" alt="ホノルルクッキーハート・オブ・アロハ・ギフト缶7枚">
                                         </picture>
                                     </div>
                                     <div class="present__ins-link">
@@ -380,9 +408,10 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 <div class="shop-event__container container">
                     <div class="row">
                         <div class="col-md-14">
-                            <h2 class="title">SHOP EVENT</h2>
+                            <h2 class="title animation-js">SHOP EVENT</h2>
                             <div class="shop-event__text content-text">
-                                <p>各ショップにて春の特別イベントを開催！</p>
+                                <p>館内の各ショップにて春のEVENTを開催！<br>
+                                    ※詳細・在庫状況は各ショップに直接お問い合わせください。</p>
                             </div>
                         </div>
                     </div>
@@ -399,7 +428,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             <div class="shop-event__item-time">2/25（日）</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="コスメキッチン">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/cosme-logo.jpg" class="" alt="コスメキッチン">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">本館1F</div>
@@ -417,7 +446,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             <div class="shop-event__item-time">2/25（日）</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="コスメキッチン">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/cosme-logo.jpg" class="" alt="コスメキッチン">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">本館1F</div>
@@ -451,20 +480,19 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                                 <div class="shop-event__item-time">2/25（日）</div>
                                                 <div class="shop-event__item-title">2/25（日）1日限定！<br>ヘアケアブランド【wicot（ウィコット）】頭皮カウンセリングイベント開催</div>
                                                 <div class="shop-event__item-desc">
+                                                    会期：2/25（日）<br>
                                                     イベント時間：11:00～17:00<br>
-                                                カウンセリング時間：お1人様15分<br><br>
-
-                                                事前にイベント参加のご予約にて、wicot製品の人気アイテムミニサイズをプレゼント！<br><br>
-
-                                                【wicot（ウィコット）】とは？<br>
-                                                福岡県糸島市の自然豊かな場所に自社工場を持ち、国際オーガニック認定基準 COSMOS認証を取得。大人女性に寄り添うスカルプケアブランドです。<br>
+                                                    カウンセリング時間：お1人様15分<br><br>
+                                                    事前にイベント参加のご予約にて、wicot製品の人気アイテムミニサイズをプレゼント！<br><br>
+                                                    【wicot（ウィコット）】とは？<br>
+                                                    福岡県糸島市の自然豊かな場所に自社工場を持ち、国際オーガニック認定基準COSMOS認証を取得。大人女性に寄り添うスカルプケアブランドです。<br>
                                                 <a href="https://wicot.com/">https://wicot.com/</a>
                                                 </div>
                                             </div>
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="コスメキッチン">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/cosme-logo.jpg" class="" alt="コスメキッチン">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">本館1F</div>
@@ -489,7 +517,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             <div class="shop-event__item-time">ダミーテキスト</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="emmi">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/emmi-logo.jpg" class="" alt="emmi">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">本館2F</div>
@@ -507,7 +535,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             <div class="shop-event__item-time">ダミーテキスト</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="emmi">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/emmi-logo.jpg" class="" alt="emmi">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">本館2F</div>
@@ -544,7 +572,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="emmi">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/emmi-logo.jpg" class="" alt="emmi">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">本館2F</div>
@@ -562,36 +590,34 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="shop-event__item-box">
                                     <div class="shop-event__item-front-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="クリエイター16名によるオリジナルアイテム発売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/SIDe.jpg" class="クリエイターによるワークショップやオリジナルアイテム発売" alt="クリエイターによるワークショップやオリジナルアイテム発売">
                                         </div>
                                         <div class="shop-event__content">
-                                            <div class="shop-event__item-title">クリエイター16名によるオリジナルアイテム発売</div>
-                                            <div class="shop-event__item-time">ダミー期間〜ダミー期間</div>
+                                            <div class="shop-event__item-title">クリエイターによるワークショップやオリジナルアイテム発売</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="サイド">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/side-logo.jpg" class="" alt="SIDe">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">本館3F</div>
-                                                    <div class="shop-event__item-name">サイド</div>
+                                                    <div class="shop-event__item-name">SIDe</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="shop-event__item-back-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="クリエイター16名によるオリジナルアイテム発売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/SIDe.jpg" class="" alt="クリエイターによるワークショップやオリジナルアイテム発売">
                                         </div>
                                         <div class="shop-event__content">
-                                            <div class="shop-event__item-title">クリエイター16名によるオリジナルアイテム発売</div>
-                                            <div class="shop-event__item-time">ダミー期間〜ダミー期間</div>
+                                            <div class="shop-event__item-title">クリエイターによるワークショップやオリジナルアイテム発売</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="サイド">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/side-logo.jpg" class="" alt="SIDe">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">本館3F</div>
-                                                    <div class="shop-event__item-name">サイド</div>
+                                                    <div class="shop-event__item-name">SIDe</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -612,23 +638,39 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="modal-cont">
                                         <div class="img-wrap">
                                             <div class="img-wrap__slider js-imgslider">
-                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" alt=""></div>
+                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/SIDe.jpg" alt="クリエイターによるワークショップやオリジナルアイテム発売"></div>
                                             </div>
                                         </div>
                                         <div class=" modal-detail">
                                             <div class=" modal-item-info">
-                                                <div class="shop-event__item-time">ダミー期間〜ダミー期間</div>
-                                                <div class="shop-event__item-title">クリエイター16名によるオリジナルアイテム発売</div>
-                                                <div class="shop-event__item-desc">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</div>
+                                                <div class="shop-event__item-title">クリエイターによるワークショップやオリジナルアイテム発売</div>
+                                                <div class="shop-event__item-desc">
+                                                    ▼本館3F・SIDe<br>
+                                                    「Aquvii's spread charm」<br>
+                                                    会期：3/2（土）3/3（日）<br>
+                                                    アクセサリーブランド【Aquvii(アクビ)】によるワークショップ開催。<br>
+                                                    フランス、イギリス、アメリカなど、世界中からAquviiに集まってきたvintageのチャームやパーツを使って、世界で一つだけのあなただけのオリジナルアクセサリーを作ります。<br>
+                                                    所要時間：5~10分／参加費：2,200円〜<br><br>
+
+                                                    ▼本館4F・ATM by SIDe<br>
+                                                     「pomemoon(ポメムーン）POPUP」<br>
+                                                    会期：2/9（金）～<br>
+                                                    「生活に寄り添う音楽とアート」をテーマにYOASOBIバンドサポートなどで活躍する（ミソハギザクロ）と、楽曲のアートワーク・デザインなどで活躍する（モリタユガみ）の二人によるユニットpomemoonのアパレル・グッズを期間限定販売。<br><br>
+
+                                                    「プクプクPOPUP」<br>
+                                                    会期：3/1（金）～4/14（日）<br>
+                                                    東京在住の漫画家・イラストレーターとして活躍するプクプクのPOPUP。<br>
+                                                    3/1（金）～3/3（日）はプクプクの似顔絵屋さんを店内で開催します。
+                                                </div>
                                             </div>
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="サイド">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/side-logo.jpg" class="" alt="SIDe">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">本館3F</div>
-                                                        <div class="shop-event__item-name">サイド</div>
+                                                        <div class="shop-event__item-name">SIDe</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -642,14 +684,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="shop-event__item-box">
                                     <div class="shop-event__item-front-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/MAIN_1080_1080.jpg" class="" alt="フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション</div>
                                             <div class="shop-event__item-time">2/2(金)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アダムエロペ">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/adam.jpg" class="" alt="アダムエロペ">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館2F</div>
@@ -660,14 +702,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                     <div class="shop-event__item-back-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="【LeSportsac ×Adam et Rope'】 別注アイテム発売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/MAIN_1080_1080.jpg" class="" alt="【LeSportsac ×Adam et Rope'】 別注アイテム発売">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション</div>
                                             <div class="shop-event__item-time">2/2(金)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アダムエロペ">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/adam.jpg" class="" alt="アダムエロペ">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館2F</div>
@@ -692,7 +734,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="modal-cont">
                                         <div class="img-wrap">
                                             <div class="img-wrap__slider js-imgslider">
-                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" alt="フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション"></div>
+                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/MAIN_1080_1080.jpg" alt="フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション"></div>
                                             </div>
                                         </div>
                                         <div class=" modal-detail">
@@ -701,23 +743,18 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                                 <div class="shop-event__item-title">フットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション</div>
                                                 <div class="shop-event__item-desc">
                                                     英国で愛されるフットボールブランド「UMBRO」とADAM ET ROPÉのコラボレーション。90年代のアイテムをイメージソースにトラックジャケットなど全3型をリリースします。<br><br>
-
                                                     【UMBRO for ADAM ET ROPÉ】TRACK JK　¥25,300(税込)<br>
                                                     90年代のプロトレーニングのカテゴリーアイテムをもとに制作したトラックジャケット。23AWシーズンに大人気だった別注アイテムを、今シーズンは春らしいアイボリーとネイビーのバイカラーで制作しました。<br><br>
-
                                                     【UMBRO for ADAM ET ROPÉ】TRACK PT　¥19,800（税込）<br>
                                                     90年代のプロトレーニングのカテゴリーアイテムをもとに制作したトラックパンツ。裾にはZIPがついており、スリットの入ったフレアパンツとしても着用可能。<br><br>
-
                                                     【UMBRO for ADAM ET ROPÉ】COLLARED SWEAT PO　¥18,700(税込)<br>
-                                                    柔らかな着心地と襟のデザインにこだわったスウェットプルオーバー。<br><br>
-
-                                                    ※在庫状況は直接店舗にお問い合わせください。
+                                                    柔らかな着心地と襟のデザインにこだわったスウェットプルオーバー。
                                                 </div>
                                             </div>
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アダムエロペ">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/adam.jpg" class="" alt="アダムエロペ">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">新館2F</div>
@@ -735,14 +772,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="shop-event__item-box">
                                     <div class="shop-event__item-front-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="「mintdesigns」POPUP EVENT">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/trip.jpg" class="" alt="「mintdesigns」POPUP EVENT">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">「mintdesigns」POPUP EVENT</div>
                                             <div class="shop-event__item-time">2/7(水)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="トリップ">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/trip-logo.jpg" class="" alt="トリップ">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館3F</div>
@@ -753,14 +790,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                     <div class="shop-event__item-back-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="「mintdesigns」POPUP EVENT">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/trip.jpg" class="" alt="「mintdesigns」POPUP EVENT">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">「mintdesigns」POPUP EVENT</div>
                                             <div class="shop-event__item-time">2/7(水)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="トリップ">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/trip-logo.jpg" class="" alt="トリップ">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館3F</div>
@@ -785,19 +822,21 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="modal-cont">
                                         <div class="img-wrap">
                                             <div class="img-wrap__slider js-imgslider">
-                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" alt="「mintdesigns」POPUP EVENT"></div>
+                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/trip.jpg" alt="「mintdesigns」POPUP EVENT"></div>
                                             </div>
                                         </div>
                                         <div class=" modal-detail">
                                             <div class=" modal-item-info">
                                                 <div class="shop-event__item-time">2/7(水)～</div>
                                                 <div class="shop-event__item-title">「mintdesigns」POPUP EVENT</div>
-                                                <div class="shop-event__item-desc">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</div>
+                                                <div class="shop-event__item-desc">
+                                                    日常生活の時間を豊かにするデザインをブランドコンセプトに掲げる「mintdesigns」の2024春夏コレクションのPOP UP EVENTを開催します。
+                                                </div>
                                             </div>
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="トリップ">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/trip-logo.jpg" class="" alt="トリップ">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">新館3F</div>
@@ -815,14 +854,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="shop-event__item-box">
                                     <div class="shop-event__item-front-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="デニム素材の「AZUMABAG」数量限定販売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/unshop.jpg" class="" alt="デニム素材の「AZUMABAG」数量限定販売">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">デニム素材の「AZUMABAG」数量限定販売</div>
                                             <div class="shop-event__item-time">2/16(金)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アンショップ">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/unshop-logo.jpg" class="" alt="アンショップ">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館3F</div>
@@ -833,14 +872,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                     <div class="shop-event__item-back-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="デニム素材の「AZUMABAG」数量限定販売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/unshop.jpg" class="" alt="デニム素材の「AZUMABAG」数量限定販売">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">デニム素材の「AZUMABAG」数量限定販売</div>
                                             <div class="shop-event__item-time">2/16(金)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アンショップ">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/unshop-logo.jpg" class="" alt="アンショップ">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館3F</div>
@@ -851,12 +890,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                 </div>
                                 <div class="shop-event__item-btn">
-                                    <button data-modal="modal-5">
+                                    <button data-modal="modal-6">
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal-block js-modal modal-5">
+                            <div class="modal-block js-modal modal-6">
                                 <div class="modal-bg js-modalclose"></div>
                                 <div class="modal-wrap">
                                     <button class="modal-close js-modalclose">
@@ -865,19 +904,21 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="modal-cont">
                                         <div class="img-wrap">
                                             <div class="img-wrap__slider js-imgslider">
-                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" alt="デニム素材の「AZUMABAG」数量限定販売"></div>
+                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/unshop.jpg" alt="デニム素材の「AZUMABAG」数量限定販売"></div>
                                             </div>
                                         </div>
                                         <div class=" modal-detail">
                                             <div class=" modal-item-info">
                                                 <div class="shop-event__item-time">2/16(金)～</div>
                                                 <div class="shop-event__item-title">デニム素材の「AZUMABAG」数量限定販売</div>
-                                                <div class="shop-event__item-desc">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</div>
+                                                <div class="shop-event__item-desc">
+                                                    昨年即完売した、AZUMA®BAGのDENIMシリーズが数量限定にてリリースされます。国産ジーンズ発祥の地である岡山県児島のデニムで制作された特別仕様のAZUMA® BAGです。
+                                                </div>
                                             </div>
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="アンショップ">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/unshop-logo.jpg" class="" alt="アンショップ">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">新館3F</div>
@@ -895,14 +936,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                 <div class="shop-event__item-box">
                                     <div class="shop-event__item-front-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="ストリートブランド Sourcream/サワークリーム コラボアイテム発売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/whos.jpg" class="" alt="ストリートブランド Sourcream/サワークリーム コラボアイテム発売">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">ストリートブランド Sourcream/サワークリーム コラボアイテム発売</div>
                                             <div class="shop-event__item-time">2/16(金)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="フーズフーギャラリー">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/whos-logo.jpg" class="" alt="フーズフーギャラリー">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館4F</div>
@@ -913,14 +954,14 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                     <div class="shop-event__item-back-hover hover-3D">
                                         <div class="shop-event__item-thumb">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="ストリートブランド Sourcream/サワークリーム コラボアイテム発売">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/whos.jpg" class="" alt="ストリートブランド Sourcream/サワークリーム コラボアイテム発売">
                                         </div>
                                         <div class="shop-event__content">
                                             <div class="shop-event__item-title">ストリートブランド Sourcream/サワークリーム コラボアイテム発売</div>
                                             <div class="shop-event__item-time">2/16(金)～</div>
                                             <div class="shop-event__item-footer">
                                                 <div class="shop-event__item-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="フーズフーギャラリー">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/whos-logo.jpg" class="" alt="フーズフーギャラリー">
                                                 </div>
                                                 <div class="shop-event__item-front">
                                                     <div class="shop-event__item-floor">新館4F</div>
@@ -931,12 +972,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     </div>
                                 </div>
                                 <div class="shop-event__item-btn">
-                                    <button data-modal="modal-5">
+                                    <button data-modal="modal-7">
                                         <img src="/<?php echo DIRNAME; ?>/assets/images/plus.svg" alt="plus">
                                     </button>
                                 </div>
                             </div>
-                            <div class="modal-block js-modal modal-5">
+                            <div class="modal-block js-modal modal-7">
                                 <div class="modal-bg js-modalclose"></div>
                                 <div class="modal-wrap">
                                     <button class="modal-close js-modalclose">
@@ -945,19 +986,21 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                     <div class="modal-cont">
                                         <div class="img-wrap">
                                             <div class="img-wrap__slider js-imgslider">
-                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" alt="ストリートブランド Sourcream/サワークリーム コラボアイテム発売"></div>
+                                                <div class="img"><img src="/<?php echo DIRNAME; ?>/assets/images/whos.jpg" alt="ストリートブランド Sourcream/サワークリーム コラボアイテム発売"></div>
                                             </div>
                                         </div>
                                         <div class=" modal-detail">
                                             <div class=" modal-item-info">
                                                 <div class="shop-event__item-time">2/16(金)～</div>
                                                 <div class="shop-event__item-title">ストリートブランド Sourcream/サワークリーム コラボアイテム発売</div>
-                                                <div class="shop-event__item-desc">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</div>
+                                                <div class="shop-event__item-desc">
+                                                    老舗釣鈎メーカー“がまかつ”とSourcreamとの《GS ULTIMASHILED 100 JKT》コラボ第３弾。本作はがまかつ社の撥水素材アルテマシールド100を使用したマウンテンパーカーをリリースします。
+                                                </div>
                                             </div>
                                             <div class=" modal-shop-info">
                                                 <div class="shop-event__item-footer">
                                                     <div class="shop-event__item-logo">
-                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/sample.jpg" class="" alt="フーズフーギャラリー">
+                                                        <img src="/<?php echo DIRNAME; ?>/assets/images/whos-logo.jpg" class="" alt="フーズフーギャラリー">
                                                     </div>
                                                     <div class="shop-event__item-front">
                                                         <div class="shop-event__item-floor">新館4F</div>
@@ -978,17 +1021,17 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 <div class="new-open__container container">
                     <div class="row justify-center">
                         <div class="col-md-14">
-                            <h2 class="title">NEW OPEN</h2>
+                            <h2 class="title animation-js">NEW OPEN</h2>
                             <div class="new-open__text content-text">
-                                <p>春のNEW SHOPが続々オープン！</p>
+                                <p>春を彩るNEW SHOPが続々オープン！</p>
                             </div>
                             <div class="new-open__content">
-                                <div class="new-open__column">
+                                <div class="new-open__column animation-js">
                                     <div class="new-open__item-left">
                                         <div class="new-open__item-slick">
                                             <div class="new-open__item-slick-item">
                                                 <div class="new-open__item-thumb">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/karendo_image.jpg" class="" alt="Karend">
                                                 </div>
                                             </div>
                                         </div>
@@ -1008,7 +1051,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             </div>
                                             <div class="new-open__item-header-right">
                                                 <div class="new-open__item-header-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/karendo_logo.jpg" class="" alt="Karend">
                                                 </div>
                                             </div>
                                         </div>
@@ -1022,15 +1065,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                         </div>
                                     </div>
                                 </div>
-                                <div class="new-open__column">
+                                <div class="new-open__column animation-js">
                                     <div class="new-open__item-left">
                                         <div class="new-open__item-slick">
                                             <div class="new-open__item-slick-item">
                                                 <div class="new-open__item-thumb">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                                </div>
-                                                <div class="new-open__item-thumb">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/cara_white.jpg" class="" alt="CARA FUKUOKA">
                                                 </div>
                                             </div>
                                         </div>
@@ -1050,7 +1090,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             </div>
                                             <div class="new-open__item-header-right">
                                                 <div class="new-open__item-header-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/cara_white.jpg" class="" alt="CARA FUKUOKA">
                                                 </div>
                                             </div>
                                         </div>
@@ -1064,15 +1104,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                         </div>
                                     </div>
                                 </div>
-                                <div class="new-open__column">
+                                <div class="new-open__column animation-js">
                                     <div class="new-open__item-left">
                                         <div class="new-open__item-slick">
                                             <div class="new-open__item-slick-item">
                                                 <div class="new-open__item-thumb">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
-                                                </div>
-                                                <div class="new-open__item-thumb">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample02.png" class="" alt="spring">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/kobez.jpg" class="" alt="KEBOZ">
                                                 </div>
                                             </div>
                                         </div>
@@ -1092,7 +1129,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                                             </div>
                                             <div class="new-open__item-header-right">
                                                 <div class="new-open__item-header-logo">
-                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/sample-logo.png" class="" alt="">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/kobez.jpg" class="" alt="KEBOZ">
                                                 </div>
                                             </div>
                                         </div>
@@ -1115,7 +1152,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                 <div class="container">
                     <div class="row justify-center">
                         <div class="col-md-14">
-                            <h2 class="title">VISUAL</h2>
+                            <h2 class="title animation-js">VISUAL</h2>
                         </div>
                     </div>
                 </div>
@@ -1126,47 +1163,57 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="item-avr-visual">
-                                    <div class="avarta">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_01.jpg" alt="poster_yoko_01" class="show-pc">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_01.jpg" alt="poster_tate_01" class="show-mb">
-                                    </div>
+                                    <a href="https://fukuoka.parco.jp/shop/detail/?cd=010192" target="_blank">
+                                        <div class="avarta">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_01.jpg" alt="poster_yoko_01" class="show-pc">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_01.jpg" alt="poster_tate_01" class="show-mb">
+                                        </div>
+                                    </a>
                                     <div class="caption">本館2F・emmi<br>ストレッチミニワンピース19,800円（税込）/マルチベルトバッグ13,200円（税込）/ecoニットロングブーツ24,200円（税込） </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-avr-visual">
-                                    <div class="avarta">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_02.jpg" alt="poster_yoko_02" class="show-pc">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_02.jpg" alt="poster_tate_02" class="show-mb">
-                                    </div>
-                                    <div class="caption">本館4F・MURUA<br>ラウンドヘムBIGポケットGジャン15,950円（税込）/ランダムパターンシアーニット5,500円（税込）/ベルテットベアワンピース12,980円（税込）/リブソックスブーツ14,960円（税込）/2WAYベルトショルダーバッグ7,920円/ドライニットバケットハット5,500円（税込）</div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="item-avr-visual">
-                                    <div class="avarta">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_03.jpg" alt="poster_yoko_03" class="show-pc">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_03" alt="poster_tate_03" class="show-mb">
-                                    </div>
+                                    <a href="https://fukuoka.parco.jp/shop/detail/?cd=008815" target="_blank">
+                                        <div class="avarta">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_03.jpg" alt="poster_yoko_03" class="show-pc">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_03.jpg" alt="poster_tate_03" class="show-mb">
+                                        </div>
+                                    </a>
                                     <div class="caption">本館4F・LAGNAMOON<br>シャツカラーカフスニットワンピース15,400円（税込）/シアーダンボールスカート16,500円/アシンメトリースリットパンプス14,300円/ネオプレンコンビハンドバック11,000円（税込）/【NEW ERAコラボ】ハートキャップ5,280円（税込）</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-avr-visual">
-                                    <div class="avarta">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_04.jpg" alt="poster_yoko_04" class="show-pc">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_04.jpg" alt="poster_tate_04" class="show-mb">
-                                    </div>
-                                    <div class="caption">新館1F・IÈNA<br>ダミーテキスト</div>
+                                    <a href="https://fukuoka.parco.jp/shop/detail/?cd=006142" target="_blank">
+                                        <div class="avarta">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_02.jpg" alt="poster_yoko_02" class="show-pc">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_02.jpg" alt="poster_tate_02" class="show-mb">
+                                        </div>
+                                    </a>
+                                    <div class="caption">本館4F・MURUA<br>ラウンドヘムBIGポケットGジャン15,950円（税込）/ランダムパターンシアーニット5,500円（税込）/ベルテットベアワンピース12,980円（税込）/リブソックスブーツ14,960円（税込）/2WAYベルトショルダーバッグ7,920円/ドライニットバケットハット5,500円（税込）</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-avr-visual">
-                                    <div class="avarta">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_05.jpg" alt="poster_yoko_05" class="show-pc">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_05.jpg" alt="poster_tate_05" class="show-mb">
-                                    </div>
-                                    <div class="caption">新館2F・ADAM ET ROPE<br>ワイドスリーブクロップドTee11,550円（税込）/ラメパターンニットスカート15,950円（税込）/メリージェーンフラットミュール15,950円（税込）/ムスビショルダーバッグ9,900円（税込）</div>
+                                    <a href="https://fukuoka.parco.jp/shop/detail/?cd=026194" target="_blank">
+                                        <div class="avarta">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_04.jpg" alt="poster_yoko_04" class="show-pc">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_04.jpg" alt="poster_tate_04" class="show-mb">
+                                        </div>
+                                    </a>
+                                    <div class="caption">新館1F・IÈNA<br>シャツウィズブラ42,900円（税込）/コットンライトツイルタックパンツ18,700円（税込）/リボンストラップサンダル59,400円（税込）/別注ビニールバック37,400円（税込）</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-avr-visual">
+                                    <a href="https://fukuoka.parco.jp/shop/detail/?cd=006127" target="_blank">
+                                        <div class="avarta">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_yoko_05.jpg" alt="poster_yoko_05" class="show-pc">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/poster_tate_05.jpg" alt="poster_tate_05" class="show-mb">
+                                        </div>
+                                    </a>
+                                    <div class="caption">新館2F・ADAM ET ROPÈ<br>ワイドスリーブクロップドTee11,550円（税込）/ラメパターンニットスカート15,950円（税込）/メリージェーンフラットミュール15,950円（税込）/ムスビショルダーバッグ9,900円（税込）</div>
                                 </div>
                             </div>
                         </div>
@@ -1178,7 +1225,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/springspring/'; //必
                     <div class="row justify-center">
                         <div class="col-md-14">
                             <div class="avr-iframe">
-                                <iframe width="1280" height="975" src="https://www.youtube.com/embed/vPcKN4HjoiI" title="Driftveil City - Pokémon / Toothless (Marimba Ringtone)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EwvABzbNca4?si=vz7Jpag7NZ2vDBBF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                             <div class="desc-video">
                                 <p>福岡PARCO 「SPRING SPRING」撮影の様子をメイキングムービーにて公開。春のLOOKに身を包んだ鹿の間さんをぜひご覧ください。トランポリンを使用した鹿の間さんの華麗なジャンプも必見！</p>

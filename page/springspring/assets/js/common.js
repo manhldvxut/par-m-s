@@ -11,12 +11,13 @@ $(function () {
   if($('.main-mv[animation="true"]').length) {
     setTimeout(function () {
       $('.main-mv').addClass('animation-active')
-    }, 1000);
+    }, 2000);
 
     setTimeout(function () {
-      $('.main-mv__main').addClass('animation-active')
-    }, 2000);
+      $('.main-mv__main').addClass('animation-active');
+    }, 5000);
   }
+
 
   // hover active
   $('.shop-event__item').each(function() {
@@ -34,13 +35,46 @@ $(function () {
     );
     }
   })
-  
+
+  // box hover click modal show
+  $('.shop-event__item').each(function() {
+    let boxEvent = $(this).find('.shop-event__item-box');
+    let boxEventItemClick = $(this).find('.shop-event__item-btn button');
+    if(boxEvent) {
+      $(boxEvent).click(function() {
+        $(boxEventItemClick).click();
+      })
+    }
+  })
 });
 
 
 $(window).on('scroll', function () {
   scrollAddClass();
 })
+
+$(document).ready(function() {
+  if($('.main-mv__main').length) {
+    // MV slick slider
+    $('.main-mv__main-list').slick({
+      dots: false,
+      autoplay: false,
+      infinite: true,
+      speed: 1000,
+      fade: true,
+      cssEase: 'linear'
+    });
+    setTimeout(function () {
+      $('.main-mv__main-list').slick('slickPlay');
+    }, 5000);
+  }
+  
+});
+
+$(window).load(function(){
+  // box shadow fix
+  // $('.shop-event__item-box').matchHeight();
+});
 
 function scrollAddClass(){
   let fixHeightScroll = 100;
@@ -115,7 +149,6 @@ function modalSlider(target) {
 
 function modalImgSlider() {
   const slider = $(document).find('.new-open__item-slick-item');
-  console.log(slider);
   let sliderCont = slider.children('*').length;
 
   // スライダーの枚数が1より多い場合に発火
@@ -133,21 +166,6 @@ function modalImgSlider() {
     });
   }
 }
-
-// $('.visual__slick').slick({
-//   autoplay: true,
-//   autoplaySpeed: 3000,
-//   speed: 800,
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   focusOnSelect: true, 
-//   centerPadding: '0',
-//   arrows: true,
-//   dots: false,
-//   infinite: true,
-//   variableWidth: true,
-//   centerMode: true,
-// });
 
 var mySwiper = new Swiper(".swiper-visual", {
   spaceBetween: 1,
@@ -173,4 +191,8 @@ $('.box-stick-menu a').click(function(e){
 
 $('.src-paralax').each(function(i,o){
   $(this).parallax({speed:14});
+});
+
+$('.src-paralax').each(function(i,o){
+  $(this).parallax({speed:14, mobile: true,});
 });
