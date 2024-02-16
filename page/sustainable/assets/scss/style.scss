@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* =========================================================
+colors
+========================================================= */
+@import "_colors";
+
+/* =========================================================
+body
+========================================================= */
+html {
+  font-size: 62.5%;
+}
+body {
+    background-size: cover;
+    color: #1D5D00;
+    font-family: "source-han-sans-cjk-ja", sans-serif;
+    font-weight: 500;
+    font-style: 400;
+    font-size: 20px;
+    line-height: 1.8;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  } 
+  &.open_modal {
+    overflow: hidden;
+  }
+}
+
+.menu-fixed {
+  a {
+    font-family: span;
+  }
+}
+
+.title h2 span, .viewmore, .pft p {
+  font-family: span;
+}
+.main-contents {
+  // font-family: 'heisei-kaku-gothic-std', sans-serif; 
+  font-weight: 500;
+}
+@media print {
+  html, body {
+    _zoom: 70%!important;
+  }
+}
+
+main {
+  display: block; /*IE*/
+}
+
+
+/* =========================================================
+default
+========================================================= */
+@import "_default";
+
+/* =========================================================
+layout
+========================================================= */
+@import "_layout";
+
+/* =========================================================
+main
+========================================================= */
+@import "_main";
