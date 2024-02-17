@@ -34,6 +34,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/page/assets/inc/meta.php';?>
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/tagmanager1.php';?>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/css.php';?>
 </head>
@@ -61,28 +64,30 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 </header>
 <main class="main-contents">
     <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-list-item">
-                <a href="" class="nav-list-link">
-                    EVENT
-                </a>
-            </li>
-            <li class="nav-list-item">
-                <a href="" class="nav-list-link">
-                    TALK SHOW & WORK SHOP
-                </a>
-            </li>
-            <li class="nav-list-item">
-                <a href="" class="nav-list-link">
-                    POP UP SHOP
-                </a>
-            </li>
-            <li class="nav-list-item">
-                <a href="" class="nav-list-link">
-                    SUSTAINABLE ACTION
-                </a>
-            </li>
-        </ul>
+        <div class="nav-body">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="" class="nav-list-link">
+                        EVENT
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="" class="nav-list-link">
+                        TALK SHOW & WORK SHOP
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="" class="nav-list-link">
+                        POP UP SHOP
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="" class="nav-list-link">
+                        SUSTAINABLE ACTION
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <section class="mv">
         <div class="mv-body">
@@ -182,23 +187,25 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
     </section>
     <section class="ribo-text">
         <div class="container">
-            <div class="ribo-text-english">
-                KICHIJOJI PARCO SUSTAINABLE DAYS
-            </div>
-            <h2>
-                みんなのサステナ宣言展
-            </h2>
-            <div class="ribo-text-info">
-                <p>サステナブルな社会の実現に向け、皆さまから募集した「宣言」を、できるだけたくさん、館内のさまざまな場所で展示する企画です。<br>
-                そのほかにも、ワークショップやポップアップショップなど、さまざまな学びを得られるイベントが盛りだくさん。</p>  
-                <p class="ribo-text-buttom-line">さあ、未来をより良く生きるためのヒントを見つけにいこう。</p>
-                
-            </div>
-            <div class="ribo-text-timeline">
-                <ul class="ribo-text-timeline-list">
-                    <li class="ribo-text-timeline-item">期間　2024年3月15日（金）〜 3月31日（日）</li>
-                    <li class="ribo-text-timeline-item">展示場所　1F イベントスペース　1F・2F各所</li>
-                </ul>
+            <div class="ribo-text-body">
+                <div class="ribo-text-english">
+                    KICHIJOJI PARCO SUSTAINABLE DAYS
+                </div>
+                <h2>
+                    みんなのサステナ宣言展
+                </h2>
+                <div class="ribo-text-info">
+                    <p>サステナブルな社会の実現に向け、皆さまから募集した「宣言」を、できるだけたくさん、館内のさまざまな場所で展示する企画です。<br>
+                    そのほかにも、ワークショップやポップアップショップなど、さまざまな学びを得られるイベントが盛りだくさん。</p>  
+                    <p class="ribo-text-buttom-line">さあ、未来をより良く生きるためのヒントを見つけにいこう。</p>
+                </div>
+                <hr class="ribo-hr">
+                <div class="ribo-text-timeline">
+                    <ul class="ribo-text-timeline-list">
+                        <li class="ribo-text-timeline-item">期間　2024年3月15日（金）〜 3月31日（日）</li>
+                        <li class="ribo-text-timeline-item">展示場所　1F イベントスペース　1F・2F各所</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -239,158 +246,159 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </div>
                     <div class="list-column-last">
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                
+                            </div>
+                        </div>
+                        <div class="list-column-last-item">
+                            
+                            <div class="list-column-last-item-info">
+                                <div class="list-column-last-img">
+                                    <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
-                            <div class="list-column-last-item-info">
-                                <div class="list-column-last-img">
-                                    <img src="assets/images/thumb.png" alt="">
-                                </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -436,158 +444,158 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </div>
                     <div class="list-column-last">
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -632,158 +640,158 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </div>
                     <div class="list-column-last">
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="list-column-last-item">
-                            <div class="parco-tag">
-                                <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                            </div>
+                            
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
-                                <div class="parco-title">
-                                    <h3>吉祥寺ZINEフェスティバル</h3>
-                                </div>
-                                <div class="parco-desciption">
-                                    ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
-                                </div>
-                                <div class="parco-time">
-                                    ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
-                                </div>
-                                <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
-                                </div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="list-column-last-item-desc">
+                                    <div class="parco-title">
+                                        <h3>吉祥寺ZINEフェスティバル</h3>
+                                    </div>
+                                    <div class="parco-desciption">
+                                        ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                                    </div>
+                                    <div class="parco-time">
+                                        ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                                    </div>
+                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-link">
+                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -794,8 +802,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
     </section>
 
     <section class="sustainable-action">
-        <div class="container">
-            <h2 class="icon-title">
+                                            <div class="container">
+                                                <h2 class="icon-title">
                 <img src="assets/images/title-sus.svg" alt="SUSTAINABLE ACTION">
             </h2>
             <div class="sustainable-action-text">

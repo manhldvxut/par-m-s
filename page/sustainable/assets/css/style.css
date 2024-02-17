@@ -1212,7 +1212,99 @@ font-family: "source-han-sans-japanese", sans-serif;
 font-weight: 700;
 font-style: normal;
 
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.rokkitt-<uniquifier> {
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 */
+body {
+  color: #000;
+  font-family: "source-han-sans-japanese", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1130px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ribo-hr {
+  margin-top: 50px;
+  width: 80px;
+  left: 0;
+  position: relative;
+  margin-left: 0;
+}
+
+.nav {
+  background: url("../images/ami.svg") no-repeat;
+  background-size: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 3px solid #000;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.nav-body {
+  max-width: 952px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.nav-list-link {
+  font-family: "Rokkitt", serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  line-height: 1.4;
+  letter-spacing: 0;
+  -webkit-text-decoration-line: unset;
+  text-decoration-line: unset;
+  position: relative;
+  transition: .3s all;
+}
+
+.nav-list-link:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #000;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  transition: .3s all;
+}
+
+@media (min-width: 769px) {
+  .nav-list-link:hover:before {
+    transition: .3s all;
+    width: 100%;
+  }
+}
+
+.mv {
+  margin-bottom: 160px;
+}
+
 .mv-body {
   width: 100%;
   position: relative;
@@ -1524,6 +1616,191 @@ font-style: normal;
 
 .mv-background img {
   width: 100%;
+}
+
+.icon-title {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.ribo-text {
+  max-width: 1080px;
+  margin: 0 auto 350px;
+}
+
+.ribo-text > * {
+  font-family: "source-han-sans-japanese", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.85;
+}
+
+.ribo-text-english {
+  font-size: 22px;
+  color: #3AAA63;
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+
+.ribo-text h2 {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "source-han-sans-japanese", sans-serif;
+  margin-bottom: 50px;
+}
+
+.ribo-text-buttom-line {
+  display: inline-block;
+  border-bottom: 3px solid #3AAA63;
+  margin-top: 35px;
+}
+
+.ribo-text-timeline {
+  margin-top: 45px;
+}
+
+.ribo-text-timeline-list {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.ribo-text-timeline-item {
+  position: relative;
+  margin-right: 30px;
+  padding-left: 20px;
+}
+
+.ribo-text-timeline-item:last-child {
+  margin-right: 0;
+}
+
+.ribo-text-timeline-item:before {
+  position: absolute;
+  content: '＊';
+  color: #3AAA63;
+  left: 0;
+  top: 0;
+}
+
+.list-column img {
+  width: 100%;
+}
+
+.list-column-first {
+  max-width: 1050px;
+  margin: 0 auto 100px;
+}
+
+.list-column-first-list {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.list-column-first-left {
+  max-width: 30.8%;
+  margin-right: 100px;
+}
+
+.list-column-first-right {
+  max-width: 59.5%;
+}
+
+.list-column-last {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -23px;
+  margin-right: -23px;
+}
+
+.list-column-last-item {
+  width: calc(100% / 3);
+  padding-left: 23px;
+  padding-right: 23px;
+  box-sizing: border-box;
+  margin-bottom: 65px;
+}
+
+.list-column-last-item .parco-tag {
+  position: absolute;
+  right: -13px;
+  bottom: -60px;
+}
+
+.list-column-last-item-desc {
+  padding: 0 25px 25px 25px;
+}
+
+.list-column-last-img {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.parco-tag {
+  max-width: 134px;
+  margin: 0 auto 30px;
+}
+
+.parco-title {
+  margin-bottom: 25px;
+}
+
+.parco-title h3 {
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 1.25;
+  font-family: "ten-mincho-antique", sans-serif;
+  font-weight: 500;
+}
+
+.parco-desciption {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.parco-time, .parco-adress {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.75;
+}
+
+.parco-link {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.parco-link a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.event {
+  background: #B2FF9A;
+  position: relative;
+  padding-top: 100px;
+}
+
+.event:before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom right, #fff 50%, #B2FF9A 50%);
+}
+
+.event-body {
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=map/style.css.map */
