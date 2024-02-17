@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="insta" transform="translate(-227 -5058)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="28" cy="28" r="28" transform="translate(227 5058)"/>
+    <g id="logo_insta" transform="translate(244.516 5074.49)">
+      <path id="Path_57" data-name="Path 57" d="M11.7,17.8a5.888,5.888,0,1,0-5.888-5.888A5.894,5.894,0,0,0,11.7,17.8m0-9.941a4.053,4.053,0,1,1-4.053,4.053A4.057,4.057,0,0,1,11.7,7.86" transform="translate(-0.701 -0.726)" fill="#3baa64"/>
+      <path id="Path_58" data-name="Path 58" d="M19.1,4.7a1.119,1.119,0,1,1-1.119,1.119A1.119,1.119,0,0,1,19.1,4.7" transform="translate(-2.167 -0.567)" fill="#3baa64"/>
+      <path id="Path_59" data-name="Path 59" d="M15.677,0H6.323A6.324,6.324,0,0,0,0,6.323V16.05a6.323,6.323,0,0,0,6.323,6.323h9.354A6.322,6.322,0,0,0,22,16.05V6.323A6.322,6.322,0,0,0,15.677,0m4.255,16.051a4.262,4.262,0,0,1-4.256,4.254H6.325a4.262,4.262,0,0,1-4.259-4.254V6.323A4.262,4.262,0,0,1,6.325,2.069h9.351a4.261,4.261,0,0,1,4.256,4.253Z" transform="translate(0 0)" fill="#3baa64"/>
+    </g>
+  </g>
+</svg>
