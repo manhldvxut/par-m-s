@@ -23,6 +23,13 @@ $(document).ready(function(){
         }, speed, 'swing');
         return false;
     });
+
+    // ランダム
+    let items = $(".event-body .list-column-last-item").not(".not-big");
+    let randomIndex = Math.floor(Math.random() * items.length);
+    items.eq(randomIndex).addClass("active");
+    let clonedHTML = items.eq(randomIndex).clone().html();
+    console.log(clonedHTML)
 })
 
     /*  modal モーダル

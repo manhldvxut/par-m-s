@@ -580,6 +580,36 @@ body {
         max-width: 1050px;
         margin: 0 auto 100px;
 
+        .list-column-last-item {
+            padding: 0;
+            width: 100%;
+        }
+
+        .list-column-last-item-info {
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        .list-column-last-img {
+            max-width: 59.5%;
+        }
+
+        .list-column-last-item-desc {
+            max-width: 30.8%;
+            padding: 0;
+            margin-left: 100px;
+        }
+
+        .list-column-last-item .parco-tag {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin-bottom: 30px;
+        }
+
         &-list {
             display: flex;
             flex-wrap: wrap;
@@ -612,11 +642,12 @@ body {
             .parco-tag {
                 position: absolute;
                 right: -13px;
-                bottom: -60px;
+                top: -85px;
             }
 
             &-desc {
                 padding: 0 25px 25px 25px;
+                position: relative;
             }
 
             &-info {
@@ -694,6 +725,15 @@ body {
     &-body {
         padding-top: 100px;
     }
+
+    .list-column-first .list-column-last-item-info {
+        flex-direction: row-reverse;
+    }
+
+    .list-column-last-item-desc {
+        margin-left: 0;
+        margin-right: 100px;
+    }
 }
 
 // talk-show
@@ -716,11 +756,11 @@ body {
         padding-top: 110px;
     }
 
-    .list-column-first-list {
-        flex-direction: row-reverse;
+    .list-column-first .list-column-last-item-info {
+        // flex-direction: row-reverse;
     }
 
-    .list-column-first-left {
+    .list-column-last-item-desc {
         margin-right: 0;
         margin-left: 100px;
     }
@@ -746,6 +786,15 @@ body {
 
     &-body {
         padding-top: 110px;
+    }
+
+    .list-column-first .list-column-last-item-info {
+        flex-direction: row-reverse;
+    }
+
+    .list-column-last-item-desc {
+        margin-left: 0;
+        margin-right: 100px;
     }
 }
 
