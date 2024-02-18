@@ -819,7 +819,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
             <button class="modal-close js-modalclose">
-                <img src="/page/springspring/assets/images/icon-close.svg" alt="icon close">
+                <img src="assets/images/icon-close.svg" alt="icon close">
             </button>
             <div class="modal-cont">
                 <div class="img-wrap">
@@ -829,20 +829,16 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                 </div>
                 <div class=" modal-detail">
                     <div class=" modal-item-info">
-                        <div class="shop-event__item-time">2/16(金)～2/25(日)</div>
-                        <div class="shop-event__item-title">SNEAKERS 5%OFF</div>
-                        <div class="shop-event__item-desc">emmiがセレクトする人気のスニーカーが期間限定で5%OFF。emmiでしか買えない限定スニーカーや春のトレンドスニーカーが揃います。</div>
-                    </div>
-                    <div class=" modal-shop-info">
-                        <div class="shop-event__item-footer">
-                            <div class="shop-event__item-logo">
-                                <img src="/page/springspring/assets/images/emmi-logo.jpg" class="" alt="emmi">
-                            </div>
-                            <div class="shop-event__item-front">
-                                <div class="shop-event__item-floor">本館2F</div>
-                                <div class="shop-event__item-name">エミ</div>
-                            </div>
+                        <div class="parco-title">
+                            <h3>吉祥寺ZINEフェスティバル</h3>
                         </div>
+                        <div class="parco-desciption">
+                            ⼤⼈気のZINEフェス、今回は過去最⼤の150組が参加。
+                        </div>
+                        <div class="parco-time">
+                            ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
+                        </div>
+                        <div class="parco-adress">＊場所　屋上</div>
                     </div>
                 </div>
             </div>
