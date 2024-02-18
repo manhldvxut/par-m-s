@@ -802,17 +802,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             <div class="footer-sns">
                 <ul class="sns">
                     <li class="sns-item">
-                        <a href="" target="_blank">
+                        <a href="https://twitter.com/parco_kichi" target="_blank">
                             <img src="assets/images/x.svg" alt="X">
                         </a>
                     </li>
                     <li class="sns-item">
-                        <a href="" target="_blank">
+                        <a href="https://page.line.me/kichijojiparco" target="_blank">
                             <img src="assets/images/line.svg" alt="Line">
                         </a>
                     </li>
                     <li class="sns-item">
-                        <a href="" target="_blank">
+                        <a href="https://www.instagram.com/parco_kichijoji_official/" target="_blank">
                             <img src="assets/images/insta.svg" alt="Instagram">
                         </a>
                     </li>
