@@ -67,22 +67,22 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         <div class="nav-body">
             <ul class="nav-list">
                 <li class="nav-list-item">
-                    <a href="" class="nav-list-link">
+                    <a href="#event" class="nav-list-link">
                         EVENT
                     </a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="" class="nav-list-link">
+                    <a href="#talk_show" class="nav-list-link">
                         TALK SHOW & WORK SHOP
                     </a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="" class="nav-list-link">
+                    <a href="#popup_show" class="nav-list-link">
                         POP UP SHOP
                     </a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="" class="nav-list-link">
+                    <a href="#sustainable_action" class="nav-list-link">
                         SUSTAINABLE ACTION
                     </a>
                 </li>
@@ -210,7 +210,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <section class="event block-section">
+    <section class="event block-section" id="event">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/event-title.svg" alt="Event">
@@ -408,7 +408,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <section class="talk-show block-section">
+    <section class="talk-show block-section" id="talk_show">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/title-talk.svg" alt="TALK SHOW & WORK SHOP">
@@ -574,7 +574,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </section>
-    <section class="popup-shop block-section">
+    <section class="popup-shop block-section" id="popup_show">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/title-popup-shop.svg" alt="POP UP SHOP">
@@ -741,7 +741,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <section class="sustainable-action block-section">
+    <section class="sustainable-action block-section" id="sustainable_action">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/title-sus.svg" alt="SUSTAINABLE ACTION">
