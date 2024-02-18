@@ -181,7 +181,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                 </div>
             </div>
             <div class="scroll">
-                <img src="assets/images/icon-scoll.svg" alt="scroll">
+                <img src="assets/images/icon-scroll.svg" alt="scroll">
             </div>
         </div>
     </section>
@@ -210,7 +210,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <section class="event">
+    <section class="event block-section">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/event-title.svg" alt="Event">
@@ -408,7 +408,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <section class="talk-show">
+    <section class="talk-show block-section">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/title-talk.svg" alt="TALK SHOW & WORK SHOP">
@@ -449,7 +449,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
                                     </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
@@ -475,7 +475,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
                                     </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
@@ -501,7 +501,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
                                     </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
@@ -527,7 +527,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
                                     </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
@@ -553,7 +553,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
                                     </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
@@ -579,7 +579,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
                                     </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
@@ -604,7 +604,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </section>
-    <section class="popup-shop">
+    <section class="popup-shop block-section">
         <div class="container">
             <h2 class="icon-title">
                 <img src="assets/images/title-popup-shop.svg" alt="POP UP SHOP">
@@ -801,9 +801,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <section class="sustainable-action">
-                                            <div class="container">
-                                                <h2 class="icon-title">
+    <section class="sustainable-action block-section">
+        <div class="container">
+            <h2 class="icon-title">
                 <img src="assets/images/title-sus.svg" alt="SUSTAINABLE ACTION">
             </h2>
             <div class="sustainable-action-text">
@@ -815,7 +815,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <div class="modal-block js-modal modal-1">
+    <div class="modal-block js-modal modal-1" style="display: none;">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
             <button class="modal-close js-modalclose">
@@ -851,7 +851,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 </main>
 
 
-<footer>
+<footer class="footer block-section">
     <div class="footer-body">
         <div class="container">
             <div class="footer-logo">
@@ -884,7 +884,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </div>
     <div class="back-top">
-        <img src="assets/images/back-top.svg" alt="TOP">
+        <a href="#">
+            <img class="back-top-unset" src="assets/images/back-top.svg" alt="TOP">
+            <img class="back-top-hover" src="assets/images/back-top-hover.svg" alt="TOP">
+        </a>
     </div>
 </footer>
 </div>
