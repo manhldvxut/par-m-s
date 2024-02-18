@@ -233,8 +233,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                     ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
                                 </div>
                                 <div class="parco-adress">＊場所　屋上</div>
-                                <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                <div class="parco-link openModal">
+                                    <a href="" class="modal-01" data-modal="modal-1">詳しくはこちら</a>
                                 </div>
                             </div>
                             <div class="list-column-first-right">
@@ -432,7 +432,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 </div>
                                 <div class="parco-adress">＊場所　屋上</div>
                                 <div class="parco-link">
-                                    <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    <a href="">詳しくはこちら</a>
                                 </div>
                             </div>
                             <div class="list-column-first-right">
