@@ -107,16 +107,56 @@ body {
     }
 }
 
+.slick-arrow {
+    position: absolute;
+    bottom: -80px;
+
+    &.next {
+        right: 80px;
+
+        img {
+            margin-left: 20px;
+        }
+    }
+
+    &.prev {
+        left: 80px;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    img {
+        max-width: 29px;
+    }
+}
+
+.slick-arrow button {
+    background: none;
+    border: 0;
+    font-size: 19px;
+    font-family: "Rokkitt", serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
 // nav
 .nav {
-    background: url('../images/ami.svg') no-repeat;
+    background: url('../images/ami.svg') no-repeat, #fff;
     background-size: 100%;
     padding-top: 22px;
     padding-bottom: 22px;
     border-bottom: 3px solid #000;
-    visibility: hidden;
-    position: absolute;
+    display: none;
+    position: fixed;
+    width: 100%;
     top: 0;
+    z-index: 55;
 
     &-body {
         max-width: 952px;

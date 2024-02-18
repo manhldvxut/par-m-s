@@ -1164,6 +1164,7 @@ body.type4 .floornav .floornav__item04 a:after {
   left: 0;
   overflow: auto;
   z-index: 1000;
+  display: none;
 }
 
 .modal-bg {
@@ -1203,7 +1204,7 @@ body.type4 .floornav .floornav__item04 a:after {
 .modal-cont {
   display: flex;
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 25px 25px 130px;
   border: 3px solid #000;
   background: #fff;
   position: relative;
@@ -1227,6 +1228,19 @@ body.type4 .floornav .floornav__item04 a:after {
 
 .img-wrap, .modal-detail {
   box-sizing: border-box;
+}
+
+.modal-item-info {
+  margin-top: 75px;
+}
+
+.modal-item-info .parco-tag {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .img-wrap {
@@ -1370,15 +1384,54 @@ body {
   bottom: 0;
 }
 
+.slick-arrow {
+  position: absolute;
+  bottom: -80px;
+}
+
+.slick-arrow.next {
+  right: 80px;
+}
+
+.slick-arrow.next img {
+  margin-left: 20px;
+}
+
+.slick-arrow.prev {
+  left: 80px;
+}
+
+.slick-arrow.prev img {
+  margin-right: 20px;
+}
+
+.slick-arrow img {
+  max-width: 29px;
+}
+
+.slick-arrow button {
+  background: none;
+  border: 0;
+  font-size: 19px;
+  font-family: "Rokkitt", serif;
+  font-weight: bold;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .nav {
-  background: url("../images/ami.svg") no-repeat;
+  background: url("../images/ami.svg") no-repeat, #fff;
   background-size: 100%;
   padding-top: 22px;
   padding-bottom: 22px;
   border-bottom: 3px solid #000;
-  visibility: hidden;
-  position: absolute;
+  display: none;
+  position: fixed;
+  width: 100%;
   top: 0;
+  z-index: 55;
 }
 
 .nav-body {

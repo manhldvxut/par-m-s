@@ -637,7 +637,7 @@ body.type4 .floornav .floornav__item04 a:after {
   left: 0;
   overflow: auto;
   z-index: 1000;
-  // display: none;
+  display: none;
 }
 
 .modal-bg {
@@ -677,7 +677,7 @@ body.type4 .floornav .floornav__item04 a:after {
 .modal-cont {
   display: flex;
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 25px 25px 130px;
   border: 3px solid #000;
   background: #fff;
   position: relative;
@@ -701,6 +701,19 @@ body.type4 .floornav .floornav__item04 a:after {
 
 .img-wrap, .modal-detail {
   box-sizing: border-box;
+}
+
+.modal-item-info {
+    margin-top: 75px;
+
+    .parco-tag {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 }
 
 .img-wrap {

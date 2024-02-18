@@ -237,8 +237,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                         ＊⽇時　3/23(⼟) 12:00-17:00　※⾬天順延
                                     </div>
                                     <div class="parco-adress">＊場所　屋上</div>
-                                    <div class="parco-link">
-                                        <a href="" class="modal-01 js-modal">詳しくはこちら</a>
+                                    <div class="parco-link openModal">
+                                        <a href="" data-modal="modal-01">詳しくはこちら</a>
                                     </div>
                                 </div>
                                 
@@ -755,7 +755,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
         </div>
     </section>
 
-    <div class="modal-block js-modal modal-1" style="display: none;">
+    <div class="modal-block js-modal modal-01">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
             <button class="modal-close js-modalclose">
@@ -763,12 +763,16 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </button>
             <div class="modal-cont">
                 <div class="img-wrap">
-                    <div class="img-wrap__slider js-imgslider">
+                    <div class="img-wrap__slider js-modal-slider">
+                        <div class="img"><img src="assets/images/thumb.png" alt=""></div>
                         <div class="img"><img src="assets/images/thumb.png" alt=""></div>
                     </div>
                 </div>
                 <div class=" modal-detail">
                     <div class=" modal-item-info">
+                        <div class="parco-tag">
+                            <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                        </div>
                         <div class="parco-title">
                             <h3>吉祥寺ZINEフェスティバル</h3>
                         </div>
