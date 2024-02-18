@@ -25,11 +25,20 @@ $(document).ready(function(){
     });
 
     // ランダム
-    let items = $(".event-body .list-column-last-item").not(".not-big");
-    let randomIndex = Math.floor(Math.random() * items.length);
-    items.eq(randomIndex).addClass("active");
-    let clonedHTML = items.eq(randomIndex).clone().html();
-    console.log(clonedHTML)
+
+    $('.block-section').each(function() {
+    	let items = $(this).find('.list-column .list-column-last-item').not(".not-big");
+    	let appendItem = $(this).find('.event .list-column-first');
+
+    	let randomIndex = Math.floor(Math.random() * items.length);
+	    items.eq(randomIndex).addClass("active");
+	    let clonedHTML = items.eq(randomIndex).clone().html();
+
+	    $(appendItem).html(clonedHTML).removeClass('active');
+    })
+    
+
+    
 })
 
     /*  modal モーダル

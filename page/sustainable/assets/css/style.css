@@ -1884,6 +1884,10 @@ body {
   margin-bottom: 60px;
 }
 
+.list-column-last-item.active {
+  display: none;
+}
+
 .list-column-last-item .parco-tag {
   position: absolute;
   right: -13px;
@@ -1968,7 +1972,7 @@ body {
   flex-direction: row-reverse;
 }
 
-.event .list-column-last-item-desc {
+.event .list-column-first .list-column-last-item-desc {
   margin-left: 0;
   margin-right: 100px;
 }
@@ -2021,7 +2025,7 @@ body {
   flex-direction: row-reverse;
 }
 
-.popup-shop .list-column-last-item-desc {
+.popup-shop .list-column-first .list-column-last-item-desc {
   margin-left: 0;
   margin-right: 100px;
 }

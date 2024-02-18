@@ -639,6 +639,10 @@ body {
             box-sizing: border-box;
             margin-bottom: 60px;
 
+            &.active {
+                display: none;
+            }
+
             .parco-tag {
                 position: absolute;
                 right: -13px;
@@ -730,7 +734,7 @@ body {
         flex-direction: row-reverse;
     }
 
-    .list-column-last-item-desc {
+    .list-column-first .list-column-last-item-desc {
         margin-left: 0;
         margin-right: 100px;
     }
@@ -792,7 +796,7 @@ body {
         flex-direction: row-reverse;
     }
 
-    .list-column-last-item-desc {
+    .list-column-first .list-column-last-item-desc {
         margin-left: 0;
         margin-right: 100px;
     }
