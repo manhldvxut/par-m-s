@@ -1210,6 +1210,16 @@ body.type4 .floornav .floornav__item04 a:after {
   position: relative;
   box-shadow: 10px 10px 4px #0000004D;
   border-bottom: 0;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  height: 500px;
+  overflow: scroll;
+}
+
+.modal-cont::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-cont img {
@@ -1868,6 +1878,10 @@ body {
   top: 0;
 }
 
+.list-column {
+  opacity: 0;
+}
+
 .list-column img {
   width: 100%;
 }
@@ -2050,7 +2064,6 @@ body {
 
 .talk-show .list-column-last-item-desc {
   margin-right: 0;
-  margin-left: 100px;
 }
 
 .popup-shop {

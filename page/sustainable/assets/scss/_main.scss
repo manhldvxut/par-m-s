@@ -612,6 +612,8 @@ body {
 // list-column-first-list
 
 .list-column {
+    opacity: 0;
+    
     img {
         width: 100%;
     }
@@ -806,7 +808,6 @@ body {
 
     .list-column-last-item-desc {
         margin-right: 0;
-        margin-left: 100px;
     }
 }
 

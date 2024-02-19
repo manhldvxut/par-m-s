@@ -18,6 +18,17 @@ $(document).ready(function(){
         } else {
                 $('.nav').fadeOut();
         }
+
+        $('section').each(function() {
+        	let fixHeightScroll = 100;
+		    let elemPos = $(this).offset().top;
+		    let scroll = $(window).scrollTop();
+		    let windowHeight = $(window).height();
+		    console.log(11)
+		    if (scroll > elemPos - windowHeight + fixHeightScroll) {
+		      $(this).addClass('aminated');
+		    }
+		});
     });
 
     // ページスクロール
@@ -37,13 +48,16 @@ $(document).ready(function(){
 	setTimeout(() => {
 	  	$('.block-section').each(function() {
 	    	let items = $(this).find('.list-column .list-column-last-item').not(".not-big");
-	    	let appendItem = $(this).find('.event .list-column-first');
+	    	let appendItem = $(this).find('.list-column-first');
 
 	    	let randomIndex = Math.floor(Math.random() * items.length);
 		    items.eq(randomIndex).addClass("active");
 		    let clonedHTML = items.eq(randomIndex).clone().html();
 
-		    $(appendItem).html(clonedHTML).removeClass('active');
+		    $(appendItem).html(clonedHTML);
+		    $('.list-column').css({
+		    	'opacity' : 1
+		    })
 	    })
 	}, 2000);
 
