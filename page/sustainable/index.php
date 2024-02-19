@@ -63,6 +63,20 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 
 </header>
 <main class="main-contents">
+    <div class="btn-bar-menu">
+        <a href="javascript:void(0)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="66.846" height="71.676" viewBox="0 0 66.846 71.676">
+                <g id="buttton_menu" transform="translate(-10 -10)">
+                    <path id="fukidashi" d="M25.393,70.676c6.077-6.025,18.1-8.441,27.465-5.582C50.907,53.522,56.243,42.24,65.846,33.578c-9.383,1.572-12.478-10.507-7.982-19.261-7.7,4.992-8.691,1.654-8-3.78C44.2,16.068,42.093,10.691,42.409,1,35.88,13.423,25.382,15.119,19.978,7.617c.982,8.622-4.925,15.79-14.558,13.566C12.708,26.173,9.505,36.348,1,35.225c8.505,1.123,11.066,20.206,3.536,26.353C14.422,57.873,24.545,62.573,25.393,70.676Z" transform="translate(10 10)" fill="#fff" stroke="#231815" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    <g id="hamburger_" data-name="hamburger ">
+                        <line id="Line_21" data-name="Line 21" x2="20" transform="translate(32.947 42.838)" fill="none" stroke="#231815" stroke-width="2.049"/>
+                        <line id="Line_23" data-name="Line 23" x2="20" transform="translate(32.947 48.838)" fill="none" stroke="#231815" stroke-width="2.049"/>
+                        <line id="Line_25" data-name="Line 25" x2="20" transform="translate(32.947 54.838)" fill="none" stroke="#231815" stroke-width="2.049"/>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </div>
     <nav class="nav">
         <div class="nav-body">
             <ul class="nav-list">
@@ -91,92 +105,97 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
     </nav>
     <section class="mv">
         <div class="mv-body">
+            <div class="bg-cover wow fadeInCover"></div>
+            <div class="avr-mobile"><img src="/<?php echo DIRNAME; ?>/assets/images/mv/mv-mb.png" class="w-100" alt=""></div>
+            <div class="avarta wow fadeIn" data-wow-delay="1.2s">
+                <img src="/<?php echo DIRNAME; ?>/assets/images/mv/top_ami_pc.png" alt="">
+            </div>
             <div class="mv-listitem">
-                <div class="mv-listitem-01 wow rubberBand" data-wow-delay="1.4s">
+                <div class="mv-listitem-01 wow rubberBand" data-wow-delay="2.9s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_01.png" alt="">
                 </div>
-                <div class="mv-listitem-02 wow rubberBand" data-wow-delay="2.12s"">
+                <div class="mv-listitem-02 wow rubberBand" data-wow-delay="3.6s"">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_02.png" alt="">
                 </div>
-                <div class="mv-listitem-03  wow rubberBand" data-wow-delay="1.76s">
+                <div class="mv-listitem-03  wow rubberBand" data-wow-delay="3.86s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_03.png" alt="">
                 </div>
-                <div class="mv-listitem-04 wow rubberBand" data-wow-delay="1.9s"">
+                <div class="mv-listitem-04 wow rubberBand" data-wow-delay="3.4s"">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_04.png" alt="">
                 </div>
-                <div class="mv-listitem-05 wow rubberBand" data-wow-delay="1.65s">
+                <div class="mv-listitem-05 wow rubberBand" data-wow-delay="3.25s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_05.png" alt="">
                 </div>
-                <div class="mv-listitem-06  wow rubberBand" data-wow-delay="0.4s">
+                <div class="mv-listitem-06  wow rubberBand" data-wow-delay="1.9s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_01.png" alt="">
                 </div>
-                <div class="mv-listitem-07  wow rubberBand" data-wow-delay="0.5s">
+                <div class="mv-listitem-07  wow rubberBand" data-wow-delay="2s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_02.png" alt="">
                 </div>
-                <div class="mv-listitem-08  wow rubberBand" data-wow-delay="0.36s">
+                <div class="mv-listitem-08  wow rubberBand" data-wow-delay="1.89s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_03.png" alt="">
                 </div>
-                <div class="mv-listitem-09  wow rubberBand" data-wow-delay="0.6s">
+                <div class="mv-listitem-09  wow rubberBand" data-wow-delay="2.1s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_04.png" alt="">
                 </div>
-                <div class="mv-listitem-10  wow rubberBand" data-wow-delay="0.8s">
+                <div class="mv-listitem-10  wow rubberBand" data-wow-delay="2.3s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_05.png" alt="">
                 </div>
-                <div class="mv-listitem-11  wow rubberBand" data-wow-delay="0.3s">
+                <div class="mv-listitem-11  wow rubberBand" data-wow-delay="1.8s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_06.png" alt="">
                 </div>
-                <div class="mv-listitem-12  wow rubberBand" data-wow-delay="0.46s">
+                <div class="mv-listitem-12  wow rubberBand" data-wow-delay="1.96s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_07.png" alt="">
                 </div>
-                <div class="mv-listitem-13  wow rubberBand" data-wow-delay="0.15s">
+                <div class="mv-listitem-13  wow rubberBand" data-wow-delay="1.65s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_08.png" alt="">
                 </div>
-                <div class="mv-listitem-14  wow rubberBand" data-wow-delay="0.35s">
+                <div class="mv-listitem-14  wow rubberBand" data-wow-delay="1.85s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_09.png" alt="">
                 </div>
-                <div class="mv-listitem-15  wow rubberBand" data-wow-delay="0.32s">
+                <div class="mv-listitem-15  wow rubberBand" data-wow-delay="1.82s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_10.png" alt="">
                 </div>
-                <div class="mv-listitem-16  wow rubberBand" data-wow-delay="0.6s">
+                <div class="mv-listitem-16  wow rubberBand" data-wow-delay="2.1s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_11.png" alt="">
                 </div>
-                <div class="mv-listitem-17  wow rubberBand" data-wow-delay="0.24s">
+                <div class="mv-listitem-17  wow rubberBand" data-wow-delay="1.74s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_12.png" alt="">
                 </div>
-                <div class="mv-listitem-18  wow rubberBand" data-wow-delay="0.24s">
+                <div class="mv-listitem-18  wow rubberBand" data-wow-delay="1.96s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_13.png" alt="">
                 </div>
-                <div class="mv-listitem-19  wow rubberBand" data-wow-delay="0.4s">
+                <div class="mv-listitem-19  wow rubberBand" data-wow-delay="1.9s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_14.png" alt="">
                 </div>
-                <div class="mv-listitem-20  wow rubberBand" data-wow-delay="0.75s">
+                <div class="mv-listitem-20  wow rubberBand" data-wow-delay="2.25s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_15.png" alt="">
                 </div>
-                <div class="mv-listitem-21  wow rubberBand" data-wow-delay="0.6s">
+                <div class="mv-listitem-21  wow rubberBand" data-wow-delay="2.1s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_16.png" alt="">
                 </div>
-                <div class="mv-listitem-22  wow rubberBand" data-wow-delay="0.34s">
+                <div class="mv-listitem-22  wow rubberBand" data-wow-delay="1.84s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_17.png" alt="">
                 </div>
-                <div class="mv-listitem-23  wow rubberBand" data-wow-delay="0.42s">
+                <div class="mv-listitem-23  wow rubberBand" data-wow-delay="1.92s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_18.png" alt="">
                 </div>
-                <div class="mv-listitem-24  wow rubberBand" data-wow-delay="0.8s">
+                <div class="mv-listitem-24  wow rubberBand" data-wow-delay="2.3s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_19.png" alt="">
                 </div>
-                <div class="mv-listitem-25  wow rubberBand" data-wow-delay="0.36s">
+                <div class="mv-listitem-25  wow rubberBand" data-wow-delay="1.86s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_20.png" alt="">
                 </div>
-                <div class="mv-listitem-26  wow rubberBand" data-wow-delay="0.48s">
+                <div class="mv-listitem-26  wow rubberBand" data-wow-delay="1.98s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_21.png" alt="">
                 </div>
-                <div class="mv-listitem-27  wow rubberBand" data-wow-delay="0.65s">
+                <div class="mv-listitem-27  wow rubberBand" data-wow-delay="2.15s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_22.png" alt="">
                 </div>
-                <div class="mv-listitem-28  wow rubberBand" data-wow-delay="0.5s">
+                <div class="mv-listitem-28  wow rubberBand" data-wow-delay="2s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_23.png" alt="">
                 </div>
-                <div class="mv-listitem-29  wow rubberBand" data-wow-delay="0.45s">
+                <div class="mv-listitem-29  wow rubberBand" data-wow-delay="1.95s">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_24.png" alt="">
                 </div>
             </div>
@@ -185,23 +204,24 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </section>
+
     <section class="ribo-text">
         <div class="container">
             <div class="ribo-text-body">
-                <div class="ribo-text-english">
+                <div class="ribo-text-english wow fadeIn">
                     KICHIJOJI PARCO SUSTAINABLE DAYS
                 </div>
-                <h2>
+                <h2 class=" wow fadeIn" data-wow-delay="0.2s">
                     みんなのサステナ宣言展
                 </h2>
-                <div class="ribo-text-info">
+                <div class="ribo-text-info  wow fadeIn" data-wow-delay="0.4s">
                     <p>サステナブルな社会の実現に向け、皆さまから募集した「宣言」を、できるだけたくさん、館内のさまざまな場所で展示する企画です。<br>
                     そのほかにも、ワークショップやポップアップショップなど、さまざまな学びを得られるイベントが盛りだくさん。</p>  
-                    <p class="ribo-text-buttom-line">さあ、未来をより良く生きるためのヒントを見つけにいこう。</p>
+                    <p class="ribo-text-buttom-line wow" data-wow-delay="0.75s">さあ、未来をより良く生きるためのヒントを見つけにいこう。</p>
                 </div>
-                <hr class="ribo-hr">
+                <hr class="ribo-hr  wow fadeIn"  data-wow-delay="0.55s">
                 <div class="ribo-text-timeline">
-                    <ul class="ribo-text-timeline-list">
+                    <ul class="ribo-text-timeline-list  wow fadeIn" data-wow-delay="0.6s">
                         <li class="ribo-text-timeline-item">期間　2024年3月15日（金）〜 3月31日（日）</li>
                         <li class="ribo-text-timeline-item">展示場所　1F イベントスペース　1F・2F各所</li>
                     </ul>
@@ -212,12 +232,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 
     <section class="event block-section" id="event">
         <div class="container">
-            <h2 class="icon-title">
+            <h2 class="icon-title wow rubberBand">
                 <img src="assets/images/event-title.svg" alt="Event">
             </h2>
             <div class="event-body">
                 <div class="list-column">
-                    <div class="list-column-first">
+                    <div class="list-column-first wow fadeInUp">
                         <div class="list-column-last-item">
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
@@ -291,6 +311,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/event_3_1.jpg" alt="冷蔵文庫">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
@@ -339,6 +362,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/event_5.jpg" alt="芝生蚤の市 in吉祥寺PARCO ‘24 SPRING">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
@@ -412,20 +438,23 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 
     <section class="talk-show block-section" id="talk_show">
         <div class="container">
-            <h2 class="icon-title">
+            <h2 class="icon-title wow rubberBand">
                 <img src="assets/images/title-talk.svg" alt="TALK SHOW & WORK SHOP">
             </h2>
             <div class="talk-show-body">
                 <div class="list-column">
-                    <div class="list-column-first">
+                    <div class="list-column-first wow fadeInUp">
                         <div class="list-column-last-item">
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/talkshow_1_1.jpg" alt="スタイルテーブルトークショー「サスティナブル入門」">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
                                     </div>
                                     <div class="parco-title">
                                         <h3>スタイルテーブル<br>トークショー「サスティナブル入門」</h3>
@@ -518,10 +547,13 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/talkshow_4.jpg" alt="スティールパンとあそぼう">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
                                     </div>
                                     <div class="parco-title">
                                         <h3>スティールパンとあそぼう</h3>
@@ -566,22 +598,26 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </section>
+
     <section class="popup-shop block-section" id="popup_show">
         <div class="container">
-            <h2 class="icon-title">
+            <h2 class="icon-title wow rubberBand">
                 <img src="assets/images/title-popup-shop.svg" alt="POP UP SHOP">
             </h2>
             <div class="popup-shop-body">
                 <div class="list-column">
-                    <div class="list-column-first">
+                    <div class="list-column-first wow fadeInUp">
                         <div class="list-column-last-item">
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag-02.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
                                     </div>
                                     <div class="parco-title">
                                         <h3>TABESUS</h3>
@@ -606,10 +642,13 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/thumb.png" alt="TABESUS">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag-03.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag-03.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
                                     </div>
                                     <div class="parco-title">
                                         <h3>TABESUS</h3>
@@ -675,10 +714,13 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
                                     <img src="assets/images/popup_4.jpg" alt="The Moon">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag-03.svg" alt="PARCO初">
+                                    </div>
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-tag">
-                                        <img src="assets/images/parco-tag-03.svg" alt="PARCO初">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
                                     </div>
                                     <div class="parco-title">
                                         <h3>The Moon</h3>
@@ -704,7 +746,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 
     <section class="sustainable-action block-section" id="sustainable_action">
         <div class="container">
-            <h2 class="icon-title">
+            <h2 class="icon-title wow rubberBand">
                 <img src="assets/images/title-sus.svg" alt="SUSTAINABLE ACTION">
             </h2>
             <div class="sustainable-action-text">
@@ -749,6 +791,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </div>
+
     <div class="modal-block js-modal modal-02">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
@@ -780,6 +823,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </div>
+
     <div class="modal-block js-modal modal-03">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
@@ -816,6 +860,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </div>
+
     <div class="modal-block js-modal modal-04">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
@@ -845,6 +890,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </div>
+
     <div class="modal-block js-modal modal-05">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
@@ -884,6 +930,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </div>
+
     <div class="modal-block js-modal modal-06">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">
@@ -924,6 +971,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </div>
         </div>
     </div>
+
     <div class="modal-block js-modal modal-07">
         <div class="modal-bg js-modalclose"></div>
         <div class="modal-wrap">

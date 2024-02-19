@@ -32,6 +32,12 @@ font-style: normal;
   font-style: normal;
 }
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     color: #000;
     font-family: "source-han-sans-japanese", sans-serif;
@@ -44,6 +50,13 @@ body {
     bottom: 20px;
     right: 20px;
     animation: bounce 1.5s infinite;
+    @media (max-width: 1023px) {
+        bottom: 10px;
+        right: 10px;
+        img {
+            max-height: 42px;
+        }
+    }
 }
 
 .container {
@@ -51,6 +64,32 @@ body {
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @media (max-width: 1250px) {
+        max-width: 100%;
+        padding: 0 60px;
+    }
+    @media (max-width: 1023px) {
+        padding: 0 32px;
+    }
+    @media (max-width: 767px) {
+        padding: 0 18px;
+    }
+}
+
+.btn-bar-menu {
+    position: fixed;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    display: none;
+    @media (max-width: 1023px) {
+        display: flex;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
 .ribo-hr {
@@ -59,12 +98,17 @@ body {
     left: 0;
     position: relative;
     margin-left: 0;
+    @media (max-width: 1023px) {
+        margin-top: 36px;
+        width: 45px;
+    }
 }
 
 .block-section {
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .back-top {
@@ -73,6 +117,10 @@ body {
     right: 30px;
     cursor: pointer;
     z-index: 10;
+    @media (max-width: 1023px) {
+        right: 16px;
+        bottom: 16px;
+    }
 
     @media (min-width: 769px) {
         &:hover {
@@ -98,6 +146,9 @@ body {
         content: "";
         right: 0;
         bottom: 0;
+        @media (max-width: 1023px) {
+            max-width: 45px;
+        }
     }
 }
 
@@ -148,7 +199,7 @@ body {
 // nav
 .nav {
     background: url('../images/ami.svg') no-repeat, #fff;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 22px;
     padding-bottom: 22px;
     border-bottom: 3px solid #000;
@@ -157,6 +208,10 @@ body {
     width: 100%;
     top: 0;
     z-index: 55;
+
+    @media (max-width: 1023px) {
+        display: none !important;
+    }
 
     &-body {
         max-width: 952px;
@@ -185,6 +240,9 @@ body {
             text-decoration-line: unset;
             position: relative;
             transition: .3s all;
+            @media (max-width: 1200px) {
+                font-size: 20px;
+            }
 
             &:before {
                 position: absolute;
@@ -214,19 +272,71 @@ body {
 
 .mv {
     margin-bottom: 160px;
+    @media (max-width: 1023px) {
+        margin-bottom: 125px;
+    }
 
     &-body {
         width: 100%;
         position: relative;
         height: 56.25vw;
         overflow: hidden;
-        background: url('../images/mv/top_ami_pc.png') no-repeat;
-        background-size: cover;
+        @media (max-width: 1023px) {
+            height: auto;
+        }
+        .avr-mobile {
+            display: none;
+            @media (max-width: 1023px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    min-height: 100vh;
+                }
+            }
+        }
+        .avarta {
+            position: absolute;
+            z-index: 2;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            @media (max-width: 1023px) {
+                display: none;
+            }
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .bg-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ebebeb;
+            z-index: 1;
+            @media (max-width: 1023px) {
+                display: none;
+            }
+        }
     }
 
     &-listitem {
         position: absolute;
         width: 100%;
+        z-index: 3;
+        @media (max-width: 1023px) {
+            opacity: 0;
+        }
 
 
         > * {
@@ -541,6 +651,14 @@ body {
 .ribo-text {
     max-width: 1080px;
     margin: 0 auto 350px;
+    @media (max-width: 1250px) {
+        max-width: 100%;
+        margin: 0 auto 200px auto;
+    }
+    @media (max-width: 1023px) {
+        margin: 0 auto 97px auto;
+        padding: 0 10px;
+    }
 
     > * {
         font-family: "source-han-sans-japanese", sans-serif;
@@ -548,6 +666,9 @@ body {
         font-weight: 500;
         letter-spacing: 0;
         line-height: 1.85;
+        @media (max-width: 1023px) {
+            font-size: 14px;
+        }
     }
 
     &-english {
@@ -557,6 +678,10 @@ body {
         font-weight: 500;
         letter-spacing: 0;
         margin-bottom: 5px;
+        @media (max-width: 1023px) {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
     }
 
     h2 {
@@ -565,6 +690,10 @@ body {
         letter-spacing: 0;
         font-family: "source-han-sans-japanese", sans-serif;
         margin-bottom: 50px;
+        @media (max-width: 1023px) {
+            font-size: 26px;
+            margin-bottom: 48px;
+        }
     }
 
     &-info {
@@ -575,22 +704,45 @@ body {
 
     &-buttom-line {
         display: inline-block;
-        border-bottom: 3px solid #3AAA63;
         margin-top: 35px;
+        position: relative;
+        @media (max-width: 1023px) {
+            margin-top: 0;
+        }
+        &:after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background: #3AAA63;
+            transition: 0.4s all !important;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &.animated {
+            &:after {
+                width: 100%;
+            }
+        }
     }
 
     &-timeline {
         margin-top: 45px;
+        @media (max-width: 1023px) {
+            margin-top: 36px;
+        }
 
         &-list {
             display: flex;
             flex-wrap: wrap;
             box-sizing: border-box;
+            @media (max-width: 1023px) {
+                display: block;
+            }
         }
 
         &-item {
             position: relative;
-            margin-right: 30px;
             padding-left: 20px;
 
             &:last-child {
@@ -619,29 +771,59 @@ body {
     }
 
     &-first {
-        max-width: 1050px;
         margin: 0 auto 100px;
+        @media (max-width: 1023px) {
+            margin: 0 0 56px 0;
+        }
 
         .list-column-last-item {
             padding: 0;
             width: 100%;
+            display: flex;
+            align-items: center;
         }
 
         .list-column-last-item-info {
             display: flex;
-            flex-wrap: wrap;
             box-sizing: border-box;
             align-items: center;
+            @media (max-width: 1023px) {
+                display: block;
+            }
         }
 
         .list-column-last-img {
-            max-width: 59.5%;
+            max-width: 60%;
+            margin-bottom: 0;
+            @media (max-width: 1023px) {
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+            .parco-tag {
+                @media (max-width: 1023px) {
+                    margin: 0;
+                    position: absolute;
+                    z-index: 2;
+                    top: unset;
+                    bottom: -20px;
+                    right: 20px;
+                    max-width: 90px;
+                }
+            }
         }
 
         .list-column-last-item-desc {
-            max-width: 30.8%;
-            padding: 0;
-            margin-left: 100px;
+            max-width: 40%;
+            padding: 0 10% 0 0;
+            flex: 0 0 40%;
+            position: relative;
+            @media (max-width: 1250px) {
+                padding: 0 6% 0 0;
+            }
+            @media (max-width: 1023px) {
+                padding: 0 32px !important;
+                max-width: 100%;
+            }
         }
 
         .list-column-last-item .parco-tag {
@@ -654,7 +836,6 @@ body {
 
         &-list {
             display: flex;
-            flex-wrap: wrap;
             box-sizing: border-box;
         }
 
@@ -666,6 +847,17 @@ body {
         &-right {
             max-width: 59.5%;
         }
+
+        .parco-title {
+            @media (max-width: 1023px) {
+                margin-bottom: 18px;
+            }
+            h3 {
+                @media (max-width: 1023px) {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
     &-last {
@@ -673,6 +865,16 @@ body {
         flex-wrap: wrap;
         margin-left: -23px;
         margin-right: -23px;
+        @media (max-width: 1023px) {
+            display: block;
+            margin: 0;
+        }
+
+        &-item-info {
+            @media (max-width: 1023px) {
+                display: flex;
+            }
+        }
 
         &-item {
             width: calc(100% / 3);
@@ -680,6 +882,14 @@ body {
             padding-right: 23px;
             box-sizing: border-box;
             margin-bottom: 60px;
+            @media (max-width: 1023px) {
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
 
             &.active {
                 display: none;
@@ -689,11 +899,19 @@ body {
                 position: absolute;
                 right: -13px;
                 top: -85px;
+                @media (max-width: 1023px) {
+                    display: none;
+                }
             }
 
             &-desc {
                 padding: 0 25px 25px 25px;
                 position: relative;
+                @media (max-width: 1023px) {
+                    flex: 0 0 calc(100% - 108px);
+                    max-width: calc(100% - 108px);
+                    padding: 0 0 0 20px;
+                }
             }
 
             &-info {
@@ -704,6 +922,21 @@ body {
         &-img {
             margin-bottom: 40px;
             position: relative;
+            @media (max-width: 1023px) {
+                margin: 0;
+                flex: 0 0 108px;
+                max-width: 108px;
+            }
+            .parco-tag {
+                display: none;
+                @media (max-width: 1023px) {
+                    display: block;
+                    top: 0;
+                    right: 0;
+                    position: relative;
+                    margin: 8px 0 0 0;
+                }
+            }
         }
     }
 }
@@ -712,16 +945,25 @@ body {
     &-tag {
         max-width: 134px;
         margin: 0 auto 30px;
+        @media (max-width: 1023px) {
+            display: none;
+        }
     }
 
     &-title {
         margin-bottom: 25px;
+        @media (max-width: 1023px) {
+            margin-bottom: 13px;
+        }
         h3 {
             font-size: 24px;
             letter-spacing: 0;
             line-height: 1.25;
             font-family: "ten-mincho-antique", sans-serif;
             font-weight: 500;
+            @media (max-width: 1023px) {
+                font-size: 15px;
+            }
         }
     }
 
@@ -730,12 +972,19 @@ body {
         letter-spacing: 0;
         line-height: 1.75;
         margin-bottom: 20px;
+        @media (max-width: 1023px) {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
     }
 
     &-time, &-adress {
         font-size: 16px;
         letter-spacing: 0;
         line-height: 1.75;
+        @media (max-width: 1023px) {
+            font-size: 12px;
+        }
     }
 
     &-link {
@@ -747,6 +996,11 @@ body {
             font-weight: 500;
             letter-spacing: 0;
             text-decoration: none;
+            @media (max-width: 1023px) {
+                border-bottom: 3px solid;
+                padding-bottom: 4px;
+                font-size: 12px;
+            }
         }
     }
 }
@@ -754,6 +1008,9 @@ body {
 // event
 .event {
     background: #B2FF9A;
+    @media (max-width: 1023px) {
+        padding-bottom: 56px;
+    }
     
     &:before {
         position: absolute;
@@ -762,14 +1019,28 @@ body {
         width: 100%;
         height: 200px;
         background:linear-gradient(to bottom right,#fff 50%, #B2FF9A 50%);
+        @media (max-width: 1023px) {
+            height: 100px;
+        }
     }
 
     .icon-title {
         margin-top: -25px;
+        @media (max-width: 1023px) {
+            margin-top: -80px;
+        }
+        img {
+            @media (max-width: 1023px) {
+                max-height: 62px;
+            }
+        }
     }
 
     &-body {
         padding-top: 100px;
+        @media (max-width: 1023px) {
+            padding-top: 65px;
+        }
     }
 
     .list-column-first .list-column-last-item-info {
@@ -778,28 +1049,41 @@ body {
 
     .list-column-first .list-column-last-item-desc {
         margin-left: 0;
-        margin-right: 100px;
     }
 }
 
 // talk-show
 .talk-show {
+    @media (max-width: 1023px) {
+        padding-bottom: 56px;
+    }
     &:before {
         position: absolute;
-        top: -65px;
+        top: 0;
         content: "";
         width: 100%;
         height: 200px;
         background: linear-gradient(to top right, #fff 50%, #B2FF9A 50%);
         z-index: 1;
+        @media (max-width: 1023px) {
+            height: 100px;
+        }
     }
 
     .icon-title {
         margin-top: -85px;
+        img {
+            @media (max-width: 1023px) {
+                max-height: 62px;
+            }
+        }
     }
 
     &-body {
         padding-top: 110px;
+        @media (max-width: 1023px) {
+            padding: 80px 0 0 0;
+        }
     }
 
     .list-column-first .list-column-last-item-info {
@@ -808,6 +1092,10 @@ body {
 
     .list-column-last-item-desc {
         margin-right: 0;
+        padding: 0 0 0 10%;
+        @media (max-width: 1023px) {
+            padding: 0 0 0 20px;
+        }
     }
 }
 
@@ -815,6 +1103,9 @@ body {
 //popup-shop
 .popup-shop {
     background: #FFE07E;
+    @media (max-width: 1023px) {
+        padding-bottom: 56px;
+    }
 
     &:before {
         position: absolute;
@@ -823,14 +1114,28 @@ body {
         width: 100%;
         height: 200px;
         background:linear-gradient(to bottom right,#fff 50%, #FFE07E 50%);
+        @media (max-width: 1023px) {
+            height: 100px;
+        }
     }
 
     .icon-title {
         margin-top: -45px;
+        @media (max-width: 1023px) {
+            margin-top: -80px;
+        }
+        img {
+            @media (max-width: 1023px) {
+                max-height: 62px;
+            }
+        }
     }
 
     &-body {
         padding-top: 110px;
+        @media (max-width: 1023px) {
+            padding-top: 56px;
+        }
     }
 
     .list-column-first .list-column-last-item-info {
@@ -839,25 +1144,39 @@ body {
 
     .list-column-first .list-column-last-item-desc {
         margin-left: 0;
-        margin-right: 100px;
     }
 }
 
 // sustainable-action
 .sustainable-action {
+    @media (max-width: 1023px) {
+        padding-bottom: 56px;
+    }
     &:before {
         position: absolute;
-        top: -65px;
+        top: 0;
         content: "";
         width: 100%;
         height: 200px;
         background: linear-gradient(to top right, #fff 50%, #FFE07E 50%);
         z-index: 1;
+        @media (max-width: 1023px) {
+            height: 100px;
+        }
     }
 
     .icon-title {
         margin-top: 60px;
         margin-bottom: 100px;
+        @media (max-width: 1023px) {
+            margin-top: 56px;
+            margin-bottom: 36px;
+        }
+        img {
+            @media (max-width: 1023px) {
+                max-height: 62px;
+            }
+        }
     }
 
     &-text {
@@ -867,6 +1186,10 @@ body {
         letter-spacing: 0;
         line-height: 1.85;
         margin-bottom: 40px;
+        @media (max-width: 1023px) {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
     }
 
     .parco-link {
@@ -880,6 +1203,9 @@ body {
 
 .footer {
     background: url('../images/ami.svg'), #3AAA63 no-repeat;
+    @media (max-width: 1023px) {
+        padding-bottom: 44px;
+    }
 
     &:before {
         position: absolute;
@@ -888,17 +1214,29 @@ body {
         width: 100%;
         height: 200px;
         background: linear-gradient(to bottom right, #fff 50%, transparent 50%);
+        @media (max-width: 1023px) {
+            height: 100px;
+        }
     }
 
 
     &-body {
         padding-top: 100px;
+        @media (max-width: 1023px) {
+            padding-top: 38px;
+        }
     }
 
     &-logo {
         text-align: center;
         max-width: 175px;
         margin: 0 auto 15px;
+        @media (max-width: 1023px) {
+            margin: 0 auto;
+            img {
+                max-height: 100px;
+            }
+        }
     }
 
     &-copyright {
@@ -907,6 +1245,9 @@ body {
         text-align: center;
         font-weight: 500;
         letter-spacing: 0;
+        @media (max-width: 1023px) {
+            font-size: 13px;
+        }
     }
 }
 
@@ -915,6 +1256,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    @media (max-width: 1023px) {
+        margin: 0;
+        padding: 16px 0;
+    }
 
     &-item {
         margin-right: 11px;
