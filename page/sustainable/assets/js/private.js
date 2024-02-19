@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	new WOW().init();
+
 	modal();
 	modalSlider();
 
