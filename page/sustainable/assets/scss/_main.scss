@@ -162,24 +162,43 @@ body {
     position: absolute;
     bottom: -80px;
 
+    @media (max-width: 1023px) {
+        bottom: 32px;
+    }
+
     &.next {
         right: 80px;
+        @media (max-width: 1023px) {
+            right: 70px;
+        }
 
         img {
             margin-left: 20px;
+            @media (max-width: 1023px) {
+                margin-left: 10px;
+            }
         }
     }
 
     &.prev {
         left: 80px;
+        @media (max-width: 1023px) {
+            left: 70px;
+        }
 
         img {
             margin-right: 20px;
+            @media (max-width: 1023px) {
+                margin-right: 10px;
+            }
         }
     }
 
     img {
         max-width: 29px;
+        @media (max-width: 1023px) {
+            max-width: 17px;
+        }
     }
 }
 
@@ -193,6 +212,9 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    @media (max-width: 1023px) {
+        font-size: 14px;
+    }
 
 }
 
@@ -709,21 +731,21 @@ body {
         @media (max-width: 1023px) {
             margin-top: 0;
         }
-        &:after {
-            content: "";
-            width: 0;
-            height: 3px;
-            background: #3AAA63;
-            transition: 0.4s all !important;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-        &.animated {
-            &:after {
-                width: 100%;
-            }
-        }
+        //&:after {
+        //    content: "";
+        //    width: 0;
+        //    height: 3px;
+        //    background: #3AAA63;
+        //    transition: 0.4s all !important;
+        //    position: absolute;
+        //    bottom: 0;
+        //    left: 0;
+        //}
+        //&.animated {
+        //    &:after {
+        //        width: 100%;
+        //    }
+        //}
     }
 
     &-timeline {
@@ -759,7 +781,22 @@ body {
         }
     }
 }
-
+.line-ribo-txt {
+    position: relative;
+    width: max-content;
+    .line {
+        background: #3AAA63;
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .5s all !important;
+        &.animated {
+            width: 100%;
+        }
+    }
+}
 
 // list-column-first-list
 
@@ -1335,7 +1372,7 @@ body {
     @media (max-width: 1023px) {
         display: flex;
     }
-    &.fadeMenu {
+    &.active {
         top: 0;
     }
     .close-menu {

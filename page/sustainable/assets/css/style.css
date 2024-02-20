@@ -1091,6 +1091,14 @@ body.type4 .floornav .floornav__item04 a:after {
   z-index: 5;
 }
 
+@media (max-width: 1023px) {
+  .content-mdal {
+    max-height: 86vh;
+    overflow: auto;
+    position: relative;
+  }
+}
+
 .modal-cont {
   display: flex;
   flex-wrap: wrap;
@@ -1108,9 +1116,9 @@ body.type4 .floornav .floornav__item04 a:after {
 @media (max-width: 1023px) {
   .modal-cont {
     height: auto;
-    max-height: 86vh;
     display: block;
-    padding: 0 0 100px 0;
+    padding: 0 0 80px 0;
+    overflow: hidden;
   }
 }
 @media (max-width: 1023px) {
@@ -1391,20 +1399,50 @@ body {
   position: absolute;
   bottom: -80px;
 }
+@media (max-width: 1023px) {
+  .slick-arrow {
+    bottom: 32px;
+  }
+}
 .slick-arrow.next {
   right: 80px;
+}
+@media (max-width: 1023px) {
+  .slick-arrow.next {
+    right: 70px;
+  }
 }
 .slick-arrow.next img {
   margin-left: 20px;
 }
+@media (max-width: 1023px) {
+  .slick-arrow.next img {
+    margin-left: 10px;
+  }
+}
 .slick-arrow.prev {
   left: 80px;
+}
+@media (max-width: 1023px) {
+  .slick-arrow.prev {
+    left: 70px;
+  }
 }
 .slick-arrow.prev img {
   margin-right: 20px;
 }
+@media (max-width: 1023px) {
+  .slick-arrow.prev img {
+    margin-right: 10px;
+  }
+}
 .slick-arrow img {
   max-width: 29px;
+}
+@media (max-width: 1023px) {
+  .slick-arrow img {
+    max-width: 17px;
+  }
 }
 
 .slick-arrow button {
@@ -1417,6 +1455,11 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .slick-arrow button {
+    font-size: 14px;
+  }
 }
 
 .nav {
@@ -1873,19 +1916,6 @@ body {
     margin-top: 0;
   }
 }
-.ribo-text-buttom-line:after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #3AAA63;
-  transition: 0.4s all !important;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.ribo-text-buttom-line.animated:after {
-  width: 100%;
-}
 .ribo-text-timeline {
   margin-top: 45px;
 }
@@ -1917,6 +1947,23 @@ body {
   color: #3AAA63;
   left: 0;
   top: 0;
+}
+
+.line-ribo-txt {
+  position: relative;
+  width: max-content;
+}
+.line-ribo-txt .line {
+  background: #3AAA63;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s all !important;
+}
+.line-ribo-txt .line.animated {
+  width: 100%;
 }
 
 .list-column {
@@ -2495,7 +2542,7 @@ body {
     display: flex;
   }
 }
-.nav-mb.fadeMenu {
+.nav-mb.active {
   top: 0;
 }
 .nav-mb .close-menu {

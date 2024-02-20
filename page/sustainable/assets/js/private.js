@@ -45,11 +45,14 @@ $(document).ready(function(){
     });
 
     $('.btn-bar-menu a').click(function() {
-    	$('.nav-mb').addClass('wow fadeMenu animated');
+    	$('.nav-mb').addClass('wow fadeMenu animated active');
     });
 
     $('.close-menu a').click(function() {
-    	$('.nav-mb').removeClass('fadeMenu');
+    	$('.nav-mb').addClass('wow hideMenu animated').removeClass('fadeMenu');
+		setTimeout(function() {
+			$('.nav-mb').removeClass('wow fadeMenu hideMenu animated active');
+		}, 900);
     });
 
     // ランダム

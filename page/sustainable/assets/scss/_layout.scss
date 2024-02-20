@@ -677,6 +677,14 @@ body.type4 .floornav .floornav__item04 a:after {
   }
 }
 
+.content-mdal {
+  @media (max-width: 1023px) {
+    max-height: 86vh;
+    overflow: auto;
+    position: relative;
+  }
+}
+
 .modal-cont {
   display: flex;
   flex-wrap: wrap;
@@ -692,9 +700,9 @@ body.type4 .floornav .floornav__item04 a:after {
   overflow: scroll;
   @media (max-width: 1023px) {
     height: auto;
-    max-height: 86vh;
     display: block;
-    padding: 0 0 100px 0;
+    padding: 0 0 80px 0;
+    overflow: hidden;
   }
   .slick-slider {
     @media (max-width: 1023px) {

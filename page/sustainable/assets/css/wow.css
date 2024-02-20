@@ -1595,6 +1595,47 @@
   animation-name: fadeMenu;
 }
 
+@keyframes hideMenu {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+
+  20% {
+    top: -70%;
+  }
+
+  30% {
+    top: -100%;
+  }
+
+  60% {
+    top: -70%;
+  }
+
+  70% {
+    top: -100%;
+  }
+
+  80% {
+    top: -90%;
+  }
+
+  90% {
+    top: -100%;
+  }
+
+
+  to {
+    top: -100%;
+  }
+}
+
+.hideMenu {
+  -webkit-animation-name: hideMenu;
+  animation-name: hideMenu;
+}
+
 @-webkit-keyframes fadeInUpBig {
   from {
     opacity: 0;
