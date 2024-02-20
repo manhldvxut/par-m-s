@@ -353,7 +353,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     みんなのサステナ宣言展
                 </h2>
                 <div class="ribo-text-info" >
-                    <p class="wow fadeIn" data-wow-delay="0.4s">サステナブルな社会の実現に向け、皆さまから募集した「宣言」を、できるだけたくさん、館内のさまざまな場所で展示する企画です。<br>
+                    <p class="wow fadeIn" data-wow-delay="0.4s">サステナブルな社会の実現に向け、皆さまから募集した「宣言」を、できるだけたくさん、館内の様々な場所で展示する企画です。<br>
                     そのほかにも、ワークショップやポップアップショップなど、さまざまな学びを得られるイベントが盛りだくさん。</p>
 
                     <div class="line-ribo-txt">
@@ -383,21 +383,21 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                         <div class="list-column-last-item">
                             <div class="list-column-last-item-info">
                                 <div class="list-column-last-img">
-                                    <img src="assets/images/thumb.png" alt="">
+                                    
                                 </div>
                                 <div class="list-column-last-item-desc">
                                     <div class="parco-title">
-                                        <h3>屋上フリーマーケット</h3>
+                                        <h3></h3>
                                     </div>
                                     <div class="parco-desciption">
-                                        毎年、春と秋に屋上で開催する恒例のフリーマーケット。出店数は約100店！
+                                        
                                     </div>
                                     <div class="parco-time">
-                                        ＊⽇時　3/20(水)　9:30-14:00
+                                        
                                     </div>
-                                    <div class="parco-adress">＊場所　屋上</div>
+                                    <div class="parco-adress"></div>
                                     <div class="parco-link openModal">
-                                        <a href="" data-modal="modal-01">詳しくはこちら</a>
+                                        <a href="" data-modal="modal-01"></a>
                                     </div>
                                 </div>
                             </div>
@@ -439,7 +439,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                         大人気のZINEフェス、今回は過去最大の150組が参加。
                                     </div>
                                     <div class="parco-time">
-                                        ＊⽇時　3/23(土)　12:00-17:00　※⾬天順延
+                                        ＊⽇時　3/23(土)　12:00-17:00<br>※雨天3/24(日)順延
                                     </div>
                                     <div class="parco-adress">＊場所　屋上</div>
                                     <div class="parco-link openModal">
@@ -556,6 +556,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                     <img src="assets/images/event_7.jpg" alt="「気候危機打開！むさしの市民エコアクション」展示">
                                 </div>
                                 <div class="list-column-last-item-desc">
+                                    <div class="parco-tag">
+                                        <img src="assets/images/parco-tag.svg" alt="PARCO初">
+                                    </div>
                                     <div class="parco-title">
                                         <h3>「気候危機打開！むさしの市民エコアクション」展示</h3>
                                     </div>
@@ -821,7 +824,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                         パリの蚤の市を再現したかのようなアンティークショップ。
                                     </div>
                                     <div class="parco-time">
-                                        ＊⽇時　3/15(金)～24(日)　11:00～19:00
+                                        ＊⽇時　3/15(金)～24(日)<br>11:00～19:00
                                     </div>
                                     <div class="parco-adress">＊場所　1F　ターンザテーブル</div>
                                     <div class="parco-link openModal">
@@ -894,7 +897,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             <div class="sustainable-action-text">
                 吉祥寺PARCO館内ショップのサステナブルな取り組みを紹介します。
             </div>
-            <div class="parco-link openModal">
+            <div class="parco-link">
                 <a href="https://kichijoji.parco.jp/sale/detail/?cd=001135&contents=salelist" target="_blank">詳しくはこちら</a>
             </div>
         </div>
@@ -961,7 +964,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                                 ぜひZINEフェスでZINE好きの皆さんと交流をもって、みんなでZINEを楽しむ日にしましょう。
                             </div>
                             <div class="parco-time">
-                                ＊⽇時　3/23(土)　12:00-17:00 ※雨天3/24(日)順延
+                                ＊⽇時　3/23(土)　12:00-17:00<br>※雨天3/24(日)順延
                             </div>
                             <div class="parco-adress">＊場所　屋上</div>
                         </div>
@@ -1022,7 +1025,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             <div class="modal-cont">
                 <div class="img-wrap">
                     <div class="img-wrap__slider js-modal-slider">
-                        <div class="img"><img src="assets/images/event_3_3.jpg" alt="BOOK TRUCK"></div>
+                        <div class="img"><img src="assets/images/event_4.jpg" alt="BOOK TRUCK"></div>
                     </div>
                 </div>
                 <div class=" modal-detail">
@@ -1103,9 +1106,6 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                 </div>
                 <div class=" modal-detail">
                     <div class=" modal-item-info">
-                        <div class="parco-tag">
-                            <img src="assets/images/parco-tag.svg" alt="PARCO初">
-                        </div>
                         <div class="parco-title">
                             <h3>コスメのイッポ</h3>
                         </div>
