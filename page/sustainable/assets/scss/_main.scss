@@ -1409,6 +1409,9 @@ body {
 
     .icon-title {
         margin-top: -85px;
+        @media (min-width: 769px) {
+            margin-top: -20px;
+        }
         img {
             @media (max-width: 1023px) {
                 max-height: 62px;
@@ -1467,6 +1470,7 @@ body {
             }
         }
     }
+    
 
     &-body {
         padding-top: 110px;
@@ -1486,6 +1490,10 @@ body {
 
 // sustainable-action
 .sustainable-action {
+    @media (min-width: 769px) {
+        padding-top: 180px;
+    }
+
     @media (max-width: 1023px) {
         padding-bottom: 56px;
     }
