@@ -117,6 +117,7 @@ body {
     right: 30px;
     cursor: pointer;
     z-index: 10;
+    display: none;
     @media (max-width: 1023px) {
         right: 16px;
         bottom: 16px;
@@ -282,7 +283,7 @@ body {
         height: 56.25vw;
         overflow: hidden;
         @media (max-width: 1023px) {
-            // height: auto;
+            height: 178.15vw;
         }
         .avarta {
             position: absolute;
@@ -336,8 +337,18 @@ body {
             top: 3vw;
             z-index: 4;
 
+            @media (max-width: 768px) {
+                left: 7.5vw;
+                top: 49vw;
+                z-index: 7;
+            }
+
             img {
                 width: 48vw;
+
+                @media (max-width: 768px) {
+                    width: 80vw;
+                }
             }
         }
 
@@ -345,9 +356,18 @@ body {
             left: 23vw;
             top: 25vw;
             z-index: 5;
+            @media (max-width: 768px) {
+                left: 18vw;
+                top: 86vw;
+                z-index: 9;
+            }
 
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -356,8 +376,18 @@ body {
             top: 0.5vw;
             z-index: 5;
 
+            @media (max-width: 768px) {
+                left: 52.5vw;
+                top: 27.5vw;
+                z-index: 9;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -366,8 +396,18 @@ body {
             top: 15vw;
             z-index: 4;
 
+            @media (max-width: 768px) {
+                left: 50.2vw;
+                top: 55vw;
+                z-index: 8;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -376,8 +416,18 @@ body {
             top: 8.5vw;
             z-index: 4;
 
+            @media (max-width: 768px) {
+                left: -11vw;
+                top: 75.5vw;
+                z-index: 9;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -386,8 +436,17 @@ body {
             top: -4.4vw;
             z-index: 2;
 
+            @media (max-width: 768px) {
+                left: -21vw;
+                top: -21.4vw;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -396,8 +455,17 @@ body {
             top: -6.5vw;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                left: 22.8vw;
+                top: -14.5vw;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -406,8 +474,18 @@ body {
             top: -4.4vw;
             z-index: 2;
 
+            @media (max-width: 768px) {
+                left: 0vw;
+                top: -17.4vw;
+                z-index: 1;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -416,8 +494,19 @@ body {
             top: -8.9vw;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                right: 0;
+                left: auto;
+                top: -16.9vw;
+                z-index: 0;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -426,8 +515,19 @@ body {
             top: -7.5vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                right: -23vw;
+                left: auto;
+                top: -4.5vw;
+                z-index: -1;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -436,8 +536,18 @@ body {
             top: -7vw;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                left: 5vw;
+                top: 16vw;
+                z-index: 3;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -446,8 +556,18 @@ body {
             top: -7vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                left: 22vw;
+                top: 17vw;
+                z-index: 2;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -456,8 +576,17 @@ body {
             top: -5vw ;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                right: 5.2vw;
+                top: 10vw;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -466,8 +595,18 @@ body {
             top: -6vw;
             z-index: 4;
 
+            @media (max-width: 768px) {
+                left: -19vw;
+                top: 16vw;
+                z-index: 2;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -476,8 +615,18 @@ body {
             top: 15vw;
             z-index: 3;
 
+            @media (max-width: 768px) {
+                right: -21vw;
+                left: auto;
+                top: 40vw;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -486,8 +635,18 @@ body {
             top: 13vw;
             z-index: 2;
 
+            @media (max-width: 768px) {
+                left: -17vw;
+                top: 52vw;
+                z-index: 0;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -496,8 +655,17 @@ body {
             top: 17vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                right: -60px;
+                top: 76vw;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -506,8 +674,18 @@ body {
             top: 14.5vw;
             z-index: 3;
 
+            @media (max-width: 768px) {
+                left: 0vw;
+                top: 86vw;
+                z-index: 1;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -516,8 +694,17 @@ body {
             top: 14vw;
             z-index: 3;
 
+            @media (max-width: 768px) {
+                left: -29vw;
+                top: 73vw;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -526,8 +713,19 @@ body {
             top: 31.8vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                    right: -22vw;
+                    left: auto;
+                    top: 100vw;
+                    z-index: 3;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -536,8 +734,19 @@ body {
             top: 35.2vw;
             z-index: 2;
 
+            @media(max-width: 768px) {
+                right: 3.5vw;
+                left: auto;
+                top: 101.2vw;
+                z-index: 2;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -546,8 +755,18 @@ body {
             top: 23.8vw;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                left: 19.5vw;
+                top: 108.8vw;
+                z-index: 1;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -556,8 +775,18 @@ body {
             top: 31.2vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                left: -1.5vw;
+                top: 114.2vw;
+                z-index: 0;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -566,8 +795,18 @@ body {
             top: 33vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                left: -21.5vw;
+                top: 101vw;
+                z-index: -1;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -576,8 +815,18 @@ body {
             top: 33vw;
             z-index: 3;
 
+            @media (max-width: 768px) {
+                left: -20vw;
+                top: 133vw;
+                z-index: 6;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -586,8 +835,18 @@ body {
             top: 33vw;
             z-index: 2;
 
+            @media (max-width: 768px) {
+                right: -2vw;
+                top: 131vw;
+                z-index: 6;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -596,8 +855,18 @@ body {
             top: 33vw;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                left: 7vw;
+                top: 143vw;
+                z-index: 5;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -606,8 +875,18 @@ body {
             top: 31.5vw;
             z-index: 0;
 
+            @media (max-width: 768px) {
+                right: 16vw;
+                top: 136vw;
+                z-index: 1;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
 
@@ -616,8 +895,18 @@ body {
             top: 30.5vw;
             z-index: 2;
 
+            @media (max-width: 768px) {
+                right: -20vw;
+                top: 135vw;
+                z-index: 0;
+            }
+
             img {
                 width: 29.42vw;
+
+                @media (max-width: 768px) {
+                    width: 53.33vw;
+                }
             }
         }
     }

@@ -197,54 +197,63 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_05.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-11  wow rubberBand" data-wow-delay="1.8s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_06.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_06.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-12  wow rubberBand" data-wow-delay="1.96s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_07.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_07.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-13  wow rubberBand" data-wow-delay="1.65s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_08.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_08.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-14  wow rubberBand" data-wow-delay="1.85s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_09.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_09.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-15  wow rubberBand" data-wow-delay="1.82s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_10.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_10.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-16  wow rubberBand" data-wow-delay="2.1s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_11.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_11.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-17  wow rubberBand" data-wow-delay="1.74s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_12.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_12.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-18  wow rubberBand" data-wow-delay="1.96s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_13.png">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_13.png" alt="">
                     </picture>
                 </div>
+
                 <div class="mv-listitem-19  wow rubberBand" data-wow-delay="1.9s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_14.png">
@@ -252,6 +261,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </picture>
                     
                 </div>
+
                 <div class="mv-listitem-20  wow rubberBand" data-wow-delay="2.25s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_15.png">
@@ -259,6 +269,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </picture>
                     
                 </div>
+
                 <div class="mv-listitem-21  wow rubberBand" data-wow-delay="2.1s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_16.png">
@@ -266,6 +277,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </picture>
                     
                 </div>
+
                 <div class="mv-listitem-22  wow rubberBand" data-wow-delay="1.84s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_17.png">
@@ -273,6 +285,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
                     </picture>
                     
                 </div>
+
                 <div class="mv-listitem-23  wow rubberBand" data-wow-delay="1.92s">
                     <picture>
                         <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_18.png">
