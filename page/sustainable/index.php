@@ -77,6 +77,28 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
             </svg>
         </a>
     </div>
+
+    <div class="nav-mb wow">
+        <div class="close-menu">
+            <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66.846" height="71.676" viewBox="0 0 66.846 71.676">
+                    <g id="button_sp_close" transform="translate(1 1)">
+                        <path id="Path_120" data-name="Path 120" d="M25.393,70.676c6.077-6.025,18.1-8.441,27.465-5.582C50.907,53.522,56.243,42.24,65.846,33.578c-9.383,1.572-12.478-10.507-7.982-19.261-7.7,4.992-8.691,1.654-8-3.78C44.2,16.068,42.093,10.691,42.409,1,35.88,13.423,25.382,15.119,19.978,7.617c.982,8.622-4.925,15.79-14.558,13.566C12.708,26.173,9.505,36.348,1,35.225c8.505,1.123,11.066,20.206,3.536,26.353C14.422,57.873,24.545,62.573,25.393,70.676Z" transform="translate(-1 -1)" fill="#fff" stroke="#231815" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        <line id="Line_26" data-name="Line 26" x2="14.142" y2="14.142" transform="translate(24.876 30.768)" fill="#fff"/>
+                        <line id="Line_27" data-name="Line 27" x2="14.142" y2="14.142" transform="translate(24.876 30.768)" fill="none" stroke="#231815" stroke-width="2.049"/>
+                        <line id="Line_28" data-name="Line 28" y1="14.142" x2="14.142" transform="translate(24.876 30.768)" fill="#fff"/>
+                        <line id="Line_29" data-name="Line 29" y1="14.142" x2="14.142" transform="translate(24.876 30.768)" fill="none" stroke="#231815" stroke-width="2.049"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <ul>
+            <li><a href=""><img src="/<?php echo DIRNAME; ?>/assets/images/menu-1.png" alt=""></a></li>
+            <li><a href=""><img src="/<?php echo DIRNAME; ?>/assets/images/menu-2.png" alt=""></a></li>
+            <li><a href=""><img src="/<?php echo DIRNAME; ?>/assets/images/menu-3.png" alt=""></a></li>
+            <li><a href=""><img src="/<?php echo DIRNAME; ?>/assets/images/menu-4.png" alt=""></a></li>
+        </ul>
+    </div>
     <nav class="nav">
         <div class="nav-body">
             <ul class="nav-list">

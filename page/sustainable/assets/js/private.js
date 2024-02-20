@@ -44,6 +44,14 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.btn-bar-menu a').click(function() {
+    	$('.nav-mb').addClass('wow fadeMenu animated');
+    });
+
+    $('.close-menu a').click(function() {
+    	$('.nav-mb').removeClass('fadeMenu');
+    });
+
     // ランダム
 	setTimeout(() => {
 	  	$('.block-section').each(function() {

@@ -644,8 +644,8 @@ body.type4 .floornav .floornav__item04 a:after {
   width: 100vw;
   height: 100vh;
   background: url('../images/ami02.svg') no-repeat, #fff;
-  background-size: 100%;
-  position: absolute;
+  background-size: cover;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -658,6 +658,9 @@ body.type4 .floornav .floornav__item04 a:after {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 33;
+  @media (max-width: 1200px) {
+    max-width: calc(100% - 40px);
+  }
 
   &:before {
     position: absolute;
@@ -687,9 +690,25 @@ body.type4 .floornav .floornav__item04 a:after {
   scrollbar-width: none;  /* Firefox */
   height: 500px;
   overflow: scroll;
+  @media (max-width: 1023px) {
+    height: auto;
+    max-height: 86vh;
+    display: block;
+    padding: 0 0 100px 0;
+  }
+  .slick-slider {
+    @media (max-width: 1023px) {
+      position: unset;
+    }
+  }
 
   &::-webkit-scrollbar {
     display: none;
+  }
+  .img-wrap {
+    @media (max-width: 1023px) {
+      width: 100%;
+    }
   }
 
   img {
@@ -705,6 +724,17 @@ body.type4 .floornav .floornav__item04 a:after {
     top: -50px;
     cursor: pointer;
     z-index: 3;
+    @media (max-width: 1023px) {
+      top: -25px;
+      right: unset;
+      left: -12px;
+    }
+    img {
+      @media (max-width: 1023px) {
+        width: 64px;
+        height: auto;
+      }
+    }
 }
 
 .img-wrap, .modal-detail {
@@ -713,6 +743,9 @@ body.type4 .floornav .floornav__item04 a:after {
 
 .modal-item-info {
     margin-top: 75px;
+    @media (max-width: 1023px) {
+      margin: 0;
+    }
 
     .parco-tag {
       position: relative;
@@ -726,11 +759,19 @@ body.type4 .floornav .floornav__item04 a:after {
 
 .img-wrap {
     width: 47.5%;
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
 }
 
 .modal-detail {
   width: 31%;
   margin-left: 95px;
+  @media (max-width: 1023px){
+    width: 100%;
+    margin: 0;
+    padding: 30px 28px;
+  }
 }
 
 /* =========================================================
