@@ -2545,6 +2545,7 @@ body {
   font-weight: 500;
   letter-spacing: 0;
   text-decoration: none;
+  position: relative;
 }
 @media (max-width: 1023px) {
   .parco-link a {
@@ -2552,6 +2553,19 @@ body {
     padding-bottom: 4px;
     font-size: 12px;
   }
+}
+.parco-link a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.4s all !important;
+}
+.parco-link a:hover:after {
+  width: 100%;
 }
 
 .event {

@@ -1317,10 +1317,26 @@ body {
             font-weight: 500;
             letter-spacing: 0;
             text-decoration: none;
+            position: relative;
             @media (max-width: 1023px) {
                 border-bottom: 3px solid;
                 padding-bottom: 4px;
                 font-size: 12px;
+            }
+            &:after {
+                content: "";
+                width: 0;
+                height: 2px;
+                background: #000000;
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                transition: .4s all !important;
+            }
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
             }
         }
     }
