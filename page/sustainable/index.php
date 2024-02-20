@@ -128,97 +128,200 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
     <section class="mv">
         <div class="mv-body">
             <div class="bg-cover wow fadeInCover"></div>
-            <div class="avr-mobile"><img src="/<?php echo DIRNAME; ?>/assets/images/mv/mv-mb.png" class="w-100" alt=""></div>
             <div class="avarta wow fadeIn" data-wow-delay="1.2s">
-                <img src="/<?php echo DIRNAME; ?>/assets/images/mv/top_ami_pc.png" alt="">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_main_01.png">
+                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/top_ami_pc.png" alt="">
+                </picture>
+                
             </div>
             <div class="mv-listitem">
                 <div class="mv-listitem-01 wow rubberBand" data-wow-delay="2.9s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_01.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_main_01.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_main_01.png" alt="">
+                    </picture>
                 </div>
-                <div class="mv-listitem-02 wow rubberBand" data-wow-delay="3.6s"">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_02.png" alt="">
+                <div class="mv-listitem-02 wow rubberBand" data-wow-delay="3.6s">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_main_02.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_main_02.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-03  wow rubberBand" data-wow-delay="3.86s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_03.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_main_03.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_main_03.png" alt="">
+                    </picture>
                 </div>
-                <div class="mv-listitem-04 wow rubberBand" data-wow-delay="3.4s"">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_04.png" alt="">
+                <div class="mv-listitem-04 wow rubberBand" data-wow-delay="3.4s">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_main_04.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_main_04.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-05 wow rubberBand" data-wow-delay="3.25s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_main_pc_05.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_main_05.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_main_05.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-06  wow rubberBand" data-wow-delay="1.9s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_01.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_01.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_01.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-07  wow rubberBand" data-wow-delay="2s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_02.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_02.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_02.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-08  wow rubberBand" data-wow-delay="1.89s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_03.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_03.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_03.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-09  wow rubberBand" data-wow-delay="2.1s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_04.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_04.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_04.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-10  wow rubberBand" data-wow-delay="2.3s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_05.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_05.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_05.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-11  wow rubberBand" data-wow-delay="1.8s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_06.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_06.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_06.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-12  wow rubberBand" data-wow-delay="1.96s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_07.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_07.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_07.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-13  wow rubberBand" data-wow-delay="1.65s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_08.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_08.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_08.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-14  wow rubberBand" data-wow-delay="1.85s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_09.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_09.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_09.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-15  wow rubberBand" data-wow-delay="1.82s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_10.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_10.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_10.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-16  wow rubberBand" data-wow-delay="2.1s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_11.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_11.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_11.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-17  wow rubberBand" data-wow-delay="1.74s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_12.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_12.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_12.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-18  wow rubberBand" data-wow-delay="1.96s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_13.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_13.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_13.png" alt="">
+                    </picture>
                 </div>
                 <div class="mv-listitem-19  wow rubberBand" data-wow-delay="1.9s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_14.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_14.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_14.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-20  wow rubberBand" data-wow-delay="2.25s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_15.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_15.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_15.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-21  wow rubberBand" data-wow-delay="2.1s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_16.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_16.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_16.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-22  wow rubberBand" data-wow-delay="1.84s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_17.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_17.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_17.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-23  wow rubberBand" data-wow-delay="1.92s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_18.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_18.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_18.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-24  wow rubberBand" data-wow-delay="2.3s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_19.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_19.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_19.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-25  wow rubberBand" data-wow-delay="1.86s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_20.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_20.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_20.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-26  wow rubberBand" data-wow-delay="1.98s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_21.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_21.png">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_21.png" alt="">
+                    </picture>
+                    
                 </div>
                 <div class="mv-listitem-27  wow rubberBand" data-wow-delay="2.15s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_22.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_22.png">
+                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_22.png" alt="">
+                    </picture>
+                   
                 </div>
                 <div class="mv-listitem-28  wow rubberBand" data-wow-delay="2s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_23.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_23.png">
+                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_23.png" alt="">
+                    </picture>
+
+                    
                 </div>
                 <div class="mv-listitem-29  wow rubberBand" data-wow-delay="1.95s">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/mv/fukidashi_pc_24.png" alt="">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/mv/sp_fukidashi_24.png">
+                         <img src="/<?php echo DIRNAME; ?>/assets/images/mv/pc-fukidashi_24.png" alt="">
+                    </picture>
+                    
                 </div>
             </div>
             <div class="scroll">

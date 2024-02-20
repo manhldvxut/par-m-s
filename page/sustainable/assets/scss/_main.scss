@@ -282,20 +282,7 @@ body {
         height: 56.25vw;
         overflow: hidden;
         @media (max-width: 1023px) {
-            height: auto;
-        }
-        .avr-mobile {
-            display: none;
-            @media (max-width: 1023px) {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                    min-height: 100vh;
-                }
-            }
+            // height: auto;
         }
         .avarta {
             position: absolute;
@@ -335,7 +322,7 @@ body {
         width: 100%;
         z-index: 3;
         @media (max-width: 1023px) {
-            opacity: 0;
+            // opacity: 0;
         }
 
 
@@ -355,8 +342,8 @@ body {
         }
 
         &-02 {
-            left: 55vw;
-            top: 1vw;
+            left: 23vw;
+            top: 25vw;
             z-index: 5;
 
             img {
@@ -365,9 +352,9 @@ body {
         }
 
         &-03 {
-            left: 49.5vw;
-            top: 16.5vw;
-            z-index: 4;
+            left: 55.5vw;
+            top: 0.5vw;
+            z-index: 5;
 
             img {
                 width: 29.42vw;
@@ -375,8 +362,8 @@ body {
         }
 
         &-04 {
-            left: 23vw;
-            top: 27vw;
+            left: 50.2vw;
+            top: 15vw;
             z-index: 4;
 
             img {
@@ -395,162 +382,162 @@ body {
         }
 
         &-06 {
-            left: -6vw;
+            left: -9vw;
             top: -4.4vw;
             z-index: 2;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-07 {
-            left: 4.6vw;
+            left: 0.8vw;
             top: -6.5vw;
             z-index: 1;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-08 {
-            left: 14vw;
+            left: 10vw;
             top: -4.4vw;
             z-index: 2;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-09 {
-            left: 23vw;
+            left: 19vw;
             top: -8.9vw;
             z-index: 1;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-10 {
-            left: 32.5vw;
+            left: 30.5vw;
             top: -7.5vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-11 {
-            left: 42.5vw;
+            left: 41.5vw;
             top: -7vw;
             z-index: 1;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-12 {
-            right: 20.5vw;
+            right: 14.5vw;
             top: -7vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-13 {
-            right: 5.2vw;
+            right: 1.2vw;
             top: -5vw ;
             z-index: 1;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-14 {
-            right: -7vw;
+            right: -11vw;
             top: -6vw;
             z-index: 4;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-15 {
-            left: -8vw;
+            left: -11.3vw;
             top: 15vw;
             z-index: 3;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-16 {
-            left: 3vw;
+            left: 0;
             top: 13vw;
             z-index: 2;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-17 {
-            right: 17.3vw;
+            right: 13.3vw;
             top: 17vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-18 {
-            right: 8vw;
+            right: 4vw;
             top: 14.5vw;
             z-index: 3;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-19 {
-            right: -4vw;
+            right: -8vw;
             top: 14vw;
             z-index: 3;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-20 {
-            left: -5.5vw;
+            left: -9vw;
             top: 31.8vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-21 {
-            left: 5.5vw;
+            left: 0.5vw;
             top: 35.2vw;
             z-index: 2;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
@@ -560,77 +547,77 @@ body {
             z-index: 1;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-23 {
-            left: 17.5vw;
+            left: 13.5vw;
             top: 31.2vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-24 {
-            left: 30.5vw;
+            left: 26.5vw;
             top: 33vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-25 {
-            right: 34.5vw;
+            right: 30.5vw;
             top: 33vw;
             z-index: 3;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-26 {
-            right: 22.5vw;
+            right: 18.5vw;
             top: 33vw;
             z-index: 2;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-27 {
-            right: 13vw;
+            right: 9vw;
             top: 33vw;
             z-index: 1;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-28 {
-            right: 2.5vw;
+            right: -1.5vw;
             top: 31.5vw;
             z-index: 0;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
 
         &-29 {
-            right: -7.3vw;
+            right: -11.3vw;
             top: 30.5vw;
             z-index: 2;
 
             img {
-                width: 22.06vw;
+                width: 29.42vw;
             }
         }
     }
