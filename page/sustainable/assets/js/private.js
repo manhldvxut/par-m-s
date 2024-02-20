@@ -57,6 +57,9 @@ $(document).ready(function(){
 
     // ランダム
 	setTimeout(() => {
+
+		$('.btn-bar-menu').addClass('active');
+
 	  	$('.block-section').each(function() {
 	    	let items = $(this).find('.list-column .list-column-last-item').not(".not-big");
 	    	let appendItem = $(this).find('.list-column-first');

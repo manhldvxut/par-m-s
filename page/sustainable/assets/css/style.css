@@ -1323,6 +1323,7 @@ body {
   top: 10px;
   left: 10px;
   display: none;
+  opacity: 0;
 }
 @media (max-width: 1023px) {
   .btn-bar-menu {
@@ -1333,6 +1334,9 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+.btn-bar-menu.active {
+  opacity: 1;
 }
 
 .ribo-hr {
@@ -1529,6 +1533,12 @@ body {
 
 .mv {
   margin-bottom: 160px;
+}
+@media (max-width: 1023px) {
+  .mv {
+    position: relative;
+    z-index: 12;
+  }
 }
 @media (max-width: 1023px) {
   .mv {
@@ -2281,17 +2291,19 @@ body {
   position: relative;
   width: max-content;
 }
+@media (max-width: 1023px) {
+  .line-ribo-txt {
+    width: auto;
+  }
+}
 .line-ribo-txt .line {
   background: #3AAA63;
-  width: 0;
+  width: 100%;
   height: 3px;
   position: absolute;
   bottom: 0;
   left: 0;
   transition: 0.5s all !important;
-}
-.line-ribo-txt .line.animated {
-  width: 100%;
 }
 
 .list-column {

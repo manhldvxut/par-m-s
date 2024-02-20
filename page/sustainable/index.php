@@ -358,7 +358,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/sustainable/'; //必ず�
 
                     <div class="line-ribo-txt">
                         <p class="ribo-text-buttom-line wow fadeIn" data-wow-delay="0.75s">さあ、未来をより良く生きるためのヒントを見つけにいこう。</p>
-                        <div class="line wow" data-wow-delay="0.8s"></div>
+                        <div class="line wow fadeLine" data-wow-delay="1.12s"></div>
                     </div>
                 </div>
                 <hr class="ribo-hr  wow fadeIn"  data-wow-delay="0.55s">

@@ -1503,6 +1503,21 @@
   animation-name: fadeInUp;
 }
 
+@keyframes fadeLine {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.fadeLine {
+  -webkit-animation-name: fadeLine;
+  animation-name: fadeLine;
+}
+
 @keyframes fadeInCover {
   from {
     opacity: 1;
