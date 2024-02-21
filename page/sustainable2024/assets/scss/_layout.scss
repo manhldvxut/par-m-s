@@ -637,7 +637,16 @@ body.type4 .floornav .floornav__item04 a:after {
   left: 0;
   overflow: auto;
   z-index: 1000;
-  display: none;
+  transition: .3s all !important;
+  opacity: 0;
+  pointer-events: none;
+  &.d-none {
+    display: none;
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: unset;
+  }
 }
 
 .modal-bg {
@@ -661,6 +670,11 @@ body.type4 .floornav .floornav__item04 a:after {
   @media (max-width: 1200px) {
     max-width: calc(100% - 40px);
   }
+  @media (max-width: 1023px) {
+    left: 20px;
+    transform: unset;
+    top: 40px;
+  }
 
   &:before {
     position: absolute;
@@ -677,17 +691,41 @@ body.type4 .floornav .floornav__item04 a:after {
 
     @media (max-width: 1023px) {
       height: 151px;
+      display: none;
     }
+  }
+}
+
+.bottom-line-modal {
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    height: 35px;
   }
 }
 
 .content-mdal {
   @media (max-width: 1023px) {
-    max-height: 86vh;
+    max-height: max-content;
     overflow: auto;
     position: relative;
-    border: 2px solid #000;
-    box-shadow: 6px 6px 11px #0000004D;
+    border: 0;
+    box-shadow: none;
+  }
+  .item-slide {
+    @media (max-width: 1023px) {
+      overflow: hidden;
+      max-height: 50vh;
+      &.slick-current {
+        max-height: unset;
+        overflow: unset;
+        padding-bottom: 60px;
+      }
+    }
   }
 }
 
@@ -702,7 +740,7 @@ body.type4 .floornav .floornav__item04 a:after {
   border-bottom: 0;
    -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  min-height: 530px;
+  min-height: 70vh;
   max-height: 70vh;
   overflow: scroll;
   @media (max-width: 1023px) {
@@ -711,9 +749,10 @@ body.type4 .floornav .floornav__item04 a:after {
     min-height: unset;
     display: block;
     padding: 0 0 80px 0;
-    overflow: hidden;
-    border-width: 0;
-    box-shadow: none;
+    overflow: unset;
+    border: 2px solid #000;
+    border-bottom: 0;
+    box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.3019607843);
 
     .parco-title h3 {
       font-size: 18px;
@@ -736,6 +775,57 @@ body.type4 .floornav .floornav__item04 a:after {
 
   img {
     width: 100%;
+  }
+}
+
+.btn-goto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 60px;
+  @media (max-width: 1023px) {
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+    left: 0;
+    margin: 0;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: "Rokkitt", serif;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #000000;
+    @media (max-width: 1023px) {
+      font-size: 14px;
+    }
+    img {
+      width: 29px;
+      height: auto;
+      @media (max-width: 1023px) {
+        width: 17px;
+      }
+    }
+    &.goto-left {
+      img {
+        margin-right: 20px;
+        @media (max-width: 1023px) {
+          margin-right: 10px;
+        }
+      }
+    }
+    &.goto-right {
+      img {
+        margin-left: 20px;
+        @media (max-width: 1023px) {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }
 

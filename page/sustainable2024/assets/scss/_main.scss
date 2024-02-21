@@ -165,7 +165,8 @@ body {
 
 .slick-arrow {
     position: absolute;
-    bottom: -80px;
+    top: 84%;
+    z-index: 2;
 
     @media (max-width: 1023px) {
         bottom: 32px;
