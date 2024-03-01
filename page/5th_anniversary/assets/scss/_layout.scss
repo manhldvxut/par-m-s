@@ -238,6 +238,9 @@ New&Renew items
             width: 48.9%;
             padding: 20px 10px;
         }
+        .front-wrap {
+            width: 100%;
+        }
     }
 
     .front-cont {
@@ -1746,4 +1749,122 @@ body {
             margin-bottom: 50px;
         }
     }
+}
+
+.item-present {
+    display: flex;
+    background: #fff;
+    color: #534631;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    border: 1px solid #A87236;
+    padding: 40px;
+    .avarta {
+        flex: 0 0 320px;
+        max-width: 320px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info {
+        h3 {
+            font-size: 20px;
+            color: #534631;
+            font-weight: bold;
+            span {
+                background: #FFEBFB;
+                padding: 1px 4px;
+            }
+        }
+    }
+    .desc {
+        padding: 20px 0;
+    }
+    .bott-present {
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                margin-right: 30px;
+                width: 100%;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:first-child {
+                    max-width: 185px;
+                    flex: 0 0 185px;
+                }
+                &:nth-child(2) {
+                    max-width: 268px;
+                    flex: 0 0 268px;
+                }
+            }
+        }
+        .icon {
+            img {
+                width: auto;
+            }
+        }
+    }
+    .item-bott {
+        display: flex;
+        color: #534631;
+        font-size: 18px;
+        line-height: normal;
+        .icon {
+            flex: 0 0 28px;
+            margin-right: 10px;
+        }
+        .inf {
+            h5 {
+                color: #A87236;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
+
+.item-event {
+    position: relative;
+    background: #fff;
+    padding: 20px 20px 40px 20px;
+    border: 1px solid #A87236;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #534631;
+    .avarta {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info {
+        .desc {
+            padding: 20px 0 25px 0;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            span {
+                background: #FFEBFB;
+                padding: 1px 4px;
+            }
+        }
+    }
+}
+
+.box-sns {
+    .title {
+        margin-bottom: 34px;
+    }
+}
+
+.content-sns {
+    max-width: 1024px;
+    margin: 0 auto;
 }

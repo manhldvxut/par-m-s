@@ -94,6 +94,49 @@ $(function() {
         $(this).css('display', 'none');
       }
     });
+
+    new Swiper('.swiper-present', {
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.next-present',
+            prevEl: '.prev-present',
+        },
+        pagination: {
+            el: '.pagination-present',
+        },
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 1.34,
+                spaceBetween: 120
+            },
+            1028: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+
+    new Swiper('.swiper-event', {
+        loop: true,
+        navigation: {
+            nextEl: '.next-event',
+            prevEl: '.prev-event',
+        },
+        pagination: {
+            el: '.pagination-event',
+        },
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 60,
+    });
 });
 
 
