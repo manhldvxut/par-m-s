@@ -46,10 +46,12 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
             <img src="/page/5th_anniversary/assets/images/bg.png" alt="background">
         </div>
             <div class="ribo-text">
-                <div class="ribo-text-body">
-                    「変わる、はじまり。」2019年3月16日ー<br>
-                    2024年3月16日。“これまで、いま、これから、人々、街。”たくさんのご縁をいただき迎えた5周年。<br>
-                    あなたと錦糸町PARCO、「五縁がありまして。」
+                <div class="container">
+                    <div class="ribo-text-body">
+                        「変わる、はじまり。」2019年3月16日ー<br>
+                        2024年3月16日。“これまで、いま、これから、人々、街。”たくさんのご縁をいただき迎えた5周年。<br>
+                        あなたと錦糸町PARCO、「五縁がありまして。」
+                    </div>
                 </div>
             </div>
             <div class="main-vue" id="shoplist" v-cloak>
@@ -107,32 +109,38 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                                                             </div>
                                                             <div class="product-info">
                                                                 <div class="product-info info01" v-if="shopList.productName1 != ''">
-                                                                    <div class="product-name" v-html="brTxt(shopList.productName1)">
+                                                                    <div class="product-name">
+                                                                        <span v-html="brTxt(shopList.productName1)"></span>
                                                                     </div>
-                                                                    <div class="product-price" v-html="brTxt(shopList.productPrice1)">
+                                                                    <div class="product-price">
+                                                                        <span v-html="brTxt(shopList.productPrice1)"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="product-info info02" v-if="shopList.productName2 != ''">
-                                                                    <div class="product-name" v-html="brTxt(shopList.productName2)">
+                                                                    <div class="product-name">
+                                                                        <span v-html="brTxt(shopList.productName2)"></span>
                                                                     </div>
                                                                     <div class="product-price" v-html="brTxt(shopList.productPrice2)">
                                                                     </div>
                                                                 </div>
                                                                 <div class="product-info info03" v-if="shopList.productName3 != ''">
-                                                                    <div class="product-name" v-html="brTxt(shopList.productName3)">
+                                                                    <div class="product-name">
+                                                                        <span v-html="brTxt(shopList.productName3)"></span>
                                                                     </div>
                                                                     <div class="product-price" v-html="brTxt(shopList.productPrice3)">
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="product-info info04" v-if="shopList.productName4 != ''">
-                                                                    <div class="product-name" v-html="brTxt(shopList.productName4)">
+                                                                    <div class="product-name">
+                                                                        <span v-html="brTxt(shopList.productName4)"></span>
                                                                     </div>
                                                                     <div class="product-price" v-html="brTxt(shopList.productPrice4)">
                                                                     </div>
                                                                 </div>
                                                                 <div class="product-info info05" v-if="shopList.productName5 != ''">
-                                                                    <div class="product-name" v-html="brTxt(shopList.productName5)">
+                                                                    <div class="product-name">
+                                                                        <span v-html="brTxt(shopList.productName5)"></span>
                                                                     </div>
                                                                     <div class="product-price" v-html="brTxt(shopList.productPrice5)">
                                                                     </div>
@@ -147,9 +155,40 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                                                     </div> <!-- /.modal-wrap -->
                                                 </div>
                                                 <div class="modal-control-area">
-                                                    <div class="modal-arrow prev" v-if="index>0"><button class="js-modalopen" :data-modal="'modal-p'+ (index - 1)">&nbsp;</button></div>
-                                                    <div class="modal-arrow next" v-if="index+1<limitedItem.length"><button class="js-modalopen" :data-modal="'modal-p'+ (index + 1)">&nbsp;</button></div>
-                                                    <div class="modal-arrow-close"><button class="js-modalclose">CLOSE ×</button></div>
+                                                    <div class="modal-arrow prev" v-if="index>0">
+                                                        <button class="js-modalopen" :data-modal="'modal-p'+ (index - 1)">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="29.687" height="30.709" viewBox="0 0 29.687 30.709">
+                                                                <g id="Group_2273" data-name="Group 2273" transform="translate(0.602 0.515)">
+                                                                    <path id="Path_3330" data-name="Path 3330" d="M25.667,0H0" transform="translate(2.919 14.84)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                    <path id="Path_3327" data-name="Path 3327" d="M0,0S12.014.369,14.839,12.258" transform="translate(12.258) rotate(90)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                    <path id="Path_3328" data-name="Path 3328" d="M14.839,0S2.825.369,0,12.258" transform="translate(12.258 14.84) rotate(90)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-arrow next" v-if="index+1<limitedItem.length">
+                                                        <button class="js-modalopen" :data-modal="'modal-p'+ (index + 1)">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="29.687" height="30.709" viewBox="0 0 29.687 30.709">
+                                                                <g id="Group_2273" data-name="Group 2273" transform="translate(0.5 0.515)">
+                                                                    <path id="Path_3330" data-name="Path 3330" d="M0,0H25.667" transform="translate(0 14.84)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                    <path id="Path_3327" data-name="Path 3327" d="M0,12.258S12.014,11.889,14.839,0" transform="translate(28.585) rotate(90)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                    <path id="Path_3328" data-name="Path 3328" d="M14.839,12.258S2.825,11.889,0,0" transform="translate(28.585 14.84) rotate(90)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-arrow-close"><button class="js-modalclose">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="161" height="54" viewBox="0 0 161 54">
+                                                                <g id="close" transform="translate(-318.25 -900)">
+                                                                    <text id="close-2" data-name="close" transform="translate(384 935)" fill="#a87236" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">close</tspan></text>
+                                                                    <line id="Line_8" data-name="Line 8" x2="161" transform="translate(318.25 953.5)" fill="none" stroke="#a87236" stroke-width="1"/>
+                                                                    <g id="Group_2277" data-name="Group 2277" transform="translate(-147.209 113.509)">
+                                                                        <path id="Path_3330" data-name="Path 3330" d="M0,0H36.768" transform="translate(485.209 824.99) rotate(-45)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                        <path id="Path_3609" data-name="Path 3609" d="M0,0H36.768" transform="translate(485.21 798.992) rotate(45)" fill="none" stroke="#a87238" stroke-linecap="round" stroke-width="1"/>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </button></div>
                                                 </div> <!-- /.modal-block -->
                                             </div>
                                         </li>
@@ -266,39 +305,39 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                             </div>
                             <h2>ANNIVERSARY EVENT</h2>
                         </div>
-                        <div class="list-event" v-cloak>
-                            <div class="swiper-container swiper-event">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <template v-for="(shopList, index) in anniversaryEvent">
-                                        <div :class="'swiper-slide ' + shopList.category" v-bind:key="index">
-                                            <div class="item-event">
-                                                <div class="avarta">
-                                                    <img :src=" '/page/5th_anniversary/assets/images/anniversary/' + shopList.image + '.jpg' " :alt="shopList.title" class="img-fluid w-100">
-                                                </div>
-                                                <div class="info">
-                                                    <h3>
-                                                        <span v-html="brTxt(shopList.title)"></span>
-                                                    </h3>
-                                                    <div class="desc" v-html="brTxt(shopList.description)"></div>
-                                                    <div class="btn-click text-center">
-                                                        <a :href="shopList.link" target="_blank"><img src="assets/images/click.png" alt="" style="width: auto;"></a>
-                                                    </div>
+                    </div>
+                    <div class="list-event" v-cloak>
+                        <div class="swiper-container swiper-event">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <template v-for="(shopList, index) in anniversaryEvent">
+                                    <div :class="'swiper-slide ' + shopList.category" v-bind:key="index">
+                                        <div class="item-event">
+                                            <div class="avarta">
+                                                <img :src=" '/page/5th_anniversary/assets/images/anniversary/' + shopList.image + '.jpg' " :alt="shopList.title" class="img-fluid w-100">
+                                            </div>
+                                            <div class="info">
+                                                <h3>
+                                                    <span v-html="brTxt(shopList.title)"></span>
+                                                </h3>
+                                                <div class="desc" v-html="brTxt(shopList.description)"></div>
+                                                <div class="btn-click text-center">
+                                                    <a :href="shopList.link" target="_blank"><img src="assets/images/click.png" alt="" style="width: auto;"></a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </template>
-                                </div>
+                                    </div>
+                                </template>
                             </div>
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-event-bott">
-                                <div class="swiper-btn swiper-button-prev prev-event">
-                                    <img src="assets/images/arr-left.png" alt="">
-                                </div>
-                                <div class="swiper-pagination pagination-event"></div>
-                                <div class="swiper-btn swiper-button-next next-event">
-                                    <img src="assets/images/arr-right.png" alt="">
-                                </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-event-bott">
+                            <div class="swiper-btn swiper-button-prev prev-event">
+                                <img src="assets/images/arr-left.png" alt="">
+                            </div>
+                            <div class="swiper-pagination pagination-event"></div>
+                            <div class="swiper-btn swiper-button-next next-event">
+                                <img src="assets/images/arr-right.png" alt="">
                             </div>
                         </div>
                     </div>
