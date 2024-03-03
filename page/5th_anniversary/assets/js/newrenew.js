@@ -104,6 +104,29 @@ function tabSwitch() {
 ------------------------------------------------------------------------------------------------------------------------*/
 
 function sliderPresent() {
+
+    // new WOW().init();
+
+    jQuery(function($) {
+        var doAnimations = function() {
+            var offset = $(window).scrollTop() + $(window).height(),
+                $animatables = $('.title h2 span, .ribo-text-body .desc');
+            if ($animatables.length == 0) {
+                $(window).off('scroll', doAnimations);
+            }
+            $animatables.each(function(i) {
+                var $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height()) < offset) {
+                    $animatable.addClass('animated');
+                }
+            });
+        };
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll');
+    });
+
+
+
     new Swiper('.swiper-present', {
         loop: true,
         centeredSlides: true,

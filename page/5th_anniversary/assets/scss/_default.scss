@@ -327,16 +327,42 @@ PARCO Footer
     }
   }
   h2 {
-    font-size: 72px;
-    color: #A87236;
-    letter-spacing: 5.76px;
-    line-height: 1.4;
-    text-align: center;
-    font-family: "garamond-premier-pro-display", sans-serif;
-    @media (max-width: 1023px) {
-      font-size: 42px;
-      letter-spacing: 3.36px;
-      line-height: 0.9;
+    span {
+      font-size: 72px;
+      //color: #A87236;
+      letter-spacing: 5.76px;
+      line-height: 1.4;
+      text-align: center;
+      font-family: "garamond-premier-pro-display", sans-serif;
+      display: inline-flex;
+
+      background-color: transparent;
+      background-image: linear-gradient(350deg, #A87236 33%, #F0E6DE 33.1%, #F0E6DE 66%, #5D4C3C 66.1%, #A87236 100%);
+      background-size: 100% 400%;
+      background-position: 50% 150%;
+      background-repeat: repeat-x;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      opacity: 0;
+      visibility: hidden;
+      &.animated {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background-position: 50% 0;
+        -webkit-transition: background-position 2s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: background-position 2s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: background-position 2s cubic-bezier(0.39, 0.575, 0.565, 1), transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: background-position 2s cubic-bezier(0.39, 0.575, 0.565, 1), transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      @media (max-width: 1023px) {
+        font-size: 42px;
+        letter-spacing: 3.36px;
+        line-height: 0.9;
+      }
     }
   }
 }
