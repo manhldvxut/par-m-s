@@ -316,6 +316,7 @@ PARCO Footer
   }
   .icon-title {
     margin-bottom: 36px;
+    transition: .8s all !important;
     @media (max-width: 1023px) {
       margin-bottom: 20px;
     }
@@ -415,6 +416,7 @@ PARCO Footer
     margin: 0;
     width: 60px;
     height: 60px;
+    transition: .4s all !important;
     &:after {
       content: "";
       width: 100%;
@@ -423,6 +425,18 @@ PARCO Footer
       position: absolute;
       border-radius: 100%;
       filter: blur(3px);
+    }
+    &.swiper-button-prev {
+      &:hover {
+        left: -6px;
+        right: unset;
+      }
+    }
+    &.swiper-button-next {
+      &:hover {
+        right: -6px;
+        left: unset;
+      }
     }
     img {
       width: auto;

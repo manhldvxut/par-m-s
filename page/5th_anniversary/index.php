@@ -48,7 +48,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
             <div class="ribo-text">
                 <div class="container">
                     <div class="ribo-text-body">
-                        <div class="desc">
+                        <div class="desc wow fadeInUp">
                             「変わる、はじまり。」2019年3月16日ー<br>
                             2024年3月16日。“これまで、いま、これから、人々、街。”たくさんのご縁をいただき迎えた5周年。<br>
                             あなたと錦糸町PARCO、「五縁がありまして。」
@@ -62,7 +62,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                         <div class="container">
                             <div class="list-block-body">
                                 <div class="title text-center">
-                                    <div class="icon-title">
+                                    <div class="icon-title wow fadeInUp">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="80" viewBox="0 0 190 80">
                                             <defs>
                                                 <clipPath id="clip-path">
@@ -86,7 +86,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                                 </div>
                                 <ul class="item-list" v-cloak>
                                     <template v-for="(shopList, index) in limitedItem">
-                                        <li :class="'item ' + shopList.category" v-bind:key="index">
+                                        <li class="wow fadeInUp" :class="'item ' + shopList.category" v-bind:key="index">
                                             <div class="front-wrap">
                                                 <a href="javascript:void()" class="js-modalopen" :data-modal="'modal-p'+index">
                                                     <div class="front-cont">
@@ -106,72 +106,74 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                                                 <div class="modal-bg js-modalclose"></div>
                                                 <div class="modal-wrap"> <button class="modal-close js-modalclose"></button>
                                                     
-                                                    <div class="modal-cont">
+                                                    <div class="content-modal-cont">
                                                         <div class="badge" v-if="shopList.badge != ''">
                                                             <div class="badge-text">先行販売</div>
                                                         </div>
-                                                        <div class="img-wrap">
-                                                            <div class="img-slider js-imgslider">
-                                                                <div class="img"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image01img + '.jpg' " :alt="shopList.productName1"></div>
-                                                                <div class="img" v-if="shopList.image02img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image02img + '.jpg' " :alt="shopList.productName2"></div>
-                                                                <div class="img" v-if="shopList.image03img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image03img + '.jpg' " :alt="shopList.productName3"></div>
-                                                                <div class="img" v-if="shopList.image04img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image04img + '.jpg' " :alt="shopList.productName4"></div>
-                                                                <div class="img" v-if="shopList.image05img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image05img + '.jpg' " :alt="shopList.productName5"></div>
-                                                            </div> <!-- /.img-wrap -->
-                                                        </div>
-                                                        <div class="detail">
-                                                            <div class="modal-header">
-                                                                <div class="logo"> <img :src=" '/page/5th_anniversary/assets/images/limited/logo/' + shopList.logo + '.png' " :alt="shopList.name"></div>
-                                                                <div class="product-title">
-                                                                    {{shopList.shopName}}
-                                                                </div>
+                                                        <div class="modal-cont">
+                                                            <div class="img-wrap">
+                                                                <div class="img-slider js-imgslider">
+                                                                    <div class="img"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image01img + '.jpg' " :alt="shopList.productName1"></div>
+                                                                    <div class="img" v-if="shopList.image02img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image02img + '.jpg' " :alt="shopList.productName2"></div>
+                                                                    <div class="img" v-if="shopList.image03img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image03img + '.jpg' " :alt="shopList.productName3"></div>
+                                                                    <div class="img" v-if="shopList.image04img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image04img + '.jpg' " :alt="shopList.productName4"></div>
+                                                                    <div class="img" v-if="shopList.image05img != ''"><img :src=" '/page/5th_anniversary/assets/images/limited/' + shopList.image05img + '.jpg' " :alt="shopList.productName5"></div>
+                                                                </div> <!-- /.img-wrap -->
                                                             </div>
-                                                            <div class="product-info">
-                                                                <div class="product-info info01" v-if="shopList.productName1 != ''">
-                                                                    <div class="product-name">
-                                                                        <span v-html="brTxt(shopList.productName1)"></span>
-                                                                    </div>
-                                                                    <div class="product-price">
-                                                                        <span v-html="brTxt(shopList.productPrice1)"></span>
+                                                            <div class="detail">
+                                                                <div class="modal-header">
+                                                                    <div class="logo"> <img :src=" '/page/5th_anniversary/assets/images/limited/logo/' + shopList.logo + '.png' " :alt="shopList.name"></div>
+                                                                    <div class="product-title">
+                                                                        {{shopList.shopName}}
                                                                     </div>
                                                                 </div>
-                                                                <div class="product-info info02" v-if="shopList.productName2 != ''">
-                                                                    <div class="product-name">
-                                                                        <span v-html="brTxt(shopList.productName2)"></span>
+                                                                <div class="product-info">
+                                                                    <div class="product-info info01" v-if="shopList.productName1 != ''">
+                                                                        <div class="product-name">
+                                                                            <span v-html="brTxt(shopList.productName1)"></span>
+                                                                        </div>
+                                                                        <div class="product-price">
+                                                                            <span v-html="brTxt(shopList.productPrice1)"></span>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="product-price" v-html="brTxt(shopList.productPrice2)">
+                                                                    <div class="product-info info02" v-if="shopList.productName2 != ''">
+                                                                        <div class="product-name">
+                                                                            <span v-html="brTxt(shopList.productName2)"></span>
+                                                                        </div>
+                                                                        <div class="product-price" v-html="brTxt(shopList.productPrice2)">
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="product-info info03" v-if="shopList.productName3 != ''">
-                                                                    <div class="product-name">
-                                                                        <span v-html="brTxt(shopList.productName3)"></span>
+                                                                    <div class="product-info info03" v-if="shopList.productName3 != ''">
+                                                                        <div class="product-name">
+                                                                            <span v-html="brTxt(shopList.productName3)"></span>
+                                                                        </div>
+                                                                        <div class="product-price" v-html="brTxt(shopList.productPrice3)">
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="product-price" v-html="brTxt(shopList.productPrice3)">
-                                                                    </div>
-                                                                </div>
 
-                                                                <div class="product-info info04" v-if="shopList.productName4 != ''">
-                                                                    <div class="product-name">
-                                                                        <span v-html="brTxt(shopList.productName4)"></span>
+                                                                    <div class="product-info info04" v-if="shopList.productName4 != ''">
+                                                                        <div class="product-name">
+                                                                            <span v-html="brTxt(shopList.productName4)"></span>
+                                                                        </div>
+                                                                        <div class="product-price" v-html="brTxt(shopList.productPrice4)">
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="product-price" v-html="brTxt(shopList.productPrice4)">
+                                                                    <div class="product-info info05" v-if="shopList.productName5 != ''">
+                                                                        <div class="product-name">
+                                                                            <span v-html="brTxt(shopList.productName5)"></span>
+                                                                        </div>
+                                                                        <div class="product-price" v-html="brTxt(shopList.productPrice5)">
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="product-info info05" v-if="shopList.productName5 != ''">
-                                                                    <div class="product-name">
-                                                                        <span v-html="brTxt(shopList.productName5)"></span>
-                                                                    </div>
-                                                                    <div class="product-price" v-html="brTxt(shopList.productPrice5)">
-                                                                    </div>
+                                                                <div class="sell-time" v-if="shopList.sellTime != ''">
+                                                                    <div class="sell-time-text">販売期間</div>
+                                                                    <div class="sell-time-date">{{shopList.sellTime}}</div>
                                                                 </div>
+                                                                <div class="product-description" v-html="brTxt(shopList.productDescription)"></div>
                                                             </div>
-                                                            <div class="sell-time" v-if="shopList.sellTime != ''">
-                                                                <div class="sell-time-text">販売期間</div>
-                                                                <div class="sell-time-date">{{shopList.sellTime}}</div>
-                                                            </div>
-                                                            <div class="product-description" v-html="brTxt(shopList.productDescription)"></div>
-                                                        </div>
-                                                    </div> <!-- /.modal-wrap -->
+                                                        </div> <!-- /.modal-wrap -->
+                                                    </div>
                                                 </div>
                                                 <div class="modal-control-area">
                                                     <div class="modal-arrow prev" v-if="index>0">
@@ -222,7 +224,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                 <section class="box-present mb-140">
                     <div class="container">
                         <div class="title text-center">
-                            <div class="icon-title">
+                            <div class="icon-title wow fadeInUp">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="80" viewBox="0 0 190 80">
                                     <defs>
                                         <clipPath id="clip-path">
@@ -243,7 +245,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                             <h2><span>PRESENT</span></h2>
                         </div>
                     </div>
-                    <div class="slide-present">
+                    <div class="slide-present wow fadeInUp">
                         <div class="swiper-container swiper-present">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper" v-cloak>
@@ -303,7 +305,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                 <section class="box-event mb-140">
                     <div class="container">
                         <div class="title text-center">
-                            <div class="icon-title">
+                            <div class="icon-title wow fadeInUp">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="80" viewBox="0 0 190 80">
                                     <defs>
                                         <clipPath id="clip-path">
@@ -325,7 +327,7 @@ $page_shareurl = 'https://' . STORE_NAME . '.parco.jp/page/5th_anniversary/'; //
                             <h2><span>ANNIVERSARY EVENT</span></h2>
                         </div>
                     </div>
-                    <div class="list-event" v-cloak>
+                    <div class="list-event wow fadeInUp" v-cloak>
                         <div class="swiper-container swiper-event">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">

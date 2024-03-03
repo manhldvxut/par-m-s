@@ -41,10 +41,11 @@ function shop(shopList) {
         updated () {
             sliderPresent();
             sliderEvent();
+            new WOW().init();
             jQuery(function($) {
                 var doAnimations = function() {
                     var offset = $(window).scrollTop() + $(window).height(),
-                        $animatables = $('.title h2 span, .ribo-text-body .desc');
+                        $animatables = $('.title h2 span');
                     if ($animatables.length == 0) {
                         $(window).off('scroll', doAnimations);
                     }

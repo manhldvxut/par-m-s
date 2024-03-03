@@ -221,6 +221,7 @@ New&Renew items
         max-width: calc(100% / 3);
         padding: 0 30px;
         margin-top: 60px;
+        transition: .8s all !important;
         @media (max-width: 1023px) {
             padding: 0 20px;
             margin-top: 40px;
@@ -597,6 +598,13 @@ New&Renew items
         }
     }
 
+    .content-modal-cont {
+        max-width: 100%;
+        flex: 0 0 100%;
+        position: relative;
+        display: block;
+    }
+
     .modal-cont {
         background: #fff;
         padding: 40px;
@@ -610,6 +618,8 @@ New&Renew items
             display: block;
             max-height: 70vh;
             overflow: auto;
+            max-width: 100%;
+            width: auto;
         }
         @media (max-width: 767px) {
            padding: 20px;
@@ -1606,16 +1616,6 @@ body {
             font-size: 16px;
             letter-spacing: 0.8px;
             line-height: 2.25;
-        }
-        .desc {
-            transition: .8s all !important;
-            top: 100px;
-            opacity: 0;
-            position: relative;
-            &.animated {
-                top: 0;
-                opacity: 1;
-            }
         }
     }
 }
