@@ -181,6 +181,8 @@ var $body = document.body,
 
     // play video splash
     var videoSplash_ver = $('#splash_ver')[0];
+    var videoMain = $('#main_video')[0];
+    var checkSoundOff = false
     $('.select__sound-choice-item-on').click(function () {
         $('.select__sound').css({
             "opacity" : 0,
@@ -202,10 +204,23 @@ var $body = document.body,
 
         videoSplash_ver.play();
         videoSplash_ver.muted = true; 
+        checkSoundOff = true;
     })
 
-    $('#splash_ver').on('ended', function() {
-        console.log('end')
+    $('#splash_ver').on('ended', function() { // show video 02
+        $('.main-video').css({
+            "opacity" : 1,
+            "visibility" : "visible",
+            "transition" : ".3s all"
+        })
+
+        if(checkSoundOff = true) {
+            videoMain.muted = true; 
+        } else {
+            videoMain.muted = false; 
+        }
+
+        videoMain.play()
     });
 })
 
