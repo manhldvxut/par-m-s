@@ -672,6 +672,26 @@ body.type4 .floornav .floornav__item04 a:after {
 .hidden {
     display: none;
 }
+.main {
+    &.active {
+        .padding-main {
+            padding-top: 60px;
+        }
+
+        .fukuoka-parco {
+            display: block;
+        }
+
+        .sns {
+            display: block;
+        }
+
+        .other-text {
+            display: flex;
+        }
+    }
+}
+
 
 .loading {
     position: relative;
@@ -759,9 +779,6 @@ body.type4 .floornav .floornav__item04 a:after {
     }
 }
 
-
-
-
 .select__sound {
     width: 412px;
     height: 412px;
@@ -836,14 +853,234 @@ body.type4 .floornav .floornav__item04 a:after {
 
 }
 
-.bg-cover {
+.nav {
     position: fixed;
-    width: 100vh;
-    height: 100vh;
-    background: red;
     top: 0;
-    left: calc(50% - 50vh);
-    transform: scale(0);
-    border-radius: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: .3s all;
+    z-index: 1;
+
+    &.hidden{
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s all;
+    }
+
+    &-logo {
+        &__link {
+            padding-left: 15px;
+            padding-top: 15px;
+            display: block;
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        padding-right: 9.66%;
+
+        &__item {
+            margin-right: 34px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__link {
+            font-size: 1.3rem;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
 
+.fukuoka-parco {
+    position: relative;
+    z-index: 1;
+    padding-top: 162px;
+    display: none;
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background: #141419;
+        opacity: 0.32;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        top: 279px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__box {
+        width: 555px;
+        height: 597px;
+        margin: auto;
+        
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: url('../images/letter.svg') no-repeat;
+            background-size: 100%; 
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 502px;
+            height: 525px;
+            left: 0;
+            top: 40px;
+            background: #A997B5;
+            backdrop-filter: blur(10px);
+            opacity: 0.25;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        letter-spacing: 0.75px;
+        line-height: 2.26;
+        color: #fff;
+        font-family: "Zen Kaku Gothic Antique", sans-serif;
+        font-weight: bold;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    &__inv {
+        position: relative;
+        z-index: 1;
+        text-align: right;
+        margin-right: 40px;
+        padding-top: 117px;
+        padding-bottom: 67px;
+    }
+}
+
+.sns {
+    position: relative;
+    z-index: 1;
+    display: none;
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &__item {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.other-text {
+    width: 100%;
+    height: 367px;
+    position: relative;
+    z-index: 1;
+    background: url('../images/other-text.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    &__body {
+        margin-top: -80px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-item {
+            font-family: "Zen Kaku Gothic Antique", sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.75px;
+
+            &-left {
+                margin-right: 28px;
+            }
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 14px 30px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__backtop {
+        position: absolute;
+        left: calc(50% - 117px);
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.copy-right {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #141419;
+}
+
+.scroll {
+    img {
+        max-width: 234px;
+        margin: auto;
+    }
+}

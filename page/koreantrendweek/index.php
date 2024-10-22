@@ -141,12 +141,113 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
     <!-- <div class="bg-cover"> </div> -->
 </div>
 <main class="main">
+    <div class="nav hidden">
+        <div class="nav-logo">
+            <a href="" class="nav-logo__link">
+                <img src="/<?php echo DIRNAME; ?>/assets/images/pc_logo.png" class="" alt="<?php echo $pege_title; ?>">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list__item">
+                <a href="" class="nav-list__link">FASHION</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="" class="nav-list__link">COSME</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="" class="nav-list__link">TALK EVENT</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="" class="nav-list__link">K-POP</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="" class="nav-list__link">NOVELTY</a>
+            </li>
+        </ul>
+    </div>
     <div class="main-video">
         <video id="main_video" muted>
             <source src="/<?php echo DIRNAME; ?>/assets/video/movie-short.mp4" type="video/mp4">
         </video>
     </div>
+    <div class="padding-main"></div>
+    <section class="fukuoka-parco">
+        <div class="fukuoka-parco__img">
+            <img src="/<?php echo DIRNAME; ?>/assets/images/fukuoka-parco.svg" class="" alt="fukuoka parco">
+        </div>
+        <div class="fukuoka-parco__body">
+            <div class="fukuoka-parco__box">
+                <div class="fukuoka-parco__text">
+                    KOREAN POP WEEKが福岡PARCOで開催！<br>
+                    企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります
+                </div>
+            </div>
+        </div>
+        <div class="fukuoka-parco__inv">
+            <img src="/<?php echo DIRNAME; ?>/assets/images/inv.svg" class="" alt="INVITSTION KOREAN POP WEEK">
+        </div>
+    </section>
+    <div class="art-director" style="display:none;">
+        <div class="art-director__body">
+            <div class="art-director__video">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1022038916?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fukuoka_korean_pop_week"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+    </div>
+    <div class="sns">
+        <ul class="sns-list">
+            <li class="sns-list__item">
+                <a href="" target="_blank">
+                     <img src="/<?php echo DIRNAME; ?>/assets/images/x.svg" class="" alt="x">
+                </a>
+            </li>
+            <li class="sns-list__item">
+                <a href="" target="_blank">
+                     <img src="/<?php echo DIRNAME; ?>/assets/images/ins.svg" class="" alt="instagram">
+                </a>
+            </li>
+            <li class="sns-list__item">
+                <a href="" target="_blank">
+                     <img src="/<?php echo DIRNAME; ?>/assets/images/tictok.svg" class="" alt="tictok">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="other-text">
+        <div class="other-text__body">
+            <ul class="other-text__list">
+                <li class="other-text__list-item other-text__list-item-left">
+                    共催：
+                </li>
+                <li class="other-text__list-item other-text__list-item-right">
+                    福岡放送ARNE
+                </li>
+            </ul>
+            <ul class="other-text__list">
+                <li class="other-text__list-item other-text__list-item-left">
+                    協力：
+                </li>
+                <li class="other-text__list-item other-text__list-item-right">
+                    テキストが入ります
+                </li>
+            </ul>
+        </div>
+    </div>
 </main>
+
+<footer class="footer">
+    <div class="footer__backtop">
+        <a href="" class="scroll">
+            <img src="/<?php echo DIRNAME; ?>/assets/images/pagetop.png"  alt="scroll to top">
+        </a>
+    </div>
+    <div class="footer__body">
+        <div class="logo">
+            <img src="/<?php echo DIRNAME; ?>/assets/images/fukuoka-logo.svg"  alt="<?php echo $pege_title; ?>">
+        </div>
+        <div class="copy-right">COPYRIGHT©PARCO CO., LTD. ALL RIGHT RESERVED.</div>
+    </div>
+</footer>
 
 </div>
 <!-- Javascript -->

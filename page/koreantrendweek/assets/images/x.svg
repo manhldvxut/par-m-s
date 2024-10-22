@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="x" transform="translate(-568 -10151)">
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(568 10151)" fill="#fff" stroke="#fff" stroke-width="1">
+      <circle cx="25" cy="25" r="25" stroke="none"/>
+      <circle cx="25" cy="25" r="24.5" fill="none"/>
+    </g>
+    <path id="Icon_fa-brands-x-twitter" data-name="Icon fa-brands-x-twitter" d="M16.625,3.375H19.5l-6.272,7.167L20.6,20.3H14.827L10.3,14.382,5.126,20.3H2.25l6.707-7.667L1.884,3.375H7.807l4.088,5.406Zm-1.009,15.2h1.59L6.94,5H5.232Z" transform="translate(582.116 10163.928)" fill="#141419"/>
+  </g>
+</svg>

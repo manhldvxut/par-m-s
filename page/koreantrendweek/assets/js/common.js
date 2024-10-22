@@ -1,4 +1,18 @@
 $(document).ready(function(){
+// ページスクロール
+$('.scroll').click(function() {
+    // スクロールの速度
+    var speed = 400; // ミリ秒で記述
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $('body,html').animate({
+        scrollTop: position
+    }, speed, 'swing');
+    return false;
+});
+
+
 
 var $body = document.body,
     $wrap = document.getElementById('loading_ware'),
@@ -213,12 +227,20 @@ var $body = document.body,
             "visibility" : "visible",
             "transition" : ".3s all"
         })
+        $('.main').addClass('active');
+        $('.footer').addClass('active');
+        $('.nav').removeClass('hidden');
+
+        // Chay cai hinh tron animation truoc 
+        // --> xong moi toi chay video
 
         if(checkSoundOff = true) {
             videoMain.muted = true; 
         } else {
             videoMain.muted = false; 
         }
+
+        //
 
         videoMain.play()
     });
