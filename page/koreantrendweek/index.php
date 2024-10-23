@@ -57,7 +57,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
  */
 ?>
 
-<div class="loading">
+<div class="loading d-none">
     <div id="loading_ware"></div>
     <div class="loading__text">
         <div id="loading_text">0</div>
@@ -171,7 +171,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         </video>
     </div>
     <div class="padding-main"></div>
-    <section class="fukuoka-parco">
+    <section class="fukuoka-parco" style="display: block">
         <div class="fukuoka-parco__img">
             <img src="/<?php echo DIRNAME; ?>/assets/images/fukuoka-parco.svg" class="" alt="fukuoka parco">
         </div>
@@ -187,6 +187,192 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
             <img src="/<?php echo DIRNAME; ?>/assets/images/inv.svg" class="" alt="INVITSTION KOREAN POP WEEK">
         </div>
     </section>
+
+    <section class="box-studio">
+        <div class="head-main d-none">
+            <h2></h2>
+            <div class="icon"></div>
+        </div>
+        <div class="container">
+            <div class="content-txt text-center">
+                <p>福岡発のトレンドメディアARNEがプロデュースする、韓国の「今」を体感できるPOP UP STUDIO。
+                    日本初上陸のファッションブランドや最新コスメが登場。</p>
+            </div>
+            <div class="fashion-popup">
+                <div class="title-box text-center">
+                    <h3>FASHION POP UP</h3>
+                    <p>多数のK-POPアイドルが愛用する２つのファッションブランドが日本初上陸！王道Y2KブランドMSKN2ND（ムンスコンセカンド）、</p>
+                    <p>そして大流行バレエコアスタイルのpainorpleasure（ペインオアプレジャー）</p>
+                    <p>さらに、サンリオ「クロミ」ちゃんとのコラボアイテムも限定発売！</p>
+                </div>
+            </div>
+            <div class="list-fashion">
+                <div class="item-fashion">
+                    <div class="brand">
+                        <div class="avr-brand"><img src="assets/images/brand-1.png" alt=""></div>
+                    </div>
+                    <div class="content-item-fashion">
+                        <div class="left-txt">
+                            <div class="info-brand">
+                                <h3>MSKN2ND</h3>
+                                <div class="insta">
+                                    <a href=""><img src="assets/images/pc_btn_insta.png" alt=""></a>
+                                </div>
+                                <div class="date-place">
+                                    <div class="date">11/21-11/25</div>
+                                    <div class="place">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                                <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                                    <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                    <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span>本館1F GATE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product">
+                            <div class="slide-product">
+                                <div class="item-slide">
+                                    <div class="avarta"><img src="assets/images/fs-1-1.png" alt=""></div>
+                                </div>
+                                <div class="item-slide">
+                                    <div class="avarta"><img src="assets/images/fs-1-2.png" alt=""></div>
+                                </div>
+                                <div class="item-slide">
+                                    <div class="avarta"><img src="assets/images/fs-1-3.png" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="view-more text-center">
+                                <a href="">
+                                    <span>VIEW MORE</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
+                                        <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
+                                            <line id="Line_7" data-name="Line 7" x1="19.453" transform="translate(18.198 4.519)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"/>
+                                            <line id="Line_8" data-name="Line 8" x1="6.024" y1="4.518" transform="translate(31.628 0)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-fashion">
+                    <div class="brand">
+                        <div class="avr-brand"><img src="assets/images/brand-2.svg" alt=""></div>
+                    </div>
+                    <div class="content-item-fashion">
+                        <div class="left-txt">
+                            <div class="info-brand">
+                                <h3>painorpleasure</h3>
+                                <div class="insta">
+                                    <a href=""><img src="assets/images/pc_btn_insta.png" alt=""></a>
+                                </div>
+                                <div class="date-place">
+                                    <div class="date">11/27-12/1</div>
+                                    <div class="place">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                                <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                                    <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                    <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span>本館1F GATE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product">
+                            <div class="slide-product">
+                                <div class="item-slide">
+                                    <div class="avarta"><img src="assets/images/fs-2-1.png" alt=""></div>
+                                </div>
+                                <div class="item-slide">
+                                    <div class="avarta"><img src="assets/images/fs-2-2.png" alt=""></div>
+                                </div>
+                                <div class="item-slide">
+                                    <div class="avarta"><img src="assets/images/fs-2-3.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="view-more text-center">
+                                <a href="">
+                                    <span>VIEW MORE</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
+                                        <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
+                                            <line id="Line_7" data-name="Line 7" x1="19.453" transform="translate(18.198 4.519)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"/>
+                                            <line id="Line_8" data-name="Line 8" x1="6.024" y1="4.518" transform="translate(31.628 0)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-cosme">
+        <div class="container">
+            <div class="title-box text-center">
+                <h3 class="mb-0">COSME POP UP</h3>
+            </div>
+            
+            <div class="beauty-minute">
+                <div class="bg-avarta text-center"><img src="assets/images/beauty-minutes.png" alt=""></div>
+                <div class="item-abs abs-1"><img src="assets/images/beauty-1.png" alt=""></div>
+                <div class="item-abs abs-2"><img src="assets/images/beauty-2.png" alt=""></div>
+                <div class="item-abs abs-3"><img src="assets/images/beauty-3.png" alt=""></div>
+                <div class="item-abs abs-4"><img src="assets/images/beauty-4.png" alt=""></div>
+                <div class="item-abs abs-5"><img src="assets/images/beauty-5.png" alt=""></div>
+
+                <div class="view-more text-center">
+                    <a href="">
+                        <span>VIEW MORE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
+                            <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
+                                <line id="Line_7" data-name="Line 7" x1="19.453" transform="translate(18.198 4.519)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"/>
+                                <line id="Line_8" data-name="Line 8" x1="6.024" y1="4.518" transform="translate(31.628 0)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="date-place">
+                    <div class="date">11/21-12/1</div>
+                    <div class="place">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                    <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <span>本館2F EVENT SPACE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="art-director" style="display:none;">
         <div class="art-director__body">
             <div class="art-director__video">

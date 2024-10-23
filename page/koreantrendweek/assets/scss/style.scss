@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 body {
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: #141419;
   &.open_modal {
     overflow: hidden;
   }

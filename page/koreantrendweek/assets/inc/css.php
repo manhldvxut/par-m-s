@@ -5,4 +5,6 @@
 
 <link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/slick.css">
 <link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
 <link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/style.css">

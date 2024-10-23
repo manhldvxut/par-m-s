@@ -1,0 +1,255 @@
+.d-none {
+  display: none;
+}
+.container {
+  max-width: 1126px;
+  margin: 0 auto;
+  img {
+    max-width: 100%;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+flex-center, .bg-avarta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avarta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.view-more {
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 28px;
+    border: 1px solid #000000;
+    text-decoration: none !important;
+    line-height: 1;
+    border-radius: 50%;
+    color: #141419;
+    font-weight: 900;
+    font-size: 11px;
+    font-family: Montserrat;
+    svg {
+      margin-left: 6px;
+    }
+  }
+}
+
+.main-video {
+  pointer-events: none;
+}
+
+.content-txt {
+  line-height: 2.26;
+  letter-spacing: 0.75px;
+  font-family: "Zen Kaku Gothic Antique";
+
+}
+
+.box-studio {
+  padding: 185px 0 200px 0;
+  position: relative;
+  background: url("../images/bg-studio.png") no-repeat center;
+  background-size: cover;
+  .content-txt {
+    max-width: 614px;
+    margin: 0 auto;
+  }
+}
+
+.title-box {
+  margin-bottom: 74px;
+  line-height: 1.78;
+  h3 {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.fashion-popup {
+  margin-top: 124px;
+}
+
+.item-fashion {
+  margin-bottom: 200px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .brand {
+    .avr-brand {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      max-height: 114px;
+      mix-blend-mode: overlay;
+    }
+  }
+}
+
+.list-product {
+  max-width: 966px;
+  margin-left: auto;
+  margin-top: -35px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .avarta {
+    @extend flex-center;
+  }
+  .view-more {
+    position: relative;
+    margin-top: -6%;
+    z-index: 2;
+  }
+}
+
+.slide-product {
+  //margin: 0 -10px;
+  .slick-list {
+    //padding-top: 3% !important;
+    padding-bottom: 3% !important;
+  }
+  .item-slide {
+    //padding: 0 10px;
+    transition: .5s all !important;
+    z-index: 3;
+    position: relative;
+    &.slick-center {
+      margin-top: 27px;
+      transform: rotate(10deg);
+      z-index: 2;
+    }
+    &.slick-current {
+      transform: rotate(-10deg);
+      z-index: 2;
+    }
+  }
+}
+
+.content-item-fashion {
+  position: relative;
+  .left-txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 68px;
+    h3 {
+      font-size: 12px;
+      font-weight: 900;
+      font-family: Montserrat;
+      margin-bottom: 17px;
+    }
+    .insta {
+      margin-bottom: 57px;
+      a {
+        display: inline-flex;
+        align-items: center;
+      }
+      img {
+        width: auto;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.date-place {
+  .date {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Montserrat;
+    margin-bottom: 12px;
+  }
+  .place {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    .icon {
+      margin-right: 8px;
+      @extend flex-center;
+    }
+  }
+}
+
+.box-cosme {
+  padding: 195px 0;
+  position: relative;
+  background: url("../images/bg-cosme.png") no-repeat center;
+  background-size: cover;
+  .title-box {
+    margin-bottom: 95px;
+  }
+}
+
+.item-abs {
+  position: absolute;
+}
+
+.beauty-minute {
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+  .bg-avarta {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .abs-1 {
+    top: 14.5%;
+    left: 0;
+    max-width: 30.5%;
+  }
+  .abs-2 {
+    top: 42.5%;
+    left: 8.2%;
+    max-width: 22.5%;
+  }
+  .abs-3 {
+    top: 9%;
+    left: 29.5%;
+    max-width: 35%;
+    z-index: 2;
+  }
+  .abs-4 {
+    top: 9%;
+    right: 13%;
+    max-width: 24.2%;
+  }
+  .abs-5 {
+    bottom: 27.5%;
+    right: 3.8%;
+    max-width: 31%;
+  }
+  .view-more {
+    position: absolute;
+    bottom: 12.5%;
+    left: 55.5%;
+    z-index: 3;
+    a {
+      background: #fff;
+    }
+  }
+  .date-place {
+    position: absolute;
+    bottom: 12%;
+    right: 0;
+  }
+}

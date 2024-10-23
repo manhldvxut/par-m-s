@@ -12,6 +12,11 @@ $('.scroll').click(function() {
     return false;
 });
 
+    $('.slide-product').slick({
+        slidesToShow: 3,
+        centerMode: true,
+    });
+
 
 
 var $body = document.body,
