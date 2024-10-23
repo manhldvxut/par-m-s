@@ -188,11 +188,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         </div>
     </section>
 
+    <div class="head-main text-center">
+        <img src="assets/images/title-studio.png" alt="">
+    </div>
     <section class="box-studio">
-        <div class="head-main d-none">
-            <h2></h2>
-            <div class="icon"></div>
-        </div>
         <div class="container">
             <div class="content-txt text-center">
                 <p>福岡発のトレンドメディアARNEがプロデュースする、韓国の「今」を体感できるPOP UP STUDIO。
@@ -356,6 +355,224 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                         </div>
                         <span>本館2F EVENT SPACE</span>
                     </div>
+                </div>
+            </div>
+
+            <div class="choi-mison">
+                <div class="bg-avarta">
+                    <img src="assets/images/choi.png" alt="">
+                </div>
+                <div class="item-abs abs-1"><img src="assets/images/choi-1.png" alt=""></div>
+                <div class="item-abs abs-2"><img src="assets/images/choi-2.png" alt=""></div>
+                <div class="item-abs abs-3"><img src="assets/images/choi-3.png" alt=""></div>
+                <div class="item-abs abs-4"><img src="assets/images/choi-4.png" alt=""></div>
+                <div class="txt-mison">
+                    <h3>チェミソン＆プロデュース <br>
+                        101トークイベント</h3>
+                    <div class="date-place">
+                        <div class="date">
+                            2024.11/21
+                            <span>THU</span>
+                            12:00〜14:30
+                        </div>
+                        <div class="place">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                    <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                        <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                        <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>PARCO●F</span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>
+                            説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                        </p>
+                        <p>
+                            説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                        </p>
+                    </div>
+                    <div class="bott">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg id="pc_btn_insta" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                        <g id="Ellipse_7" data-name="Ellipse 7" fill="#fff" stroke="#fff" stroke-width="1">
+                                            <circle cx="25" cy="25" r="25" stroke="none"/>
+                                            <circle cx="25" cy="25" r="24.5" fill="none"/>
+                                        </g>
+                                        <path id="Icon_akar-instagram-fill" data-name="Icon akar-instagram-fill" d="M7.11,1.557C8.128,1.51,8.452,1.5,11.045,1.5s2.917.011,3.934.057A7.025,7.025,0,0,1,17.3,2a4.886,4.886,0,0,1,2.791,2.792,7.02,7.02,0,0,1,.444,2.317c.047,1.02.057,1.344.057,3.936s-.011,2.917-.057,3.935a7,7,0,0,1-.444,2.317A4.873,4.873,0,0,1,17.3,20.089a7.02,7.02,0,0,1-2.317.444c-1.019.047-1.343.057-3.936.057s-2.917-.011-3.935-.057a7,7,0,0,1-2.317-.444A4.878,4.878,0,0,1,2,17.3a7.045,7.045,0,0,1-.443-2.317c-.047-1.02-.057-1.344-.057-3.936s.011-2.917.057-3.934A7.025,7.025,0,0,1,2,4.792,4.682,4.682,0,0,1,3.1,3.1,4.679,4.679,0,0,1,4.792,2a7.045,7.045,0,0,1,2.317-.443ZM14.9,3.275c-1.007-.046-1.309-.056-3.857-.056s-2.851.01-3.857.056A5.276,5.276,0,0,0,5.415,3.6,3.152,3.152,0,0,0,3.6,5.415a5.276,5.276,0,0,0-.329,1.773C3.229,8.195,3.22,8.5,3.22,11.045s.01,2.851.056,3.857A5.276,5.276,0,0,0,3.6,16.675a3.152,3.152,0,0,0,1.811,1.811,5.276,5.276,0,0,0,1.773.329c1.007.046,1.308.056,3.857.056s2.851-.01,3.857-.056a5.276,5.276,0,0,0,1.773-.329,3.152,3.152,0,0,0,1.811-1.811,5.276,5.276,0,0,0,.329-1.773c.046-1.007.056-1.309.056-3.857s-.01-2.851-.056-3.857a5.276,5.276,0,0,0-.329-1.773A3.152,3.152,0,0,0,16.675,3.6,5.276,5.276,0,0,0,14.9,3.275ZM9.826,13.988a3.185,3.185,0,1,0-1.965-2.942,3.184,3.184,0,0,0,1.965,2.942ZM7.576,7.576a4.906,4.906,0,1,1,0,6.939,4.906,4.906,0,0,1,0-6.939ZM17.04,6.87a1.16,1.16,0,1,0-1.616-.024,1.16,1.16,0,0,0,1.616.024Z" transform="translate(15 13.719)" fill="#141419"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="view-more">
+                                    <a href="">
+                                        <span>VIEW MORE</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
+                                            <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
+                                                <line id="Line_7" data-name="Line 7" x1="19.453" transform="translate(18.198 4.519)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"></line>
+                                                <line id="Line_8" data-name="Line 8" x1="6.024" y1="4.518" transform="translate(31.628 0)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"></line>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-dj">
+        <div class="container">
+            <div class="title-box text-center">
+                <h3 class="mb-0">DJ</h3>
+            </div>
+            <div class="wrap-dj">
+                <div class="content-dj">
+                    <div class="avarta">
+                        <img src="assets/images/avr-dj.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="txt-mison">
+                            <h3>TAG LIVE LABEL</h3>
+                            <div class="date-place">
+                                <div class="date">
+                                    2024.11/21
+                                    <span>THU</span>
+                                    12:00〜14:30
+                                </div>
+                                <div class="place">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                            <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                                <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                                <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <span>新館2F</span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                                </p>
+                                <p>
+                                    説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                                </p>
+                            </div>
+                            <div class="bott">
+                                <ul>
+                                    <li>
+                                        <div class="view-more">
+                                            <a href="">
+                                                <span>VIEW MORE</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
+                                                    <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
+                                                        <line id="Line_7" data-name="Line 7" x1="19.453" transform="translate(18.198 4.519)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"></line>
+                                                        <line id="Line_8" data-name="Line 8" x1="6.024" y1="4.518" transform="translate(31.628 0)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"></line>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-novelty">
+        <div class="container">
+            <div class="content-novelty">
+                <div class="line text-center"><img src="assets/images/txt-novelty.png" alt=""></div>
+                <div class="txt-novelty">
+                    <div class="avarta text-center">
+                        <img src="assets/images/novelty.png" alt="">
+                    </div>
+                    <div class="desc-novelty">
+                        <h3>ノベルティキャンペーン</h3>
+                        <div class="date-place">
+                            <div class="date">
+                                2024.11/21 <span>THU</span> - 2024.12/21 <span>THU</span>
+                            </div>
+                            <div class="place">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                        <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                            <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                            <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>新館2F</span>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            ノベルティなどの説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                        </div>
+                        <div class="view-more text-center">
+                            <a href="">
+                                <span>VIEW MORE</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
+                                    <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
+                                        <line id="Line_7" data-name="Line 7" x1="19.453" transform="translate(18.198 4.519)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"></line>
+                                        <line id="Line_8" data-name="Line 8" x1="6.024" y1="4.518" transform="translate(31.628 0)" fill="none" stroke="#141419" stroke-linecap="round" stroke-width="1"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-video">
+        <div class="container">
+            <div class="content-video">
+                <div style="padding:56.25% 0 0 0;position:relative;z-index: 2;">
+                    <iframe src="https://player.vimeo.com/video/1022038916?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fukuoka_korean_pop_week"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                
+                <div class="icon-play">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/btn_play.png" alt="">
+                    </a>
+                </div>
+                
+                <div class="icon-video">
+                    <img src="assets/images/icon-video-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="content-profile">
+                <div class="logo-profile">
+                    <img src="assets/images/profile.png" alt="">
+                </div>
+                <div class="desc-profile">
+                    <div class="desc">
+                        <p>CGクリエイター、アートディレクター。</p>
+                        <p>NIKEやaddidasなどのファッションブランドのスチール広告、動画制作。</p>
+                        <p>西武百貨店の空間のディレクション、などを様々な分野で活動。</p>
+                        <p>パーソナルワークでは、女の子をターゲットにした作品でありながら、</p>
+                        <p>社会への違和感や自分自身が感じた事を、</p>
+                        <p>言葉遊びやだじゃれを用いて、アートに落とし込んでいる。</p>
+                    </div>
+                    <ul>
+                        <li><a href="">WEB</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

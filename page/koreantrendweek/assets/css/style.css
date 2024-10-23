@@ -1146,7 +1146,6 @@ body.type4 .floornav .floornav__item04 a:after {
   left: 0;
   width: 100%;
   height: 100vh;
-  opacity: 0;
   overflow: hidden;
   transition: 0.3s all;
 }
@@ -1351,7 +1350,6 @@ body.type4 .floornav .floornav__item04 a:after {
 .sns {
   position: relative;
   z-index: 1;
-  display: none;
 }
 .sns-list {
   display: flex;
@@ -1377,7 +1375,6 @@ body.type4 .floornav .floornav__item04 a:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
 }
 .other-text__body {
   margin-top: -80px;
@@ -1404,7 +1401,6 @@ body.type4 .floornav .floornav__item04 a:after {
   z-index: 1;
   background: #fff;
   padding: 14px 30px;
-  display: none;
 }
 .footer.active {
   display: block;
@@ -1420,6 +1416,13 @@ body.type4 .floornav .floornav__item04 a:after {
   right: 0;
   bottom: 0;
   margin: auto;
+  display: flex;
+  align-items: center;
+}
+.footer__backtop a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copy-right {
@@ -1579,7 +1582,7 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 68px;
+  margin-top: 42px;
 }
 .content-item-fashion .left-txt h3 {
   font-size: 12px;
@@ -1604,6 +1607,11 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   font-weight: 900;
   font-family: Montserrat;
   margin-bottom: 12px;
+  line-height: normal;
+}
+.date-place .date span {
+  font-size: 12px;
+  padding: 0 4px;
 }
 .date-place .place {
   display: flex;
@@ -1627,12 +1635,16 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
 
 .item-abs {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .beauty-minute {
   width: max-content;
-  margin: 0 auto;
   position: relative;
+  margin-bottom: 122px;
+  margin-left: auto;
 }
 .beauty-minute .bg-avarta {
   position: relative;
@@ -1678,6 +1690,226 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   position: absolute;
   bottom: 12%;
   right: 0;
+}
+
+.choi-mison {
+  position: relative;
+}
+.choi-mison .abs-1 {
+  top: 0;
+  left: -1.5%;
+  max-width: 42.5%;
+  z-index: 2;
+}
+.choi-mison .abs-2 {
+  top: 13%;
+  left: 35.5%;
+  max-width: 24.5%;
+}
+.choi-mison .abs-3 {
+  top: -2%;
+  left: 54%;
+  max-width: 10%;
+}
+.choi-mison .abs-4 {
+  bottom: 3%;
+  left: 39%;
+  max-width: 6.5%;
+}
+
+.txt-mison {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 34.5%;
+  padding: 5% 0 0 0;
+  box-sizing: border-box;
+}
+.txt-mison h3 {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Zen Kaku Gothic Antique";
+  margin-bottom: 28px;
+}
+.txt-mison .desc {
+  padding: 30px 0;
+  line-height: 2;
+}
+.txt-mison .bott ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.txt-mison .bott ul li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.txt-mison .bott ul li:last-child {
+  margin-right: 0;
+}
+.txt-mison .bott a {
+  display: inline-flex;
+  align-items: center;
+}
+.txt-mison .bott .view-more a {
+  background: #fff;
+}
+
+.box-dj {
+  padding: 200px 0;
+  background: url("../images/bg-dj.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.box-dj .title-box {
+  margin-bottom: 35px;
+}
+.box-dj .txt-mison {
+  position: relative;
+  max-width: 100%;
+  top: unset;
+}
+.box-dj .wrap-dj {
+  max-width: 895px;
+  margin: 0 auto;
+}
+
+.content-dj {
+  display: flex;
+  align-items: center;
+  margin: 0 -47px;
+}
+.content-dj > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 47px;
+}
+
+.box-novelty {
+  padding: 100px 0 135px 0;
+  background: rgba(20, 20, 25, 0.32);
+  position: relative;
+}
+.box-novelty .line {
+  position: absolute;
+  left: 0;
+  top: 38%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-novelty {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.txt-novelty .avarta {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -185px;
+}
+.txt-novelty .avarta img {
+  max-width: 382px;
+}
+.txt-novelty .desc-novelty {
+  max-width: 502px;
+  margin: 0 auto;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 217px 50px 80px 50px;
+}
+.txt-novelty .desc-novelty h3 {
+  font-size: 26px;
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.txt-novelty .desc-novelty .desc {
+  padding: 20px 0 60px 0;
+}
+
+.box-video {
+  position: relative;
+  padding: 200px 0;
+  background: url("../images/bg-video.jpg") no-repeat center;
+  background-size: cover;
+}
+.box-video .icon-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background: rgba(20, 20, 25, 0.7);
+}
+.box-video .icon-play a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-video {
+  position: relative;
+  margin-bottom: 200px;
+}
+.content-video .icon-video {
+  position: absolute;
+  top: -23%;
+  left: -18%;
+  max-width: 26.5%;
+}
+
+.content-profile {
+  max-width: 638px;
+  margin: 0 auto;
+}
+.content-profile .desc-profile {
+  padding: 48px 0 0 48px;
+  line-height: 2.2;
+  font-weight: 500;
+}
+.content-profile .desc-profile a {
+  text-decoration: none !important;
+  font-weight: 800;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: #141419;
+}
+.content-profile .desc-profile .desc {
+  margin-bottom: 25px;
+}
+.content-profile .desc-profile ul {
+  display: flex;
+  align-items: center;
+}
+.content-profile .desc-profile ul li {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-profile .desc-profile ul li:last-child {
+  margin-right: 0;
+}
+
+.padding-main {
+  padding-top: 100vh;
+}
+
+.head-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
