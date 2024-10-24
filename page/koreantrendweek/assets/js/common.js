@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    history.scrollRestoration = "manual";
+    $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+    });
 // ページスクロール
 $('.scroll').click(function() {
     // スクロールの速度
@@ -242,7 +246,7 @@ var $body = document.body,
             "visibility" : "visible",
             "transition" : ".3s all"
         })
-        $('.main').addClass('active');
+        $('.main, body').addClass('active');
         $('.footer').addClass('active');
         $('.nav').removeClass('hidden');
 
@@ -258,6 +262,24 @@ var $body = document.body,
         //
 
         videoMain.play()
+    });
+
+    $('.btn-menu-mb a').click(function () {
+        $('.nav-link-menu').addClass('active');
+    })
+
+    $('.close-menu a').click(function () {
+        $('.nav-link-menu').removeClass('active');
+    })
+
+    $('.nav-list__link').click(function(e){
+        e.preventDefault();
+        $('.nav-link-menu').removeClass('active');
+        var target = $($(this).attr('href'));
+        if(target.length){
+            var scrollTo = target.offset().top;
+            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+        }
     });
 })
 

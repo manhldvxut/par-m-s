@@ -12,7 +12,13 @@ html {
 body {
   font-size: 15px;
   line-height: 1.5;
+  overflow: hidden;
+  height: 100vh;
   color: #141419;
+}
+body.active {
+  overflow: unset;
+  height: auto;
 }
 body.open_modal {
   overflow: hidden;
@@ -37,6 +43,17 @@ body.open_modal {
 }
 main {
   display: block; /*IE*/
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s all !important;
+}
+main.active {
+  opacity: 1;
+  pointer-events: unset;
+}
+main.active .mask-video {
+  opacity: 1;
+  transform: scale(3);
 }
 
 /* =========================================================
@@ -1101,6 +1118,12 @@ body.type4 .floornav .floornav__item04 a:after {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .loading canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 .loading__body {
   position: fixed;
   top: 0;
@@ -1182,6 +1205,12 @@ body.type4 .floornav .floornav__item04 a:after {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .select__sound {
+    width: 298px;
+    height: 298px;
+  }
+}
 .select__sound:before {
   position: absolute;
   width: 100%;
@@ -1215,6 +1244,11 @@ body.type4 .floornav .floornav__item04 a:after {
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .select__sound-choice {
+    font-size: 14px;
+  }
+}
 .select__sound-choice-item {
   padding: 0 31px;
   cursor: pointer;
@@ -1231,6 +1265,12 @@ body.type4 .floornav .floornav__item04 a:after {
   font-size: 1rem;
   transform: translate(0px, 116px);
 }
+@media (max-width: 767px) {
+  .select__sound-text {
+    transform: translate(0px, 68px);
+    font-size: 14px;
+  }
+}
 
 .nav {
   position: fixed;
@@ -1240,7 +1280,12 @@ body.type4 .floornav .floornav__item04 a:after {
   justify-content: space-between;
   width: 100%;
   transition: 0.3s all;
-  z-index: 1;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .nav {
+    padding: 5px;
+  }
 }
 .nav.hidden {
   visibility: hidden;
@@ -1252,16 +1297,51 @@ body.type4 .floornav .floornav__item04 a:after {
   padding-top: 15px;
   display: block;
 }
+@media (max-width: 767px) {
+  .nav-logo__link {
+    padding: 0;
+  }
+}
 .nav-logo__link img {
   max-width: 120px;
+}
+@media (max-width: 767px) {
+  .nav-logo__link img {
+    max-height: 52px;
+  }
 }
 .nav-list {
   display: flex;
   align-items: center;
   padding-right: 9.66%;
 }
+@media (max-width: 991px) {
+  .nav-list {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-list {
+    display: block;
+    padding: 0 0 80px 0;
+    position: relative;
+    z-index: 2;
+  }
+  .nav-list.nav-pc {
+    display: none;
+  }
+}
 .nav-list__item {
   margin-right: 34px;
+}
+@media (max-width: 767px) {
+  .nav-list__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .nav-list__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .nav-list__item:last-child {
   margin-right: 0;
@@ -1272,6 +1352,13 @@ body.type4 .floornav .floornav__item04 a:after {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   text-decoration: none;
+}
+@media (max-width: 767px) {
+  .nav-list__link {
+    font-size: 20px;
+    font-weight: 800;
+    color: #141419;
+  }
 }
 
 .fukuoka-parco {
@@ -1586,6 +1673,92 @@ main
   display: none;
 }
 
+@media (max-width: 767px) {
+  .btn-menu-mb {
+    display: block;
+  }
+}
+.btn-menu-mb a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link-menu {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all !important;
+  z-index: 12;
+}
+.nav-link-menu:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../images/bgmenu-mb.png") no-repeat center;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.95;
+}
+@media (max-width: 767px) {
+  .nav-link-menu {
+    display: flex;
+  }
+}
+.nav-link-menu.active {
+  left: 0;
+}
+.nav-link-menu .close-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+}
+.nav-link-menu .close-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s all !important;
+}
+.mask-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s all !important;
+}
+@media (max-width: 767px) {
+  .mask-video img.show-pc {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mask-video img.show-mb {
+    display: block;
+  }
+}
+
 .container {
   max-width: 1126px;
   margin: 0 auto;
@@ -1658,7 +1831,7 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
 .content-txt {
   line-height: 2.26;
   letter-spacing: 0.75px;
-  font-family: "Zen Kaku Gothic Antique";
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 .box-studio {
@@ -2140,7 +2313,7 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
 .txt-mison h3 {
   font-size: 26px;
   font-weight: bold;
-  font-family: "Zen Kaku Gothic Antique";
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
   margin-bottom: 28px;
 }
 @media (max-width: 991px) {
@@ -2327,7 +2500,7 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
 }
 .txt-novelty .desc-novelty h3 {
   font-size: 26px;
-  font-family: "Zen Kaku Gothic Antique";
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
 }

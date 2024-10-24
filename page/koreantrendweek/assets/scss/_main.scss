@@ -7,6 +7,91 @@
 .d-none {
   display: none;
 }
+
+.btn-menu-mb {
+  @media (max-width: 767px) {
+    display: block;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav-link-menu {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all !important;
+  z-index: 12;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../images/bgmenu-mb.png") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+  }
+  @media (max-width: 767px) {
+    display: flex;
+  }
+  &.active {
+    left: 0;
+  }
+  .close-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 12px;
+    right: 12px;
+    z-index: 3;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.mask-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s all !important;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s all !important;
+    &.show-pc {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    &.show-mb {
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+}
+
 .container {
   max-width: 1126px;
   margin: 0 auto;
@@ -74,7 +159,7 @@ flex-center, .bg-avarta {
 .content-txt {
   line-height: 2.26;
   letter-spacing: 0.75px;
-  font-family: "Zen Kaku Gothic Antique";
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 
 }
 
@@ -503,7 +588,7 @@ flex-center, .bg-avarta {
   h3 {
     font-size: 26px;
     font-weight: bold;
-    font-family: "Zen Kaku Gothic Antique";
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
     margin-bottom: 28px;
     @media (max-width: 991px) {
       font-size: 20px;
@@ -666,7 +751,7 @@ flex-center, .bg-avarta {
     }
     h3 {
       font-size: 26px;
-      font-family: "Zen Kaku Gothic Antique";
+      font-family: "Zen Kaku Gothic Antique", sans-serif;
       font-weight: bold;
       margin-bottom: 20px;
       @media (max-width: 767px) {

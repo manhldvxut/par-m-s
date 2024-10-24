@@ -13,8 +13,13 @@ html {
 body {
   font-size: 15px;
   line-height: 1.5;
-
+  overflow: hidden;
+  height: 100vh;
   color: #141419;
+  &.active {
+    overflow: unset;
+    height: auto;
+  }
   &.open_modal {
     overflow: hidden;
   }
@@ -41,6 +46,17 @@ body {
 
 main {
   display: block; /*IE*/
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s all !important;
+  &.active {
+    opacity: 1;
+    pointer-events: unset;
+    .mask-video {
+      opacity: 1;
+      transform: scale(3);
+    }
+  }
 }
 
 
