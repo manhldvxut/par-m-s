@@ -192,12 +192,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         <img src="assets/images/title-studio.png" alt="">
     </div>
     <section class="box-studio">
-        <div class="container">
-            <div class="content-txt text-center">
+        <div class="content-txt text-center">
+            <div class="container">
                 <p>福岡発のトレンドメディアARNEがプロデュースする、韓国の「今」を体感できるPOP UP STUDIO。
                     日本初上陸のファッションブランドや最新コスメが登場。</p>
             </div>
-            <div class="fashion-popup">
+        </div>
+        <div class="fashion-popup">
+            <div class="container">
                 <div class="title-box text-center">
                     <h3>FASHION POP UP</h3>
                     <p>多数のK-POPアイドルが愛用する２つのファッションブランドが日本初上陸！王道Y2KブランドMSKN2ND（ムンスコンセカンド）、</p>
@@ -205,7 +207,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                     <p>さらに、サンリオ「クロミ」ちゃんとのコラボアイテムも限定発売！</p>
                 </div>
             </div>
-            <div class="list-fashion">
+        </div>
+        <div class="list-fashion">
+            <div class="container">
                 <div class="item-fashion">
                     <div class="brand">
                         <div class="avr-brand"><img src="assets/images/brand-1.png" alt=""></div>
@@ -324,6 +328,25 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
             </div>
             
             <div class="beauty-minute">
+                <div class="date-place">
+                    <div class="date">11/21-12/1</div>
+                    <div class="place">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
+                                <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
+                                    <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <span>本館2F EVENT SPACE</span>
+                    </div>
+                </div>
+
+                <div class="beauty-mb d-none">
+                    <div class="avarta"><img src="assets/images/beauty-mb.png" class="w-100" alt=""></div>
+                </div>
+
                 <div class="bg-avarta text-center"><img src="assets/images/beauty-minutes.png" alt=""></div>
                 <div class="item-abs abs-1"><img src="assets/images/beauty-1.png" alt=""></div>
                 <div class="item-abs abs-2"><img src="assets/images/beauty-2.png" alt=""></div>
@@ -342,23 +365,13 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                         </svg>
                     </a>
                 </div>
-                <div class="date-place">
-                    <div class="date">11/21-12/1</div>
-                    <div class="place">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
-                                <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-3.5 -0.5)">
-                                    <path id="Path_83" data-name="Path 83" d="M20.864,9.682c0,6.364-8.182,11.818-8.182,11.818S4.5,16.045,4.5,9.682a8.182,8.182,0,1,1,16.364,0Z" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                    <path id="Path_84" data-name="Path 84" d="M18.955,13.227A2.727,2.727,0,1,1,16.227,10.5,2.727,2.727,0,0,1,18.955,13.227Z" transform="translate(-3.545 -3.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <span>本館2F EVENT SPACE</span>
-                    </div>
-                </div>
+
             </div>
 
             <div class="choi-mison">
+                <div class="choice-mb d-none">
+                    <img src="assets/images/choice-mb.png" class="w-100" alt="">
+                </div>
                 <div class="bg-avarta">
                     <img src="assets/images/choi.png" alt="">
                 </div>
