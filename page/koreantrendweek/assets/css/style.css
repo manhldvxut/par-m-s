@@ -2017,7 +2017,7 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
 @media (max-width: 767px) {
   .txt-mison h3 {
     font-size: 23px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 }
 .txt-mison .desc {
@@ -2057,17 +2057,42 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .box-dj {
+    padding: 160px 0;
+  }
+}
 .box-dj .title-box {
   margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .box-dj .title-box {
+    margin-bottom: 54px;
+  }
 }
 .box-dj .txt-mison {
   position: relative;
   max-width: 100%;
   top: unset;
 }
+@media (max-width: 767px) {
+  .box-dj .txt-mison {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .box-dj .txt-mison h3, .box-dj .txt-mison .date-place {
+    text-align: center;
+  }
+}
 .box-dj .wrap-dj {
   max-width: 895px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .box-dj .container {
+    padding: 0 28px;
+  }
 }
 
 .content-dj {
@@ -2075,16 +2100,37 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   align-items: center;
   margin: 0 -47px;
 }
+@media (max-width: 767px) {
+  .content-dj {
+    margin: 0;
+    display: block;
+  }
+}
 .content-dj > div {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 47px;
+}
+@media (max-width: 767px) {
+  .content-dj > div {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 26px;
+  }
+  .content-dj > div:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .box-novelty {
   padding: 100px 0 135px 0;
   background: rgba(20, 20, 25, 0.32);
   position: relative;
+}
+@media (max-width: 767px) {
+  .box-novelty {
+    padding: 147px 0 160px 0;
+  }
 }
 .box-novelty .line {
   position: absolute;
@@ -2094,6 +2140,16 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .box-novelty .line {
+    top: 31%;
+  }
+}
+@media (max-width: 767px) {
+  .box-novelty .container {
+    padding: 0 12px;
+  }
 }
 
 .txt-novelty {
@@ -2106,8 +2162,19 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   z-index: 2;
   margin-bottom: -185px;
 }
+@media (max-width: 767px) {
+  .txt-novelty .avarta {
+    padding: 0 57px;
+    margin-bottom: -130px;
+  }
+}
 .txt-novelty .avarta img {
   max-width: 382px;
+}
+@media (max-width: 767px) {
+  .txt-novelty .avarta img {
+    max-width: 100%;
+  }
 }
 .txt-novelty .desc-novelty {
   max-width: 502px;
@@ -2117,14 +2184,38 @@ flex-center, .date-place .place .icon, .list-product .avarta, .bg-avarta {
   background: rgba(255, 255, 255, 0.5);
   padding: 217px 50px 80px 50px;
 }
+@media (max-width: 767px) {
+  .txt-novelty .desc-novelty {
+    max-width: 100%;
+    padding: 176px 50px 38px 50px;
+  }
+}
 .txt-novelty .desc-novelty h3 {
   font-size: 26px;
   font-family: "Zen Kaku Gothic Antique";
   font-weight: bold;
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .txt-novelty .desc-novelty h3 {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 .txt-novelty .desc-novelty .desc {
   padding: 20px 0 60px 0;
+}
+@media (max-width: 767px) {
+  .txt-novelty .desc-novelty .desc {
+    padding: 30px 0;
+    line-height: 2.26;
+  }
+}
+@media (max-width: 767px) {
+  .txt-novelty .desc-novelty .date-place {
+    text-align: center;
+  }
 }
 
 .box-video {
