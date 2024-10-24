@@ -178,8 +178,16 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         <div class="fukuoka-parco__body">
             <div class="fukuoka-parco__box">
                 <div class="fukuoka-parco__text">
-                    KOREAN POP WEEKが福岡PARCOで開催！<br>
-                    企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります
+
+                    <div class="desc">
+                        <div class="icon-starfu starfu-1"><img src="assets/images/icon-star.png" alt=""></div>
+                        <div class="icon-starfu starfu-2"><img src="assets/images/icon-star.png" alt=""></div>
+                        <div class="icon-letter d-none">
+                            <img src="assets/images/letter.png" alt="">
+                        </div>
+                        KOREAN POP WEEKが福岡PARCOで開催！<br>
+                        企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります
+                    </div>
                 </div>
             </div>
         </div>

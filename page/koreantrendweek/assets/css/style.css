@@ -1285,11 +1285,6 @@ body.type4 .floornav .floornav__item04 a:after {
     padding-top: 95px;
   }
 }
-@media (max-width: 767px) {
-  .fukuoka-parco {
-    display: none !important;
-  }
-}
 .fukuoka-parco:before {
   position: absolute;
   content: "";
@@ -1308,6 +1303,12 @@ body.type4 .floornav .floornav__item04 a:after {
 .fukuoka-parco__img img {
   width: 100%;
 }
+@media (max-width: 767px) {
+  .fukuoka-parco__img img {
+    height: 80px;
+    object-fit: cover;
+  }
+}
 .fukuoka-parco__box {
   width: 555px;
   height: 597px;
@@ -1317,6 +1318,12 @@ body.type4 .floornav .floornav__item04 a:after {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  .fukuoka-parco__box {
+    width: 100%;
+    height: auto;
+  }
+}
 .fukuoka-parco__box:after {
   position: absolute;
   content: "";
@@ -1324,6 +1331,12 @@ body.type4 .floornav .floornav__item04 a:after {
   height: 100%;
   background: url("../images/letter.svg") no-repeat;
   background-size: 100%;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .fukuoka-parco__box:after {
+    display: none;
+  }
 }
 .fukuoka-parco__box:before {
   position: absolute;
@@ -1338,6 +1351,14 @@ body.type4 .floornav .floornav__item04 a:after {
   right: 0;
   margin: auto;
 }
+@media (max-width: 767px) {
+  .fukuoka-parco__box:before {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: none;
+  }
+}
 .fukuoka-parco__text {
   font-size: 1.5rem;
   letter-spacing: 0.75px;
@@ -1348,6 +1369,32 @@ body.type4 .floornav .floornav__item04 a:after {
   padding-left: 100px;
   padding-right: 100px;
 }
+@media (max-width: 767px) {
+  .fukuoka-parco__text {
+    padding: 0 22px;
+    position: relative;
+  }
+  .fukuoka-parco__text .desc {
+    position: relative;
+    z-index: 2;
+    border-top: 6px solid #141419;
+    border-bottom: 20px solid #141419;
+    padding: 84px 28px 60px 28px;
+    background: rgba(169, 151, 181, 0.56);
+  }
+}
+@media (max-width: 767px) {
+  .fukuoka-parco__text .icon-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+}
 .fukuoka-parco__inv {
   position: relative;
   z-index: 1;
@@ -1355,6 +1402,32 @@ body.type4 .floornav .floornav__item04 a:after {
   margin-right: 40px;
   padding-top: 117px;
   padding-bottom: 67px;
+}
+@media (max-width: 767px) {
+  .fukuoka-parco__inv {
+    margin: 0;
+    text-align: center;
+    padding: 60px 0 20px 0;
+  }
+}
+.fukuoka-parco .icon-starfu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .fukuoka-parco .icon-starfu {
+    display: flex;
+  }
+}
+.fukuoka-parco .icon-starfu.starfu-1 {
+  top: 0;
+  left: -20px;
+}
+.fukuoka-parco .icon-starfu.starfu-2 {
+  bottom: -20px;
+  right: -20px;
 }
 
 .sns {
