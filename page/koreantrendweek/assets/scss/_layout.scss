@@ -1008,6 +1008,11 @@ body.type4 .floornav .floornav__item04 a:after {
             &:last-child {
                 margin-right: 0;
             }
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
     }
 }
@@ -1018,13 +1023,21 @@ body.type4 .floornav .floornav__item04 a:after {
     position: relative;
     z-index: 1;
     background: url('../images/other-text.png') no-repeat;
-    background-size: 100% 100%;
+    //background-size: 100% 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      height: auto;
+      padding: 100px 0 226px 0;
+    }
 
     &__body {
         margin-top: -80px;
+        @media (max-width: 767px) {
+          margin-top: 0;
+        }
     }
 
     &__list {
@@ -1053,6 +1066,10 @@ body.type4 .floornav .floornav__item04 a:after {
     z-index: 1;
     background: #fff;
     padding: 14px 30px;
+    @media (max-width: 767px) {
+      padding: 0;
+      background: transparent;
+    }
 
     &.active {
         display: block;
@@ -1062,6 +1079,20 @@ body.type4 .floornav .floornav__item04 a:after {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 767px) {
+          display: block;
+          text-align: center;
+          padding: 26px 10px 12px 10px;
+          background: #fff;
+        }
+      .logo {
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
 
     &__backtop {
@@ -1072,6 +1103,13 @@ body.type4 .floornav .floornav__item04 a:after {
         margin: auto;
         display: flex;
         align-items: center;
+        @media (max-width: 767px) {
+          position: relative;
+          left: 0;
+          justify-content: center;
+          text-align: center;
+          margin-top: -155px;
+        }
         a {
           display: inline-flex;
           align-items: center;
@@ -1092,5 +1130,8 @@ body.type4 .floornav .floornav__item04 a:after {
     img {
         max-width: 234px;
         margin: auto;
+        @media (max-width: 767px) {
+          height: 155px;
+        }
     }
 }

@@ -15,6 +15,16 @@ $('.scroll').click(function() {
     $('.slide-product').slick({
         slidesToShow: 3,
         centerMode: true,
+        dots: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
 

@@ -191,6 +191,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //å¿…ã
     <div class="head-main text-center">
         <img src="assets/images/title-studio.png" alt="">
     </div>
+    <div class="head-main-mb d-none text-center">
+        <img src="assets/images/title-studio-mb.png" alt="">
+    </div>
     <section class="box-studio">
         <div class="content-txt text-center">
             <div class="container">
@@ -553,20 +556,18 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //å¿…ã
     <section class="box-video">
         <div class="container">
             <div class="content-video">
-                <div style="padding:56.25% 0 0 0;position:relative;z-index: 2;">
-                    <iframe src="https://player.vimeo.com/video/1022038916?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fukuoka_korean_pop_week"></iframe>
-                </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-                
-                <div class="icon-play">
-                    <a href="javascript:void(0)">
-                        <img src="assets/images/btn_play.png" alt="">
-                    </a>
-                </div>
-                
                 <div class="icon-video">
                     <img src="assets/images/icon-video-1.png" alt="">
                 </div>
+                <div style="padding:56.25% 0 0 0;position:relative;z-index: 2;">
+                    <iframe src="https://player.vimeo.com/video/1022038916?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fukuoka_korean_pop_week"></iframe>
+                    <div class="icon-play">
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/btn_play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
 
             <div class="content-profile">
