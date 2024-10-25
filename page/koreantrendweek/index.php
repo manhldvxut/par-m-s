@@ -347,8 +347,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                             <div class="left-txt">
                                 <div class="info-brand">
                                     <h3>painorpleasure</h3>
-                                    <div class="insta">
-                                        <a href="https://www.instagram.com/painorpleasure_official/" target="_blank"><img src="assets/images/pc_btn_insta.png" alt=""></a>
+                                    <div class="insta insta-painorpleasure">
+                                        <a href="https://www.instagram.com/painorpleasure_official/" target="_blank"><img src="assets/images/painorpleasure-ins.png" alt=""></a>
                                     </div>
                                     <div class="date-place">
                                         <div class="date">11/27(水)-12/1(日)</div>
@@ -377,6 +377,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                     <div class="item-slide">
                                         <div class="avarta"><img src="assets/images/fs-2-3.png" alt=""></div>
                                     </div>
+                                </div>
+                                <div class="note-text">
+                                    ※画像はイメージです
                                 </div>
                                 <div class="view-more text-center">
                                     <a href="https://fukuoka.parco.jp/pnews/detail/?id=30451" target="_blank">

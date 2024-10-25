@@ -1890,6 +1890,11 @@ body {
   }
 }
 
+.insta-painorpleasure img {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+
 /* =========================================================
 main
 ========================================================= */
@@ -2402,6 +2407,10 @@ flex-center, .list-product .avarta, .date-place .place .icon, .bg-avarta {
   }
 }
 
+.box-cosme .content-txt {
+  text-align: center;
+}
+
 .box-cosme .title-box {
   margin-bottom: 95px;
 }
@@ -2520,7 +2529,7 @@ flex-center, .list-product .avarta, .date-place .place .icon, .bg-avarta {
 }
 
 .beauty-minute .view-more a {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .beauty-minute .date-place {
@@ -2559,6 +2568,10 @@ flex-center, .list-product .avarta, .date-place .place .icon, .bg-avarta {
 
 .choi-mison {
   position: relative;
+}
+
+.choi-mison h3 {
+  margin-bottom: 100px;
 }
 
 @media (max-width: 767px) {
@@ -2736,6 +2749,8 @@ flex-center, .list-product .avarta, .date-place .place .icon, .bg-avarta {
   position: relative;
   max-width: 100%;
   top: unset;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
