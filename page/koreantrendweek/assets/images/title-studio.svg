@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="85.001" viewBox="0 0 1366 85.001">
+  <g id="title-studio" transform="translate(0 -1622.999)">
+    <path id="base" d="M-4474,172H-5840V87h1366v85Zm-85.77-62.04a11.72,11.72,0,0,0-8.39,3.424,11.863,11.863,0,0,0-3.4,8.44c0,8.087,7.118,14.621,17.892,24.512l.439.4,3.11,2.8,3.108-2.8.436-.4c10.777-9.893,17.9-16.428,17.9-24.515a11.863,11.863,0,0,0-3.4-8.44,11.72,11.72,0,0,0-8.39-3.424,12.551,12.551,0,0,0-5.346,1.214,12.868,12.868,0,0,0-4.3,3.317,12.884,12.884,0,0,0-4.3-3.317A12.555,12.555,0,0,0-4559.77,109.96Z" transform="translate(5840 1536)"/>
+    <g id="h1" transform="translate(100 -18)">
+      <text id="KOREA_POP_UP_STUDIO" data-name="KOREA POP UP STUDIO" transform="translate(59 1694)" fill="#fff" font-size="30" font-family="SegoeUIBlack, Segoe UI" letter-spacing="0.03em"><tspan x="0" y="0">KOREA POP UP STUDIO</tspan></text>
+    </g>
+  </g>
+</svg>

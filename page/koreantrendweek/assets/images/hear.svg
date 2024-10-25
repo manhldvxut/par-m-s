@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="85" viewBox="0 0 111 85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="1255" width="111" height="85" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="hear" transform="translate(-1255)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="title-studio" transform="translate(0 -1622.999)">
+      <path id="base" d="M1366,85H0V0H1366V85Zm-85.77-62.04a11.72,11.72,0,0,0-8.39,3.424,11.863,11.863,0,0,0-3.4,8.44c0,8.087,7.118,14.621,17.892,24.512l.439.4,3.11,2.8,3.108-2.8.436-.4c10.777-9.893,17.9-16.427,17.9-24.515a11.863,11.863,0,0,0-3.4-8.44,11.72,11.72,0,0,0-8.39-3.424,12.551,12.551,0,0,0-5.346,1.214,12.868,12.868,0,0,0-4.3,3.317,12.884,12.884,0,0,0-4.3-3.317A12.555,12.555,0,0,0,1280.23,22.96Z" transform="translate(0 1622.999)"/>
+    </g>
+  </g>
+</svg>

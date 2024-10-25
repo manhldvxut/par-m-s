@@ -658,6 +658,10 @@ body.type4 .floornav .floornav__item04 a:after {
 }
 
 // coding
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -751,6 +755,21 @@ body.type4 .floornav .floornav__item04 a:after {
         }
     }
 }
+
+.scroll-main {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    writing-mode: vertical-rl;
+    bottom: 90px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    border-left: 1px solid;
+}
+
 
 
 .main-video {
@@ -1051,7 +1070,7 @@ body.type4 .floornav .floornav__item04 a:after {
             border-top: 6px solid #141419;
             border-bottom: 20px solid #141419;
             padding: 84px 28px 60px 28px;
-            background: rgb(169 151 181 / 56%);
+            background: rgba(169, 151, 181, 0.56);
           }
         }
       .icon-letter {
@@ -1162,6 +1181,13 @@ body.type4 .floornav .floornav__item04 a:after {
             font-family: "Zen Kaku Gothic Antique", sans-serif;
             font-size: 1.5rem;
             letter-spacing: 0.75px;
+
+            a {
+              font-family: "Zen Kaku Gothic Antique", sans-serif;
+              font-size: 1.5rem;
+              letter-spacing: 0.75px;
+              color: #141419;
+            }
 
             &-left {
                 margin-right: 28px;

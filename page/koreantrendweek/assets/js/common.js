@@ -225,6 +225,7 @@ var $body = document.body,
 
         videoSplash_ver.play();
         videoSplash_ver.muted = false; 
+        checkSoundOff = false
     })
 
     $('.select__sound-choice-item-off').click(function () {
@@ -253,12 +254,11 @@ var $body = document.body,
         // Chay cai hinh tron animation truoc 
         // --> xong moi toi chay video
 
-        if(checkSoundOff = true) {
+        if (checkSoundOff === true) {
             videoMain.muted = true; 
         } else {
             videoMain.muted = false; 
         }
-
         //
 
         videoMain.play()
@@ -281,5 +281,9 @@ var $body = document.body,
             $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
         }
     });
+
+    $(window).scroll(function () {
+        $('.scroll-main').fadeOut();
+    })
 })
 

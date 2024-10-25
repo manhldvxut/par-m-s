@@ -160,6 +160,7 @@ flex-center, .bg-avarta {
   line-height: 2.26;
   letter-spacing: 0.75px;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 600;
 
 }
 
@@ -205,6 +206,16 @@ flex-center, .bg-avarta {
   margin-top: 124px;
   @media (max-width: 767px) {
     margin-top: 60px;
+  }
+
+  .title-box {
+    margin-bottom: 25px;
+  }
+
+  .text-center {
+    p {
+      font-weight: 600;
+    }
   }
 }
 
@@ -307,6 +318,19 @@ flex-center, .bg-avarta {
       }
     }
   }
+}
+
+.note-text {
+  font-size: 0.9rem;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  text-align: right;
+  padding-right: 99px;
+  transform: rotate(10deg);
+  position: relative;
+  z-index: 99999;
+  /* transform: skewX(-25deg); */
+  margin-top: -70px;
+  padding-bottom: 60px;
 }
 
 .content-item-fashion {
@@ -695,7 +719,7 @@ flex-center, .bg-avarta {
 }
 .box-novelty {
   padding: 100px 0 135px 0;
-  background: rgb(20 20 25 / 32%);
+  background: rgba(20, 20, 25, 0.32);
   position: relative;
   @media (max-width: 767px) {
     padding: 147px 0 160px 0;
@@ -743,7 +767,7 @@ flex-center, .bg-avarta {
     margin: 0 auto;
     border: 1px solid #FFFFFF;
     border-radius: 10px;
-    background: rgb(255 255 255 / 50%);
+    background: rgba(255, 255, 255, 0.5);
     padding: 217px 50px 80px 50px;
     @media (max-width: 767px) {
       max-width: 100%;
@@ -793,7 +817,7 @@ flex-center, .bg-avarta {
     align-items: center;
     justify-content: center;
     z-index: 3;
-    background: rgb(20 20 25 / 70%);
+    background: rgba(20, 20, 25, 0.7);
     a {
       display: inline-flex;
       align-items: center;
@@ -897,10 +921,42 @@ flex-center, .bg-avarta {
 
 .head-main {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: -85px;
+  z-index: 5;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 110px);
+    height: 85px;
+    background: #000;
+    left: 0;
+    top: 0;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 110px;
+    height: 85px;
+    background: url('../images/hear.svg') no-repeat;
+    right: 0;
+    top: 0;
+    background-size: 102% 101%;
+  }
+
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 5;
+  }
+  
   @media (max-width: 767px) {
     display: none;
   }

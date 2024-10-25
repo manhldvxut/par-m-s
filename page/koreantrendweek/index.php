@@ -210,6 +210,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         </div>
     </div>
     <div class="main-video">
+        <div class="scroll-main">
+            <span>SCROLL</span>
+        </div>
+
         <div class="mask-video">
             <img src="assets/images/mask-video.png" class="w-100 show-pc" alt="">
             <img src="assets/images/mask-video-mb.png" class="w-100 show-mb d-none" alt="">
@@ -235,8 +239,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                             <div class="icon-letter d-none">
                                 <img src="assets/images/letter.png" alt="">
                             </div>
-                            KOREAN POP WEEKが福岡PARCOで開催！<br>
-                            企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります企画の概要が入ります 企画の概要が入ります
+                            アジアの玄関口であるここ福岡で、PARCOを舞台に韓国のトレンドを体験できるKOREAN POP WEEKを初開催。<br>
+                            日本初上陸のファッションPOPUPやコスメ体験、スペシャルゲストをお呼びしたトークイベントを是非ご堪能ください。<br><br>
+                            会期≪11/21(木)-12/1(日)≫
                         </div>
                     </div>
                 </div>
@@ -247,7 +252,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         </section>
 
         <div id="fashion" class="head-main text-center">
-            <img src="assets/images/title-studio.png" alt="">
+            <div class="container">
+                <h2 class="header-title">
+                    KOREA POP UP STUDIO
+                </h2>
+            </div>
         </div>
         <div class="head-main-mb d-none text-center">
             <img src="assets/images/title-studio-mb.png" alt="">
@@ -255,17 +264,19 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         <section class="box-studio">
             <div class="content-txt text-center">
                 <div class="container">
-                    <p>福岡発のトレンドメディアARNEがプロデュースする、韓国の「今」を体感できるPOP UP STUDIO。
-                        日本初上陸のファッションブランドや最新コスメが登場。</p>
+                    <p>
+                        福岡発のトレンドメディアARNEがプロデュースする、韓国の「今」を体感できるPOP UP STUDIO。<br>日本初上陸のファッションブランドや最新コスメが登場。
+                    </p>
                 </div>
             </div>
             <div class="fashion-popup">
                 <div class="container">
                     <div class="title-box text-center">
-                        <h3>FASHION POP UP</h3>
-                        <p>多数のK-POPアイドルが愛用する２つのファッションブランドが日本初上陸！王道Y2KブランドMSKN2ND（ムンスコンセカンド）、</p>
-                        <p>そして大流行バレエコアスタイルのpainorpleasure（ペインオアプレジャー）</p>
-                        <p>さらに、サンリオ「クロミ」ちゃんとのコラボアイテムも限定発売！</p>
+                        <h3>FASHION</h3>
+                        <p>
+                            多数のK-POPアイドルが愛用する２つのファッションブランドが日本初上陸！王道Y2KブランドMSKN2ND（ムンスコンセカンド）、そして大流行バレエコアスタイルのpainorpleasure（ペインオアプレジャー）<br>
+                            さらに、サンリオ「クロミ」ちゃんとのコラボアイテムも限定発売！
+                        </p>
                     </div>
                 </div>
             </div>
@@ -280,10 +291,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                 <div class="info-brand">
                                     <h3>MSKN2ND</h3>
                                     <div class="insta">
-                                        <a href=""><img src="assets/images/pc_btn_insta.png" alt=""></a>
+                                        <a href="https://www.instagram.com/mskn2nd/" target="_blank"><img src="assets/images/pc_btn_insta.png" alt=""></a>
                                     </div>
                                     <div class="date-place">
-                                        <div class="date">11/21-11/25</div>
+                                        <div class="date">11/21(木)-11/25(月)</div>
                                         <div class="place">
                                             <div class="icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
@@ -310,9 +321,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                         <div class="avarta"><img src="assets/images/fs-1-3.png" alt=""></div>
                                     </div>
                                 </div>
+                                <div class="note-text">
+                                    ※画像はイメージです
+                                </div>
 
                                 <div class="view-more text-center">
-                                    <a href="">
+                                    <a href="https://fukuoka.parco.jp/pnews/detail/?id=30450" target="_blank">
                                         <span>VIEW MORE</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
                                             <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
@@ -334,10 +348,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                 <div class="info-brand">
                                     <h3>painorpleasure</h3>
                                     <div class="insta">
-                                        <a href=""><img src="assets/images/pc_btn_insta.png" alt=""></a>
+                                        <a href="https://www.instagram.com/painorpleasure_official/" target="_blank"><img src="assets/images/pc_btn_insta.png" alt=""></a>
                                     </div>
                                     <div class="date-place">
-                                        <div class="date">11/27-12/1</div>
+                                        <div class="date">11/27(水)-12/1(日)</div>
                                         <div class="place">
                                             <div class="icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
@@ -365,7 +379,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                     </div>
                                 </div>
                                 <div class="view-more text-center">
-                                    <a href="">
+                                    <a href="https://fukuoka.parco.jp/pnews/detail/?id=30451" target="_blank">
                                         <span>VIEW MORE</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
                                             <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
@@ -385,12 +399,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         <section id="cosme" class="box-cosme">
             <div class="container">
                 <div class="title-box text-center">
-                    <h3 class="mb-0">COSME POP UP</h3>
+                    <h3 class="mb-0">COSME</h3>
+                </div>
+                <div class="content-txt">
+                    最新の韓国コスメが無料で体験できるBeauty MINUTESが日本初上陸。<br>無料のカラー診断や診断結果から手軽に参加できるタッチアップ企画も！
                 </div>
 
                 <div class="beauty-minute">
                     <div class="date-place">
-                        <div class="date">11/21-12/1</div>
+                        <div class="date">11/21(木)-12/1(日)</div>
                         <div class="place">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18.364" height="22" viewBox="0 0 18.364 22">
@@ -416,7 +433,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                     <div class="item-abs abs-5"><img src="assets/images/beauty-5.png" alt=""></div>
 
                     <div class="view-more text-center">
-                        <a href="">
+                        <a href="https://fukuoka.parco.jp/pnews/detail/?id=30452" target="_blank">
                             <span>VIEW MORE</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.653" height="5.918" viewBox="0 0 20.653 5.918">
                                 <g id="Group_23" data-name="Group 23" transform="translate(-17.698 0.7)">
@@ -430,6 +447,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                 </div>
 
                 <div class="choi-mison" id="talk">
+                    <div class="title-box text-center">
+                        <h3 class="">TALK EVENT</h3>
+                    </div>
                     <div class="choice-mb d-none">
                         <img src="assets/images/choice-mb.png" class="w-100" alt="">
                     </div>
@@ -441,13 +461,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                     <div class="item-abs abs-3"><img src="assets/images/choi-3.png" alt=""></div>
                     <div class="item-abs abs-4"><img src="assets/images/choi-4.png" alt=""></div>
                     <div class="txt-mison">
-                        <h3>チェミソン＆プロデュース <br>
-                            101トークイベント</h3>
+                        <h3>世界的スタイリスト チェ・ミソン<br>TALK EVENT</h3>
                         <div class="date-place">
                             <div class="date">
-                                2024.11/21
-                                <span>THU</span>
-                                12:00〜14:30
+                                11/23
+                                <span>(土)</span>
+                                14:00-15:00
                             </div>
                             <div class="place">
                                 <div class="icon">
@@ -458,15 +477,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                         </g>
                                     </svg>
                                 </div>
-                                <span>PARCO●F</span>
+                                <span>本館7F スーパースピンズ店内</span>
                             </div>
                         </div>
                         <div class="desc">
                             <p>
-                                説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
-                            </p>
-                            <p>
-                                説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                               世界的K-POPアイドルを担当するスタイリスト チェ・ミソン が来日。ゲストに水上凜巳花さん・大坪楓恋さん・濵嵜愛子さんをお呼びし、韓国のトレンドスタイルを解説します。<br>
+                                チェ・ミソンInstagramに掲載のスタイルブックも必見！<br>
+                                イベント参加方法等詳細は"VIEW MORE"をチェック！
                             </p>
                         </div>
                         <div class="bott">
@@ -505,7 +523,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         <section id="kpop" class="box-dj">
             <div class="container">
                 <div class="title-box text-center">
-                    <h3 class="mb-0">DJ</h3>
+                    <h3 class="mb-0">K-POP</h3>
                 </div>
                 <div class="wrap-dj">
                     <div class="content-dj">
@@ -514,12 +532,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                         </div>
                         <div class="info">
                             <div class="txt-mison">
-                                <h3>TAG LIVE LABEL</h3>
+                                <h3>Stray Kidsラベルドリンク自販機</h3>
                                 <div class="date-place">
                                     <div class="date">
-                                        2024.11/21
-                                        <span>THU</span>
-                                        12:00〜14:30
+                                        開催中-1/5(日)　
                                     </div>
                                     <div class="place">
                                         <div class="icon">
@@ -530,7 +546,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                                 </g>
                                             </svg>
                                         </div>
-                                        <span>新館2F</span>
+                                        <span>新館6F エスカレーター横</span>
                                     </div>
                                 </div>
                                 <div class="desc">
@@ -574,10 +590,10 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                             <img src="assets/images/novelty.png" alt="">
                         </div>
                         <div class="desc-novelty">
-                            <h3>ノベルティキャンペーン</h3>
+                            <h3>SPECIAL NOVELTY</h3>
                             <div class="date-place">
                                 <div class="date">
-                                    2024.11/21 <span>THU</span> - 2024.12/21 <span>THU</span>
+                                   なくなり次第終了
                                 </div>
                                 <div class="place">
                                     <div class="icon">
@@ -588,11 +604,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                             </g>
                                         </svg>
                                     </div>
-                                    <span>新館2F</span>
+                                    <span>福岡PARCO館内のチラシラック・一部ショップ</span>
                                 </div>
                             </div>
                             <div class="desc">
-                                ノベルティなどの説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                                福岡PARCO館内のチラシラックや、一部対象ショップにて「KOREAN POP WEEK」のメインビジュアルを使用したオリジナルシールとステッカーを設置！<br>
+                                是非お手に取ってみてください♪<br>
+                                ※なくなり次第終了となります。<br>
+                                ※対象ショップ等詳細は"VIEW MORE"をご確認ください。
                             </div>
                             <div class="view-more text-center">
                                 <a href="">
@@ -634,16 +653,13 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                     </div>
                     <div class="desc-profile">
                         <div class="desc">
-                            <p>CGクリエイター、アートディレクター。</p>
-                            <p>NIKEやaddidasなどのファッションブランドのスチール広告、動画制作。</p>
-                            <p>西武百貨店の空間のディレクション、などを様々な分野で活動。</p>
-                            <p>パーソナルワークでは、女の子をターゲットにした作品でありながら、</p>
-                            <p>社会への違和感や自分自身が感じた事を、</p>
-                            <p>言葉遊びやだじゃれを用いて、アートに落とし込んでいる。</p>
+                            <p> 静岡県出身、幼少期からジャズダンスを習い、ものづくりや表現することの楽しさを知る。</p>
+                            <p>大学在学中にデザイン、アートを学び、学生生活の傍ら、世界10カ国以上を旅し、自由な価値観やアート作品をみた経験から、自分の世界観を作りたいと決意、日本のお寿司をモチーフにした作品制作を行っている。</p>
+                            <p>現在は3Dアートや、映像の表現を中心に、KEENのブランドムービー、たまごっちのグラフィックなどを手掛けている。</p>
                         </div>
                         <ul>
-                            <li><a href="">WEB</a></li>
-                            <li><a href="">Instagram</a></li>
+                            <li><a href="https://kiyuu999.studio.site/" target="_blank">WEB</a></li>
+                            <li><a href="https://www.instagram.com/kiyuu_1900/" target="_blank">Instagram</a></li>
                         </ul>
                     </div>
                 </div>
@@ -661,17 +677,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
         <div class="sns">
             <ul class="sns-list">
                 <li class="sns-list__item">
-                    <a href="" target="_blank">
+                    <a href="https://x.com/parco_fukuoka" target="_blank">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/x.svg" class="" alt="x">
                     </a>
                 </li>
                 <li class="sns-list__item">
-                    <a href="" target="_blank">
+                    <a href="https://www.instagram.com/parco_fukuoka_official/" target="_blank">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/ins.svg" class="" alt="instagram">
                     </a>
                 </li>
                 <li class="sns-list__item">
-                    <a href="" target="_blank">
+                    <a href="https://www.tiktok.com/@fukuoka_parco?_t=8qa34qTw0Kl&_r=1" target="_blank">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/tictok.svg" class="" alt="tictok">
                     </a>
                 </li>
@@ -685,7 +701,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                         共催：
                     </li>
                     <li class="other-text__list-item other-text__list-item-right">
-                        福岡放送ARNE
+                        <a href="https://arne.media/" target="_blank">福岡放送ARNE</a>
                     </li>
                 </ul>
                 <ul class="other-text__list">
