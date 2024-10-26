@@ -562,12 +562,12 @@ flex-center, .bg-avarta {
     max-width: 24.5%;
   }
   .abs-3 {
-    top: -2%;
-    left: 54%;
+    top: -10%;
+    left: 56%;
     max-width: 10%;
   }
   .abs-4 {
-    bottom: 3%;
+    bottom: 20%;
     left: 39%;
     max-width: 6.5%;
   }
@@ -815,6 +815,7 @@ flex-center, .bg-avarta {
   padding: 200px 0;
   background: url("../images/bg-video.jpg") no-repeat center;
   background-size: cover;
+  overflow: hidden;
   @media (max-width: 767px) {
     padding: 72px 0 95px 0;
   }
@@ -985,5 +986,69 @@ flex-center, .bg-avarta {
   }
   img {
     width: 100%;
+  }
+}
+
+.bubbles {
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  top:0;
+  left:0;
+}
+.bubble {
+  position: absolute;
+  animation: rise 40s infinite ease-in;
+  @media (max-width: 767px) {
+    transform: scale(0.7);
+  }
+  &.bubble-1 {
+    left:10%;
+    animation-duration:18s;
+  }
+  &.bubble-2 {
+    left:20%;
+    animation-duration:15s;
+    animation-delay:1s;
+  }
+  &.bubble-3 {
+    left:35%;
+    animation-duration:17s;
+    animation-delay:2s;
+  }
+  &.bubble-4 {
+    left:50%;
+    animation-duration:21s;
+    animation-delay:0s;
+  }
+  &.bubble-5 {
+    left:55%;
+    animation-duration:16s;
+    animation-delay:1s;
+  }
+  &.bubble-6 {
+    left:65%;
+    animation-duration:18s;
+    animation-delay:3s;
+  }
+  &.bubble-7 {
+    left:70%;
+    animation-duration:22s;
+    animation-delay:2s;
+  }
+}
+
+@keyframes rise{
+  0%{
+    bottom:-80px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:120%;
+    transform:translateX(-200px);
   }
 }

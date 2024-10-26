@@ -667,6 +667,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //å¿…ã
                     </div>
                 </div>
             </div>
+            <div class="bubbles">
+                <div class="bubble bubble-1"><img src="assets/images/vd-1.png" alt=""></div>
+                <div class="bubble bubble-2"><img src="assets/images/vd-2.png" alt=""></div>
+                <div class="bubble bubble-3"><img src="assets/images/vd-3.png" alt=""></div>
+                <div class="bubble bubble-4"><img src="assets/images/vd-4.png" alt=""></div>
+                <div class="bubble bubble-5"><img src="assets/images/vd-5.png" alt=""></div>
+                <div class="bubble bubble-6"><img src="assets/images/vd-6.png" alt=""></div>
+                <div class="bubble bubble-7"><img src="assets/images/vd-7.png" alt=""></div>
+            </div>
         </section>
 
         <div class="art-director" style="display:none;">
