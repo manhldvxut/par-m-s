@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="336" height="76" viewBox="0 0 336 76">
+  <defs>
+    <filter id="Rectangle_42" x="0" y="0" width="336" height="76" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#1a1311"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn-bg" transform="translate(-261 -2511)">
+    <g transform="matrix(1, 0, 0, 1, 261, 2511)" filter="url(#Rectangle_42)">
+      <g id="Rectangle_42-2" data-name="Rectangle 42" fill="#00942c" stroke="#1a1311" stroke-width="2">
+        <rect width="336" height="70" rx="35" stroke="none"/>
+        <rect x="1" y="1" width="334" height="68" rx="34" fill="none"/>
+      </g>
+    </g>
+    <path id="Polygon_12" data-name="Polygon 12" d="M7.5,0,15,11H0Z" transform="translate(565 2538) rotate(90)" fill="#1a1311"/>
+  </g>
+</svg>

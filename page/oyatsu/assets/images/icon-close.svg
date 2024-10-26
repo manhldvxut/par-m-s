@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="icon-close" transform="translate(-1248 -26)">
+    <g id="Ellipse_74" data-name="Ellipse 74" transform="translate(1248 26)" fill="#e66f89" stroke="#1a1311" stroke-width="2">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="34" fill="none"/>
+    </g>
+    <path id="Icon_ion-close" data-name="Icon ion-close" d="M20.386,18l6.68-6.68A1.689,1.689,0,0,0,24.68,8.93L18,15.609,11.32,8.93A1.69,1.69,0,0,0,8.93,11.32L15.609,18,8.93,24.68A1.69,1.69,0,0,0,11.32,27.07L18,20.391l6.68,6.68A1.69,1.69,0,0,0,27.07,24.68Z" transform="translate(1265 43)" stroke="#1a1311" stroke-width="0.07"/>
+  </g>
+</svg>
