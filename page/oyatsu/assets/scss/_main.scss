@@ -1,3 +1,9 @@
+* {
+  @media (max-width: 1366px) {
+    box-sizing: border-box;
+  }
+}
+
 header {
   position: relative;
   z-index: 1001;
@@ -464,12 +470,31 @@ header {
     margin: 0 -24px;
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      margin: 0 -10px;
+    }
   }
   .col-prd {
     padding: 0 24px 100px 24px;
-    max-width: 342px;
-    min-width: 286px;
     box-sizing: border-box;
+    flex: 0 0 28%;
+    max-width: 28%;
+    @media (max-width: 1200px) {
+      padding: 0 10px 80px 10px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 10px 50px 10px;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7) {
+      flex: 0 0 22%;
+      max-width: 22%;
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
   }
 }
 
@@ -477,35 +502,72 @@ header {
   font-size: 11px;
   font-weight: bold;
   line-height: 1.8;
+  @media (max-width: 767px) {
+    width: max-content;
+    margin: 0 auto;
+  }
   .avarta {
     height: 293px;
     margin-bottom: 25px;
     position: relative;
     display: block;
     text-align: center;
+    @media (max-width: 1023px) {
+      height: 190px;
+    }
+    @media (max-width: 767px) {
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     img {
       max-height: 100%;
+      @media (max-width: 767px) {
+        width: auto;
+      }
     }
   }
   .desc-prd {
     padding: 0 24px;
+    @media (max-width: 1364px) {
+      padding: 0 12px;
+    }
   }
   .menu-list__item-floor {
     font-size: 10px;
     margin-bottom: 7px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
   .menu-list__item-shopname {
     font-size: 12px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
   .menu-list__item-name {
     padding: 17px 0 12px 0;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
   .menu-list__item-price {
     font-size: 19px;
     line-height: normal;
     margin-bottom: 24px;
+    @media (max-width: 1364px) {
+      font-size: 16px;
+    }
+    @media (max-width: 767px) {
+      font-size: 19px;
+    }
     .jpy {
       margin-left: 16px;
+      @media (max-width: 1364px) {
+        margin-left: 0;
+      }
     }
   }
 }
