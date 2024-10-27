@@ -446,85 +446,89 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                     おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。
                 </div>
 
-                <div class="menu-list">
-                    <div :class="'menu-list__item-' + index" class="menu-list__item" v-for="(shopList, index) in list" v-bind:key="index">
-                        <div class="menu-list__item-body">
-                            <div class="menu-list__item-img" v-if="shopList.front_image != ''">
-                                <span class="label" v-if="shopList.product_label != ''" v-html="brTxt(shopList.product_label)">label</span>
-                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.front_image" :alt="shopList.product_name">
+                <div class="menu-list list-product">
+                    <div class="row-prd">
+                        <div class="col-prd" v-for="(shopList, index) in list" v-bind:key="index">
+                            <div class="item-product">
+                                <div class="avarta" v-if="shopList.avarta != ''">
+                                <img :src="shopList.avarta" :alt="shopList.product_name">
                             </div>
-                            <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
-                            <div class="menu-list__item-shopname" v-html="brTxt(shopList.shopname)">shopname</div>
-                            <div class="menu-list__item-name"　v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
-                            <div class="menu-list__item-price" v-if="shopList.price != ''">
-                                <span v-html="brTxt(shopList.price)">price</span>
-                                <span class="jpy">円</span>
-                            </div>
-                            <div class="btn-view">
-                                <span class="more-line">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/more-line.svg" alt="icon more">
-                                </span>
-                                <button :id="'btn' + index" class="js-modalopen" :data-modal="'modal-'+index">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/icon-more.svg" alt="icon more">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="popup-container">
-                            <div :id="'popup' + index" :class="'overlay js-modal modal-' + index">
-                                <div class="popup">
-                                    <div class="popup-close js-modalclose">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/icon-close.svg" class="" alt="close icon">
+                            <div class="info">
+                                <div class="desc-prd">
+                                    <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
+                                    <div class="menu-list__item-shopname" v-html="brTxt(shopList.shopname)">shopname</div>
+                                    <div class="menu-list__item-name"　v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
+                                    <div class="menu-list__item-price" v-if="shopList.price != ''">
+                                        <span v-html="brTxt(shopList.price)">price</span>
+                                        <span class="jpy">円</span>
                                     </div>
-                                    <div class="popup-content">
-                                        <div class="popup-body">
-                                            <div class="slick js-imgslider">
-                                                <div class="slick__item" v-if="shopList.slider_image01 != ''">
-                                                    <div class="slick__item-img">
-                                                        <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image01" :alt="shopList.product_name">
-                                                    </div>
-                                                </div>
-                                                <div class="slick__item" v-if="shopList.slider_image02 != ''">
-                                                    <div class="slick__item-img">
-                                                        <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image02" :alt="shopList.product_name">
-                                                    </div>
-                                                </div>
-                                                <div class="slick__item" v-if="shopList.slider_image03 != ''">
-                                                    <div class="slick__item-img">
-                                                        <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image03" :alt="shopList.product_name">
-                                                    </div>
-                                                </div>
-                                                <div class="slick__item" v-if="shopList.slider_image04 != ''">
-                                                    <div class="slick__item-img">
-                                                        <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image04" :alt="shopList.product_name">
-                                                    </div>
-                                                </div>
-                                                <div class="slick__item" v-if="shopList.slider_image05 != ''">
-                                                    <div class="slick__item-img">
-                                                        <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image05" :alt="shopList.product_name">
-                                                    </div>
-                                                </div>
+                                </div>
+                                <div class="btn-view">
+                                        <span class="more-line">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/more-line.svg" alt="icon more">
+                                        </span>
+                                    <button :id="'btn' + index" class="js-modalopen" :data-modal="'modal-'+index">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/icon-more.svg" alt="icon more">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="popup-container">
+                                    <div :id="'popup' + index" :class="'overlay js-modal modal-' + index">
+                                        <div class="popup">
+                                            <div class="popup-close js-modalclose">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/icon-close.svg" class="" alt="close icon">
                                             </div>
-                                            <div class="popup-desc">
-                                                <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
-                                                <div class="menu-list__item-floor" v-html="brTxt(shopList.shopname)">floor</div>
-                                                <div class="menu-list__item-name" v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
-                                                <div class="menu-list__item-price"v-if="shopList.price != ''"> 
-                                                    <span v-html="brTxt(shopList.price)">price</span>
+                                            <div class="popup-content">
+                                                <div class="popup-body">
+                                                    <div class="slick js-imgslider">
+                                                        <div class="slick__item" v-if="shopList.slider_image01 != ''">
+                                                            <div class="slick__item-img">
+                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image01" :alt="shopList.product_name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slick__item" v-if="shopList.slider_image02 != ''">
+                                                            <div class="slick__item-img">
+                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image02" :alt="shopList.product_name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slick__item" v-if="shopList.slider_image03 != ''">
+                                                            <div class="slick__item-img">
+                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image03" :alt="shopList.product_name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slick__item" v-if="shopList.slider_image04 != ''">
+                                                            <div class="slick__item-img">
+                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image04" :alt="shopList.product_name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="slick__item" v-if="shopList.slider_image05 != ''">
+                                                            <div class="slick__item-img">
+                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image05" :alt="shopList.product_name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-desc">
+                                                        <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
+                                                        <div class="menu-list__item-floor" v-html="brTxt(shopList.shopname)">floor</div>
+                                                        <div class="menu-list__item-name" v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
+                                                        <div class="menu-list__item-price"v-if="shopList.price != ''">
+                                                            <span v-html="brTxt(shopList.price)">price</span>
+                                                        </div>
+                                                        <div class="menu-list__item-desc"v-if="shopList.description != ''"> {{shopList.description}}
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="btn-shoppage" v-if="shopList.restaurant_link != ''">
+                                                        <a :href="shopList.restaurant_link" target="_blank">Shop page</a>
+                                                    </div>
                                                 </div>
-                                                <div class="menu-list__item-desc"v-if="shopList.description != ''"> {{shopList.description}}
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="btn-shoppage" v-if="shopList.restaurant_link != ''">
-                                                <a :href="shopList.restaurant_link" target="_blank">Shop page</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

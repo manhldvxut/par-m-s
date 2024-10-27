@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="46" viewBox="0 0 109 46">
+  <defs>
+    <filter id="Rectangle_15" x="0" y="0" width="109" height="46" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#1a1311"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn-menu" transform="translate(-1237 -30)">
+    <g transform="matrix(1, 0, 0, 1, 1237, 30)" filter="url(#Rectangle_15)">
+      <g id="Rectangle_15-2" data-name="Rectangle 15" fill="#fff" stroke="#1a1311" stroke-width="2">
+        <rect width="109" height="40" rx="5" stroke="none"/>
+        <rect x="1" y="1" width="107" height="38" rx="4" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_feather-menu" data-name="Icon feather-menu" d="M4.5,18h18M4.5,9h18M4.5,27h18" transform="translate(1252.478 32)" fill="none" stroke="#1a1311" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <text id="めにゅー" transform="translate(1288 55)" fill="#1a1311" font-size="12" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700" letter-spacing="0.06em"><tspan x="0" y="0">めにゅー</tspan></text>
+  </g>
+</svg>

@@ -1,4 +1,25 @@
 $(function() {
+    // history.scrollRestoration = "manual";
+    // $(window).on('beforeunload', function(){
+    //     $(window).scrollTop(0);
+    // });
+
+    setTimeout(function() {
+        $('.content-banner .avarta').addClass('active');
+    }, 100);
+    setTimeout(function() {
+        $('.icon-mv').addClass('active');
+    }, 400);
+    setTimeout(function() {
+        $('.content-banner .icon-abs').addClass('active');
+    }, 800);
+
+    $('.btn-menu a').click(function() {
+        $('.nav-menu, .overlay').addClass('active');
+    });
+    $('.close-menu a, .overlay').click(function() {
+        $('.nav-menu, .overlay').removeClass('active');
+    });
 
     // ページトップボタン
     $(window).scroll(function () {

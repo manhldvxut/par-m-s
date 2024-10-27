@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="46" viewBox="0 0 109 46">
+  <defs>
+    <filter id="Rectangle_15" x="0" y="0" width="109" height="46" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#1a1311"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn-close-menu" transform="translate(-1237 -30)">
+    <g transform="matrix(1, 0, 0, 1, 1237, 30)" filter="url(#Rectangle_15)">
+      <g id="Rectangle_15-2" data-name="Rectangle 15" fill="#fff" stroke="#1a1311" stroke-width="2">
+        <rect width="109" height="40" rx="5" stroke="none"/>
+        <rect x="1" y="1" width="107" height="38" rx="4" fill="none"/>
+      </g>
+    </g>
+    <text id="めにゅー" transform="translate(1288 55)" fill="#1a1311" font-size="12" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700" letter-spacing="0.06em"><tspan x="0" y="0">めにゅー</tspan></text>
+    <path id="Icon_ion-close" data-name="Icon ion-close" d="M20.386,18l6.68-6.68A1.689,1.689,0,0,0,24.68,8.93L18,15.609,11.32,8.93A1.69,1.69,0,0,0,8.93,11.32L15.609,18,8.93,24.68A1.69,1.69,0,0,0,11.32,27.07L18,20.391l6.68,6.68A1.69,1.69,0,0,0,27.07,24.68Z" transform="translate(1247.978 32)" stroke="#1a1311" stroke-width="0.07"/>
+  </g>
+</svg>
