@@ -707,9 +707,9 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        @media (max-width: 767px) {
-          width: 100% !important;
-          height: 100% !important;
+        @media (max-width: 768px) {
+          width: 375px;
+          height: 375px;
         }
     }
 
@@ -768,6 +768,11 @@ body {
     padding-left: 10px;
     transform: rotate(90deg);
 
+    @media (max-width: 768px) {
+      right: -10px;
+      bottom: 73px;
+    }
+
     span {
       &:after {
         content: '';
@@ -806,6 +811,12 @@ body {
     bottom: 20px;
     left: 20px;
 
+    @media (max-width: 768px) {
+      position: fixed;
+      left: 10px;
+      bottom: 10px;
+    }
+
     &.hidden {
         opacity: 0;
     }
@@ -828,7 +839,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       width: 298px;
       height: 298px;
     }
@@ -870,13 +881,17 @@ body {
         font-weight: 900;
         font-family: "Montserrat", sans-serif;
         color: #fff;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           font-size: 14px;
         }
 
         &-item {
             padding: 0 31px;
             cursor: pointer;
+
+            @media (max-width: 768px) {
+              padding: 0 20px;
+            }
 
             &:first-child {
                 border-right: 1px solid #fff;
@@ -892,7 +907,7 @@ body {
         font-style: italic;
         font-size: 1rem;
         transform: translate(0px, 116px);
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           transform: translate(0px, 68px);
           font-size: 14px;
         }
@@ -909,7 +924,7 @@ body {
     width: 100%;
     transition: .3s all;
     z-index: 10;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 5px;
     }
 
@@ -924,12 +939,12 @@ body {
             padding-left: 15px;
             padding-top: 15px;
             display: block;
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               padding: 0;
             }
             img {
                 max-width: 120px;
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                   max-height: 52px
                 }
             }
@@ -943,11 +958,11 @@ body {
         @media (max-width: 991px) {
           padding-right: 40px;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           display: block;
           padding: 0 0 80px 0;
           position: relative;
-          z-index: 2;
+          z-index: 5;
           &.nav-pc {
             display: none;
           }
@@ -955,7 +970,7 @@ body {
 
         &__item {
             margin-right: 34px;
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               margin-right: 0;
               margin-bottom: 30px;
               &:last-child {
@@ -975,7 +990,7 @@ body {
             color: #fff;
             text-decoration: none;
             position: relative;
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               font-size: 20px;
               font-weight: 800;
               color: #141419;
@@ -1010,7 +1025,7 @@ body {
     padding-top: 162px;
     display: none;
     @media (max-width: 991px) {
-      padding-top: 95px;
+      // padding-top: 95px;
     }
 
     &:before {
@@ -1046,9 +1061,8 @@ body {
         img {
             width: 50%;
             height: 90px;
-          @media (max-width: 767px) {
-            height: 80px;
-            object-fit: cover;
+          @media (max-width: 768px) {
+            height: 47px;
           }
         }
     }
@@ -1061,9 +1075,8 @@ body {
         align-items: center;
         position: relative;
         z-index: 2;
-        opacity: 0;
         transform: translateY(20px);
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           width: 100%;
           height: auto;
         }
@@ -1076,7 +1089,7 @@ body {
             background: url('../images/letter.svg') no-repeat;
             background-size: 100%;
             pointer-events: none;
-            @media (max-width: 767px) {
+            @media (max-width: 768px) {
               display: none;
             }
         }
@@ -1094,11 +1107,12 @@ body {
             border-right: 1px solid #939393;
             right: 0;
             margin: auto;
-            @media (max-width: 767px) {
-              width: 100%;
+            @media (max-width: 768px) {
+              width: calc(100% - 45px);
+              top: 0;
               height: 100%;
               pointer-events: none;
-              display: none;
+              // display: none;
             }
         }
 
@@ -1112,6 +1126,10 @@ body {
             transform: translate(190px, 0);
             opacity: 0;
             transition: opacity 2s ease-in-out;
+
+            @media (max-width: 768px) {
+              display: none;
+            }
         }
     }
 
@@ -1125,7 +1143,7 @@ body {
         padding-left: 100px;
         padding-right: 100px;
         position: relative;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           padding: 0 22px;
           position: relative;
           .desc {
@@ -1138,7 +1156,7 @@ body {
           }
         }
       .icon-letter {
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1158,7 +1176,7 @@ body {
         margin-right: 40px;
         padding-top: 117px;
         padding-bottom: 67px;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           margin: 0;
           text-align: center;
           padding: 60px 0 20px 0;
@@ -1169,7 +1187,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: flex;
     }
     &.starfu-1 {
@@ -1222,14 +1240,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       height: auto;
       padding: 100px 0 226px 0;
     }
 
     &__body {
         margin-top: -80px;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           margin-top: 0;
         }
     }
@@ -1267,7 +1285,7 @@ body {
     z-index: 1;
     background: #fff;
     padding: 14px 30px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0;
       background: transparent;
     }
@@ -1280,14 +1298,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           display: block;
           text-align: center;
           padding: 26px 10px 12px 10px;
           background: #fff;
         }
       .logo {
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           margin-bottom: 20px;
           display: flex;
           align-items: center;
@@ -1304,7 +1322,7 @@ body {
         margin: auto;
         display: flex;
         align-items: center;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           position: relative;
           left: 0;
           justify-content: center;
@@ -1319,6 +1337,46 @@ body {
     }
 }
 
+
+.slick-arrow {
+  position: absolute;
+  bottom: -42px;
+  width: 74px;
+  height: 33px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(30px);
+}
+
+.slick-next {
+  right: 29%;
+}
+
+.slick-prev {
+  left: 29%;
+}
+.item-slide img {
+    transition: transform 0.5s ease;
+}
+
+// .item-slide.rotate img {
+//     transform: rotate(10deg);
+//     padding-top: 20px;
+// }
+
+// .item-slide.rotate:nth-child(3) img {
+//     transform: rotate(-10deg);
+// }
+
+// .item-slide.rotate:nth-child(4) img {
+//     transform: rotate(-10deg);
+// }
+// .item-slide.rotate:nth-child(9) img {
+//     transform: rotate(-10deg);
+// }
+
+
 .copy-right {
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
@@ -1331,7 +1389,7 @@ body {
     img {
         max-width: 234px;
         margin: auto;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           height: 155px;
         }
     }
@@ -1407,12 +1465,15 @@ body {
 }
 
 .canvas-rgba {
-
   canvas {
     position: absolute;
     top: 45px;
     left: 0;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 768px) {
+      top: 0;
+    }
   }
 }

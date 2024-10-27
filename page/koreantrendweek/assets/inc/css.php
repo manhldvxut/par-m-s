@@ -4,6 +4,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
 
 <link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/slick.css">
+<link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/swiper.css">
 <link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/reset.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <link rel="stylesheet" href="/<?php echo DIRNAME; ?>/assets/css/style.css">

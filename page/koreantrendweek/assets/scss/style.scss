@@ -59,6 +59,10 @@ main {
     .mask-video {
       opacity: 1;
       transform: scale(3);
+
+      @media (max-width: 768px) {
+        // transform: scale(1.9);
+      }
     }
   }
 }

@@ -26,15 +26,18 @@ $(document).ready(function() {
     });
 
     //  loading splash
+    var canvassize = 500;
+
+    if(window.innerWidth < 768) {
+        canvassize = 375
+    }
+
 
     var $body = document.body,
         $wrap = document.getElementById('loading_ware'),
 
         areawidth = window.innerWidth,
         areaheight = window.innerHeight,
-
-        canvassize = 500,
-
         length = 30,
         radius = 5.6,
 
@@ -320,22 +323,61 @@ $(document).ready(function() {
 
     });
 
-    console.log(areawidth)
-
     if(areawidth < 769) {
-        $('.slide-product').slick({
-            slidesToShow: 3,
-            centerMode: true,
-            dots: false,
-            arrows: false,
-            responsive: [{
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }]
+        var $swiper = $(".swiper-container");
+        var $bottomSlide = null;
+        var $bottomSlideContent = null;
+        var mySwiper = new Swiper(".swiper-container", {
+            spaceBetween: 1,
+            slidesPerView: 3,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            loopAdditionalSlides: 30,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev"
+            }
         });
+        // $('.slide-product').slick({
+        //     slidesToShow: 3,
+        //     centerMode: true,
+        //     dots: false,
+        //     arrows: true,
+        //     infinite: true,
+        //     centerPadding: '80px',
+        //     prevArrow: '<button type="button" class="slick-custom-arrow slick-prev"><img src="/page/koreantrendweek/assets/images/arrow-left.svg" class="" alt=""></button>',
+        //     nextArrow: '<button type="button" class="slick-custom-arrow slick-next"><img src="/page/koreantrendweek/assets/images/arrow-right.svg" class="" alt=""></button>',
+        //     responsive: [{
+        //         breakpoint: 767,
+        //         settings: {
+        //             slidesToShow: 1,
+        //         }
+        //     }]
+        // });
     }
+
+    // function updateRotation() {
+    //     $('.slide-product .item-slide').removeClass('rotate');
+
+    //     // Lấy index của slide hiện tại
+    //     var currentIndex = $('.slide-product .slick-center').index();
+
+    //     // Xoay cho ảnh 1 và ảnh 3
+    //     var slides = $('.slide-product .item-slide');
+
+    //     // Áp dụng class rotate cho ảnh 1 và ảnh 3
+    //     $(slides[currentIndex - 1]).addClass('rotate'); // Ảnh bên trái
+    //     $(slides[currentIndex + 1]).addClass('rotate'); // Ảnh bên phải
+    // }
+
+    // // Gọi hàm khi slider thay đổi
+    // $('.slide-product').on('afterChange', function(event, slick, currentSlide) {
+    //     updateRotation();
+    // });
+
+    // // Gọi lần đầu tiên để thiết lập xoay ban đầu
+    // updateRotation();
 })
 
  window.onload = function() { // canvas random run

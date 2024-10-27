@@ -9,7 +9,7 @@
 }
 
 .btn-menu-mb {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: block;
   }
   a {
@@ -39,10 +39,24 @@
     background-position: bottom;
     position: absolute;
     top: 0;
-    left: 0;
-    opacity: 0.95;
+    filter: blur(8px);
+    left: -1px;
   }
-  @media (max-width: 767px) {
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../images/bgmenu-mb02.png") no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 2;
+  }
+  @media (max-width: 768px) {
     display: flex;
   }
   &.active {
@@ -73,19 +87,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 1.5s all !important;
+  transition: 3s all !important;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: .4s all !important;
     &.show-pc {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: none;
       }
     }
     &.show-mb {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: block;
       }
     }
@@ -100,7 +114,7 @@
     width: 100%;
     padding: 0 40px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 0 38px;
   }
   img {
@@ -146,7 +160,7 @@ flex-center, .bg-avarta {
     outline-offset: -1px;
     transition: .3s;
     background: rgba(255, 255, 255, 0.32);
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 10px;
       padding: 20px 22px;
     }
@@ -177,16 +191,22 @@ flex-center, .bg-avarta {
   position: relative;
   // background: url("../images/bg-studio.png") no-repeat center;
   background-size: cover;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 60px 0 100px 0;
   }
   .content-txt {
     max-width: 614px;
     margin: 0 auto;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 14px;
       font-weight: 500;
       text-align: left;
+    }
+  }
+
+  .canvas-rgba canvas {
+    @media (min-width: 769px) {
+      top: 80px;
     }
   }
 }
@@ -194,7 +214,8 @@ flex-center, .bg-avarta {
 .title-box {
   margin-bottom: 74px;
   line-height: 1.78;
-  @media (max-width: 767px) {
+  position: relative;
+  @media (max-width: 768px) {
     font-size: 14px;
     margin-bottom: 55px;
   }
@@ -203,7 +224,7 @@ flex-center, .bg-avarta {
     font-weight: 900;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 24px;
       margin-bottom: 20px;
     }
@@ -212,7 +233,7 @@ flex-center, .bg-avarta {
 
 .fashion-popup {
   margin-top: 124px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-top: 60px;
   }
 
@@ -228,11 +249,11 @@ flex-center, .bg-avarta {
 }
 
 .list-fashion {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     overflow: hidden;
   }
   .container {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 13px;
     }
   }
@@ -240,7 +261,7 @@ flex-center, .bg-avarta {
 
 .item-fashion {
   margin-bottom: 200px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-bottom: 100px;
   }
   &:last-child {
@@ -275,13 +296,14 @@ flex-center, .bg-avarta {
   @media (max-width: 991px) {
     padding-left: 120px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 0;
     margin: 40px 0 0 0;
     position: relative;
     left: -13px;
     width: calc(100% + 26px);
     max-width: unset;
+    padding-top: 10px;
   }
   .avarta {
     @extend flex-center;
@@ -291,8 +313,8 @@ flex-center, .bg-avarta {
     margin-top: -3%;
     z-index: 2;
     padding-bottom: 20px;
-    @media (max-width: 767px) {
-      margin-top: 46px;
+    @media (max-width: 768px) {
+      margin-top: 65px;
     }
   }
 }
@@ -301,7 +323,7 @@ flex-center, .bg-avarta {
   //margin: 0 -10px;
   .slick-list {
     padding-bottom: 3% !important;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       //padding-left: 0 !important;
       //padding-right: 0 !important;
     }
@@ -310,11 +332,12 @@ flex-center, .bg-avarta {
     // transition: .3s all !important;
     z-index: 3;
     position: relative;
+    width: 33.333%;
     &.slick-center {
       margin-top: 27px;
       transform: rotate(10deg);
       z-index: 2;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         transform: rotate(0);
         margin-top: 0;
       }
@@ -322,8 +345,10 @@ flex-center, .bg-avarta {
     &.slick-current {
       transform: rotate(-10deg);
       z-index: 2;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         transform: rotate(0);
+        position: relative;
+        z-index: 333;
       }
     }
   }
@@ -340,6 +365,10 @@ flex-center, .bg-avarta {
   /* transform: skewX(-25deg); */
   margin-top: -70px;
   padding-bottom: 60px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .content-item-fashion {
@@ -350,7 +379,7 @@ flex-center, .bg-avarta {
     left: 0;
     margin-top: 42px;
     z-index: 3;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       position: relative;
       margin-top: 10px;
       text-align: center;
@@ -360,7 +389,7 @@ flex-center, .bg-avarta {
       font-weight: 900;
       font-family: Montserrat;
       margin-bottom: 17px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         margin-bottom: 30px;
       }
     }
@@ -369,7 +398,7 @@ flex-center, .bg-avarta {
       @media (max-width: 991px) {
         margin-bottom: 32px;
       }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -397,7 +426,7 @@ flex-center, .bg-avarta {
     @media (max-width: 991px) {
       font-size: 16px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 20px;
       margin-bottom: 6px;
     }
@@ -411,7 +440,7 @@ flex-center, .bg-avarta {
     align-items: center;
     font-size: 14px;
     font-weight: bold;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       justify-content: center;
     }
     .icon {
@@ -427,7 +456,7 @@ flex-center, .bg-avarta {
   // background: url("../images/bg-cosme.png") no-repeat center;
   background-size: cover;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 154px 0 162px 0;
   }
 
@@ -436,9 +465,9 @@ flex-center, .bg-avarta {
   }
 
   .title-box {
-    margin-bottom: 95px;
-    @media (max-width: 767px) {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      // margin-bottom: 50px;
     }
   }
 }
@@ -458,7 +487,7 @@ flex-center, .bg-avarta {
   @media (max-width: 1250px) {
     width: 100%;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-bottom: 90px;
   }
   .bg-avarta {
@@ -468,12 +497,12 @@ flex-center, .bg-avarta {
     @media (max-width: 1250px) {
       width: 100%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
   .item-abs {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
@@ -513,7 +542,7 @@ flex-center, .bg-avarta {
       left: 46%;
       bottom: 8%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       transform: scale(1);
       bottom: 14%;
       left: unset;
@@ -530,7 +559,7 @@ flex-center, .bg-avarta {
     @media (max-width: 991px) {
       bottom: 8%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       position: relative;
       bottom: 0;
       width: 100%;
@@ -544,7 +573,7 @@ flex-center, .bg-avarta {
   position: relative;
   left: -38px;
   width: calc(100% + 76px);
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: block;
   }
 }
@@ -555,8 +584,9 @@ flex-center, .bg-avarta {
     margin-bottom: 100px;
   }
   .item-abs {
-    @media (max-width: 767px) {
-      display: none;
+    @media (max-width: 768px) {
+      // display: none;
+      position: relative;
     }
   }
   .abs-1 {
@@ -567,16 +597,36 @@ flex-center, .bg-avarta {
     padding-top: 43px;
     padding-bottom: 43px;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      left: 0;
+      max-width: 93%;
+      margin: auto;
+    }
   }
   .abs-2 {
     top: 13%;
     left: 31.8%;
     max-width: 25.3%;
+
+    @media (max-width: 768px) {
+      max-width: 58.1%;
+      margin: auto;
+      margin-top: -23px;
+      left: 0;
+      top: 0;
+    }
   }
   .abs-3 {
     top: -10%;
     left: 56%;
     max-width: 10%;
+
+    @media (max-width: 768px) {
+      max-width: 28%;
+      left: auto;
+      right: 30%;
+    }
 
     &.bul-animation {
       animation: rise 40s infinite ease-in;
@@ -588,28 +638,35 @@ flex-center, .bg-avarta {
     left: 39%;
     max-width: 6.5%;
 
+    @media (max-width: 768px) {
+      max-width: 20%;
+      left: 0;
+    }
+
     &.bul-animation {
       animation: rise 40s infinite ease-in;
       animation-duration: 30s;
     }
   }
   .txt-mison {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       left: -38px;
       width: calc(100% + 76px);
       max-width: unset;
       padding: 0 28px;
     }
     .desc {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         text-align: left;
         padding-bottom: 24px;
       }
     }
   }
   .bg-avarta {
-    @media (max-width: 767px) {
-      display: none;
+    @media (max-width: 768px) {
+      position: absolute;
+      left: -20px;
+      top: 13%;
     }
   }
 
@@ -655,7 +712,7 @@ flex-center, .bg-avarta {
   left: -38px;
   width: calc(100% + 76px);
   padding: 0 28px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: block;
   }
 }
@@ -670,7 +727,7 @@ flex-center, .bg-avarta {
   @media (max-width: 991px) {
     max-width: 36.5%;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     max-width: 100%;
     position: relative;
     padding: 0;
@@ -685,7 +742,7 @@ flex-center, .bg-avarta {
       font-size: 20px;
       margin-bottom: 12px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 23px;
       margin-bottom: 24px;
     }
@@ -730,12 +787,12 @@ flex-center, .bg-avarta {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 160px 0;
   }
   .title-box {
     margin-bottom: 35px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-bottom: 54px;
     }
   }
@@ -745,11 +802,11 @@ flex-center, .bg-avarta {
     top: unset;
     font-family: "Zen Kaku Gothic Antique", sans-serif;
     font-weight: bold;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       text-align: left;
     }
     h3, .date-place {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         text-align: center;
       }
     }
@@ -759,7 +816,7 @@ flex-center, .bg-avarta {
     margin: 0 auto;
   }
   .container {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 28px;
     }
   }
@@ -769,7 +826,7 @@ flex-center, .bg-avarta {
   display: flex;
   align-items: center;
   margin: 0 -47px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin: 0;
     display: block;
   }
@@ -777,7 +834,7 @@ flex-center, .bg-avarta {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 47px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 100%;
       padding: 0;
       margin-bottom: 26px;
@@ -791,7 +848,7 @@ flex-center, .bg-avarta {
   padding: 100px 0 135px 0;
   background: rgba(20, 20, 25, 0.32);
   position: relative;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 147px 0 160px 0;
   }
   .line {
@@ -802,12 +859,12 @@ flex-center, .bg-avarta {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 31%;
     }
   }
   .container {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 12px;
     }
   }
@@ -821,13 +878,13 @@ flex-center, .bg-avarta {
     position: relative;
     z-index: 2;
     margin-bottom: -185px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 57px;
       margin-bottom: -130px;
     }
     img {
       max-width: 382px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         max-width: 100%;
       }
     }
@@ -839,7 +896,7 @@ flex-center, .bg-avarta {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5);
     padding: 217px 50px 80px 50px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 100%;
       padding: 176px 50px 38px 50px;
     }
@@ -848,7 +905,7 @@ flex-center, .bg-avarta {
       font-family: "Zen Kaku Gothic Antique", sans-serif;
       font-weight: bold;
       margin-bottom: 20px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         font-size: 23px;
         text-align: center;
         margin-bottom: 30px;
@@ -856,13 +913,13 @@ flex-center, .bg-avarta {
     }
     .desc {
       padding: 20px 0 60px 0;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding: 30px 0;
         line-height: 2.26;
       }
     }
     .date-place {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         text-align: center;
       }
     }
@@ -875,14 +932,14 @@ flex-center, .bg-avarta {
   // background: url("../images/bg-video.jpg") no-repeat center;
   background-size: cover;
   overflow: hidden;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 72px 0 95px 0;
   }
 
   .canvas-rgba canvas {
     top: 0;
   }
-  
+
   .icon-play {
     position: absolute;
     top: 0;
@@ -904,17 +961,21 @@ flex-center, .bg-avarta {
       border: 1px solid #000;
       border-radius: 100%;
       backdrop-filter: blur(20px) brightness(1.4);
-      background: rgba(255, 255, 255, 0.32);
+      background: rgba(255, 255, 255, 0.7);
+
+      @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+      }
     }
     img {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         width: auto;
-        height: 100px;
       }
     }
   }
   .container {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 13px;
     }
   }
@@ -924,7 +985,7 @@ flex-center, .bg-avarta {
   position: relative;
   max-width: 800px;
   margin: 0 auto 200px auto;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-bottom: 80px;
   }
   .icon-video {
@@ -937,7 +998,7 @@ flex-center, .bg-avarta {
       top: -42%;
       max-width: 25%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       position: relative;
       top: unset;
       max-width: 100%;
@@ -957,7 +1018,7 @@ flex-center, .bg-avarta {
   position: relative;
   z-index: 2;
   .logo-profile {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 15px;
     }
   }
@@ -965,7 +1026,7 @@ flex-center, .bg-avarta {
     padding: 48px 0 0 48px;
     line-height: 2.2;
     font-weight: 500;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 30px 15px 0 15px;
     }
     a {
@@ -974,7 +1035,7 @@ flex-center, .bg-avarta {
       font-family: Montserrat;
       font-size: 12px;
       color: #141419;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         font-size: 16px;
       }
     }
@@ -984,7 +1045,7 @@ flex-center, .bg-avarta {
     ul {
       display: flex;
       align-items: center;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         justify-content: center;
       }
       li {
@@ -1019,6 +1080,10 @@ flex-center, .bg-avarta {
     background: #000;
     left: 0;
     top: 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &:before {
@@ -1030,6 +1095,10 @@ flex-center, .bg-avarta {
     right: 0;
     top: 0;
     background-size: 102% 101%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &.active {
@@ -1061,9 +1130,13 @@ flex-center, .bg-avarta {
     font-family: "Montserrat", sans-serif;
     position: relative;
     z-index: 5;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: none;
   }
   img {
@@ -1072,11 +1145,12 @@ flex-center, .bg-avarta {
 }
 
 .head-main-mb {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 44px;
   }
   img {
     width: 100%;
@@ -1094,7 +1168,7 @@ flex-center, .bg-avarta {
 .bubble {
   position: absolute;
   animation: rise 40s infinite ease-in;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     transform: scale(0.7);
   }
   &.bubble-1 {
@@ -1158,16 +1232,88 @@ flex-center, .bg-avarta {
 .slide-product {
     display: flex;
     padding: 30px;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
 }
 
 .item-slide.fadeup.delay-1.animated {
-    transform: rotate(-10deg);
+    @media (min-width: 769px) {
+      transform: rotate(-10deg);
+    }
 }
 
 .item-slide.fadeup.delay-3.animated {
+  @media (min-width: 769px) {
     transform: rotate(10deg);
+  }
+    
 }
 
 .item-slide.fadeup.delay-2.animated {
+  @media (min-width: 769px) {
     margin-top: -26px;
+  }
+}
+
+.swiper-slide-prev {
+  @media (max-width: 768px) {
+    transform: rotate(-10deg)  !important;
+  }
+}
+
+.swiper-slide-next {
+  @media (max-width: 768px) {
+    transform: rotate(10deg)  !important;
+  }
+}
+
+.list-product  {
+  .swiper-slide-active {
+    @media (max-width: 768px) {
+      z-index: 5;
+      margin-top: -10px;
+    }
+  }
+}
+
+
+.swiper-button-prev {
+  display: none; 
+
+   @media (max-width: 768px) {
+    display: block;
+    background: none;
+    width: 78px;
+    height: 33px;
+    top: 67%;
+    left: 28%;
+
+    button {
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.swiper-button-next {
+  display: none; 
+   @media (max-width: 768px) {
+    display: block;
+    background: none;
+    width: 78px;
+    height: 33px;
+    top: 67%;
+    right: 28%;
+
+    button {
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.swiper-3d .swiper-slide, .swiper-3d .swiper-cube-shadow {
+      transform-style: preserve-3d;
 }

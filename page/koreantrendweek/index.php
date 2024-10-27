@@ -230,7 +230,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                 <img src="/<?php echo DIRNAME; ?>/assets/images/fukuoka-parco.svg" class="" alt="fukuoka parco">
             </div>
             <div class="fukuoka-parco__body">
-                <div class="fukuoka-parco__box fadeup">
+                <div class="fukuoka-parco__box">
                     <div class="fukuoka-parco__box-letter fadeup">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/letter01.svg" alt="">
                     </div>
@@ -320,17 +320,23 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                     </div>
                                 </div>
                             </div>
-                            <div class="list-product">
-                                <div class="slide-product">
-                                    <div class="item-slide fadeup delay-1">
+                            <div class="list-product swiper-container">
+                                <div class="slide-product swiper-wrapper">
+                                    <div class="item-slide fadeup delay-1 swiper-slide">
                                         <div class="avarta"><img src="assets/images/fs-1-1.png" alt=""></div>
                                     </div>
-                                    <div class="item-slide fadeup delay-2">
+                                    <div class="item-slide fadeup delay-2 swiper-slide">
                                         <div class="avarta"><img src="assets/images/fs-1-2.png" alt=""></div>
                                     </div>
-                                    <div class="item-slide fadeup delay-3">
+                                    <div class="item-slide fadeup delay-3 swiper-slide">
                                         <div class="avarta"><img src="assets/images/fs-1-3.png" alt=""></div>
                                     </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <button type="button" class="slick-custom-arrow slick-prev"><img src="/page/koreantrendweek/assets/images/arrow-left.svg" class="" alt=""></button>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <button type="button" class="slick-custom-arrow slick-next"><img src="/page/koreantrendweek/assets/images/arrow-right.svg" class="" alt=""></button>
                                 </div>
                                 <div class="note-text">
                                     ※画像はイメージです
@@ -377,17 +383,23 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                                     </div>
                                 </div>
                             </div>
-                            <div class="list-product">
-                                <div class="slide-product">
-                                    <div class="item-slide fadeup delay-1">
+                            <div class="list-product swiper-container">
+                                <div class="slide-product swiper-wrapper">
+                                    <div class="item-slide fadeup delay-1 swiper-slide">
                                         <div class="avarta"><img src="assets/images/fs-2-1.png" alt=""></div>
                                     </div>
-                                    <div class="item-slide fadeup delay-2">
+                                    <div class="item-slide fadeup delay-2 swiper-slide">
                                         <div class="avarta"><img src="assets/images/fs-2-2.png" alt=""></div>
                                     </div>
-                                    <div class="item-slide fadeup delay-3">
+                                    <div class="item-slide fadeup delay-3 swiper-slide">
                                         <div class="avarta"><img src="assets/images/fs-2-3.png" alt=""></div>
                                     </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <button type="button" class="slick-custom-arrow slick-prev"><img src="/page/koreantrendweek/assets/images/arrow-left.svg" class="" alt=""></button>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <button type="button" class="slick-custom-arrow slick-next"><img src="/page/koreantrendweek/assets/images/arrow-right.svg" class="" alt=""></button>
                                 </div>
                                 <div class="note-text">
                                     ※画像はイメージです
@@ -468,11 +480,11 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                     </div>
                 </div>
                 <div class="choi-mison" id="talk">
-                    <div class="choice-mb d-none">
-                        <img src="assets/images/choice-mb.png" class="w-100" alt="">
-                    </div>
                     <div class="bg-avarta">
-                        <img src="assets/images/choi.png" alt="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/choi-mison-star.svg">
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/choi.png" alt="">
+                        </picture>
                     </div>
                     <div class="item-abs abs-1">
                         <div class="choi-mison-run">
@@ -679,7 +691,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                         <iframe src="https://player.vimeo.com/video/1022038916?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="fukuoka_korean_pop_week"></iframe>
                         <div class="icon-play">
                             <a href="javascript:void(0)">
-                                <img src="assets/images/icon-play-text.svg" alt="Play">
+                                <picture>
+                                  <?php /* SPメイン画像 */ ?>
+                                  <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/icon-play-text-sp.svg" />
+                                  <?php /* PCメイン画像 */ ?>
+                                  <img src="/<?php echo DIRNAME; ?>/assets/images/icon-play-text.svg" alt="<?php echo $pege_title; ?>">
+                                </picture>
                             </a>
                         </div>
                     </div>
