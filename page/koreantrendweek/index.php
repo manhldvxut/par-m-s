@@ -480,31 +480,35 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //必�
                     </div>
                 </div>
                 <div class="choi-mison" id="talk">
-                    <div class="bg-avarta">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/choi-mison-star.svg">
-                            <img src="/<?php echo DIRNAME; ?>/assets/images/choi.png" alt="">
-                        </picture>
-                    </div>
-                    <div class="item-abs abs-1">
-                        <div class="choi-mison-run">
-                            <div class="choi-mison-top">
-                                <img src="assets/images/choi-mis.svg" alt="icon">
-                                <img src="assets/images/choi-mis.svg" alt="icon">
-                            </div>
+                    <div class="top">
+                        <div class="bg-avarta">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/<?php echo DIRNAME; ?>/assets/images/choi-mison-star.svg">
+                                <img src="/<?php echo DIRNAME; ?>/assets/images/choi.png" alt="">
+                            </picture>
                         </div>
-                        <div class="choi-mison-run">
-                            <div class="choi-mison-bottom">
-                                <img src="assets/images/choi-mis.svg" alt="icon">
-                                <img src="assets/images/choi-mis.svg" alt="icon">
+                        <div class="item-abs abs-1">
+                            <div class="choi-mison-run">
+                                <div class="choi-mison-top">
+                                    <img src="assets/images/choi-mis.svg" alt="icon">
+                                    <img src="assets/images/choi-mis.svg" alt="icon">
+                                </div>
                             </div>
+                            <div class="choi-mison-run">
+                                <div class="choi-mison-bottom">
+                                    <img src="assets/images/choi-mis.svg" alt="icon">
+                                    <img src="assets/images/choi-mis.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <img src="assets/images/choi-1.png" alt="">
                         </div>
-                        
-                        <img src="assets/images/choi-1.png" alt="">
+                        <div class="item-abs abs-2"><img src="assets/images/choi-2.png" alt=""></div>
+                        <div class="bubbles">
+                            <div class="item-abs abs-3 bul-animation"><img src="assets/images/choi-3.png" alt=""></div>
+                            <div class="item-abs abs-4 bul-animation"><img src="assets/images/choi-4.png" alt=""></div>
+                        </div>
                     </div>
-                    <div class="item-abs abs-2"><img src="assets/images/choi-2.png" alt=""></div>
-                    <div class="item-abs abs-3 bul-animation"><img src="assets/images/choi-3.png" alt=""></div>
-                    <div class="item-abs abs-4 bul-animation"><img src="assets/images/choi-4.png" alt=""></div>
                     <div class="txt-mison">
                         <h3 class="fadeup">世界的スタイリスト チェ・ミソン<br>TALK EVENT</h3>
                         <div class="date-place">
