@@ -49,9 +49,13 @@ main {
   opacity: 0;
   pointer-events: none;
   transition: .3s all !important;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
   &.active {
     opacity: 1;
     pointer-events: unset;
+    height: auto;
     .mask-video {
       opacity: 1;
       transform: scale(3);

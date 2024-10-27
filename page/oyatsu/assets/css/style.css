@@ -834,6 +834,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1023px) {
+  .oyatsu {
+    height: auto;
+    padding: 36px 0 110px 0;
+  }
+}
 .oyatsu__grid {
   position: absolute;
   left: 0;
@@ -869,6 +875,18 @@ body {
   left: 141px;
   top: 72px;
 }
+@media (max-width: 1366px) {
+  .oyatsu__title {
+    width: 10.5%;
+    top: 8%;
+    left: 10%;
+  }
+}
+@media (max-width: 1023px) {
+  .oyatsu__title {
+    display: none;
+  }
+}
 .oyatsu__title img {
   max-width: 140px;
 }
@@ -877,14 +895,33 @@ body {
   bottom: 135px;
   left: 95px;
 }
+@media (max-width: 1023px) {
+  .oyatsu__cookie {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 36px;
+  }
+}
+@media (max-width: 1023px) {
+  .oyatsu__cookie ul {
+    display: flex;
+    align-items: center;
+  }
+}
 .oyatsu__cookie img {
   max-width: 86px;
 }
 .oyatsu__cookie-list-item {
   margin-bottom: 19px;
 }
+@media (max-width: 1023px) {
+  .oyatsu__cookie-list-item {
+    margin: 0 12px 0 0;
+  }
+}
 .oyatsu__cookie-list-item:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 .oyatsu__box {
   position: relative;
@@ -976,6 +1013,14 @@ body {
   left: 0;
   z-index: 2;
   background-size: 100%;
+}
+@media (max-width: 1023px) {
+  .event:before {
+    height: 82px;
+    background-size: cover;
+    background-position: top;
+    top: -80px;
+  }
 }
 .event:after {
   position: absolute;
@@ -1724,6 +1769,7 @@ header {
 .box-banner {
   position: relative;
   overflow: hidden;
+  border: 2px solid #1A1311;
 }
 .box-banner .avarta {
   transition: 1s all !important;

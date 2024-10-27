@@ -108,19 +108,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
             <div class="oyatsu__title">
                 <img src="/<?php echo DIRNAME; ?>/assets/images/oyatsu-title.svg" alt="oyatsu">
             </div>
-            <div class="oyatsu__cookie">
-                <ul class="oyatsu__cookie-list">
-                    <li class="oyatsu__cookie-list-item">
-                        <img src="/<?php echo DIRNAME; ?>/assets/images/cookie01.svg" alt="cookie01">
-                    </li>
-                    <li class="oyatsu__cookie-list-item">
-                        <img src="/<?php echo DIRNAME; ?>/assets/images/cookie02.svg" alt="cookie02">
-                    </li>
-                    <li class="oyatsu__cookie-list-item">
-                        <img src="/<?php echo DIRNAME; ?>/assets/images/cookie03.svg" alt="cookie03">
-                    </li>
-                </ul>
-            </div>
+
             <div class="oyatsu__box">
                 <div class="oyatsu__box-bg">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/box-bg.png" alt="icon">
@@ -139,6 +127,19 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                         <img src="/<?php echo DIRNAME; ?>/assets/images/clock.svg" alt="icon">
                     </div>
                 </div>
+            </div>
+            <div class="oyatsu__cookie">
+                <ul class="oyatsu__cookie-list">
+                    <li class="oyatsu__cookie-list-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/cookie01.svg" alt="cookie01">
+                    </li>
+                    <li class="oyatsu__cookie-list-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/cookie02.svg" alt="cookie02">
+                    </li>
+                    <li class="oyatsu__cookie-list-item">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/cookie03.svg" alt="cookie03">
+                    </li>
+                </ul>
             </div>
             <div class="oyatsu__traidat">
                 <img src="/<?php echo DIRNAME; ?>/assets/images/traidat.png" alt="icon">
