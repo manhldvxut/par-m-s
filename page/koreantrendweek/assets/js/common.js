@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function() {
     history.scrollRestoration = "manual";
-    $(window).on('beforeunload', function(){
+    $(window).on('beforeunload', function() {
         $(window).scrollTop(0);
     });
     // ページスクロール
@@ -25,46 +25,30 @@ $(document).ready(function(){
 
     });
 
-    $('.slide-product').slick({
-        slidesToShow: 3,
-        centerMode: true,
-        dots: false,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
+    //  loading splash
 
+    var $body = document.body,
+        $wrap = document.getElementById('loading_ware'),
 
+        areawidth = window.innerWidth,
+        areaheight = window.innerHeight,
 
-var $body = document.body,
-    $wrap = document.getElementById('loading_ware'),
+        canvassize = 500,
 
-    areawidth = window.innerWidth,
-    areaheight = window.innerHeight,
+        length = 30,
+        radius = 5.6,
 
-    canvassize = 500,
+        rotatevalue = 0.035,
+        acceleration = 0,
+        animatestep = 0,
+        toend = false,
 
-    length = 30,
-    radius = 5.6,
+        pi2 = Math.PI * 2,
 
-    rotatevalue = 0.035,
-    acceleration = 0,
-    animatestep = 0,
-    toend = false,
+        group = new THREE.Group(),
+        mesh, ringcover, ring,
 
-    pi2 = Math.PI*2,
-
-    group = new THREE.Group(),
-    mesh, ringcover, ring,
-
-    camera, scene, renderer;
-
+        camera, scene, renderer;
 
     camera = new THREE.PerspectiveCamera(65, 1, 1, 10000);
     camera.position.z = 150;
@@ -73,19 +57,19 @@ var $body = document.body,
     scene.add(group);
 
     mesh = new THREE.Mesh(
-        new THREE.TubeGeometry(new (THREE.Curve.create(function() {},
+        new THREE.TubeGeometry(new(THREE.Curve.create(function() {},
             function(percent) {
 
-                var x = length*Math.sin(pi2*percent),
-                    y = radius*Math.cos(pi2*3*percent),
+                var x = length * Math.sin(pi2 * percent),
+                    y = radius * Math.cos(pi2 * 3 * percent),
                     z, t;
 
-                t = percent%0.25/0.25;
-                t = percent%0.25-(2*(1-t)*t* -0.0185 +t*t*0.25);
-                if (Math.floor(percent/0.25) == 0 || Math.floor(percent/0.25) == 2) {
+                t = percent % 0.25 / 0.25;
+                t = percent % 0.25 - (2 * (1 - t) * t * -0.0185 + t * t * 0.25);
+                if (Math.floor(percent / 0.25) == 0 || Math.floor(percent / 0.25) == 2) {
                     t *= -1;
                 }
-                z = radius*Math.sin(pi2*2* (percent-t));
+                z = radius * Math.sin(pi2 * 2 * (percent - t));
 
                 return new THREE.Vector3(x, y, z);
 
@@ -98,22 +82,32 @@ var $body = document.body,
     );
     group.add(mesh);
 
-    ringcover = new THREE.Mesh(new THREE.PlaneGeometry(50, 15, 1), new THREE.MeshBasicMaterial({ opacity: 0, transparent: true}));
-    ringcover.position.x = length+1;
-    ringcover.rotation.y = Math.PI/2;
+    ringcover = new THREE.Mesh(new THREE.PlaneGeometry(50, 15, 1), new THREE.MeshBasicMaterial({
+        opacity: 0,
+        transparent: true
+    }));
+    ringcover.position.x = length + 1;
+    ringcover.rotation.y = Math.PI / 2;
     group.add(ringcover);
 
-    ring = new THREE.Mesh(new THREE.RingGeometry(4.3, 5.55, 32), new THREE.MeshBasicMaterial({ opacity: 0, transparent: true}));
-    ring.position.x = length+1.1;
-    ring.rotation.y = Math.PI/2;
+    ring = new THREE.Mesh(new THREE.RingGeometry(4.3, 5.55, 32), new THREE.MeshBasicMaterial({
+        opacity: 0,
+        transparent: true
+    }));
+    ring.position.x = length + 1.1;
+    ring.rotation.y = Math.PI / 2;
     group.add(ring);
 
     // fake shadow
     (function() {
         var plain, i;
         for (i = 0; i < 10; i++) {
-            plain = new THREE.Mesh(new THREE.PlaneGeometry(length*2+1, radius*3, 1), new THREE.MeshBasicMaterial({color: 0xd1684e, transparent: true, opacity: 0}));
-            plain.position.z = -2.5+i*0.5;
+            plain = new THREE.Mesh(new THREE.PlaneGeometry(length * 2 + 1, radius * 3, 1), new THREE.MeshBasicMaterial({
+                color: 0xd1684e,
+                transparent: true,
+                opacity: 0
+            }));
+            plain.position.z = -2.5 + i * 0.5;
             group.add(plain);
         }
     })();
@@ -124,7 +118,7 @@ var $body = document.body,
     });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(canvassize, canvassize);
-    renderer.setClearColor(0x000000, 0); // Thiết lập nền trong suốt
+    renderer.setClearColor(0x000000, 0);
 
     $wrap.appendChild(renderer.domElement);
 
@@ -139,30 +133,29 @@ var $body = document.body,
     function start() {
         toend = true;
     }
-    
+
     function back() {
         toend = false;
     }
 
     function tilt(percent) {
-        group.rotation.y = percent*0.5;
+        group.rotation.y = percent * 0.5;
     }
 
     function render() {
-
         var progress;
 
-        animatestep = Math.max(0, Math.min(240, toend ? animatestep+1 : animatestep-4));
+        animatestep = Math.max(0, Math.min(240, toend ? animatestep + 1 : animatestep - 4));
         acceleration = easing(animatestep, 0, 1, 240);
 
         if (acceleration > 0.35) {
-            progress = (acceleration-0.35)/0.65;
-            group.rotation.y = -Math.PI/2 *progress;
-            group.position.z = 50*progress;
-            progress = Math.max(0, (acceleration-0.97)/0.03);
-            mesh.material.opacity = 1-progress;
+            progress = (acceleration - 0.35) / 0.65;
+            group.rotation.y = -Math.PI / 2 * progress;
+            group.position.z = 50 * progress;
+            progress = Math.max(0, (acceleration - 0.97) / 0.03);
+            mesh.material.opacity = 1 - progress;
             ringcover.material.opacity = ring.material.opacity = progress;
-            ring.scale.x = ring.scale.y = 0.9 + 0.1*progress;
+            ring.scale.x = ring.scale.y = 0.9 + 0.1 * progress;
         }
 
         renderer.render(scene, camera);
@@ -175,11 +168,13 @@ var $body = document.body,
         requestAnimationFrame(animate);
     }
 
-    function easing(t,b,c,d) {if((t/=d/2)<1)return c/2*t*t+b;return c/2*((t-=2)*t*t+2)+b;}
+    function easing(t, b, c, d) {
+        if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+        return c / 2 * ((t -= 2) * t * t + 2) + b;
+    }
 
 
-
-    // Loading
+    // Loading number
     var percentage = 0;
 
     function updateLoading() {
@@ -188,7 +183,7 @@ var $body = document.body,
 
         if (percentage < 100) {
             setTimeout(updateLoading, 30);
-        } else if(percentage == 100) {
+        } else if (percentage == 100) {
             $('.loading__body').removeClass('blur');
             $(".loading__text, #loading_ware").addClass('hidden');
             $(".select__sound").removeClass('hidden');
@@ -197,18 +192,19 @@ var $body = document.body,
 
     updateLoading();
 
+    // sound run line
     const soundToggleRects = $(".ui-sound-toggle-rects rect");
     const intensity = 2.5;
     let isAnimating = true;
 
     function animateRects(time) {
         if (isAnimating) {
-          soundToggleRects.each(function (index, rect) {
-            const o = Math.cos(time * 0.003 + index * 0.5) * intensity;
-            $(rect).css("transform", `translateY(${o}px)`);
-          });
+            soundToggleRects.each(function(index, rect) {
+                const o = Math.cos(time * 0.003 + index * 0.5) * intensity;
+                $(rect).css("transform", `translateY(${o}px)`);
+            });
         } else {
-          soundToggleRects.css("transform", "translateY(0px)"); 
+            soundToggleRects.css("transform", "translateY(0px)");
         }
 
         requestAnimationFrame(animateRects);
@@ -216,83 +212,170 @@ var $body = document.body,
 
     requestAnimationFrame(animateRects);
 
-    $(".ui-sound-toggle").on("click", function () {
-        console.log('click')
-        // isAnimating = !isAnimating;
-    });
+    // $(".ui-sound-toggle").on("click", function() {
+    //     console.log('click')
+    //     // isAnimating = !isAnimating;
+    // });
 
     // play video splash
     var videoSplash_ver = $('#splash_ver')[0];
     var videoMain = $('#main_video')[0];
     var checkSoundOff = false
-    $('.select__sound-choice-item-on').click(function () {
+    $('.select__sound-choice-item-on').click(function() {
         $('.select__sound').css({
-            "opacity" : 0,
-            "z-index" : -1
+            "opacity": 0,
+            "z-index": -1
         })
         $('.next-sound-line').removeClass('hidden')
 
         videoSplash_ver.play();
-        videoSplash_ver.muted = false; 
+        videoSplash_ver.muted = false;
         checkSoundOff = false
     })
 
-    $('.select__sound-choice-item-off').click(function () {
+    $('.select__sound-choice-item-off').click(function() {
         $('.select__sound').css({
-            "opacity" : 0,
-            "z-index" : -1
+            "opacity": 0,
+            "z-index": -1
         })
         $('.next-sound-line').removeClass('hidden')
         isAnimating = !isAnimating;
 
         videoSplash_ver.play();
-        videoSplash_ver.muted = true; 
+        videoSplash_ver.muted = true;
         checkSoundOff = true;
     })
 
     $('#splash_ver').on('ended', function() { // show video 02
         $('.main-video').css({
-            "opacity" : 1,
-            "visibility" : "visible",
-            "transition" : ".3s all"
+            "opacity": 1,
+            "visibility": "visible",
+            "transition": ".3s all"
         })
         $('.main, body').addClass('active');
         $('.footer').addClass('active');
         $('.nav').removeClass('hidden');
 
-        // Chay cai hinh tron animation truoc 
-        // --> xong moi toi chay video
-
         if (checkSoundOff === true) {
-            videoMain.muted = true; 
+            videoMain.muted = true;
         } else {
-            videoMain.muted = false; 
+            videoMain.muted = false;
         }
         //
 
         videoMain.play()
     });
 
-    $('.btn-menu-mb a').click(function () {
+    $('.btn-menu-mb a').click(function() {
         $('.nav-link-menu').addClass('active');
     })
 
-    $('.close-menu a').click(function () {
+    $('.close-menu a').click(function() {
         $('.nav-link-menu').removeClass('active');
     })
 
-    $('.nav-list__link').click(function(e){
+    $('.nav-list__link').click(function(e) {
         e.preventDefault();
         $('.nav-link-menu').removeClass('active');
         var target = $($(this).attr('href'));
-        if(target.length){
+        if (target.length) {
             var scrollTo = target.offset().top;
-            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+            $('body, html').animate({
+                scrollTop: scrollTo + 'px'
+            }, 800);
         }
     });
 
-    $(window).scroll(function () {
-        $('.scroll-main').fadeOut();
-    })
+
+    var navOffset = 1978;
+
+    $(window).on('scroll', function() {
+        var scrollPos = $(window).scrollTop();
+
+        if(scrollPos > 100) {
+            $('.scroll-main').fadeOut();
+        } else {
+           $('.scroll-main').fadeIn();
+        }
+
+        if (scrollPos >= navOffset) {
+            $('.head-main').addClass('active');
+        }
+
+        if(scrollPos > 4000 || (scrollPos < 1800)) {
+            $('.head-main').removeClass('active').fadeIn();
+        }
+
+        $('.fukuoka-parco, #cosme, .fadeup').each(function() {
+            var elementOffset = $(this).offset().top;
+            var windowHeight = $(window).height();
+
+            if (scrollPos + windowHeight > elementOffset) {
+                $(this).addClass('animated');
+                // $('.head-main').removeClass('active');
+            } else {
+                // $(this).removeClass('active');
+            }
+        });
+
+    });
+
+    console.log(areawidth)
+
+    if(areawidth < 769) {
+        $('.slide-product').slick({
+            slidesToShow: 3,
+            centerMode: true,
+            dots: false,
+            arrows: false,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }]
+        });
+    }
 })
 
+ window.onload = function() { // canvas random run
+    function startCanvasAnimation(canvasId) {
+      const canvas = document.getElementById(canvasId);
+      const context = canvas.getContext('2d');
+      let time = 0;
+
+      const color = function (x, y, r, g, b) {
+        context.fillStyle = `rgb(${r}, ${g}, ${b})`;
+        context.fillRect(x, y, 10, 10);
+      };
+
+      const R = function (x, y, time) {
+        return Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + time));
+      };
+
+      const G = function (x, y, time) {
+        return Math.floor(192 + 64 * Math.sin((x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 300));
+      };
+
+      const B = function (x, y, time) {
+        return Math.floor(192 + 64 * Math.sin(5 * Math.sin(time / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100));
+      };
+
+      const animate = function () {
+        for (let x = 0; x <= 30; x++) {
+          for (let y = 0; y <= 30; y++) {
+            color(x * 10, y * 10, R(x, y, time), G(x, y, time), B(x, y, time));
+          }
+        }
+        time += 0.03;
+        window.requestAnimationFrame(animate);
+      };
+
+      animate();
+    }
+
+    startCanvasAnimation('canvas1');
+    startCanvasAnimation('canvas2');
+    startCanvasAnimation('canvas3');
+    startCanvasAnimation('canvas4');
+};
