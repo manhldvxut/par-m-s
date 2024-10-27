@@ -197,7 +197,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                 </div>
                             </div>
                             <div class="endmore">
-                                <span>endmore</span>
+                                <span>and more</span>
                             </div>
                             <div class="btn-show">
                                 <a href="" target="_blank">詳しくはこちら</a>
@@ -239,6 +239,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
         <div class="content">
             <div class="shop-limit__body">
                 <div class="shop-limit__box">
+                    <div class="icon-title">
+                        <img src="assets/images/icon-title-limit.png" alt="">
+                    </div>
+                    <div class="title-limit">
+                        <img src="assets/images/title-limit-mb.png" alt="">
+                    </div>
                     <h2>
                         <img src="/<?php echo DIRNAME; ?>/assets/images/shop-limit-ttl.svg" alt="期間限定ショップ">
                     </h2>
@@ -321,7 +327,8 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
         <div class="content">
             <div class="camping__body">
                 <div class="camping-icon-header">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/icon-camping.svg" alt="icon">
+                    <img src="/<?php echo DIRNAME; ?>/assets/images/icon-camping.svg" class="show-pc" alt="icon">
+                    <img src="/<?php echo DIRNAME; ?>/assets/images/icon-camping-mb.svg" class="show-mb" alt="icon">
                 </div>
                 <div class="camping__box">
                     <h2>
@@ -414,12 +421,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                         <ul class="pocket__list">
                             <li class="pocket__list-item">
                                 <a href="" target="_blank">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket.svg" alt="">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket.svg" class="show-pc" alt="">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket-mb.svg" class="show-mb" alt="">
                                 </a>
                             </li>
                             <li class="pocket__list-item">
                                 <a href="" target="_blank">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment.svg" alt="">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment.svg" class="show-pc" alt="">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment-mb.svg" class="show-mb" alt="">
                                 </a>
                             </li>
                         </ul>
