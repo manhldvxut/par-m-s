@@ -1,23 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="135" viewBox="0 0 320 135">
-  <defs>
-    <filter id="Rectangle_81" x="0" y="0" width="320" height="135" filterUnits="userSpaceOnUse">
-      <feOffset dy="8" input="SourceAlpha"/>
-      <feGaussianBlur result="blur"/>
-      <feFlood flood-color="#1a1311"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="127" viewBox="0 0 320 127">
   <g id="btn-payment-mb" transform="translate(-221 -5251)">
-    <g transform="matrix(1, 0, 0, 1, 221, 5251)" filter="url(#Rectangle_81)">
-      <g id="Rectangle_81-2" data-name="Rectangle 81" fill="#e64a00" stroke="#1a1311" stroke-width="2">
-        <rect width="320" height="127" rx="10" stroke="none"/>
-        <rect x="1" y="1" width="318" height="125" rx="9" fill="none"/>
-      </g>
+    <g id="Rectangle_81" data-name="Rectangle 81" transform="translate(221 5251)" fill="#e64a00" stroke="#1a1311" stroke-width="2">
+      <rect width="320" height="127" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="318" height="125" rx="9" fill="none"/>
     </g>
     <rect id="Rectangle_103" data-name="Rectangle 103" width="316" height="77" transform="translate(223 5276)" fill="#fff"/>
-    <text id="についてはこちら" transform="translate(380.5 5336.737)" fill="#1a1311" font-size="12" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700" letter-spacing="0.056em"><tspan x="-39.829" y="0">についてはこちら</tspan></text>
+    <text id="についてはこちら" transform="translate(380.5 5336.737)" fill="#1a1311" font-size="12" font-family="BIZUDPGothic-Bold, BIZ UDPGothic" font-weight="700" letter-spacing="0.056em"><tspan x="-49.157" y="0">についてはこちら</tspan></text>
     <path id="Polygon_14" data-name="Polygon 14" d="M7.5,0,15,11H0Z" transform="translate(524 5307) rotate(90)" fill="#1a1311"/>
-    <text id="ポケパル払い" transform="translate(380 5314)" fill="#df1f17" font-size="26" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700" letter-spacing="0.056em"><tspan x="-70.697" y="0">ポケパル払い</tspan></text>
+    <text id="ポケパル払い" transform="translate(380 5314)" fill="#df1f17" font-size="26" font-family="BIZUDPGothic-Bold, BIZ UDPGothic" font-weight="700" letter-spacing="0.056em"><tspan x="-80.866" y="0">ポケパル払い</tspan></text>
   </g>
 </svg>

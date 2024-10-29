@@ -661,7 +661,7 @@ body {
     @media (max-width: 1023px) {
       height: auto;
       padding: 36px 0 110px 0;
-      background: url("../images/oyatsu-mb.png") no-repeat center;
+      background: url("../images/oyatsu-mb.png") #FFFBD1 no-repeat center;
       background-size: 100% 100%;
     }
     @media (max-width: 768px) {
@@ -1157,7 +1157,18 @@ body {
         .btn-show {
             margin-top: 50px;
             display: flex;
-            justify-content: center;   
+            justify-content: center;
+            a {
+              &.more-evt {
+                width: 340px;
+                height: 71px;
+                box-sizing: border-box;
+                @media (max-width: 768px) {
+                  width: 100%;
+                  max-width: 320px;
+                }
+              }
+            }
         }
     }
 
@@ -1179,7 +1190,10 @@ body {
         top: 0;
         left: 0;
         @media (max-width: 767px) {
+          background: url(../images/limit-all-bgmb.svg) no-repeat #E66F89;
           background-size: cover;
+          height: calc(100% - 80px);
+          top: 80px;
         }
     }
 
@@ -1416,6 +1430,17 @@ body {
     background: #00942C;
     padding-top: 150px;
     padding-bottom: 310px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: url("../images/draw-camp.svg") no-repeat center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
     @media (max-width: 768px) {
       padding-bottom: 200px;
@@ -1565,6 +1590,10 @@ body {
             background: #E66F89;
             color: #1A1311;
         }
+    }
+    .content {
+      position: relative;
+      z-index: 2;
     }
 }
 
@@ -1795,13 +1824,15 @@ body {
               border: 2px solid #1A1311;
               box-shadow: 0 6px #1A1311;
               transition: .3s all !important;
+              position: relative;
+              top: 0;
 
               @media (max-width: 768px) {
                 border: none;
-                box-shadow: none;
               }
               &:hover {
                 box-shadow: 0 0 #1A1311;
+                top: 6px;
               }
             }
             .show-pc {
@@ -1903,7 +1934,7 @@ body {
         @media (max-width: 768px) {
           background: url('../images/osusume-line-sp.png') no-repeat;
           width: 15px;
-          height: 100%;
+          height: calc(100% - 90px);
           background-size: 100%;
           top: 30px;
         }
@@ -1924,7 +1955,7 @@ body {
         @media (max-width: 768px) {
           width: 15px;
           top: -85px;
-          height: calc(100% + 100px);
+          height: calc(100% - 85px);
           background: url('../images/osusume-line-sp.png') no-repeat;
           background-size: 100%;
         }
@@ -2050,7 +2081,7 @@ body {
 .btn-show {
     a {
         background: url('../images/btn-bg.svg') no-repeat;
-        padding: 27px 117px;
+        padding: 24px 117px;
         display: block;
         width: fit-content;
         text-decoration: none;
@@ -2061,11 +2092,33 @@ body {
         text-align: center;
         background-size: 100% 100%;
         height: 23px;
+        transition: .3s all !important;
+        top: 0;
+        position: relative;
+        &:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: #1A1311;
+          position: absolute;
+          top: 6px;
+          left: 0;
+          z-index: -1;
+          border-radius: 60px;
+          transition: .3s all !important;
+        }
+        &:hover {
+          top: 6px;
+          &:after {
+            top: 0;
+          }
+        }
         @media (max-width: 767px) {
           padding: 27px 24px;
           width: 100%;
           height: 80px;
         }
+
     }
 }
 

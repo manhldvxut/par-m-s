@@ -168,7 +168,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu'; //必ずディ�
                                 <span>and more...</span>
                             </div>
                             <div class="btn-show">
-                                <a href="" target="_blank">詳しくはこちら</a>
+                                <a href="" target="_blank" class="more-evt">詳しくはこちら</a>
                             </div>
                         </div>
                         <div class="event__column-item event__column-item-right">

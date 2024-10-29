@@ -69,7 +69,7 @@
 <section class="box-banner">
     <div class="content-banner">
         <div class="avarta avr-pc"><img src="assets/images/bg-mv.svg" class="w-100" alt=""></div>
-        <div class="avarta avr-mb"><img src="assets/images/bg-mv-mb.webp" class="w-100" alt=""></div>
+        <div class="avarta avr-mb"><img src="assets/images/bg-mv-mb.png" class="w-100" alt=""></div>
         <div class="icon-mv"><img src="assets/images/mv.svg" alt=""></div>
         <div class="icon-abs abs-1"><img src="assets/images/mv-01.svg" alt=""></div>
         <div class="icon-abs abs-2"><img src="assets/images/mv-02.svg" alt=""></div>
