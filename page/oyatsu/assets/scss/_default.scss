@@ -142,10 +142,11 @@ PARCO Header
 PARCO Footer
 ========================================================= */
 .pft{
-  background: #222222;
+  background: #0C1012;
   position: relative;
   padding-bottom: 27px;
   padding-top: 32px;
+  z-index: 99;
   @media screen and (min-width:769px){
     padding: 50px 0 40px;
   }
@@ -192,19 +193,17 @@ PARCO Footer
     right: 25px;
     bottom: 30px;
     margin: 0;
-    opacity: 0;
     transition: transform 0.3s linear;
     animation-duration: 1s;
     animation-fill-mode: both;
 
-    &.animated-blur {
-      animation-name: imageBlurScr;
-      opacity: 1;
-      transition: .1s;
-    }
-
     @media (max-width: 768px) {
-      right: 14px;
+      right: 0;
+      left: calc(50% - 22px);
+      margin: auto;
+      bottom: unset;
+      top: -50px;
+      position: absolute;
     }
     a {
       display: inline-block;
@@ -215,11 +214,11 @@ PARCO Footer
       text-indent: 100%;
       overflow: hidden;
       white-space: nowrap;
-      animation-name: imageBlurScr;
 
       @media(max-width: 768px) {
         width: 47px;
         height: 84px;
+        background: url('../images/pagetop-sp.svg') no-repeat;
         background-size: 100%;
       }
       &:hover {

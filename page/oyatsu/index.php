@@ -23,9 +23,9 @@ if ($productionFlag === true) {
 
 //ページ用の変数
 $pege_title = '何時でもおやつ│吉祥寺PARCO';
-$pege_description = '';
+$pege_description = '食欲の秋がやってきた！吉祥寺PARCOはみんな大好き「おやつ」を大特集。3時のおやつ？何時だって食べたくなっちゃう！毎日に元気をくれるおやつを吉祥寺PARCOで見つけよう。';
 $pege_keywords = '';
-$page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずディレクトリ名を変更する
+$page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu'; //必ずディレクトリ名を変更する
 
 ?>
 <!DOCTYPE html>
@@ -52,42 +52,6 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
 ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/'.DIRNAME.'/assets/inc/header.php'; ?>
 
-
-
-<nav class="localnav" style="display:none;">
-  <ul class="localnav-list">
-    <li class="localnav-item localnav-item__event">
-        <a href="" class="">
-            <span class="localnav-item__icon"><img src="/<?php echo DIRNAME; ?>/assets/images/icon-event.svg" alt="icon event"></span>
-            イベント
-        </a>
-    </li>
-    <li class="localnav-item localnav-item__original">
-        <a href="" class="">
-            <span class="localnav-item__icon"><img src="/<?php echo DIRNAME; ?>/assets/images/icon-original.svg" alt="icon original"></span>
-            オリジナルメニュー
-        </a>
-    </li>
-    <li class="localnav-item localnav-item__present">
-        <a href="" class="">
-            <span class="localnav-item__icon"><img src="/<?php echo DIRNAME; ?>/assets/images/icon-present.svg" alt="icon present"></span>
-            プレゼント
-        </a>
-    </li>
-    <li class="localnav-item localnav-item__shopevent">
-        <a href="" class="">
-            <span class="localnav-item__icon"><img src="/<?php echo DIRNAME; ?>/assets/images/icon-shopevent.svg" alt="icon shopevent"></span>
-            ショップイベント
-        </a>
-    </li>
-    <li class="localnav-item localnav-item__concept">
-        <a href="" class="">
-            <span class="localnav-item__icon"><img src="/<?php echo DIRNAME; ?>/assets/images/icon-concept.svg" alt="icon concept"></span>
-            コンセプト
-        </a>
-    </li>
-  </ul>
-<!-- /.localnav --></nav>
 <?php
 /**
  * Main contents
@@ -111,7 +75,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
 
             <div class="oyatsu__box">
                 <div class="oyatsu__box-bg">
-                    <img src="/<?php echo DIRNAME; ?>/assets/images/box-bg.png" alt="icon">
+                    <!-- <img src="/<?php echo DIRNAME; ?>/assets/images/box-bg.png" alt="icon"> -->
                 </div>
                 <div class="oyatsu__box-icon-left">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/box-left.png" alt="icon">
@@ -121,10 +85,14 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                 </div>
                 <div class="oyatsu__box-content">
                     <div class="oyatsu__box-text">
-                        リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります リード文が入ります
+                        食欲の秋がやってきた！吉祥寺PARCOはみんな大好き「おやつ」を大特集。<br>
+                        屋上ではファンから熱い視線を集める「キャロットケーキ」が大集合するイベントを開催！<br>
+                        さらに「JIICHIRO POCKET」「名作絵本のクッキー缶セレクション by Cake.jp」が初出店。<br>
+                        豪華セットが当たるおやつくじもご用意しました。<br>
+                        3時のおやつ？何時だって食べたくなっちゃう！毎日に元気をくれるおやつを吉祥寺PARCOで見つけよう。
                     </div>
                     <div class="oyatsu__box-clock">
-                        <img src="/<?php echo DIRNAME; ?>/assets/images/clock.svg" alt="icon">
+                        <img src="/<?php echo DIRNAME; ?>/assets/images/clock.gif" alt="icon">
                     </div>
                 </div>
             </div>
@@ -150,9 +118,9 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
         </div>
     </section>
 
-    <section class="event">
+    <section class="event" id="event">
         <div class="event__body">
-            <h2 class="title">
+            <h2 class="title fadein">
                 <span><img src="/<?php echo DIRNAME; ?>/assets/images/event.svg" alt="event"></span>
             </h2>
             <div class="event__box">
@@ -165,39 +133,39 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                             <div class="event__box-list">
                                 <div class="event__box-list-item">
                                     <div class="event__box-img">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/img01.png" alt="">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/pr_01.jpg" alt="MAKIMONO">
                                     </div>
                                     <div class="event__box-name type01">
-                                        <span>ザ シティ ベーカリー</span>
+                                        <span>MAKIMONO</span>
                                     </div>
                                 </div>
                                 <div class="event__box-list-item">
                                     <div class="event__box-name type02">
-                                        <span>ザ シティ ベーカリー<br>ザ シティ ベーカリー</span>
+                                        <span>Qué BONITA</span>
                                     </div>
                                     <div class="event__box-img">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/img01.png" alt="">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/pr_02.jpg" alt="Qué BONITA">
                                     </div>
                                 </div>
                                 <div class="event__box-list-item">
                                     <div class="event__box-img">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/img01.png" alt="">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/pr_03.jpg" alt="横森珈琲">
                                     </div>
                                     <div class="event__box-name type03">
-                                        <span>ザ シティ ベーカリー<br>ザ シティ ベーカリー</span>
+                                        <span>横森珈琲</span>
                                     </div>
                                 </div>
                                 <div class="event__box-list-item">
                                     <div class="event__box-name type04">
-                                        <span>ザ シティ ベーカリー</span>
+                                        <span>デイリーズ</span>
                                     </div>
                                     <div class="event__box-img">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/img01.png" alt="">
+                                        <img src="/<?php echo DIRNAME; ?>/assets/images/pr_04.jpg" alt="デイリーズ">
                                     </div>
                                 </div>
                             </div>
                             <div class="endmore">
-                                <span>and more</span>
+                                <span>and more...</span>
                             </div>
                             <div class="btn-show">
                                 <a href="" target="_blank">詳しくはこちら</a>
@@ -208,11 +176,17 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                 <img src="/<?php echo DIRNAME; ?>/assets/images/event-right-img.png" alt="">
                             </div>
                             <div class="desc">
-                                秋のキャロットケーキ大収穫まつりの概要が入ります 秋のキャロットケーキ大収穫まつりの概要が入ります秋のキャロットケーキ大収穫まつりの概要が入ります秋のキャロットケーキ大収穫まつりの概要が入ります
+                                関東・関西のキャロットケーキ店が吉祥寺PARCO屋上に大集合！<br>
+                                各店こだわりのキャロットケーキや焼き菓子を販売いたします。<br>
+                                また、デイリーズの系列各店や人気ブランドなども出店。<br>
+                                コーヒー、お弁当、雑貨や古道具、お洋服、バッグ、ポーチなどのお買い物もお楽しみいただけます。<br>
+                                旭川の家具メーカー「大雪木工」のランチプレートづくりワークショップも行います（要事前申し込み）。<br><br>
+
+                                週末はみなさまお誘いあわせのうえ、吉祥寺PARCO屋上へお越しください♪
                             </div>
                             <div class="list-info">
                                 <ul class="list-time">
-                                    <li>11.16 <span class="day"> fri</span> - 11.17 <span class="day">sun</span></li>
+                                    <li>11.16 <span class="day"> sat</span> - 17 <span class="day">sun</span></li>
                                     <li>10:00 - 16:00</li>
                                 </ul>
                                 <ul class="list-adress">
@@ -221,7 +195,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                 </ul>
                                 <ul class="list-plan">
                                     <li>入場料</li>
-                                    <li>300円</li>
+                                    <li>無料</li>
                                 </ul>
                                 <ul class="list-other">
                                     <li>主催</li>
@@ -235,7 +209,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
         </div>
     </section>
 
-    <section class="shop-limit">
+    <section class="shop-limit" id="limit">
         <div class="content">
             <div class="shop-limit__body">
                 <div class="shop-limit__box">
@@ -258,25 +232,25 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                     <img src="/<?php echo DIRNAME; ?>/assets/images/jiichiro-ttl.svg" alt="JIICHIRO POCKET">
                                 </div>
                                 <div class="shop-limit__desc">
-                                    期間限定ショップの概要が入ります。期間限定ショップの概要が入ります。期間限定ショップの概要が入ります。期間限定ショップの概要が入ります。期間限定ショップの概要が入ります。
+                                    治一郎のお菓子を、いつものお供に。定番のバウムクーヘンカットをはじめとした、ポケットに入るサイズのお菓子を取り揃えます。常設店舗ではお取扱いのないキャラメル缶やポシェットの販売も行います。
                                 </div>
 
                                 <div class="shop-limit__list">
                                     <div class="list-info">
                                         <ul class="list-time-limit">
                                             <li>時間</li>
-                                            <li>11.16 <span class="day"> fri</span> - 11.17 <span class="day">sun</span></li>
+                                            <li>11.13 <span class="day"> wed</span> - 11.27 <span class="day">wed</span></li>
                                         </ul>
                                         <ul class="list-plan">
                                             <li>場所</li>
-                                            <li>吉祥寺PARCO  屋上</li>
+                                            <li>1F イベントスペース</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-limit__column-item right">
                                 <div class="shop-limit__column-thumb">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/shop-limit01.png" alt="">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/limited_01.jpg" alt="JIICHIRO POCKET　～いつでもそばに、治一郎を～">
                                 </div>
                             </div>
                         </div>
@@ -300,19 +274,19 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                     <div class="list-info">
                                         <ul class="list-time-limit">
                                             <li>時間</li>
-                                            <li>11.16 <span class="day"> fri</span> - 11.17 <span class="day">sun</span></li>
+                                            <li>11.29 <span class="day"> fri</span> - 12.8 <span class="day">sun</span></li>
                                             
                                         </ul>
                                         <ul class="list-plan">
                                             <li>場所</li>
-                                            <li>吉祥寺PARCO  屋上</li>
+                                            <li>1F イベントスペース</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-limit__column-item right">
                                 <div class="shop-limit__column-thumb">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/shop-limit01.png" alt="">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/limited_02.jpg" alt="名作絵本のクッキー缶セレクション by Cake.jp">
                                 </div>
                             </div>
                         </div> 
@@ -323,7 +297,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
         
     </section>
 
-    <section class="camping">
+    <section class="camping" id="camping">
         <div class="content">
             <div class="camping__body">
                 <div class="camping-icon-header">
@@ -331,7 +305,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                     <img src="/<?php echo DIRNAME; ?>/assets/images/icon-camping-mb.svg" class="show-mb" alt="icon">
                 </div>
                 <div class="camping__box">
-                    <h2>
+                    <h2 class="fadein">
                         <img src="/<?php echo DIRNAME; ?>/assets/images/camping-ttl.svg" alt="キャンページ">
                     </h2>
                     <div class="camping__column">
@@ -340,15 +314,23 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                 <img src="/<?php echo DIRNAME; ?>/assets/images/camping-img.png" alt="">
                             </div>
                             <div class="camping__column-info">
-                                <h3>クーポン企画タイトル</h3>
+                                <h3>POCKET PARCO限定！おやつくじ</h3>
                                 <div class="camping__column-desc">
-                                    クーポン企画の概要が入ります。クーポン企画の概要が入ります。クーポン企画の概要が入ります。クーポン企画の概要が入ります。クーポン企画の概要が入ります。クーポン企画の概要が入ります。クーポン企画の概要が入ります。クーポン企画の概要が入ります。
+                                    館内ショップにてポケパル払いで2,000円(税込)<br>以上お買い上げいただいたお客様の中から抽選で45名様に豪華おやつセットをプレゼント！<br>
+                                    レジにて「POCET PARCO」に配信される「おやつくじ」クーポンをご提示ください。<br><br>
+
+                                    <div class="pocket-list">
+                                        ・ポケパル払いができるすべてのショップが対象です。<br>
+                                        ・当選クーポンの配信は12/18(水)を予定しております。賞品は各ショップの店頭でお渡しとなります。引換期間は12/18(水)～12/29(日)です。<br>
+                                        ・クーポンは吉祥寺PARCOを「よく行くPARCO」に登録してくださっているお客様に届きます。<br>
+                                        ・企画の詳細はクーポン画面をご確認ください。
+                                    </div>
                                 </div>
                                 <div class="camping-list">
                                     <div class="list-info">
                                         <ul class="list-adress">
                                             <li>日付</li>
-                                            <li>11.16 <span class="day"> fri</span> - 11.17 <span class="day">sun</span></li>
+                                            <li>11.13 <span class="day"> wed</span> - 11.27 <span class="day">wed</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -368,12 +350,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                             <div class="present__first-name">名様</div>
                                         </div>
                                         <div class="present__column-img">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present-thumb.png" alt="キャンページ">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present-thumb.png" alt="治一郎">
                                         </div>
                                         <div class="present__column-info">
-                                            <div class="present-floor">地下1階</div>
-                                            <div class="present-name">デイリーズ</div>
-                                            <div class="present-desc">商品名が入ります 商品名が入ります<br>商品名が入ります 商品名が入ります</div>
+                                            <div class="present-floor">1F</div>
+                                            <div class="present-name">治一郎</div>
+                                            <div class="present-desc">治一郎の詰め合わせ</div>
                                         </div>
                                     </div>
                                 </div>
@@ -385,12 +367,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                             <div class="present__first-name">名様</div>
                                         </div>
                                         <div class="present__column-img">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present-thumb.png" alt="キャンページ">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present_02.jpg" alt="㊇先手家・ユナイテッドネイチャー">
                                         </div>
                                         <div class="present__column-info">
-                                            <div class="present-floor">地下1階</div>
-                                            <div class="present-name">デイリーズ</div>
-                                            <div class="present-desc">商品名が入ります 商品名が入ります<br>商品名が入ります 商品名が入ります</div>
+                                            <div class="present-floor">1F</div>
+                                            <div class="present-name">㊇先手家・ユナイテッドネイチャー</div>
+                                            <div class="present-desc">ナッツはちみつ、ドライフルーツ、フルーツコンポートの詰め合わせ</div>
                                         </div>
                                     </div>
                                 </div>
@@ -402,12 +384,12 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                                             <div class="present__first-name">名様</div>
                                         </div>
                                         <div class="present__column-img">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present-thumb.png" alt="キャンページ">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/present-thumb.png" alt="グラニースミス アップルパイ＆コーヒー">
                                         </div>
                                         <div class="present__column-info">
-                                            <div class="present-floor">地下1階</div>
-                                            <div class="present-name">デイリーズ</div>
-                                            <div class="present-desc">商品名が入ります 商品名が入ります<br>商品名が入ります 商品名が入ります</div>
+                                            <div class="present-floor">2F</div>
+                                            <div class="present-name">グラニースミス アップルパイ＆コーヒー</div>
+                                            <div class="present-desc">アップルパイ・アップルクリームサンドなど人気商品詰め合わせ</div>
                                         </div>
                                     </div>
                                 </div>
@@ -420,15 +402,15 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
                         </div>
                         <ul class="pocket__list">
                             <li class="pocket__list-item">
-                                <a href="" target="_blank">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket.svg" class="show-pc" alt="">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket-mb.svg" class="show-mb" alt="">
+                                <a href="https://point.parco.jp/pocketparco/" target="_blank">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket.svg" class="show-pc" alt="POCKET PARCOのダウンロード">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-pocket-mb.svg" class="show-mb" alt="POCKET PARCOのダウンロード">
                                 </a>
                             </li>
                             <li class="pocket__list-item">
-                                <a href="" target="_blank">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment.svg" class="show-pc" alt="">
-                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment-mb.svg" class="show-mb" alt="">
+                                <a href="https://point.parco.jp/pay/" target="_blank">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment.svg" class="show-pc" alt="ポケパル払いについて">
+                                    <img src="/<?php echo DIRNAME; ?>/assets/images/btn-payment-mb.svg" class="show-mb" alt="ポケパル払いについて">
                                 </a>
                             </li>
                         </ul>
@@ -439,98 +421,113 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
     </section>
 
     <section class="ossume" id="shoplist" v-cloak>
-        <div class="ossume-line line-left">
+        <!-- <div class="ossume-line line-left">
             <img src="/<?php echo DIRNAME; ?>/assets/images/osusume-line.png" alt="">
         </div>
         <div class="ossume-line line-right">
             <img src="/<?php echo DIRNAME; ?>/assets/images/osusume-line.png" alt="">
-        </div>
-        <div class="content">
-            <div class="original-body">
-                <h2>
-                    <span>
-                        <img src="/<?php echo DIRNAME; ?>/assets/images/osusume-ttl.svg" alt="おすすめ＆エベント">
-                    </span>
-                </h2>
-                <div class="txt">
-                    おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。
-                </div>
+        </div> -->
+        <div class="ossume__body">
+            <div class="content">
+                <div class="original-body">
+                    <h2 class="fadein">
+                        <span>
+                            <img src="/<?php echo DIRNAME; ?>/assets/images/osusume-ttl.svg" alt="おすすめ＆エベント">
+                        </span>
+                    </h2>
+                    <div class="txt">
+                        おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。おすすめ商品の説明文が入ります。
+                    </div>
 
-                <div class="menu-list list-product">
-                    <div class="row-prd">
-                        <div class="col-prd" v-for="(shopList, index) in list" v-bind:key="index">
-                            <div class="item-product">
-                                <div class="avarta" v-if="shopList.avarta != ''">
-                                <img :src="shopList.avarta" :alt="shopList.product_name">
-                            </div>
-                            <div class="info">
-                                <div class="desc-prd">
-                                    <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
-                                    <div class="menu-list__item-shopname" v-html="brTxt(shopList.shopname)">shopname</div>
-                                    <div class="menu-list__item-name"　v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
-                                    <div class="menu-list__item-price" v-if="shopList.price != ''">
-                                        <span v-html="brTxt(shopList.price)">price</span>
-                                        <span class="jpy">円</span>
+                    <div class="menu-list list-product">
+                        <div class="row-prd">
+                            <div class="col-prd" :class="'list-item_' + index" v-for="(shopList, index) in list" v-bind:key="index">
+                                <div class="item-product">
+                                    <div class="avarta" v-if="shopList.avarta != ''">
+                                    <img :src="shopList.avarta" :alt="shopList.product_name">
+                                </div>
+                                <div class="info">
+                                    <div class="desc-prd">
+                                        <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
+                                        <div class="menu-list__item-shopname" v-html="brTxt(shopList.shopname)">shopname</div>
+                                        <div class="menu-list__item-name"　v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
+                                        <div class="menu-list__item-price" v-if="shopList.price != ''">
+                                            <span v-html="brTxt(shopList.price)">price</span>
+                                            <!-- <span class="jpy">円</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="btn-view">
+                                            <span class="more-line">
+                                                <img src="/<?php echo DIRNAME; ?>/assets/images/more-line.svg" alt="icon more">
+                                            </span>
+                                        <button :id="'btn' + index" class="js-modalopen" :data-modal="'modal-'+index">
+                                            <img src="/<?php echo DIRNAME; ?>/assets/images/icon-more.svg" alt="icon more">
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="btn-view">
-                                        <span class="more-line">
-                                            <img src="/<?php echo DIRNAME; ?>/assets/images/more-line.svg" alt="icon more">
-                                        </span>
-                                    <button :id="'btn' + index" class="js-modalopen" :data-modal="'modal-'+index">
-                                        <img src="/<?php echo DIRNAME; ?>/assets/images/icon-more.svg" alt="icon more">
-                                    </button>
-                                </div>
-                            </div>
 
-                            <div class="popup-container">
-                                    <div :id="'popup' + index" :class="'overlay js-modal modal-' + index">
-                                        <div class="popup">
-                                            <div class="popup-close js-modalclose">
-                                                <img src="/<?php echo DIRNAME; ?>/assets/images/icon-close.svg" class="" alt="close icon">
-                                            </div>
-                                            <div class="popup-content">
-                                                <div class="popup-body">
-                                                    <div class="slick js-imgslider">
-                                                        <div class="slick__item" v-if="shopList.slider_image01 != ''">
-                                                            <div class="slick__item-img">
-                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image01" :alt="shopList.product_name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="slick__item" v-if="shopList.slider_image02 != ''">
-                                                            <div class="slick__item-img">
-                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image02" :alt="shopList.product_name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="slick__item" v-if="shopList.slider_image03 != ''">
-                                                            <div class="slick__item-img">
-                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image03" :alt="shopList.product_name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="slick__item" v-if="shopList.slider_image04 != ''">
-                                                            <div class="slick__item-img">
-                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image04" :alt="shopList.product_name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="slick__item" v-if="shopList.slider_image05 != ''">
-                                                            <div class="slick__item-img">
-                                                                <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image05" :alt="shopList.product_name">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="popup-desc">
-                                                        <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
-                                                        <div class="menu-list__item-floor" v-html="brTxt(shopList.shopname)">floor</div>
-                                                        <div class="menu-list__item-name" v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
-                                                        <div class="menu-list__item-price"v-if="shopList.price != ''">
-                                                            <span v-html="brTxt(shopList.price)">price</span>
-                                                        </div>
-                                                        <div class="menu-list__item-desc"v-if="shopList.description != ''"> {{shopList.description}}
-                                                        </div>
+                                <div class="popup-container">
+                                        <div :id="'popup' + index" :class="'overlay js-modal modal-' + index">
+                                            <div class="popup">
+                                                <!-- <div class="popup-line-left">
+                                                    <img src="/page/oyatsu/assets/images/pop-line.svg" alt="">
+                                                </div>
 
-                                                    </div>
-                                                    <div class="btn-shoppage" v-if="shopList.restaurant_link != ''">
-                                                        <a :href="shopList.restaurant_link" target="_blank">Shop page</a>
+                                                <div class="popup-line-right">
+                                                    <img src="/page/oyatsu/assets/images/pop-line.svg" alt="">
+                                                </div> -->
+                                                <div class="popup-close js-modalclose">
+                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/icon-close.svg" class="" alt="close icon">
+                                                </div>
+                                                <div class="popup-content">
+                                                    <div class="popup-body">
+                                                        <div class="slick js-imgslider">
+                                                            <div class="slick__item" v-if="shopList.slider_image01 != ''">
+                                                                <div class="slick__item-img">
+                                                                    <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image01" :alt="shopList.product_name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="slick__item" v-if="shopList.slider_image02 != ''">
+                                                                <div class="slick__item-img">
+                                                                    <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image02" :alt="shopList.product_name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="slick__item" v-if="shopList.slider_image03 != ''">
+                                                                <div class="slick__item-img">
+                                                                    <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image03" :alt="shopList.product_name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="slick__item" v-if="shopList.slider_image04 != ''">
+                                                                <div class="slick__item-img">
+                                                                    <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image04" :alt="shopList.product_name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="slick__item" v-if="shopList.slider_image05 != ''">
+                                                                <div class="slick__item-img">
+                                                                    <img :src="'/<?php echo DIRNAME; ?>/assets/images/' + shopList.slider_image05" :alt="shopList.product_name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="popup-desc">
+                                                            <div class="menu-list__item-floor" v-html="brTxt(shopList.floor)">floor</div>
+                                                            <div class="menu-list__item-floor" v-html="brTxt(shopList.shopname)">floor</div>
+                                                            <div class="menu-list__item-name" v-if="shopList.product_name != ''" v-html="brTxt(shopList.product_name)">Product name</div>
+                                                            <div class="menu-list__item-price"v-if="shopList.price != ''">
+                                                                <span v-html="brTxt(shopList.price)">price</span>
+                                                                <!-- <span class="jpy">円</span> -->
+                                                            </div>
+                                                            <div class="menu-list__item-desc"v-if="shopList.description != ''"> {{shopList.description}}
+                                                            </div>
+
+                                                            <div class="btn-shoppage" v-if="shopList.restaurant_link != ''">
+                                                                <a :href="shopList.restaurant_link" target="_blank">
+                                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/shopage-on.svg" class="show-pc" alt="">
+                                                                    <img src="/<?php echo DIRNAME; ?>/assets/images/shopage-on-mb.svg" class="show-mb" alt="">
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -582,25 +579,25 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/oyatsu/menu'; //必ずデ
     <?php */ ?>
 
     <div class="pft__pageTop">
-      <a href="#top" class="scroll">ページトップ</a>
+      <a href="#top" class="scroll"></a>
     </div>
 
     <div class="sns">
         <ul class="sns-list">
             <li class="sns-list__item">
-                <a href="" class="sns-list__link">
+                <a href="https://x.com/parco_kichi" target="_blank" class="sns-list__link">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/x.svg" alt="icon x">
                 </a>
             </li>
 
             <li class="sns-list__item">
-                <a href="" class="sns-list__link">
+                <a href="https://page.line.me/kichijojiparco" target="_blank" class="sns-list__link">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/line.svg" alt="icon line">
                 </a>
             </li>
 
             <li class="sns-list__item">
-                <a href="" class="sns-list__link">
+                <a href="https://www.instagram.com/parco_kichijoji_official/" target="_blank" class="sns-list__link">
                     <img src="/<?php echo DIRNAME; ?>/assets/images/ins.svg" alt="icon instagram">
                 </a>
             </li>

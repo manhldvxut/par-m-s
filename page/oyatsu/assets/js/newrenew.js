@@ -105,7 +105,17 @@ function modal() {
       let target = $(this).attr('data-modal');
       $('.' + target).fadeIn(400);
       imgSlider('.' + target); //モーダル内スライダー発火
-      $('.' + target).addClass('open')
+      $('.' + target).addClass('open');
+      $('.btn-menu, .ossume-line.line-left, .ossume-line.line-right').css({
+        'opacity' : 0
+      })
+
+      $('.pft').css({
+        'z-index' : 1
+      })
+
+      $('.ossume__body').addClass('active')
+
       $('body').css('overflow', 'hidden'); //スクロール止め（※iphoneでは効かない）
 
     });
@@ -114,7 +124,15 @@ function modal() {
     $(document).on('click', modalClose, function() {
       $('body').removeAttr('style');
       $(document).find('.slick-initialized').slick('unslick'); //モーダル内スライダーストップ
-      $(document).find(modal).removeClass('open')
+      $(document).find(modal).removeClass('open');
+      $('.ossume__body').removeClass('active')
+      $('.btn-menu, .ossume-line.line-left, .ossume-line.line-right').css({
+        'opacity' : 1
+      })
+
+      $('.pft').css({
+        'z-index' : 50
+      })
     });
 
     $(document).on('click', modalCloseOverlay, function(e) {
@@ -122,6 +140,13 @@ function modal() {
         $('body').removeAttr('style');
         $(document).find('.slick-initialized').slick('unslick'); //モーダル内スライダーストップ
         $(document).find(modal).removeClass('open')
+        $('.ossume__body').removeClass('active')
+        $('.btn-menu, .ossume-line.line-left, .ossume-line.line-right').css({
+          'opacity' : 1
+        })
+        $('.pft').css({
+          'z-index' : 50
+        })
       }
       
     });

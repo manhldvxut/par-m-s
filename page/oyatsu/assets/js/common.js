@@ -15,18 +15,24 @@ $(function() {
     }, 800);
 
     $('.btn-menu a').click(function() {
-        $('.nav-menu, .overlay').addClass('active');
+        $('.nav-menu, .menu-overlay').addClass('active');
     });
-    $('.close-menu a, .overlay').click(function() {
-        $('.nav-menu, .overlay').removeClass('active');
+    $('.close-menu a, .menu-overlay').click(function() {
+        $('.nav-menu, .menu-overlay').removeClass('active');
     });
+
+    $('.link-nav a').click(function () {
+        $('.link-nav a').removeClass('active');
+        $(this).addClass('active')
+        $('.nav-menu, .menu-overlay').removeClass('active');
+    })
 
     // ページトップボタン
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            // $('.pft__pageTop').addClass('animated-blur');
+         if ($(this).scrollTop() > 200) {
+                $('.pft__pageTop').fadeIn();
         } else {
-            // $('.pft__pageTop').removeClass('animated-blur');
+                $('.pft__pageTop').fadeOut();
         }
 
         var scroll = $(this).scrollTop();
@@ -34,11 +40,7 @@ $(function() {
             var elemPos = $(this).offset().top;
             var windowHeight = $(window).height();
             if (scroll > elemPos - windowHeight + 100) {
-                $(this).addClass('in');
-                $('.title').addClass('title-animated')
-                $('.title').fadeIn(1000, function() {
-                    // $('.title-en').fadeIn(1000);
-                });
+                $(this).addClass('animated');
             }
         });
     });

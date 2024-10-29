@@ -9,7 +9,7 @@ header {
   z-index: 1001;
 }
 
-.overlay {
+.menu-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,13 +32,13 @@ header {
   align-items: center;
   justify-content: center;
   &.avr-pc {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
   &.avr-mb {
     display: none;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: flex;
     }
   }
@@ -57,7 +57,7 @@ header {
   width: 54.8%;
   transition: 1s all !important;
   opacity: 0;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: none;
   }
   &.active {
@@ -91,7 +91,7 @@ header {
     top: 15%;
     left: 2.2%;
     width: 8.8%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 33%;
       left: 1%;
       width: 12%;
@@ -105,7 +105,7 @@ header {
     top: 23%;
     left: 18.7%;
     width: 8.8%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 12%;
       left: 7.2%;
       width: 11.6%;
@@ -118,7 +118,7 @@ header {
     top: 47%;
     left: 5%;
     width: 8.8%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 76%;
       left: 1%;
       width: 12%;
@@ -131,7 +131,7 @@ header {
     top: 75.2%;
     left: 1.2%;
     width: 7.5%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 89%;
       left: 7.2%;
       width: 10%;
@@ -144,7 +144,7 @@ header {
     top: 75.4%;
     left: 16.2%;
     width: 7.5%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 42%;
       left: 28.2%;
       width: 10.5%;
@@ -157,7 +157,7 @@ header {
     top: 3.5%;
     right: 17.8%;
     width: 7.2%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: unset;
       bottom: 0;
       right: 3.8%;
@@ -171,7 +171,7 @@ header {
     top: 10%;
     right: 1.5%;
     width: 9%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 3%;
       right: 10.5%;
       width: 10%;
@@ -184,7 +184,7 @@ header {
     top: 54%;
     right: 5%;
     width: 10%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 32%;
       right: 3%;
       width: 14%;
@@ -197,7 +197,7 @@ header {
     bottom: 8.5%;
     right: 15.5%;
     width: 9%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       bottom: 15.5%;
       right: 1.5%;
       width: 13%;
@@ -210,7 +210,7 @@ header {
     bottom: 6.5%;
     right: 1%;
     width: 8%;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       bottom: 19.5%;
       right: 29%;
       width: 11%;
@@ -301,10 +301,10 @@ header {
 
 .btn-menu {
   position: fixed;
-  z-index: 9;
+  z-index: 1;
   top: 30px;
   right: 20px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     top: 10px;
     right: 10px;
   }
@@ -314,7 +314,7 @@ header {
     justify-content: center;
   }
   img {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 80px;
     }
   }
@@ -331,7 +331,7 @@ header {
   opacity: 0;
   pointer-events: none;
   transition: 1s all !important;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     height: 90%;
     width: 100%;
   }
@@ -344,7 +344,7 @@ header {
     top: 30px;
     right: 20px;
     z-index: 3;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       top: 10px;
       right: 10px;
       img {
@@ -363,7 +363,7 @@ header {
   background: #E64A00;
   max-width: 90px;
   flex: 0 0 90px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -373,13 +373,13 @@ header {
     padding: 10px 0;
   }
   ul {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: flex;
       align-items: center;
     }
     li {
       margin-bottom: 18px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         margin-bottom: 0;
         padding: 0 4px;
         flex: 0 0 58px;
@@ -399,7 +399,7 @@ header {
 .content-menu {
   display: flex;
   height: 100%;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: block;
     position: relative;
   }
@@ -412,15 +412,15 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     max-width: 100%;
     height: calc(100% - 80px);
   }
   ul {
     li {
       margin-bottom: 40px;
-      @media (max-width: 767px) {
-        margin-bottom: 30px;
+      @media (max-width: 768px) {
+        // margin-bottom: 30px;
       }
       &:last-child {
         margin-bottom: 0;
@@ -441,7 +441,7 @@ header {
     text-align: center;
     color: #1A1311;
     margin-bottom: 40px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 18px;
       margin-bottom: 30px;
     }
@@ -452,7 +452,7 @@ header {
   .line {
     pointer-events: none;
     img {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         width: auto;
         height: 12px;
       }
@@ -482,7 +482,7 @@ header {
     @media (max-width: 1200px) {
       padding: 0 10px 80px 10px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 0 10px 50px 10px;
       flex: 0 0 100%;
       max-width: 100%;
@@ -490,7 +490,7 @@ header {
     &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7) {
       flex: 0 0 22%;
       max-width: 22%;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         flex: 0 0 100%;
         max-width: 100%;
       }
@@ -502,29 +502,32 @@ header {
   font-size: 11px;
   font-weight: bold;
   line-height: 1.8;
-  @media (max-width: 767px) {
-    width: max-content;
+  @media (max-width: 768px) {
+    width: 100%;
     margin: 0 auto;
   }
   .avarta {
-    height: 293px;
-    margin-bottom: 25px;
+    width: 210px;
+    height: 210px;
+    border: 2px solid #1A1311;
+    margin-bottom: 44px;
     position: relative;
     display: block;
     text-align: center;
     @media (max-width: 1023px) {
       height: 190px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 22px;
     }
     img {
       max-height: 100%;
-      @media (max-width: 767px) {
-        width: auto;
+      @media (max-width: 768px) {
+        // width: auto;
       }
     }
   }
@@ -537,19 +540,19 @@ header {
   .menu-list__item-floor {
     font-size: 10px;
     margin-bottom: 7px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 14px;
     }
   }
   .menu-list__item-shopname {
     font-size: 12px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 14px;
     }
   }
   .menu-list__item-name {
     padding: 17px 0 12px 0;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 14px;
     }
   }
@@ -560,7 +563,7 @@ header {
     @media (max-width: 1364px) {
       font-size: 16px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 19px;
     }
     .jpy {
@@ -569,5 +572,233 @@ header {
         margin-left: 0;
       }
     }
+  }
+  .popup {
+    .menu-list__item-floor {
+      font-size: 1.4rem;
+    }
+
+    .menu-list__item-floor {
+      font-size: 1.4rem;
+    }
+
+    .menu-list__item-name {
+      font-size: 1.8rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .menu-list__item-price {
+      font-size: 2.6rem;
+
+      @media (max-width: 768px){
+        font-size: 1.9rem;
+        text-align: right;
+      }
+
+      .jpy {
+        font-size: 1.4rem;
+        margin-left: 0;
+
+        @media (max-width: 768px){
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .menu-list__item-desc {
+      font-size: 1.6rem;
+      line-height: 2.12;
+
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .btn-shoppage {
+      margin-top: 40px;
+
+      @media (max-width: 768px) {
+        margin-top: 30px;
+        justify-content: center;
+      }
+
+      .show-pc {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .show-mb {
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.popup-line-left, .popup-line-right {
+  position: absolute;
+  width: 33px;
+  height: 665px;
+  top: 0;
+}
+
+.popup-line-left {
+  left: 0;
+}
+
+.popup-line-right {
+  right: 0;
+}
+
+.btn-shoppage {
+  display: flex;
+  justify-content: end;
+  a {
+    display: block;
+    position: relative;
+    transition: .3s all ;
+
+    &:hover {
+      opacity: 0.8;
+      &:before {
+        transition: .3s all;
+        opacity: 0;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      border: 0px solid #1A1311;
+      box-shadow: 0 9px #1A1311;
+      transition: .3s all ;
+      border-radius: 50px;
+      top: -6px;
+    }
+  }
+}
+
+.pocket-list {
+  font-size: 1.4rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.list-item_0 {
+  .avarta {
+    margin-left: 80px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 236px;
+      height: 236px;
+      background: url('../images/icon-01.svg') no-repeat;
+      background-size: 100% 100%;
+      top: -80px;
+      left: -80px;
+      z-index: -1;
+    }
+  }
+}
+
+.list-item_1 {
+  margin-top: -75px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+
+  .avarta {
+    margin-bottom: 120px;
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 145px;
+      height: 187px;
+      background: url('../images/icon-02.svg') no-repeat;
+      background-size: 100% 100%;
+      bottom: -95px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: -1;
+    }
+  }
+}
+
+.list-item_2 {
+  @media (max-width: 768px) {
+    margin-top: 75px;
+  }
+  .avarta {
+    &:before {
+      position: absolute;
+      content: "";
+      width: 147px;
+      height: 284px;
+      background: url('../images/icon-03.svg') no-repeat;
+      background-size: 100% 100%;
+      bottom: 0;
+      right: -80px;
+      margin: auto;
+      z-index: -1;
+    }
+  }
+}
+
+.list-item_3 {
+  margin-top: -35px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+  .avarta {
+    margin-bottom: 80px;
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+    }
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      width: 175px;
+      height: 175px;
+      background: url('../images/icon-04.svg') no-repeat;
+      background-size: 100% 100%;
+      top: -85px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      z-index: -1;
+    }
+
+    &:after {
+      top: auto;
+      bottom: -85px;
+      transform: scale(-1, -1);
+    }
+  }
+}
+
+.ossume__body.active {
+  &:after {
+    z-index: 1;
   }
 }

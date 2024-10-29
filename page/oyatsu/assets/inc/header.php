@@ -44,26 +44,26 @@
             <div class="link-nav">
                 <ul>
                     <li>
-                        <a href="" class="active">イベント</a>
+                        <a href="#event" class="">イベント</a>
                         <div class="line"><img src="assets/images/line-menu.svg" alt=""></div>
                     </li>
                     <li>
-                        <a href="" class="">期間限定ショップ</a>
+                        <a href="#limit" class="">期間限定ショップ</a>
                         <div class="line"><img src="assets/images/line-menu.svg" alt=""></div>
                     </li>
                     <li>
-                        <a href="" class="">キャンペーン</a>
+                        <a href="#camping" class="">キャンペーン</a>
                         <div class="line"><img src="assets/images/line-menu.svg" alt=""></div>
                     </li>
                     <li>
-                        <a href="" class="">おすすめ商品</a>
+                        <a href="#shoplist" class="">おすすめ商品</a>
                         <div class="line"><img src="assets/images/line-menu.svg" alt=""></div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="overlay"></div>
+    <div class="menu-overlay"></div>
 </header>
 
 <section class="box-banner">
