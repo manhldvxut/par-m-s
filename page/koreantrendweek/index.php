@@ -95,7 +95,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //å¿…ã
     </div>
     <div class="loading__body blur">
         <div class="video">
-            <video id="splash_ver" muted>
+            <video id="splash_ver" muted playsinline poster="/<?php echo DIRNAME; ?>/assets/images/poster.png">
               <source src="/<?php echo DIRNAME; ?>/assets/video/splash_ver.mp4" type="video/mp4">
             </video>
         </div>
@@ -217,7 +217,7 @@ $page_shareurl = 'https://'.STORE_NAME.'.parco.jp/page/koreantrendweek/'; //å¿…ã
             <img src="assets/images/mask-video.png" class="w-100 show-pc" alt="">
             <img src="assets/images/mask-video-mb.png" class="w-100 show-mb d-none" alt="">
         </div>
-        <video id="main_video" muted loop>
+        <video id="main_video" loop muted playsinline width="100%">
             <source src="/<?php echo DIRNAME; ?>/assets/video/movie-short.mp4" type="video/mp4">
         </video>
     </div>
